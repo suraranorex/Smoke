@@ -548,8 +548,8 @@
 			datarangeactive="True"
 			datasource="FinalizaSolicitudesMotor"
 			id="7f48616a-2d1b-4b01-aa8b-c255f4b395b3"
-			maxrange="14"
-			minrange="2"
+			maxrange="3"
+			minrange="3"
 			name="FinalizaSolicitudes">
 			</testcase>
 			<testmodule
