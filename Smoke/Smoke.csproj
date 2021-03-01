@@ -566,8 +566,8 @@
       <repoid>58ca00b5-56c0-4f78-a5d2-302b212932e0</repoid>
       <reporootid>7521c285-eca8-4037-8149-4c0669f953a6</reporootid>
     </None>
-    <None Include="Utilidades\VPNConnect.exe">
-      <id>b41d2946-8d4d-4edb-81ff-51aaa06f0690</id>
+    <None Include="Utilitarios\VPNConnect.exe">
+      <id>d3bec75a-a572-49e3-81e7-b249becd3af1</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
@@ -597,8 +597,8 @@
     <Folder Include="Menu">
       <id>63d26898-ac92-4d63-adf8-7d9c34bbd9ee</id>
     </Folder>
-    <Folder Include="Utilidades">
-      <id>f091f2fe-1b90-410b-9ba3-1183e1706b12</id>
+    <Folder Include="Utilitarios">
+      <id>a3fe3287-2953-4655-ba3b-b85c76a6755e</id>
     </Folder>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
