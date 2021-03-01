@@ -568,6 +568,7 @@
     </None>
     <None Include="Utilidades\VPNConnect.exe">
       <id>b41d2946-8d4d-4edb-81ff-51aaa06f0690</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
   <ItemGroup>
