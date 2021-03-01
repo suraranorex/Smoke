@@ -1,0 +1,775 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="7979bdeb-98ed-4c76-bddb-41d2b24c528c"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="EmisionPoliza"
+	namespace="Smoke.Emision">
+	</codegen>
+	<variables>
+		<var
+		id="13ee8014-30de-4a6b-8911-d337f02faa58"
+		name="NumPolizaEmitida">
+		</var>
+		<var
+		id="2c6d6c19-3362-4f10-bce5-8b6262e28878"
+		name="ValidateNroCuenta">
+		</var>
+	</variables>
+	<recorditems>
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="b24509e3-bf99-42d3-a9ec-8576f563f53a">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="cf322db1-9fef-4062-8950-7863c9b87436"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webdocument"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="3"
+				prefcap="webdocument"
+				rect="0,71,1366,608"
+				role="container"
+				snapElem=""
+				uidroot="True"
+				valid="True"
+				visible="True">
+					<attribute
+					name="caption"
+					type="System.String">
+						[Modo DEV - 9.0.3.185] Guidewire PolicyCenter (Lmattioli)
+					</attribute>
+					<attribute
+					name="browsername"
+					type="System.String">
+						Chrome
+					</attribute>
+					<attribute
+					name="browserversion"
+					type="System.String">
+						79.0.3945.130
+					</attribute>
+					<attribute
+					name="domain"
+					type="System.String">
+						ssurgwsoadev4.opc.oracleoutsourcing.com
+					</attribute>
+					<attribute
+					name="fullscreen"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="page"
+					type="System.String">
+						PolicyCenter.do
+					</attribute>
+					<attribute
+					name="pageurl"
+					type="System.String">
+						https://ssurgwsoadev4.opc.oracleoutsourcing.com/pc/PolicyCenter.do
+					</attribute>
+					<attribute
+					name="path"
+					type="System.String">
+						/pc/PolicyCenter.do
+					</attribute>
+					<attribute
+					name="state"
+					type="System.String">
+						complete
+					</attribute>
+					<dynamicaction
+					description="Enables the Chrome accessible renderer mode."
+					displayName="EnableAccessibleRenderer">
+					</dynamicaction>
+				</element>
+				<path>
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']
+				</path>
+			</info>
+		</loggingrecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="446beda9-08b9-478f-9158-b0e732bf81d1"
+		sx="356"
+		sy="184"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b32a0445-cd2f-4045-98e8-a66caf27a16e"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="spantag"
+				rect="340,176,59,12"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						x-btn-inner x-btn-inner-default-toolbar-small
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						SubmissionWizard:SubmissionWizard_QuoteScreen:JobWizardToolbarButtonSet:BindAndIssue-btnInnerEl
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Emitir P&#243;liza
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						x-btn-inner x-btn-inner-default-toolbar-small
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-ref"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="unselectable"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'SubmissionWizard/ViewQuote']/table/tbody/tr[2]/td/div/div/div/a[4]//span[@innertext='Emitir P&#243;liza']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="ba85cbdf-1b05-49dc-b141-b71b63e0340f">
+				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
+			</helperscreenshot>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="d3afdd90-6c50-4923-b4fe-b1cf3d263f6a"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="11f602f0-0505-40c6-a23b-952ce3c9fbd2"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']/body//span[@innertext~'Aceptar']
+				</path>
+			</info>
+		</mouseitem>
+		<userrecorditem
+		autogenmethod="True"
+		classname="EmisionPoliza"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="AprobacionBloqueo"
+		namespace="Sura.Emision"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="bb45dccb-1bd2-44ec-a48d-c1005cd0c0cb">
+			</arguments>
+		</userrecorditem>
+		<WaitForRecordItem
+		enabled="False"
+		optional="False"
+		searchpropertyid="c279ecc8-3f16-432b-a8b0-f0576b292549"
+		waitaction="Exists"
+		waittimeout="30000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="082a62a6-1219-42e3-a13d-5d3a6f926c4d"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'JobComplete-tbody']/tr[1]/td/div//span[@innertext&gt;'Solicitud de P&#243;liza Contr']
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="False"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="f984e4b8-73cd-42b3-800c-b745a4864ca7"
+		sx="185"
+		sy="214"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="feb2e392-7a19-49f5-96e8-0e2bcbc595a1"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="spantag"
+				rect="165,208,41,12"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						x-btn-inner x-btn-inner-default-toolbar-small
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						UWBlockProgressIssuesPopup:IssuesScreen:DetailsButton-btnInnerEl
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Detalles
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						x-btn-inner x-btn-inner-default-toolbar-small
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-ref"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="unselectable"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain=$Ambiente]//tbody[#'UWBlockProgressIssuesPopup-tbody']/tr[2]/td/div//span[@innertext='Detalles']
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="False"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="08c2201d-1c55-4b28-bc3d-1386d2731567"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="25751288-83df-48fa-9c83-e5042a4aa619"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//div[#'SubmissionWizard/RiskAnalysis']/table/tbody/tr[6]//table/tbody/tr[2]/td/div/div[2]/?/?/table//div/div[3]/div[1]/div/table[2]/tbody/tr/td[5]/?/?/a[@innertext='Aprobaci&#243;n especial']
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="False"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="26141400-baa2-4b71-bd6e-a34ad3e959ca"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="adb45499-cef6-4ef4-aa9a-b7590776e3ae"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]/body//span[@innertext~'Aceptar']
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="False"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="b74a4cba-8a61-4143-9dd4-30d6d3d2aac0"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="ccf906a0-df33-4f74-809e-3b0672b456f0"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]/body//table//div/table//div//span/span/span[@innertext~'Aceptar']
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="False"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="446beda9-08b9-478f-9158-b0e732bf81d1"
+		sx="356"
+		sy="184"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b32a0445-cd2f-4045-98e8-a66caf27a16e"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="spantag"
+				rect="340,176,59,12"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						x-btn-inner x-btn-inner-default-toolbar-small
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						SubmissionWizard:SubmissionWizard_QuoteScreen:JobWizardToolbarButtonSet:BindAndIssue-btnInnerEl
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Emitir P&#243;liza
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						x-btn-inner x-btn-inner-default-toolbar-small
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-ref"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="unselectable"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'SubmissionWizard/ViewQuote']/table/tbody/tr[2]/td/div/div/div/a[4]//span[@innertext='Emitir P&#243;liza']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="ba85cbdf-1b05-49dc-b141-b71b63e0340f">
+				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
+			</helperscreenshot>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="False"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="d3afdd90-6c50-4923-b4fe-b1cf3d263f6a"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="11f602f0-0505-40c6-a23b-952ce3c9fbd2"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']/body//span[@innertext~'Aceptar']
+				</path>
+			</info>
+		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="c279ecc8-3f16-432b-a8b0-f0576b292549"
+		waitaction="Exists"
+		waittimeout="40000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="082a62a6-1219-42e3-a13d-5d3a6f926c4d"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'JobComplete-tbody']/tr[1]/td/div//span[@innertext&gt;'Solicitud de P&#243;liza Contr']
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				La poliza emitida es:
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="d1c9ee8e-ebc4-4a2b-ae8e-549099478d20">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="cf322db1-9fef-4062-8950-7863c9b87436"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']
+				</path>
+			</info>
+		</loggingrecorditem>
+		<getvaluerecorditem
+		attrname="InnerText"
+		captureregex="[0-9]+"
+		enabled="True"
+		optional="False"
+		searchpropertyid="b8ccb0f0-5657-40e8-a4ee-3f0069e1fddd"
+		varname="NumPolizaEmitida">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="57ad92ab-0608-4c61-b272-55202066bba8"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'JobComplete-tbody']/tr[5]//table/tbody/tr[2]/td/div/div[1]/div[@innertext&gt;'Ver su p&#243;liza (N.&#176; 124200']
+				</path>
+			</info>
+		</getvaluerecorditem>
+		<getvaluerecorditem
+		attrname="InnerText"
+		enabled="True"
+		optional="False"
+		searchpropertyid="186c0b13-5c98-43ad-9f8a-fadd06819991"
+		varname="ValidateNroCuenta">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="20231b82-907f-498c-bfed-7d3c5688462d"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'infoBar-targetEl']//span[@innertext~'cuenta']/..//span[@innertext~'[0-9]+']
+				</path>
+			</info>
+		</getvaluerecorditem>
+		<loggingrecorditem
+		category="User"
+		enabled="True"
+		message="El número de poliza emitida es:"
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="d96bb192-99bd-493d-b154-08040b00d8e2">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</loggingrecorditem>
+		<loggingrecorditem
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="d2a95ba6-6b2a-43a9-a0fe-4498dbdf8277">
+			<comment>
+				El n&#250;mero de poliza emitida es:
+			</comment>
+			<bindings>
+				<binding
+				target="Message"
+				variable="NumPolizaEmitida">
+				</binding>
+			</bindings>
+		</loggingrecorditem>
+		<loggingrecorditem
+		category="User"
+		enabled="True"
+		message="Para la cuenta:"
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="d96bb192-99bd-493d-b154-08040b00d8e2">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</loggingrecorditem>
+		<loggingrecorditem
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="d2a95ba6-6b2a-43a9-a0fe-4498dbdf8277">
+			<comment>
+				Para la cuenta:
+			</comment>
+			<bindings>
+				<binding
+				target="Message"
+				variable="ValidateNroCuenta">
+				</binding>
+			</bindings>
+		</loggingrecorditem>
+		<userrecorditem
+		autogenmethod="True"
+		classname="EmisionPoliza"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="guardarNumPoliza"
+		namespace="Sura.Emision"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="ec4b9c70-c7e3-48aa-8add-65671fb69aa9">
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="58ca00b5-56c0-4f78-a5d2-302b212932e0"
+	name="SmokeRepository"
+	relativepath="..\SmokeRepository.rxrep">
+		<codegen
+		classname="SmokeRepository"
+		namespace="Smoke">
+		</codegen>
+		<rootfolder
+		id="7521c285-eca8-4037-8149-4c0669f953a6"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		EmisionPoliza.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

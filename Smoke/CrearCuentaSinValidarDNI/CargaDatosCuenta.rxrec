@@ -1,0 +1,3640 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="ae8d76b8-ca8d-489d-9235-d22edfe1e8c5"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CargaDatosCuenta"
+	namespace="Smoke.CrearCuentaSinValidarDNI">
+	</codegen>
+	<variables>
+		<var
+		id="a2f8e0c0-d527-47bb-9280-4d906442c16f"
+		name="Documento">
+			24566780
+		</var>
+		<var
+		id="d59d41b7-d196-438c-b318-6009ed1068fa"
+		name="Provincia">
+			CATAMARCA
+		</var>
+		<var
+		id="ac4fe456-5c0e-4a41-9ad7-e03a64d64e1c"
+		name="Localidad">
+			FIAMBALA
+		</var>
+		<var
+		id="dde27135-7cd8-4559-9595-fca2a3999c9c"
+		name="Calle">
+			Jujuy
+		</var>
+		<var
+		id="8ef3b852-64c8-4518-9328-95e257f5bb52"
+		name="NumeroCalle">
+			200
+		</var>
+		<var
+		id="e1da83f3-32d6-4f5b-a1df-244609b2f689"
+		name="FechaNacimiento">
+			12/12/1980
+		</var>
+		<var
+		id="269aaa38-23b6-4e4c-8135-bbb4c4ff9ddd"
+		name="correoprincipal">
+			aseguradosgw@gmail.com
+		</var>
+	</variables>
+	<recorditems>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				**** Cargar Datos de la Cuenta ****
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="56;12"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="d5679908-7406-4bea-ba1f-ba6aa62a66e8"
+		sx="77"
+		sy="236"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="a8f55ed3-626d-41ab-ba57-8d993b139f89"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="spantag"
+				rect="21,224,123,16"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						x-btn-inner x-btn-inner-default-toolbar-small
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						CreateAccount:SuraCreateAccountScreen:CreateAccountDV:CreateAccountContactInputSet:OfficialIDsInputSet:AccountFile_OfficialIDsLV_tb:Add-btnInnerEl
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						gregar Documento
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						x-btn-inner x-btn-inner-default-toolbar-small
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-ref"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="unselectable"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'CreateAccount-tbody']/tr[4]//table//td/?/?/table/tbody/tr/td[1]/?/?/table/tbody/tr[2]/td/div/div[1]/div/div/a[1]//span[@innertext='gregar Documento']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="62f5826d-96cd-4d4b-a540-c2efed5b564c">
+				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
+			</helperscreenshot>
+		</mouseitem>
+		<mouseitem
+		action="Move"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="91548097-37f2-4093-929d-6a2190f6da77"
+		sx="166"
+		sy="221"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="79ccf4b7-229d-4365-aa6b-4f4b3acca579"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, divtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="divtag"
+				rect="100,211,133,21"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						x-grid-cell-inner&#32;
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						x-grid-cell-inner
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						div
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~$Ambiente]//tbody[#'CreateAccount-tbody']//table//tbody/tr/td[2]/div[@safeclass='x-grid-cell-inner']
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="105;16"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="c1eb35b4-5f3f-4dd2-bba3-748f9881fce8"
+		sx="217"
+		sy="299"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="79ccf4b7-229d-4365-aa6b-4f4b3acca579"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~$Ambiente]//tbody[#'CreateAccount-tbody']/tr[4]//table//div/table/?/?/tr/td[1]/?/?/table/tbody/tr[2]/td/div/div[3]/div[1]/div/table/tbody/tr/td[2]/div[@id='ext-element-720']
+				</path>
+			</info>
+		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="a92de95e-4eb0-4195-8481-017b5e0c2f12"
+		waitaction="NotExists"
+		waittimeout="45000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="068620f2-c546-4806-8dac-9c0b67cc6064"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~$Ambiente]//tbody[#'CreateAccount-tbody']//table//tbody/tr/td[2]/div[@safeclass='x-grid-cell-inner' and @data-tabindexsaved='True']
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="29;13"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="823068ce-df11-495d-a62e-39d3eb55fe39"
+		sx="142"
+		sy="345"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b4f71902-67f5-4b89-bfbf-243936b99a7e"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, litag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="litag"
+				rect="113,332,99,24"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						x-boundlist-item x-boundlist-item-over
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						D.N.I.
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						x-boundlist-item
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						li
+					</attribute>
+					<attribute
+					name="tagvalue"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="value"
+					type="System.String">
+						0
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-boundview"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-recordid"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-recordindex"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="role"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="tabindex"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']/body/div[12]/?/?/ul/li[@innertext='D.N.I.']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="4e2b3cfa-22ce-43ca-8d25-34a56096af22">
+				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
+			</helperscreenshot>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="172e95ce-fd6e-400e-a918-c5e3f43c3635"
+		sx="72"
+		sy="616"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="3edecf31-bec0-46a8-b1b3-2cd55f9aa197"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~$Ambiente]//span[@innertext='Crear cuenta']
+				</path>
+			</info>
+		</mouseitem>
+		<WaitForRecordItem
+		enabled="False"
+		optional="False"
+		searchpropertyid="d88558d7-d3c4-46ea-804c-b55932754a61"
+		waitaction="NotExists"
+		waittimeout="45000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="0e4b84cb-bfd7-4e18-93e5-b1610a1e1dd4"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, divtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="divtag"
+				rect="0,103,0,0"
+				role="unknown"
+				snapElem=""
+				valid="False"
+				visible="False">
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						div
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain~$Ambiente]//tbody[#'CreateAccount-tbody']/tr[4]//table//div/table/?/?/tr/td[1]/?/?/table/tbody/tr[2]/td/div/div[3]/div[1]/div/table/tbody/tr/td[2]/div[@innertext='D.N.I.']
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<explicitdelayitem
+		duration="6000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="fd13b569-eccb-4ea3-81a9-28a23e781ec2"
+		sx="329"
+		sy="298"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="9568e5fb-0780-4042-b111-c17f151e6d6c"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, divtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="divtag"
+				rect="262,283,118,24"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						x-grid-cell-inner&#32;
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						x-grid-cell-inner
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						div
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'CreateAccount-tbody']/tr[4]//table//div/table/?/?/tr/td[1]/?/?/table/tbody/tr[2]/td/div/div[3]/div[1]/div[1]/table/tbody/tr/td[3]/div
+				</path>
+			</info>
+			<helperscreenshot
+			guid="f757242f-673f-450a-8e86-a1a4a839f752">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCAB0AdgDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDpKrTW
+azXJlZvlMRiK49e+as0UAUItOZTH51wZVSNowuzHBottMWAEBoiNhVSIQG59T3q/RQBTisfLNp+8
+z9nUr9372Rj8KjXTGW1Nt9ozGHDp8nK85x15rQooApS6f5i3g83H2nH8P3cDHrzSiykS5M0Fx5Yc
+KJFKZ3Y9PSrlFAGd/ZQ+0+c024iXzASg3fQn0qWKykhkkCXGIXZmMZQdT7+lXKKAKC6a8SQ+RcbJ
+Yo/LL7Mhh9KfBp6wSQMjnEKMuCOuec1cooAhs7f7LbLFu34JOcY6kn+tTUUUAFFFFABRRRQAUUUU
+AFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQA
+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
+1T/7poooqoks/9k=
+			</helperscreenshot>
+		</mouseitem>
+		<keysequenceitem
+		KeySequence="24566788"
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		repoItemActivation="EnsureVisible"
+		searchpropertyid="43a78fb6-44a0-417e-a59c-ac9e1ef19ab9">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="KeySequence"
+				variable="Documento">
+				</binding>
+			</bindings>
+			<info
+			id="9568e5fb-0780-4042-b111-c17f151e6d6c"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'CreateAccount-tbody']/tr[4]//table//div/table/?/?/tr/td[1]/?/?/table/tbody/tr[2]/td/div/div[3]/div[1]/div[1]/table/tbody/tr/td[3]/div
+				</path>
+			</info>
+		</keysequenceitem>
+		<loggingrecorditem
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="0b0c80e3-fb60-4f4d-9665-7608c1245eeb">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="Message"
+				variable="Documento">
+				</binding>
+			</bindings>
+		</loggingrecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="172e95ce-fd6e-400e-a918-c5e3f43c3635"
+		sx="72"
+		sy="616"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="6fd58a34-a260-46ba-a1f1-39d6466d8145"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, labeltag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="labeltag"
+				rect="20,607,104,18"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						x-component x-component-default
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						CreateAccount:SuraCreateAccountScreen:CreateAccountDV:CreateAccountContactInputSet:FiscalConditionInputSetRef:Ext_FiscalConditionInputSet:FiscalConditionLabel
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Condici&#243;n Fiscal
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						x-component x-component-default
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						label
+					</attribute>
+					<attribute
+					name="for"
+					type="System.String">
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~$Ambiente]//tbody[#'CreateAccount-tbody']/tr[4]//table//div/table/?/?/tr/td[1]/div/table/tbody/tr[14]/?/?/label[@innertext='Condici&#243;n Fiscal']
+				</path>
+			</info>
+		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="c06d7ac2-2af2-43e3-9625-5ab26158ec7e"
+		waitaction="Exists"
+		waittimeout="40000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="a6658232-53cd-4553-8579-ee1b1002c358"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, inputtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="inputtag"
+				rect="124,537,116,18"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						x-form-field x-form-text x-form-text-default &#32;
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						CreateAccount:SuraCreateAccountScreen:CreateAccountDV:CreateAccountContactInputSet:FiscalConditionInputSetRef:Ext_FiscalConditionInputSet:IVAFiscalConditionTypeKeyInput-inputEl
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						x-form-field x-form-text x-form-text-default
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						input
+					</attribute>
+					<attribute
+					name="tagvalue"
+					type="System.String">
+						Consumidor Final
+					</attribute>
+					<attribute
+					name="autocomplete"
+					type="System.String">
+						off
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="checked"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="multiple"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="name"
+					type="System.String">
+						CreateAccount:SuraCreateAccountScreen:CreateAccountDV:CreateAccountContactInputSet:FiscalConditionInputSetRef:Ext_FiscalConditionInputSet:IVAFiscalConditionTypeKeyInput
+					</attribute>
+					<attribute
+					name="required"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="size"
+					type="System.String">
+						1
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						text
+					</attribute>
+					<attribute
+					name="value"
+					type="System.String">
+						Consumidor Final
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						0
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="componentid"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-ref"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="role"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'CreateAccount-tbody']//table//table/tbody//tbody//input[@name='CreateAccount:SuraCreateAccountScreen:CreateAccountDV:CreateAccountContactInputSet:FiscalConditionInputSetRef:Ext_FiscalConditionInputSet:IVAFiscalConditionTypeKeyInput' and @value~'[A-Za-z]+']
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<keysequenceitem
+		KeySequence="yourtext"
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		searchpropertyid="b77dbf77-c9c2-4c24-883c-a1d43c0a107c">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="KeySequence"
+				variable="FechaNacimiento">
+				</binding>
+			</bindings>
+			<info
+			id="886f875e-67f6-4462-a9c8-e3cdf39263ac"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~$Ambiente]//tbody[#'CreateAccount-tbody']//span[@innertext~'Fecha de Nacimiento']/../..//input
+				</path>
+			</info>
+		</keysequenceitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="172e95ce-fd6e-400e-a918-c5e3f43c3635"
+		sx="72"
+		sy="616"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="6fd58a34-a260-46ba-a1f1-39d6466d8145"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, labeltag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="labeltag"
+				rect="20,607,104,18"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						x-component x-component-default
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						CreateAccount:SuraCreateAccountScreen:CreateAccountDV:CreateAccountContactInputSet:FiscalConditionInputSetRef:Ext_FiscalConditionInputSet:FiscalConditionLabel
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Condici&#243;n Fiscal
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						x-component x-component-default
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						label
+					</attribute>
+					<attribute
+					name="for"
+					type="System.String">
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~$Ambiente]//tbody[#'CreateAccount-tbody']/tr[4]//table//div/table/?/?/tr/td[1]/div/table/tbody/tr[14]/?/?/label[@innertext='Condici&#243;n Fiscal']
+				</path>
+			</info>
+		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="0f1608ef-59ca-47ac-8614-52b32d37de93"
+		waitaction="NotExists"
+		waittimeout="30000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b41a43c7-23bf-4e3c-9b7d-068b0f799566"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~$Ambiente]//tbody[#'CreateAccount-tbody']//span[@innertext~'Fecha de Nacimiento']/../..//input[@data-tabindexsaved='True']
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="9b464d15-b8ad-43ca-a55c-6cc4c9c7e796"
+		sx="201"
+		sy="692"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="56460703-7915-4d2d-aa13-1faef3faa274"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, inputtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="True"
+				index="0"
+				prefcap="inputtag"
+				rect="132,683,138,19"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						x-form-field x-form-text x-form-text-default&#32;
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						CreateAccount:SuraCreateAccountScreen:CreateAccountDV:CreateAccountContactPhoneInputSet:EmailAddress1-inputEl
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						x-form-field x-form-text x-form-text-default
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						input
+					</attribute>
+					<attribute
+					name="autocomplete"
+					type="System.String">
+						off
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="checked"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="maxlength"
+					type="System.String">
+						60
+					</attribute>
+					<attribute
+					name="multiple"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="name"
+					type="System.String">
+						CreateAccount:SuraCreateAccountScreen:CreateAccountDV:CreateAccountContactPhoneInputSet:EmailAddress1
+					</attribute>
+					<attribute
+					name="required"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="size"
+					type="System.String">
+						1
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						text
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						0
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="componentid"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-ref"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="role"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='i-preproducciongestion.segurossura.com.ar']//tbody[#'CreateAccount-tbody']/tr[4]//table//div/table/?/?/tr/td[1]/?/?/table/tbody/tr[33]/td/div/div//input[@name='CreateAccount:SuraCreateAccountScreen:CreateAccountDV:CreateAccountContactPhoneInputSet:EmailAddress1']
+				</path>
+			</info>
+		</mouseitem>
+		<keysequenceitem
+		KeySequence="yourtext"
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		searchpropertyid="b9db517b-cbd4-493a-960f-bc00918e39eb">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="KeySequence"
+				variable="correoprincipal">
+				</binding>
+			</bindings>
+			<info
+			id="56460703-7915-4d2d-aa13-1faef3faa274"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, inputtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="True"
+				index="0"
+				prefcap="inputtag"
+				rect="132,684,138,19"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						x-form-field x-form-text x-form-text-default&#32;
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						CreateAccount:SuraCreateAccountScreen:CreateAccountDV:CreateAccountContactPhoneInputSet:EmailAddress1-inputEl
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						x-form-field x-form-text x-form-text-default
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						input
+					</attribute>
+					<attribute
+					name="autocomplete"
+					type="System.String">
+						off
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="checked"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="maxlength"
+					type="System.String">
+						60
+					</attribute>
+					<attribute
+					name="multiple"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="name"
+					type="System.String">
+						CreateAccount:SuraCreateAccountScreen:CreateAccountDV:CreateAccountContactPhoneInputSet:EmailAddress1
+					</attribute>
+					<attribute
+					name="required"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="size"
+					type="System.String">
+						1
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						text
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						0
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="componentid"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-ref"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="role"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='i-preproducciongestion.segurossura.com.ar']//tbody[#'CreateAccount-tbody']/tr[4]//table//div/table/?/?/tr/td[1]/?/?/table/tbody/tr[33]/td/div/div//input[@name='CreateAccount:SuraCreateAccountScreen:CreateAccountDV:CreateAccountContactPhoneInputSet:EmailAddress1']
+				</path>
+			</info>
+		</keysequenceitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="da756dad-8231-415a-b079-e6f7f6d706e5"
+		sx="22"
+		sy="674"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="fff99994-d474-4d1c-9ef4-96aedd8df06f"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, labeltag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="labeltag"
+				rect="8,667,28,14"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						x-component x-component-default
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						CreateAccount:SuraCreateAccountScreen:CreateAccountDV:CreateAccountContactPhoneInputSet:0
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Email
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						x-component x-component-default
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						label
+					</attribute>
+					<attribute
+					name="for"
+					type="System.String">
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='i-preproducciongestion.segurossura.com.ar']//tbody[#'CreateAccount-tbody']/tr[4]//table//div/table/?/?/tr/td[1]/div/table/tbody/tr[32]/?/?/label[@innertext='Email']
+				</path>
+			</info>
+		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="a46e141a-1a3b-45a4-947a-a5c08391482f"
+		waitaction="NotExists"
+		waittimeout="30000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="57491af1-e19a-4204-96c8-1f11144531bf"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~$Ambiente]//tbody[#'CreateAccount-tbody']/tr[4]//table//div/table/?/?/tr/td[1]/?/?/table/tbody/tr[35]/td/div/div//input[@name='CreateAccount:SuraCreateAccountScreen:CreateAccountDV:CreateAccountContactPhoneInputSet:EmailAddress1']/../..//input[@data-tabindexsaved='True']
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="11;14"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="0bda53b7-e825-4475-92fb-8a2c27ba9bb2"
+		sx="853"
+		sy="271"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="4db7e08a-bea7-474e-8443-30f804e1fd67"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, divtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="divtag"
+				rect="842,257,22,24"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						x-form-trigger x-form-trigger-default x-form-arrow-trigger x-form-arrow-trigger-default  x-form-trigger-over
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						CreateAccount:SuraCreateAccountScreen:CreateAccountDV:AddressInputSet:globalAddressContainer:GlobalAddressInputSet:State-trigger-picker
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						x-form-arrow-trigger x-form-arrow-trigger-default x-form-trigger x-form-trigger-default
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						div
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'CreateAccount-tbody']/tr[4]//table//div/table/?/?/tr/td[2]/?/?/table/tbody/tr[3]/td/div/div/div/div[2]
+				</path>
+			</info>
+			<helperscreenshot
+			guid="eec25b8b-e04f-414b-a2fa-bfddabae8e87">
+				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
+UUUAFFFFABRRRQAUUUUAFFFFAH//2Q==
+			</helperscreenshot>
+		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="7efcb28f-d8ce-4a8c-9d71-ea68c52b8470"
+		waitaction="Exists"
+		waittimeout="30000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="fd467487-1966-4756-be34-2c7bcca584fd"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~$Ambiente]/body/div[12]/?/?/ul/li[@innertext='BUENOS AIRES']
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<keysequenceitem
+		KeySequence="CATAMARCA"
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		searchpropertyid="74364fc0-3cb1-4a09-b153-c85b41c49236">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="KeySequence"
+				variable="Provincia">
+				</binding>
+			</bindings>
+			<info
+			id="4bdc646b-df8a-4d46-8b59-a5e125d0d6a1"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, inputtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="inputtag"
+				rect="539,293,166,19"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						x-form-field x-form-text x-form-text-default &#32;
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						CreateAccount:SuraCreateAccountScreen:CreateAccountDV:AddressInputSet:globalAddressContainer:GlobalAddressInputSet:State-inputEl
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						x-form-field x-form-text x-form-text-default
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						input
+					</attribute>
+					<attribute
+					name="autocomplete"
+					type="System.String">
+						off
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="checked"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="multiple"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="name"
+					type="System.String">
+						CreateAccount:SuraCreateAccountScreen:CreateAccountDV:AddressInputSet:globalAddressContainer:GlobalAddressInputSet:State
+					</attribute>
+					<attribute
+					name="required"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="size"
+					type="System.String">
+						1
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						text
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						0
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="componentid"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-ref"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="role"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'CreateAccount-tbody']/tr[4]//table//td/?/?/table/?/?/tr/td[2]/?/?/table/tbody/tr[3]/td/div/div/div/div[1]/input[@name='CreateAccount:SuraCreateAccountScreen:CreateAccountDV:AddressInputSet:globalAddressContainer:GlobalAddressInputSet:State']
+				</path>
+			</info>
+		</keysequenceitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="73136490-3372-4075-84d4-c16ce141f9f9"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="49ab3b8c-1aa6-40b1-ae99-6fc6eb65b11e"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~$Ambiente]/body/div[12]/?/?/ul/li[@innertext=$Provincia and @visible='true']
+				</path>
+			</info>
+		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="8d6bd6ce-ab20-49ac-8820-950257efee36"
+		waitaction="NotExists"
+		waittimeout="30000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="2d626268-57f7-4788-b6f1-c1ec5e78fcac"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'CreateAccount-tbody']/tr[4]//table//td/?/?/table/?/?/tr/td[2]/?/?/table/tbody/tr[3]/td/div/div/div/div[1]/input[@name='CreateAccount:SuraCreateAccountScreen:CreateAccountDV:AddressInputSet:globalAddressContainer:GlobalAddressInputSet:State' and @data-tabindexsaved='True']
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="0a5b4c25-0fb8-4056-a31c-f3d3ea9c8a09"
+		sx="921"
+		sy="299"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="417b4786-6027-4a3f-b86c-620b8f9037e2"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, divtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="divtag"
+				rect="914,285,22,24"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						x-form-trigger x-form-trigger-default x-form-arrow-trigger x-form-arrow-trigger-default  x-form-trigger-over
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						CreateAccount:SuraCreateAccountScreen:CreateAccountDV:AddressInputSet:globalAddressContainer:GlobalAddressInputSet:City-trigger-picker
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						x-form-arrow-trigger x-form-arrow-trigger-default x-form-trigger x-form-trigger-default
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						div
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'CreateAccount-tbody']/tr[4]//table//div/table/?/?/tr/td[2]/?/?/table/tbody/tr[4]/td/div/div/div/div[2]
+				</path>
+			</info>
+			<helperscreenshot
+			guid="bf844a5c-1026-4945-8d19-3e580956bddd">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCACEAIQDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDoR95f
+rT6YPvL9afQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFADByw4P5U+q+zZNFtZ+WIOX
+J/hPqasUCQUUUUDCiiigAooooAKKKKACiiigAooooAKKKKACiiigCB/9bD/vn/0E1PUD/wCth/3z
+/wCgmp6YkFFFFIYUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAVwhDqzNK205AO30x2+tS+Z/s
+N+n+NFFFwsHmf7Dfp/jR5n+w36f40UUAHmf7Dfp/jR5n+w36f40UUAUtQvp7d4UgjUtISMP68Y7+
+9R/aNX/59Yfz/wDsqTVP+P2w/wCun9VrSqNW3qdPMoQi+VO/+ZnfaNX/AOfWH8//ALKmTX2pwRmS
+W3hVR1PX+talUtY/5B0n1H8xQ00twp1FKai4rX+u5ct5DLbRSNgF0DHHuKkqGy/48YP+ua/yqaqW
+xhLSTCiiimSFFFFABRRRQAyikz7H8qM+x/KgBaKTPsfyoz7H8qAFopM+x/KjPsfyoAztU/4/bD/r
+p/Vat3j7Lc/uxJuZUCscA5YDr+NU9VYLd2TMcAPkk8d1p1zepNtjijkdBcRKZVwUB3KfXP6damO7
+N6n8OHz/ADJNOhUIZWUB97LjOQMMRwfwo1j/AJB0n1H8xUEtrdQrLLC80bYnfCsGBO/KDacjkZ6U
+y9uWexuILhohPHIFwh+8OCCAfY/pRLZk0f4kfVGpZf8AHjB/1zX+VTVDZf8AHjB/1zX+VTU1sRP4
+mFFFFMkKKKKACiiigAooooAKKKKACiiigCG5tILrb56b9ucckY/KqM9tDpssd1CmyEsEnBY4wSNr
+cnscfgTWpTJlSSJo5RlHBUj1Bosr3K5pW5b6DXes3T7SC/jlvJ0D+dKxQgkfKPlGfyq39itj3uP+
+/wDJ/jViIRxRJHGCERQqjB4AoaTFGTi7pj0RY0VEGFUAAe1LTd6+/wCRo3r7/kaBDqKbvX3/ACNG
+9ff8jQA6im719/yNG9ff8jQA6im719/yNFADqKKKACiiigAooooAKbJ2+tOpsnb60ANopk8nkwSS
+4zsUtj1wKghuyzFZkSLCCTIfIwfXgYoAtUVF9pg2B/Pj2no28YNK1xCiK7TRqrfdYsAD9KAJKKYZ
+og4QyJvPRdwyaRbiF/uzRtzt4YdfSgCSiopZlS3klXDhATgHuO1R2900jlJUWMhBJkPuGD68DFAF
+mimRyxyrujdXX1U5FFAE9FFFABRRRQAUUUUAFNk7fWnU2Tt9aAIbmMy20sa4BdCoz7iqgspoUZbV
+kjDoNwHHzDuOO4q/RQBnw2MqTI7FcCUyEbix5XHU9eaIrOeHay+U52spViQACxPHFaFFAFCLT2RZ
+ELjDQCIMOoIz/jTVsJPJZCqKzBVL+azHA7jPQ+laNFAFVbeQac1sdm7YUBHQ+hNQNpzCJ4oSiJIg
+3AZHzDHIx2PetGigClFZDBMkahicn967/qaKu0VXM0S4pklFFFSUFFFFABRRRQAU1/4frRRQAYFG
+BRRQAYFGBRRQAYFGBRRQAYFGBRRQAYFFFFAH/9k=
+			</helperscreenshot>
+		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="11fc5ad6-ab3d-4ca4-96f6-f22cc9f266a7"
+		waitaction="Exists"
+		waittimeout="30000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="d623be34-12ec-428e-a98e-dd1afb876e42"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~$Ambiente]/body/div[13]/?/?/ul/li[1][@visible='true']
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<keysequenceitem
+		KeySequence="{LControlKey down}{Akey}{LControlKey up}"
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		searchpropertyid="14fcf1cf-551f-47a9-b5c1-defd10fce797">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="417b4786-6027-4a3f-b86c-620b8f9037e2"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~$Ambiente]//tbody[#'CreateAccount-tbody']/tr[4]//table//div/table/?/?/tr/td[2]/?/?/table/tbody/tr[4]/td/div/div/div/div[@id='CreateAccount:SuraCreateAccountScreen:CreateAccountDV:AddressInputSet:globalAddressContainer:GlobalAddressInputSet:City-trigger-picker']
+				</path>
+			</info>
+		</keysequenceitem>
+		<keysequenceitem
+		KeySequence=""
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		searchpropertyid="b39c91a5-247f-4823-b553-562fb772a4de">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="KeySequence"
+				variable="Localidad">
+				</binding>
+			</bindings>
+			<info
+			id="417b4786-6027-4a3f-b86c-620b8f9037e2"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//tbody[#'CreateAccount-tbody']/tr[4]//table//div/table/?/?/tr/td[2]/?/?/table/tbody/tr[4]/td/div/div/div/div[@id='CreateAccount:SuraCreateAccountScreen:CreateAccountDV:AddressInputSet:globalAddressContainer:GlobalAddressInputSet:City-trigger-picker']
+				</path>
+			</info>
+		</keysequenceitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="False"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="92931dfa-9c14-45a6-a3fd-30530dcbd100"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="674e23cb-5c1d-471a-a987-9b10388b3eb3"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~$Ambiente]/body/div[13]/?/?/ul/li[@innertext=$Localidad and @visible='true']
+				</path>
+			</info>
+		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="e2f2f747-12c7-49f6-8e32-ac095cf198cd"
+		waitaction="NotExists"
+		waittimeout="50000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="ebd9b353-f33c-4048-bded-7de4ba7c3f1b"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~$Ambiente]//tbody[#'CreateAccount-tbody']/tr[4]//table//div/table/tbody/tr/td[2]/?/?/table/tbody/tr[4]/td/div/div/div/div[1]/input[@name='CreateAccount:SuraCreateAccountScreen:CreateAccountDV:AddressInputSet:globalAddressContainer:GlobalAddressInputSet:City' and @data-tabindexsaved='True']
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="f7489da9-188b-46fb-813b-842bbc2d61bd"
+		sx="567"
+		sy="294"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="a87f6747-8e44-40ba-ae6e-aee06de7378d"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="spantag"
+				rect="492,286,150,17"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						x-form-item-label-inner x-form-item-label-inner-default
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Direcci&#243;n
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						x-form-item-label-inner x-form-item-label-inner-default
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~$Ambiente]//tbody[#'CreateAccount-tbody']/tr[4]/td/?/?/table/tbody//table/?/?/tr/td[2]/?/?/table/tbody/tr[1]//label/span[@innertext='Direcci&#243;n']
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="88d599fc-6dba-448d-b00a-ecb33942d1ad"
+		sx="726"
+		sy="328"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="98803da2-8e5f-4d49-a147-06861fe2ce77"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, inputtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="inputtag"
+				rect="638,313,173,24"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						x-form-field x-form-text x-form-text-default &#32;
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						CreateAccount:SuraCreateAccountScreen:CreateAccountDV:AddressInputSet:globalAddressContainer:GlobalAddressInputSet:AddressLine1-inputEl
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						x-form-field x-form-text x-form-text-default
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						input
+					</attribute>
+					<attribute
+					name="autocomplete"
+					type="System.String">
+						off
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="checked"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="multiple"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="name"
+					type="System.String">
+						CreateAccount:SuraCreateAccountScreen:CreateAccountDV:AddressInputSet:globalAddressContainer:GlobalAddressInputSet:AddressLine1
+					</attribute>
+					<attribute
+					name="required"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="size"
+					type="System.String">
+						1
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						text
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						0
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="componentid"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-ref"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="role"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'CreateAccount-tbody']/tr[4]//table//div/table/?/?/tr/td[2]/?/?/table/tbody/tr[5]/td/div/div//input[@name='CreateAccount:SuraCreateAccountScreen:CreateAccountDV:AddressInputSet:globalAddressContainer:GlobalAddressInputSet:AddressLine1']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="637bfd2f-5743-430b-a0c2-1f67ba7abebc">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCAGAAYADASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDpKKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
+KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAbuP/ADzb9P8AGjcf+ebfp/jTqKAG
+7j/zzb9P8aNx/wCebfp/jTqKAG7j/wA82/T/ABo3H/nm36f406igBu4/882/T/Gjcf8Anm36f406
+igBu4/8APNv0/wAaNx/55t+n+NOooAbuP/PNv0/xo3H/AJ5t+n+NOooAbuP/ADzb9P8AGjcf+ebf
+p/jTqKAG7j/zzb9P8aNx/wCebfp/jTqKAG7j/wA82/T/ABo3H/nm36f406igBu4/882/T/Gjcf8A
+nm36f406igBu4/8APNv0/wAaNx/55t+n+NOooAbuP/PNv0/xo3H/AJ5t+n+NOooAbuP/ADzb9P8A
+Gjcf+ebfp/jTqKAG7j/zzb9P8aNx/wCebfp/jTqKAG7j/wA82/T/ABo3H/nm36f406igBu4/882/
+T/Gjcf8Anm36f406igBu4/8APNv0/wAaNx/55t+n+NOooAbuP/PNv0/xo3H/AJ5t+n+NOooAbuP/
+ADzb9P8AGjcf+ebfp/jTqKAG7j/zzb9P8aNx/wCebfp/jTqKAG7j/wA82/T/ABo3H/nm36f406ig
+Bu4/882/T/Gjcf8Anm36f406igBu4/8APNv0/wAaNx/55t+n+NOooAbuP/PNv0/xo3H/AJ5t+n+N
+OooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACii
+igAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
+KKKKACiiigAooooAKKKKACiiigAooooAAQRkHINFZcdzdXL26rIIfMiLMQoPIPUZq5p8zz2UckhB
+cjkge9AFiiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiii
+gAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAbsTcG2LuAwDjkD0pURUUK
+ihVHQAYFLRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRTS6A4LqD9aAHUU3zE/vr+dHmJ/fX86AHUU3
+zE/vr+dHmJ/fX86AHUU3zE/vr+dHmJ/fX86AHUU3zE/vr+dHmJ/fX86AHUU3zE/vr+dHmJ/fX86A
+HUU3zE/vr+dHmJ/fX86AHUU3zE/vr+dHmJ/fX86AHUU3zE/vr+dHmJ/fX86AHUU3zE/vr+dHmJ/f
+X86AHUU3zE/vr+dHmJ/fX86AHUU3zE/vr+dHmJ/fX86AHUU3zE/vr+dHmJ/fX86AHUU3zE/vr+dH
+mJ/fX86AHUU3zE/vr+dKGVj8rA/Q0ALRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFF
+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
+FFFFABRRRQAUUUUAFFFFAH//2Q==
+			</helperscreenshot>
+		</mouseitem>
+		<keysequenceitem
+		KeySequence="catamarca"
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		searchpropertyid="d90fb859-d23f-4cd4-a7d0-f941763bd7b0">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="KeySequence"
+				variable="Calle">
+				</binding>
+			</bindings>
+			<info
+			id="98803da2-8e5f-4d49-a147-06861fe2ce77"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~$Ambiente]//tbody[#'CreateAccount-tbody']/tr[4]//table//div/table/?/?/tr/td[2]/?/?/table/tbody/tr[5]/td/div/div//input[@name='CreateAccount:SuraCreateAccountScreen:CreateAccountDV:AddressInputSet:globalAddressContainer:GlobalAddressInputSet:AddressLine1']
+				</path>
+			</info>
+		</keysequenceitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="f7489da9-188b-46fb-813b-842bbc2d61bd"
+		sx="567"
+		sy="294"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="a87f6747-8e44-40ba-ae6e-aee06de7378d"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="spantag"
+				rect="492,286,150,17"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						x-form-item-label-inner x-form-item-label-inner-default
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Direcci&#243;n
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						x-form-item-label-inner x-form-item-label-inner-default
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~$Ambiente]//tbody[#'CreateAccount-tbody']/tr[4]/td/?/?/table/tbody//table/?/?/tr/td[2]/?/?/table/tbody/tr[1]//label/span[@innertext='Direcci&#243;n']
+				</path>
+			</info>
+		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="99c1b973-bfd0-4bd5-9cb5-bdb0251d6079"
+		waitaction="NotExists"
+		waittimeout="50000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="24b57362-30e9-4fe3-a4ca-eeb9f4bfcec1"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//tbody[#'CreateAccount-tbody']/tr[4]//table//div/table/?/?/tr/td[2]/?/?/table/tbody/tr[5]/td/div/div//input[@name='CreateAccount:SuraCreateAccountScreen:CreateAccountDV:AddressInputSet:globalAddressContainer:GlobalAddressInputSet:AddressLine1' and @data-tabindexsaved='True']
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="36c83807-83e8-4d9d-bd47-b2628862f10a"
+		sx="760"
+		sy="350"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="d6cc6a3a-c3fd-46d1-90d2-c4999bb53cc6"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, inputtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="inputtag"
+				rect="638,341,173,24"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						x-form-field x-form-text x-form-text-default &#32;
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						CreateAccount:SuraCreateAccountScreen:CreateAccountDV:AddressInputSet:globalAddressContainer:GlobalAddressInputSet:StreetNumberSura-inputEl
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						x-form-field x-form-text x-form-text-default
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						input
+					</attribute>
+					<attribute
+					name="autocomplete"
+					type="System.String">
+						off
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="checked"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="multiple"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="name"
+					type="System.String">
+						CreateAccount:SuraCreateAccountScreen:CreateAccountDV:AddressInputSet:globalAddressContainer:GlobalAddressInputSet:StreetNumberSura
+					</attribute>
+					<attribute
+					name="required"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="size"
+					type="System.String">
+						1
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						text
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						0
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="componentid"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-ref"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="role"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'CreateAccount-tbody']/tr[4]//table//div/table/?/?/tr/td[2]/?/?/table/tbody/tr[6]/td/div/div//input[@name='CreateAccount:SuraCreateAccountScreen:CreateAccountDV:AddressInputSet:globalAddressContainer:GlobalAddressInputSet:StreetNumberSura']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="5ebe0064-4d9d-4658-842a-f78de55c49b5">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCAGAAYADASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDpKKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
+KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAo
+oooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACii
+igAooooAKKKKACiiigAooooAKKrve28QXfKPmXcMAnI9qmikSaNZI2DKwyCKAHUUUUAFFFFABRRR
+QAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFA
+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
+dsZXkjIOR6fSgCYSxtIUDqXHVQeR+FOqnBBIsqLJ5pCMWDZTbzn8e9XKACiiigAqMd/qakqMd/qa
+AFooopAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAI33T9KkqNvun6VJTAKKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKj6Z4PU9qkqLGSeW
+6n+I0ALn2P5UZ9j+VJt92/76NG33b/vo0ALn2P5UZ9j+VJt92/76NG33b/vo0ALn2P5UZ9j+VJt9
+2/76NG33b/vo0ALn2P5UZ9j+VJt92/76NG33b/vo0ALn2P5UZ9j+VJt92/76NG33b/vo0ALn2P5U
+Z9j+VJt92/76NG33b/vo0ALn2P5UZ9j+VJt92/76NG33b/vo0ALn2P5UZ9j+VJt92/76NG33b/vo
+0ALn2P5UZ9j+VJt92/76NG33b/vo0ALn2P5UZ9j+VJt92/76NG33b/vo0AKeQeD+VSVEVwCct/30
+aloAKKKKACiiigAooooAKKKKACiiigAooooAqtPKhMZ2NICvzAEDDHHTNI9zJGHR9rOGChlQ459u
+TU6wRqMYJ5DZLEnI6cmlaGNt25c7sZ59OlAFfz5zHkJjDYL+U3THXb19qsxtujVtwbI6joaZ9nTZ
+szJjOf8AWtn885qRVCKFUYA4AoAWiiigAooooAKKKKACiiigAqMd/qakqMd/qaAFooopAFFFFABR
+RRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAI33T9KkqNvun6VJTAKKKKACiiigAooooAKK
+KKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKjHf6mpKjHf6mgBaKKKQBRRRQAUUUU
+AFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFACN90/SpKjb7p+lSUwCiiigAooooAKKKKACiiig
+AooooAKKKKAP/9k=
+			</helperscreenshot>
+		</mouseitem>
+		<keysequenceitem
+		KeySequence="200"
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		repoItemActivation="EnsureVisible"
+		searchpropertyid="fac5e4b5-31d8-41a2-87b8-27f697d96c7b">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="KeySequence"
+				variable="NumeroCalle">
+				</binding>
+			</bindings>
+			<info
+			id="d6cc6a3a-c3fd-46d1-90d2-c4999bb53cc6"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'CreateAccount-tbody']/tr[4]//table//div/table/?/?/tr/td[2]/?/?/table/tbody/tr[6]/td/div/div//input[@name='CreateAccount:SuraCreateAccountScreen:CreateAccountDV:AddressInputSet:globalAddressContainer:GlobalAddressInputSet:StreetNumberSura']
+				</path>
+			</info>
+		</keysequenceitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="f7489da9-188b-46fb-813b-842bbc2d61bd"
+		sx="567"
+		sy="294"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="a87f6747-8e44-40ba-ae6e-aee06de7378d"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="spantag"
+				rect="492,286,150,17"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						x-form-item-label-inner x-form-item-label-inner-default
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Direcci&#243;n
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						x-form-item-label-inner x-form-item-label-inner-default
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~$Ambiente]//tbody[#'CreateAccount-tbody']/tr[4]/td/?/?/table/tbody//table/?/?/tr/td[2]/?/?/table/tbody/tr[1]//label/span[@innertext='Direcci&#243;n']
+				</path>
+			</info>
+		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="325a3344-f61d-46f9-9e6a-4f8f8bec0db0"
+		waitaction="NotExists"
+		waittimeout="50000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b4f6b11f-0c7e-4483-aab0-eed6a9cca678"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~$Ambiente]//tbody[#'CreateAccount-tbody']/tr[4]//table//div/table//input[@name='CreateAccount:SuraCreateAccountScreen:CreateAccountDV:AddressInputSet:globalAddressContainer:GlobalAddressInputSet:StreetNumberSura' and @data-tabindexsaved='True']
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="583a7027-16f9-41b5-b063-7ffaba252252"
+		sx="689"
+		sy="382"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b6e3a8b3-1b1e-44e0-9d4f-83e8f66b17ff"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="spantag"
+				rect="641,372,104,16"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						x-btn-inner x-btn-inner-default-small
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						CreateAccount:SuraCreateAccountScreen:CreateAccountDV:AddressInputSet:globalAddressContainer:GlobalAddressInputSet:VerifyItem-btnInnerEl
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Validar Direcci&#243;n
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						x-btn-inner x-btn-inner-default-small
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-ref"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="unselectable"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'CreateAccount-tbody']/tr[4]//table//div/table/?/?/tr/td[2]/?/?/table/tbody/tr[7]/td/div/div/div/table/tbody/tr/td/a//span[@innertext='Validar Direcci&#243;n']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="8a8b0e0e-013f-4c2f-9f87-a5f18ee46e55">
+				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
+			</helperscreenshot>
+		</mouseitem>
+		<explicitdelayitem
+		duration="8000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="CenterRight"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="63ce7af5-407c-44a4-b4b8-7534fc2d4825"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="8caf5ade-c981-41ed-a356-50f53f94dee7"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//tbody[#'CreateAccount-tbody']/tr[4]//table//div/table/?/?/tr/td[2]/?/?/table/tbody/tr[22]/td/div/div/div/div/div/div/div[3]/a[@href='javascript:void(0)']/img[@src='https://'+$Ambiente+'/pc/resources/themes/theme-9/resources/images/app/drop_button.png']
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="38488a44-153a-4fbc-bcbc-1cc04a425e41"
+		sx="865"
+		sy="381"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="3fda49cc-bc3a-42cf-a178-524948a59989"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="spantag"
+				rect="841,369,91,24"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						x-menu-item-text x-menu-item-text-default x-menu-item-indent-no-separator
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						CreateAccount:SuraCreateAccountScreen:CreateAccountDV:ProducerSelectionInputSet:Group:GroupSearchMenuIcon-textEl
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Buscar grupo...
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						x-menu-item-indent-no-separator x-menu-item-text x-menu-item-text-default
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-ref"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="unselectable"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']/body/div[12]/div/div[2]//span[@innertext='Buscar grupo...']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="aed7b432-58ba-4fe7-b21d-8e4c58eb497e">
+				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
+jg4z0q/GixRLGgwqAKB7CiigD//Z
+			</helperscreenshot>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="112;14"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="93171f61-a9df-4f6d-9dfb-e1f44c598b6a"
+		sx="122"
+		sy="136"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="4a4ba0b9-84f9-46b1-a127-8edbd86baf28"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="spantag"
+				rect="10,122,154,22"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						g-title
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						GroupSearchPopup:GroupSearchPickerScreen:ttlBar
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Buscar grupos
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						g-title
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'GroupSearchPopup-tbody']/tr[1]/td/div/div/div/div/?/?/span[@innertext='Buscar grupos']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="9b09a949-a850-4e0c-b268-701a429fc802">
+				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
+			</helperscreenshot>
+		</mouseitem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				**** Validaci&#243;n de Carga de Datos de la Cuenta exitoso ****
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="ddb881c7-39ff-46ee-b8c6-9aedf469f029">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="4a4ba0b9-84f9-46b1-a127-8edbd86baf28"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="spantag"
+				rect="10,122,154,22"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						g-title
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						GroupSearchPopup:GroupSearchPickerScreen:ttlBar
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Buscar grupos
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						g-title
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'GroupSearchPopup-tbody']/tr[1]/td/div/div/div/div/?/?/span[@innertext='Buscar grupos']
+				</path>
+			</info>
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+				Buscar grupos
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="58ca00b5-56c0-4f78-a5d2-302b212932e0"
+	name="SmokeRepository"
+	relativepath="..\SmokeRepository.rxrep">
+		<codegen
+		classname="SmokeRepository"
+		namespace="Smoke">
+		</codegen>
+		<rootfolder
+		id="7521c285-eca8-4037-8149-4c0669f953a6"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CargaDatosCuenta.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

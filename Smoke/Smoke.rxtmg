@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc>
+  <testsuiteentryhierarchy>
+    <flatlistofchildren>
+      <modulegroups
+      name="Smoke"
+      id="d6413f41-b072-48a3-8bfd-733dabe0e588"/>
+    </flatlistofchildren>
+    <childhierarchy>
+      <modulegroups
+      name="Smoke"
+      id="d6413f41-b072-48a3-8bfd-733dabe0e588"/>
+    </childhierarchy>
+  </testsuiteentryhierarchy>
+</modulegroupdoc>
