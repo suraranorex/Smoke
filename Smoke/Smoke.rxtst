@@ -680,7 +680,6 @@
 				</databinding>
 			</testmodule>
 			<testcase
-			datarangeactive="True"
 			datasource="FinalizaSolicitudesMotor"
 			id="7f48616a-2d1b-4b01-aa8b-c255f4b395b3"
 			maxrange="3"
@@ -1663,7 +1662,7 @@
 		filename="FinalizaSolicitudesMotor.xlsx"
 		id="6673493f-6029-4c46-8b30-f45a6037dbd9"
 		includefile="Checked"
-		lastknownrowcount="15"
+		lastknownrowcount="1"
 		name="FinalizaSolicitudesMotor"
 		type="Ranorex.Core.Data.ExcelDataConnector"
 		worksheetname="Hoja1"
