@@ -53,7 +53,7 @@ namespace Smoke
 
 #region Variables
 
-        string _Ambiente = "ssurgwsoadev3-oci.opc.oracleoutsourcing.com";
+        string _Ambiente = "preproducciongestion.segurossura.com.ar";
 
         /// <summary>
         /// Gets or sets the value of variable Ambiente.
@@ -113,7 +113,7 @@ namespace Smoke
             set { _PAS = value; }
         }
 
-        string _TIPOPOLIZA = "Accidentes Personales";
+        string _TIPOPOLIZA = "Hogar";
 
         /// <summary>
         /// Gets or sets the value of variable TIPOPOLIZA.
@@ -197,7 +197,6 @@ namespace Smoke
             RepoItemInfo _lbl_verificarmsInfo;
             RepoItemInfo _bttn_nuevoInfo;
             RepoItemInfo _bttn_nuevasolicitudInfo;
-            RepoItemInfo _bttn_aceptarcofInfo;
             RepoItemInfo _lbl_solicitudesdepolizanuevasInfo;
             RepoItemInfo _bttn_elegirInfo;
             RepoItemInfo _txt_motorInfo;
@@ -336,6 +335,9 @@ namespace Smoke
             RepoItemInfo _btn_aprobacionespecialInfo;
             RepoItemInfo _bttn_aceptar4Info;
             RepoItemInfo _lbl_nuevometododepagoInfo;
+            RepoItemInfo _copy_of_bttn_elegirInfo;
+            RepoItemInfo _bttn_elegir1Info;
+            RepoItemInfo _txt_viviendaInfo;
 
             /// <summary>
             /// Creates a new SURA  folder.
@@ -349,7 +351,6 @@ namespace Smoke
                 _lbl_verificarmsInfo = new RepoItemInfo(this, "lbl_VerificarMS", ".//tbody//span[@innertext~'Resumen']", 30000, null, "cf0f04fc-eb89-48f5-8018-274f0dc0aa32");
                 _bttn_nuevoInfo = new RepoItemInfo(this, "bttn_Nuevo", ".//a[#'AccountFile:AccountFileMenuActions']/span", 30000, null, "b238aa7f-ff38-4906-867c-c96d60fd59e2");
                 _bttn_nuevasolicitudInfo = new RepoItemInfo(this, "bttn_NuevaSolicitud", ".//span[@innertext~'Nueva Solicitud']", 30000, null, "09a5e63f-6299-457a-9661-55a4f77d0a0c");
-                _bttn_aceptarcofInfo = new RepoItemInfo(this, "bttn_AceptarCOF", "body//span[@innertext~'Aceptar']", 0, null, "adb45499-cef6-4ef4-aa9a-b7590776e3ae");
                 _lbl_solicitudesdepolizanuevasInfo = new RepoItemInfo(this, "lbl_SolicitudesDePolizaNuevas", ".//tbody[#'NewSubmission-tbody']//span[@innertext~'Solicitudes de Póliza nue']", 30000, null, "1386380b-75bc-4c1d-9a1b-45e10899b53a");
                 _bttn_elegirInfo = new RepoItemInfo(this, "bttn_Elegir", ".//tbody[#'NewSubmission-tbody']//div[@innertext=$TIPOPOLIZA]/../..//a[@innertext='Elegir']", 30000, null, "054d7555-d976-40ce-8c3d-5c51defc2776");
                 _txt_motorInfo = new RepoItemInfo(this, "txt_Motor", ".//div[#'infoBar-targetEl']//span[@innertext~'Motor']", 30000, null, "e3ee08ca-695a-4fa3-ab08-f35467d8f9f1");
@@ -488,6 +489,9 @@ namespace Smoke
                 _btn_aprobacionespecialInfo = new RepoItemInfo(this, "btn_AprobacionEspecial", ".//div[#'SubmissionWizard/RiskAnalysis']//a[@innertext~'Aprobación especial']", 30000, null, "25751288-83df-48fa-9c83-e5042a4aa619");
                 _bttn_aceptar4Info = new RepoItemInfo(this, "bttn_Aceptar4", "body//table//div/table//div//span/span/span[@innertext~'Aceptar']", 30000, null, "ccf906a0-df33-4f74-809e-3b0672b456f0");
                 _lbl_nuevometododepagoInfo = new RepoItemInfo(this, "lbl_NuevoMetodoDePago", ".//div[@id='centerPanel']//*[@innertext~'Nuevo Método de Pago']", 30000, null, "f8cf5db2-390d-4066-ac2c-dab2abfc82e3");
+                _copy_of_bttn_elegirInfo = new RepoItemInfo(this, "Copy_of_bttn_Elegir", ".//tbody[#'NewSubmission-tbody']//div[@innertext~$TIPOPOLIZA]/../..//a[@innertext~'Elegir' and @enabled='True']", 30000, null, "6ed15358-7933-4cf6-a940-f7747839ff64");
+                _bttn_elegir1Info = new RepoItemInfo(this, "bttn_Elegir1", ".//tbody[#'NewSubmission-tbody']//div[@innertext~$TIPOPOLIZA]/../..//a[@innertext~'Elegir']", 30000, null, "1897bc39-2b21-4995-9a79-31febda491ee");
+                _txt_viviendaInfo = new RepoItemInfo(this, "txt_Vivienda", ".//div[#'SubmissionWizard/HomeownersDwelling']//span[@innertext='Vivienda']", 30000, null, "24f75cb5-9109-4b29-9544-bde176052825");
             }
 
             /// <summary>
@@ -631,30 +635,6 @@ namespace Smoke
                 get
                 {
                     return _bttn_nuevasolicitudInfo;
-                }
-            }
-
-            /// <summary>
-            /// The bttn_AceptarCOF item.
-            /// </summary>
-            [RepositoryItem("adb45499-cef6-4ef4-aa9a-b7590776e3ae")]
-            public virtual Ranorex.SpanTag bttn_AceptarCOF
-            {
-                get
-                {
-                    return _bttn_aceptarcofInfo.CreateAdapter<Ranorex.SpanTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The bttn_AceptarCOF item info.
-            /// </summary>
-            [RepositoryItemInfo("adb45499-cef6-4ef4-aa9a-b7590776e3ae")]
-            public virtual RepoItemInfo bttn_AceptarCOFInfo
-            {
-                get
-                {
-                    return _bttn_aceptarcofInfo;
                 }
             }
 
@@ -3971,6 +3951,78 @@ namespace Smoke
             }
 
             /// <summary>
+            /// The Copy_of_bttn_Elegir item.
+            /// </summary>
+            [RepositoryItem("6ed15358-7933-4cf6-a940-f7747839ff64")]
+            public virtual Ranorex.ATag Copy_of_bttn_Elegir
+            {
+                get
+                {
+                    return _copy_of_bttn_elegirInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Copy_of_bttn_Elegir item info.
+            /// </summary>
+            [RepositoryItemInfo("6ed15358-7933-4cf6-a940-f7747839ff64")]
+            public virtual RepoItemInfo Copy_of_bttn_ElegirInfo
+            {
+                get
+                {
+                    return _copy_of_bttn_elegirInfo;
+                }
+            }
+
+            /// <summary>
+            /// The bttn_Elegir1 item.
+            /// </summary>
+            [RepositoryItem("1897bc39-2b21-4995-9a79-31febda491ee")]
+            public virtual Ranorex.ATag bttn_Elegir1
+            {
+                get
+                {
+                    return _bttn_elegir1Info.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The bttn_Elegir1 item info.
+            /// </summary>
+            [RepositoryItemInfo("1897bc39-2b21-4995-9a79-31febda491ee")]
+            public virtual RepoItemInfo bttn_Elegir1Info
+            {
+                get
+                {
+                    return _bttn_elegir1Info;
+                }
+            }
+
+            /// <summary>
+            /// The txt_Vivienda item.
+            /// </summary>
+            [RepositoryItem("24f75cb5-9109-4b29-9544-bde176052825")]
+            public virtual Ranorex.SpanTag txt_Vivienda
+            {
+                get
+                {
+                    return _txt_viviendaInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txt_Vivienda item info.
+            /// </summary>
+            [RepositoryItemInfo("24f75cb5-9109-4b29-9544-bde176052825")]
+            public virtual RepoItemInfo txt_ViviendaInfo
+            {
+                get
+                {
+                    return _txt_viviendaInfo;
+                }
+            }
+
+            /// <summary>
             /// The PC folder.
             /// </summary>
             [RepositoryFolder("0f5b0abe-7a5f-4c05-a3f8-192c01a184a9")]
@@ -4072,6 +4124,7 @@ namespace Smoke
             SmokeRepositoryFolders.PolizaMotorFolder _polizamotor;
             SmokeRepositoryFolders.GeneralesFolder _generales;
             SmokeRepositoryFolders.EnlatadosFolder _enlatados;
+            SmokeRepositoryFolders.PolizaHogarFolder _polizahogar;
 
             /// <summary>
             /// Creates a new Emision  folder.
@@ -4082,6 +4135,7 @@ namespace Smoke
                 _polizamotor = new SmokeRepositoryFolders.PolizaMotorFolder(this);
                 _generales = new SmokeRepositoryFolders.GeneralesFolder(this);
                 _enlatados = new SmokeRepositoryFolders.EnlatadosFolder(this);
+                _polizahogar = new SmokeRepositoryFolders.PolizaHogarFolder(this);
             }
 
             /// <summary>
@@ -4121,6 +4175,15 @@ namespace Smoke
             public virtual SmokeRepositoryFolders.EnlatadosFolder Enlatados
             {
                 get { return _enlatados; }
+            }
+
+            /// <summary>
+            /// The PolizaHogar folder.
+            /// </summary>
+            [RepositoryFolder("647211b7-3a79-4bde-9493-793a9cd3c81f")]
+            public virtual SmokeRepositoryFolders.PolizaHogarFolder PolizaHogar
+            {
+                get { return _polizahogar; }
             }
         }
 
@@ -4492,6 +4555,7 @@ namespace Smoke
             RepoItemInfo _txtbox_motorInfo;
             RepoItemInfo _txtbox_chasisInfo;
             RepoItemInfo _txtbox_productoInfo;
+            RepoItemInfo _txt_codinfoautoInfo;
 
             /// <summary>
             /// Creates a new Vehiculoss  folder.
@@ -4510,6 +4574,7 @@ namespace Smoke
                 _txtbox_motorInfo = new RepoItemInfo(this, "txtbox_Motor", ".//label/span[@innertext~'Motor']/../..//input", 30000, null, "3355fb5c-0722-4b18-abd8-5f3e320db6f2");
                 _txtbox_chasisInfo = new RepoItemInfo(this, "txtbox_Chasis", ".//label/span[@innertext~'Chasis']/../..//input", 30000, null, "08a7020f-b71a-4ea6-8982-e745441757a0");
                 _txtbox_productoInfo = new RepoItemInfo(this, "txtbox_Producto", ".//label/span[@innertext~'Producto']/../..//input", 30000, null, "65b5430d-577e-45cc-bc06-cb8f0733db13");
+                _txt_codinfoautoInfo = new RepoItemInfo(this, "txt_CodInfoAuto", ".//div[#'SubmissionWizard/VehicleList']//input[@name='SubmissionWizard:LOBWizardStepGroup:LineWizardStepSet:CA7VehicleListScreen:CA7VehiclePanelSet:CA7VehicleLDP:CA7VehicleCV:CA7BasicVehicleInfoDV:infoauto']", 30000, null, "6735ac52-3c87-430b-b141-3dde2906a26a");
             }
 
             /// <summary>
@@ -4765,6 +4830,30 @@ namespace Smoke
             }
 
             /// <summary>
+            /// The txt_CodInfoAuto item.
+            /// </summary>
+            [RepositoryItem("6735ac52-3c87-430b-b141-3dde2906a26a")]
+            public virtual Ranorex.InputTag txt_CodInfoAuto
+            {
+                get
+                {
+                    return _txt_codinfoautoInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txt_CodInfoAuto item info.
+            /// </summary>
+            [RepositoryItemInfo("6735ac52-3c87-430b-b141-3dde2906a26a")]
+            public virtual RepoItemInfo txt_CodInfoAutoInfo
+            {
+                get
+                {
+                    return _txt_codinfoautoInfo;
+                }
+            }
+
+            /// <summary>
             /// The Copias folder.
             /// </summary>
             [RepositoryFolder("d5f2f7dc-a61e-40b6-9587-ae1a5d1b5abf")]
@@ -4789,6 +4878,7 @@ namespace Smoke
             RepoItemInfo _copy_of_txtbox_motorInfo;
             RepoItemInfo _copy_of_txtbox_chasisInfo;
             RepoItemInfo _copy_of_txtbox_productoInfo;
+            RepoItemInfo _copy_of_txt_codinfoautoInfo;
 
             /// <summary>
             /// Creates a new Copias  folder.
@@ -4805,6 +4895,7 @@ namespace Smoke
                 _copy_of_txtbox_motorInfo = new RepoItemInfo(this, "Copy_of_txtbox_Motor", ".//label/span[@innertext='Motor']/../..//input[@data-tabindexsaved='True']", 30000, null, "5ed883ce-7015-4350-b862-1e1878133e8c");
                 _copy_of_txtbox_chasisInfo = new RepoItemInfo(this, "Copy_of_txtbox_Chasis", ".//label/span[@innertext='Chasis']/../..//input[@data-tabindexsaved='True']", 30000, null, "9b8f9dd9-ba60-4540-ab91-7b3f35b82a14");
                 _copy_of_txtbox_productoInfo = new RepoItemInfo(this, "Copy_of_txtbox_Producto", ".//label/span[@innertext='Producto']/../..//input[@data-tabindexsaved='True']", 30000, null, "6fcc04fc-2a09-4a8e-819f-786a6a32f2dd");
+                _copy_of_txt_codinfoautoInfo = new RepoItemInfo(this, "Copy_of_txt_CodInfoAuto", ".//div[#'SubmissionWizard/VehicleList']//input[@name='SubmissionWizard:LOBWizardStepGroup:LineWizardStepSet:CA7VehicleListScreen:CA7VehiclePanelSet:CA7VehicleLDP:CA7VehicleCV:CA7BasicVehicleInfoDV:infoauto' and @data-tabindexsaved='True']", 30000, null, "541a8505-f66d-4a9d-8e49-9a9525f4235d");
             }
 
             /// <summary>
@@ -5032,6 +5123,30 @@ namespace Smoke
                 get
                 {
                     return _copy_of_txtbox_productoInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Copy_of_txt_CodInfoAuto item.
+            /// </summary>
+            [RepositoryItem("541a8505-f66d-4a9d-8e49-9a9525f4235d")]
+            public virtual Ranorex.InputTag Copy_of_txt_CodInfoAuto
+            {
+                get
+                {
+                    return _copy_of_txt_codinfoautoInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Copy_of_txt_CodInfoAuto item info.
+            /// </summary>
+            [RepositoryItemInfo("541a8505-f66d-4a9d-8e49-9a9525f4235d")]
+            public virtual RepoItemInfo Copy_of_txt_CodInfoAutoInfo
+            {
+                get
+                {
+                    return _copy_of_txt_codinfoautoInfo;
                 }
             }
         }
@@ -6094,11 +6209,196 @@ namespace Smoke
         }
 
         /// <summary>
+        /// The PolizaHogarFolder folder.
+        /// </summary>
+        [RepositoryFolder("647211b7-3a79-4bde-9493-793a9cd3c81f")]
+        public partial class PolizaHogarFolder : RepoGenBaseFolder
+        {
+            SmokeRepositoryFolders.Hogar_NoEnlatadoFolder _hogar_noenlatado;
+            SmokeRepositoryFolders.NoEnlatadoFolder _noenlatado;
+
+            /// <summary>
+            /// Creates a new PolizaHogar  folder.
+            /// </summary>
+            public PolizaHogarFolder(RepoGenBaseFolder parentFolder) :
+                    base("PolizaHogar", "", parentFolder, 0, null, false, "647211b7-3a79-4bde-9493-793a9cd3c81f", "")
+            {
+                _hogar_noenlatado = new SmokeRepositoryFolders.Hogar_NoEnlatadoFolder(this);
+                _noenlatado = new SmokeRepositoryFolders.NoEnlatadoFolder(this);
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("647211b7-3a79-4bde-9493-793a9cd3c81f")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Hogar_NoEnlatado folder.
+            /// </summary>
+            [RepositoryFolder("c65e239e-9244-49ad-96eb-c203672a2e46")]
+            public virtual SmokeRepositoryFolders.Hogar_NoEnlatadoFolder Hogar_NoEnlatado
+            {
+                get { return _hogar_noenlatado; }
+            }
+
+            /// <summary>
+            /// The NoEnlatado folder.
+            /// </summary>
+            [RepositoryFolder("effeb3f7-4309-47db-8f80-e560cdb193c0")]
+            public virtual SmokeRepositoryFolders.NoEnlatadoFolder NoEnlatado
+            {
+                get { return _noenlatado; }
+            }
+        }
+
+        /// <summary>
+        /// The Hogar_NoEnlatadoFolder folder.
+        /// </summary>
+        [RepositoryFolder("c65e239e-9244-49ad-96eb-c203672a2e46")]
+        public partial class Hogar_NoEnlatadoFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _copy_of_bttn_elegirInfo;
+            RepoItemInfo _bttn_elegirInfo;
+
+            /// <summary>
+            /// Creates a new Hogar_NoEnlatado  folder.
+            /// </summary>
+            public Hogar_NoEnlatadoFolder(RepoGenBaseFolder parentFolder) :
+                    base("Hogar_NoEnlatado", "", parentFolder, 0, null, false, "c65e239e-9244-49ad-96eb-c203672a2e46", "")
+            {
+                _copy_of_bttn_elegirInfo = new RepoItemInfo(this, "Copy_of_bttn_Elegir", ".//tbody[#'NewSubmission-tbody']//div[@innertext~$TIPOPOLIZA]/../..//a[@innertext~'Elegir' and @enabled='True']", 30000, null, "7c44b3df-1a02-4b9e-a7dd-2ea77dcf019c");
+                _bttn_elegirInfo = new RepoItemInfo(this, "bttn_Elegir", ".//tbody[#'NewSubmission-tbody']//div[@innertext~$TIPOPOLIZA]/../..//a[@innertext~'Elegir']", 30000, null, "f46cb8fa-f32f-4822-b6c8-313e088b3264");
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("c65e239e-9244-49ad-96eb-c203672a2e46")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Copy_of_bttn_Elegir item.
+            /// </summary>
+            [RepositoryItem("7c44b3df-1a02-4b9e-a7dd-2ea77dcf019c")]
+            public virtual Ranorex.ATag Copy_of_bttn_Elegir
+            {
+                get
+                {
+                    return _copy_of_bttn_elegirInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Copy_of_bttn_Elegir item info.
+            /// </summary>
+            [RepositoryItemInfo("7c44b3df-1a02-4b9e-a7dd-2ea77dcf019c")]
+            public virtual RepoItemInfo Copy_of_bttn_ElegirInfo
+            {
+                get
+                {
+                    return _copy_of_bttn_elegirInfo;
+                }
+            }
+
+            /// <summary>
+            /// The bttn_Elegir item.
+            /// </summary>
+            [RepositoryItem("f46cb8fa-f32f-4822-b6c8-313e088b3264")]
+            public virtual Ranorex.ATag bttn_Elegir
+            {
+                get
+                {
+                    return _bttn_elegirInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The bttn_Elegir item info.
+            /// </summary>
+            [RepositoryItemInfo("f46cb8fa-f32f-4822-b6c8-313e088b3264")]
+            public virtual RepoItemInfo bttn_ElegirInfo
+            {
+                get
+                {
+                    return _bttn_elegirInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The NoEnlatadoFolder folder.
+        /// </summary>
+        [RepositoryFolder("effeb3f7-4309-47db-8f80-e560cdb193c0")]
+        public partial class NoEnlatadoFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _txt_viviendaInfo;
+
+            /// <summary>
+            /// Creates a new NoEnlatado  folder.
+            /// </summary>
+            public NoEnlatadoFolder(RepoGenBaseFolder parentFolder) :
+                    base("NoEnlatado", "", parentFolder, 0, null, false, "effeb3f7-4309-47db-8f80-e560cdb193c0", "")
+            {
+                _txt_viviendaInfo = new RepoItemInfo(this, "txt_Vivienda", ".//div[#'SubmissionWizard/HomeownersDwelling']//span[@innertext='Vivienda']", 30000, null, "f7bfbf09-4393-494d-b44e-63458e0f977f");
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("effeb3f7-4309-47db-8f80-e560cdb193c0")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txt_Vivienda item.
+            /// </summary>
+            [RepositoryItem("f7bfbf09-4393-494d-b44e-63458e0f977f")]
+            public virtual Ranorex.SpanTag txt_Vivienda
+            {
+                get
+                {
+                    return _txt_viviendaInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txt_Vivienda item info.
+            /// </summary>
+            [RepositoryItemInfo("f7bfbf09-4393-494d-b44e-63458e0f977f")]
+            public virtual RepoItemInfo txt_ViviendaInfo
+            {
+                get
+                {
+                    return _txt_viviendaInfo;
+                }
+            }
+        }
+
+        /// <summary>
         /// The MenuFolder folder.
         /// </summary>
         [RepositoryFolder("53b244df-5926-4d05-a262-3121c53ddb70")]
         public partial class MenuFolder : RepoGenBaseFolder
         {
+            SmokeRepositoryFolders.MenuLateralFolder _menulateral;
             SmokeRepositoryFolders.SuperiorFolder _superior;
             RepoItemInfo _menu_informaciondelpagoInfo;
 
@@ -6108,6 +6408,7 @@ namespace Smoke
             public MenuFolder(RepoGenBaseFolder parentFolder) :
                     base("Menu", "", parentFolder, 0, null, false, "53b244df-5926-4d05-a262-3121c53ddb70", "")
             {
+                _menulateral = new SmokeRepositoryFolders.MenuLateralFolder(this);
                 _superior = new SmokeRepositoryFolders.SuperiorFolder(this);
                 _menu_informaciondelpagoInfo = new RepoItemInfo(this, "menu_InformacionDelPago", ".//div[#'westPanel-innerCt']//span[@innertext='Información del Pago']", 30000, null, "a15649bf-3742-42c3-bc08-153dd33a272a");
             }
@@ -6149,12 +6450,75 @@ namespace Smoke
             }
 
             /// <summary>
+            /// The MenuLateral folder.
+            /// </summary>
+            [RepositoryFolder("9e7f3951-2907-47bc-a2e3-7da113b4bffa")]
+            public virtual SmokeRepositoryFolders.MenuLateralFolder MenuLateral
+            {
+                get { return _menulateral; }
+            }
+
+            /// <summary>
             /// The Superior folder.
             /// </summary>
             [RepositoryFolder("7876797c-185b-4fc4-ab42-69360f28b89e")]
             public virtual SmokeRepositoryFolders.SuperiorFolder Superior
             {
                 get { return _superior; }
+            }
+        }
+
+        /// <summary>
+        /// The MenuLateralFolder folder.
+        /// </summary>
+        [RepositoryFolder("9e7f3951-2907-47bc-a2e3-7da113b4bffa")]
+        public partial class MenuLateralFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _menulatizqvehiculosInfo;
+
+            /// <summary>
+            /// Creates a new MenuLateral  folder.
+            /// </summary>
+            public MenuLateralFolder(RepoGenBaseFolder parentFolder) :
+                    base("MenuLateral", "", parentFolder, 0, null, false, "9e7f3951-2907-47bc-a2e3-7da113b4bffa", "")
+            {
+                _menulatizqvehiculosInfo = new RepoItemInfo(this, "MenuLatIzqVehiculos", ".//div[#'westPanel-innerCt']//span[@innertext='Vehículos']", 30000, null, "08ccf242-156c-41be-a0d2-9efc04687ae0");
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("9e7f3951-2907-47bc-a2e3-7da113b4bffa")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The MenuLatIzqVehiculos item.
+            /// </summary>
+            [RepositoryItem("08ccf242-156c-41be-a0d2-9efc04687ae0")]
+            public virtual Ranorex.SpanTag MenuLatIzqVehiculos
+            {
+                get
+                {
+                    return _menulatizqvehiculosInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The MenuLatIzqVehiculos item info.
+            /// </summary>
+            [RepositoryItemInfo("08ccf242-156c-41be-a0d2-9efc04687ae0")]
+            public virtual RepoItemInfo MenuLatIzqVehiculosInfo
+            {
+                get
+                {
+                    return _menulatizqvehiculosInfo;
+                }
             }
         }
 

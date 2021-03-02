@@ -234,6 +234,15 @@ name="SmokeRepository">
 								searchtimeout="30000ms">
 									/dom[@domain=$Ambiente]//label/span[@innertext='Producto']/../..//input[@data-tabindexsaved='True']
 								</item>
+								<item
+								addcaps="unknown,webelement,inputtag"
+								capname="inputtag"
+								id="541a8505-f66d-4a9d-8e49-9a9525f4235d"
+								name="Copy_of_txt_CodInfoAuto"
+								refimgid="f4c70f23-199b-4628-a703-fa17b1651abd"
+								searchtimeout="30000ms">
+									/dom[@domain=$Ambiente]//div[#'SubmissionWizard/VehicleList']//input[@name='SubmissionWizard:LOBWizardStepGroup:LineWizardStepSet:CA7VehicleListScreen:CA7VehiclePanelSet:CA7VehicleLDP:CA7VehicleCV:CA7BasicVehicleInfoDV:infoauto' and @data-tabindexsaved='True']
+								</item>
 							</folder>
 							<item
 							addcaps="unknown,webelement,spantag"
@@ -324,6 +333,15 @@ name="SmokeRepository">
 							refimgid="2151a8d1-66ba-426a-bdac-a317eabbe07c"
 							searchtimeout="30000ms">
 								/dom[@domain=$Ambiente]//label/span[@innertext~'Producto']/../..//input
+							</item>
+							<item
+							addcaps="unknown,webelement,inputtag"
+							capname="inputtag"
+							id="6735ac52-3c87-430b-b141-3dde2906a26a"
+							name="txt_CodInfoAuto"
+							refimgid="f4c70f23-199b-4628-a703-fa17b1651abd"
+							searchtimeout="30000ms">
+								/dom[@domain=$Ambiente]//div[#'SubmissionWizard/VehicleList']//input[@name='SubmissionWizard:LOBWizardStepGroup:LineWizardStepSet:CA7VehicleListScreen:CA7VehiclePanelSet:CA7VehicleLDP:CA7VehicleCV:CA7BasicVehicleInfoDV:infoauto']
 							</item>
 						</folder>
 					</folder>
@@ -655,6 +673,54 @@ name="SmokeRepository">
 							/dom[@domain=$Ambiente]//span[@innertext~'C&#243;digo de agente']/../..//input[@data-tabindexsaved='True']
 						</item>
 					</folder>
+					<folder
+					capname="webdocument"
+					id="647211b7-3a79-4bde-9493-793a9cd3c81f"
+					isrooted="False"
+					name="PolizaHogar"
+					searchtimeout="0ms">
+						<folder
+						capname="webdocument"
+						id="c65e239e-9244-49ad-96eb-c203672a2e46"
+						isrooted="False"
+						name="Hogar_NoEnlatado"
+						searchtimeout="0ms">
+							<item
+							addcaps="unknown,webelement,divtag"
+							capname="atag"
+							id="7c44b3df-1a02-4b9e-a7dd-2ea77dcf019c"
+							name="Copy_of_bttn_Elegir"
+							refimgid="9c8cb7bd-cee3-49db-b13d-2d66a72efb21"
+							searchtimeout="30000ms">
+								/dom[@domain=$Ambiente]//tbody[#'NewSubmission-tbody']//div[@innertext~$TIPOPOLIZA]/../..//a[@innertext~'Elegir' and @enabled='True']
+							</item>
+							<item
+							addcaps="unknown,webelement,divtag"
+							capname="atag"
+							id="f46cb8fa-f32f-4822-b6c8-313e088b3264"
+							name="bttn_Elegir"
+							refimgid="3e2f4b1c-7c00-4e5d-835c-3965b0bd3693"
+							searchtimeout="30000ms">
+								/dom[@domain=$Ambiente]//tbody[#'NewSubmission-tbody']//div[@innertext~$TIPOPOLIZA]/../..//a[@innertext~'Elegir']
+							</item>
+						</folder>
+						<folder
+						capname="webdocument"
+						id="effeb3f7-4309-47db-8f80-e560cdb193c0"
+						isrooted="False"
+						name="NoEnlatado"
+						searchtimeout="0ms">
+							<item
+							addcaps="unknown,webelement,spantag"
+							capname="spantag"
+							id="f7bfbf09-4393-494d-b44e-63458e0f977f"
+							name="txt_Vivienda"
+							refimgid="dbabf962-2982-4a04-9a8c-962eb800bb77"
+							searchtimeout="30000ms">
+								/dom[@domain=$Ambiente]//div[#'SubmissionWizard/HomeownersDwelling']//span[@innertext='Vivienda']
+							</item>
+						</folder>
+					</folder>
 				</folder>
 				<folder
 				capname="webdocument"
@@ -662,6 +728,22 @@ name="SmokeRepository">
 				isrooted="False"
 				name="Menu"
 				searchtimeout="0ms">
+					<folder
+					capname="unknown"
+					id="9e7f3951-2907-47bc-a2e3-7da113b4bffa"
+					isrooted="False"
+					name="MenuLateral"
+					searchtimeout="0ms">
+						<item
+						addcaps="unknown,webelement,divtag"
+						capname="spantag"
+						id="08ccf242-156c-41be-a0d2-9efc04687ae0"
+						name="MenuLatIzqVehiculos"
+						refimgid="639684bc-738f-4c6f-b6e4-d973d993310d"
+						searchtimeout="30000ms">
+							/dom[@domain=$Ambiente]//div[#'westPanel-innerCt']//span[@innertext='Veh&#237;culos']
+						</item>
+					</folder>
 					<folder
 					capname="webdocument"
 					id="7876797c-185b-4fc4-ab42-69360f28b89e"
@@ -833,13 +915,6 @@ name="SmokeRepository">
 			refimgid="a17dd9cb-8f56-4f63-a478-8edf9826a89c"
 			searchtimeout="30000ms">
 				/dom[@domain=$Ambiente]//span[@innertext~'Nueva Solicitud']
-			</item>
-			<item
-			capname="spantag"
-			id="adb45499-cef6-4ef4-aa9a-b7590776e3ae"
-			name="bttn_AceptarCOF"
-			searchtimeout="0ms">
-				/dom[@domain=$Ambiente]/body//span[@innertext~'Aceptar']
 			</item>
 			<item
 			addcaps="unknown,webelement,spantag"
@@ -2083,6 +2158,33 @@ name="SmokeRepository">
 			searchtimeout="30000ms">
 				/dom[@domain=$Ambiente]//div[@id='centerPanel']//*[@innertext~'Nuevo M&#233;todo de Pago']
 			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="atag"
+			id="6ed15358-7933-4cf6-a940-f7747839ff64"
+			name="Copy_of_bttn_Elegir"
+			refimgid="e7f75293-b9c2-4376-a56a-8ce5fca5375e"
+			searchtimeout="30000ms">
+				/dom[@domain=$Ambiente]//tbody[#'NewSubmission-tbody']//div[@innertext~$TIPOPOLIZA]/../..//a[@innertext~'Elegir' and @enabled='True']
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="atag"
+			id="1897bc39-2b21-4995-9a79-31febda491ee"
+			name="bttn_Elegir1"
+			refimgid="04a05c5c-452d-413c-b108-e62e32c0dd87"
+			searchtimeout="30000ms">
+				/dom[@domain=$Ambiente]//tbody[#'NewSubmission-tbody']//div[@innertext~$TIPOPOLIZA]/../..//a[@innertext~'Elegir']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="24f75cb5-9109-4b29-9544-bde176052825"
+			name="txt_Vivienda"
+			refimgid="da34fc27-5ddb-4731-af25-36d6c85eef3b"
+			searchtimeout="30000ms">
+				/dom[@domain=$Ambiente]//div[#'SubmissionWizard/HomeownersDwelling']//span[@innertext='Vivienda']
+			</item>
 			<basepath>
 				/dom[@domain=$Ambiente]
 			</basepath>
@@ -2696,7 +2798,7 @@ QmCC
 		<var
 		id="179cd022-d834-4b47-98d5-e2a34a6a6fce"
 		name="Ambiente">
-			ssurgwsoadev3-oci.opc.oracleoutsourcing.com
+			preproducciongestion.segurossura.com.ar
 		</var>
 		<var
 		id="995aaba0-daa7-4faa-ac37-c534aceaec96"
@@ -2721,7 +2823,7 @@ QmCC
 		<var
 		id="0f3eddd2-8254-4005-b367-e75729329c6b"
 		name="TIPOPOLIZA">
-			Accidentes Personales
+			Hogar
 		</var>
 		<var
 		id="10e73b3e-5f3c-4506-a282-bfc64eae503b"

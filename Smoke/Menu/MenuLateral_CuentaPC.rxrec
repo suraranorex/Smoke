@@ -234,10 +234,10 @@ X8qQ7Fuiqn2p/Rfyo+1P6L+VAH//2Q==
 			<bindings>
 			</bindings>
 			<info
-			id="adb45499-cef6-4ef4-aa9a-b7590776e3ae"
+			id="46048979-b84b-4f84-91ed-a763e10aa82f"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']/body//span[@innertext~'Aceptar']
+					/dom[@domain=$Ambiente]/body//span[@innertext~'Aceptar']
 				</path>
 			</info>
 		</mouseitem>

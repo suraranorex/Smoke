@@ -41,7 +41,7 @@ namespace Smoke.Menu
         /// </summary>
         public MenuSuperior_CuentaPC()
         {
-            NroCuenta = "2887145026";
+            NroCuenta = "7538512225";
         }
 
         /// <summary>

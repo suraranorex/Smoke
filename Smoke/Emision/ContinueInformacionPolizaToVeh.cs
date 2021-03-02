@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace Smoke.Menu
+namespace Smoke.Emision
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The MenuLateral_CuentaPC recording.
+    ///The ContinueInformacionPolizaToVeh recording.
     /// </summary>
-    [TestModule("4a4cfa98-0f1e-4ea3-bb4f-7c88347b85de", ModuleType.Recording, 1)]
-    public partial class MenuLateral_CuentaPC : ITestModule
+    [TestModule("16fcffe1-ae26-4fb2-8cc2-a3f4e1c97567", ModuleType.Recording, 1)]
+    public partial class ContinueInformacionPolizaToVeh : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::Smoke.SmokeRepository repository.
         /// </summary>
         public static global::Smoke.SmokeRepository repo = global::Smoke.SmokeRepository.Instance;
 
-        static MenuLateral_CuentaPC instance = new MenuLateral_CuentaPC();
+        static ContinueInformacionPolizaToVeh instance = new ContinueInformacionPolizaToVeh();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public MenuLateral_CuentaPC()
+        public ContinueInformacionPolizaToVeh()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static MenuLateral_CuentaPC Instance
+        public static ContinueInformacionPolizaToVeh Instance
         {
             get { return instance; }
         }
@@ -89,28 +89,28 @@ namespace Smoke.Menu
 
             Init();
 
-            // --------------------------------Nueva Poliza
-            Report.Log(ReportLevel.Info, "Section", "--------------------------------Nueva Poliza", new RecordItemIndex(0));
+            Report.Screenshot(ReportLevel.Info, "User", "", repo.SURA.Self, false, new RecordItemIndex(0));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.bttn_Nuevo' at Center.", repo.SURA.bttn_NuevoInfo, new RecordItemIndex(1));
-            repo.SURA.bttn_Nuevo.Click();
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(1));
+            Delay.Duration(3000, false);
+            
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'SURA.bttn_Siguiente' at Center.", repo.SURA.bttn_SiguienteInfo, new RecordItemIndex(2));
+            //repo.SURA.bttn_Siguiente.MoveTo();
+            //Delay.Milliseconds(0);
+            
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.bttn_Siguiente' at Center.", repo.SURA.bttn_SiguienteInfo, new RecordItemIndex(3));
+            //repo.SURA.bttn_Siguiente.Click();
+            //Delay.Milliseconds(0);
+            
+            //Report.Log(ReportLevel.Info, "Wait", "Waiting 50s to not exist. Associated repository item: 'SURA.Copy_of_bttn_Siguiente'", repo.SURA.Copy_of_bttn_SiguienteInfo, new ActionTimeout(50000), new RecordItemIndex(4));
+            //repo.SURA.Copy_of_bttn_SiguienteInfo.WaitForNotExists(50000);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.PC.Menu.MenuLateral.MenuLatIzqVehiculos' at Center.", repo.SURA.PC.Menu.MenuLateral.MenuLatIzqVehiculosInfo, new RecordItemIndex(5));
+            repo.SURA.PC.Menu.MenuLateral.MenuLatIzqVehiculos.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.bttn_NuevaSolicitud' at Center.", repo.SURA.bttn_NuevaSolicitudInfo, new RecordItemIndex(2));
-            repo.SURA.bttn_NuevaSolicitud.Click();
-            Delay.Milliseconds(0);
-            
-            // --------------------------------Cuando tiene saldo deudor
-            Report.Log(ReportLevel.Info, "Section", "--------------------------------Cuando tiene saldo deudor", new RecordItemIndex(3));
-            
-            try {
-                Report.Log(ReportLevel.Info, "Mouse", "(Optional Action)\r\nMouse Left Click item 'SURA_ContinueOnFail.bttn_AceptarCOF' at 11;11.", repo.SURA_ContinueOnFail.bttn_AceptarCOFInfo, new RecordItemIndex(4));
-                repo.SURA_ContinueOnFail.bttn_AceptarCOF.Click("11;11");
-                Delay.Milliseconds(0);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(4)); }
-            
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 15s to exist. Associated repository item: 'SURA.lbl_SolicitudesDePolizaNuevas'", repo.SURA.lbl_SolicitudesDePolizaNuevasInfo, new ActionTimeout(15000), new RecordItemIndex(5));
-            repo.SURA.lbl_SolicitudesDePolizaNuevasInfo.WaitForExists(15000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SURA.txt_Vehiculos'", repo.SURA.txt_VehiculosInfo, new ActionTimeout(30000), new RecordItemIndex(6));
+            repo.SURA.txt_VehiculosInfo.WaitForExists(30000);
             
         }
 
