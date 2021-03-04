@@ -788,7 +788,7 @@
 			<testcase
 			datasource="Emision_Hogar"
 			id="9796e920-1188-45ad-af46-1061deede081"
-			name="EmisionHogar">
+			name="Emision_Hogar_Faster">
 			</testcase>
 			<testmodule
 			id="9bd0f570-d2a5-4476-a55c-a9348ffc512e"
@@ -1353,7 +1353,7 @@
 					</testcase>
 					<testcase
 					id="9796e920-1188-45ad-af46-1061deede081"
-					name="EmisionHogar">
+					name="Emision_Hogar_Faster">
 						<testmodule
 						id="00a061a6-63fc-4fa2-9bdc-e06e769d3606"
 						name="MenuLateral_CuentaPC">
@@ -1692,7 +1692,7 @@
 		</DataSource>
 	</datasources>
 	<testconfigurations
-	default="FinalizaSolicitudes">
+	default="Smoke">
 		<testconfiguration
 		name="FinalizaSolicitudes">
 			<testcontainer
