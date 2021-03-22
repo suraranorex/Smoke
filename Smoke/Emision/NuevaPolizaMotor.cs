@@ -112,25 +112,25 @@ namespace Smoke.Emision
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.PC.Emision.Enlatados.txtbox_CodigoAgente' at Center.", repo.SURA.PC.Emision.Enlatados.txtbox_CodigoAgenteInfo, new RecordItemIndex(0));
-            repo.SURA.PC.Emision.Enlatados.txtbox_CodigoAgente.Click();
-            Delay.Milliseconds(0);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.PC.Emision.Enlatados.txtbox_CodigoAgente' at Center.", repo.SURA.PC.Emision.Enlatados.txtbox_CodigoAgenteInfo, new RecordItemIndex(0));
+            //repo.SURA.PC.Emision.Enlatados.txtbox_CodigoAgente.Click();
+            //Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'SURA.PC.Emision.Enlatados.txtbox_CodigoAgente'.", repo.SURA.PC.Emision.Enlatados.txtbox_CodigoAgenteInfo, new RecordItemIndex(1));
-            Keyboard.PrepareFocus(repo.SURA.PC.Emision.Enlatados.txtbox_CodigoAgente);
-            Keyboard.Press(System.Windows.Forms.Keys.A | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
-            Delay.Milliseconds(0);
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'SURA.PC.Emision.Enlatados.txtbox_CodigoAgente'.", repo.SURA.PC.Emision.Enlatados.txtbox_CodigoAgenteInfo, new RecordItemIndex(1));
+            //Keyboard.PrepareFocus(repo.SURA.PC.Emision.Enlatados.txtbox_CodigoAgente);
+            //Keyboard.Press(System.Windows.Forms.Keys.A | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            //Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$CodigoAgente' with focus on 'SURA.PC.Emision.Enlatados.txtbox_CodigoAgente'.", repo.SURA.PC.Emision.Enlatados.txtbox_CodigoAgenteInfo, new RecordItemIndex(2));
-            repo.SURA.PC.Emision.Enlatados.txtbox_CodigoAgente.PressKeys(CodigoAgente);
-            Delay.Milliseconds(0);
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$CodigoAgente' with focus on 'SURA.PC.Emision.Enlatados.txtbox_CodigoAgente'.", repo.SURA.PC.Emision.Enlatados.txtbox_CodigoAgenteInfo, new RecordItemIndex(2));
+            //repo.SURA.PC.Emision.Enlatados.txtbox_CodigoAgente.PressKeys(CodigoAgente);
+            //Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.PC.Emision.PolizaMotor.SolicitudDePolizaNueva.lbl_SolicitudesDePolizaNuevas' at Center.", repo.SURA.PC.Emision.PolizaMotor.SolicitudDePolizaNueva.lbl_SolicitudesDePolizaNuevasInfo, new RecordItemIndex(3));
-            repo.SURA.PC.Emision.PolizaMotor.SolicitudDePolizaNueva.lbl_SolicitudesDePolizaNuevas.Click();
-            Delay.Milliseconds(0);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.PC.Emision.PolizaMotor.SolicitudDePolizaNueva.lbl_SolicitudesDePolizaNuevas' at Center.", repo.SURA.PC.Emision.PolizaMotor.SolicitudDePolizaNueva.lbl_SolicitudesDePolizaNuevasInfo, new RecordItemIndex(3));
+            //repo.SURA.PC.Emision.PolizaMotor.SolicitudDePolizaNueva.lbl_SolicitudesDePolizaNuevas.Click();
+            //Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s to not exist. Associated repository item: 'SURA.PC.Emision.Enlatados.Copy_of_txtbox_CodigoAgente'", repo.SURA.PC.Emision.Enlatados.Copy_of_txtbox_CodigoAgenteInfo, new ActionTimeout(10000), new RecordItemIndex(4));
-            repo.SURA.PC.Emision.Enlatados.Copy_of_txtbox_CodigoAgenteInfo.WaitForNotExists(10000);
+            //Report.Log(ReportLevel.Info, "Wait", "Waiting 10s to not exist. Associated repository item: 'SURA.PC.Emision.Enlatados.Copy_of_txtbox_CodigoAgente'", repo.SURA.PC.Emision.Enlatados.Copy_of_txtbox_CodigoAgenteInfo, new ActionTimeout(10000), new RecordItemIndex(4));
+            //repo.SURA.PC.Emision.Enlatados.Copy_of_txtbox_CodigoAgenteInfo.WaitForNotExists(10000);
             
             Report.Screenshot(ReportLevel.Info, "User", "", repo.SURA.Self, false, new RecordItemIndex(5));
             

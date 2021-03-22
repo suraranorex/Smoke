@@ -621,7 +621,7 @@ mode="Global">
 		<keysequenceitem
 		KeySequence="{LControlKey down}{Akey}{LControlKey up}"
 		duration="20ms"
-		enabled="True"
+		enabled="False"
 		optional="False"
 		presstime="20ms"
 		searchpropertyid="c580e610-0456-43df-826c-a715eb1dc9ba">
@@ -640,7 +640,7 @@ mode="Global">
 		<keysequenceitem
 		KeySequence="yourtext"
 		duration="20ms"
-		enabled="True"
+		enabled="False"
 		optional="False"
 		presstime="20ms"
 		searchpropertyid="c0692de1-9259-4b94-bd83-8e07ae39712b">
@@ -812,7 +812,7 @@ mode="Global">
 		action="Click"
 		button="Left"
 		duration="300ms"
-		enabled="True"
+		enabled="False"
 		loc="UpperRight"
 		movetime="300ms"
 		optional="False"
@@ -892,7 +892,7 @@ mode="Global">
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
-		enabled="True"
+		enabled="False"
 		optional="False"
 		searchpropertyid="3d28503f-4b0c-4e50-b042-962aa448e620"
 		waitaction="NotExists"

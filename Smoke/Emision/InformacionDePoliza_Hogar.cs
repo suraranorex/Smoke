@@ -112,45 +112,47 @@ namespace Smoke.Emision
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Value to '(null)' on item 'SURA.PC.Emision.Generales.InformacionDePoliza.list_MetodoDePago'.", repo.SURA.PC.Emision.Generales.InformacionDePoliza.list_MetodoDePagoInfo, new RecordItemIndex(0));
-            repo.SURA.PC.Emision.Generales.InformacionDePoliza.list_MetodoDePago.Element.SetAttributeValue("Value", null);
+            Report.Log(ReportLevel.Info, "User", MetodoDePago, new RecordItemIndex(0));
+            
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Value to '' on item 'SURA.PC.Emision.Generales.InformacionDePoliza.list_MetodoDePago'.", repo.SURA.PC.Emision.Generales.InformacionDePoliza.list_MetodoDePagoInfo, new RecordItemIndex(1));
+            repo.SURA.PC.Emision.Generales.InformacionDePoliza.list_MetodoDePago.Element.SetAttributeValue("Value", "");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$MetodoDePago' with focus on 'SURA.PC.Emision.Generales.InformacionDePoliza.list_MetodoDePago'.", repo.SURA.PC.Emision.Generales.InformacionDePoliza.list_MetodoDePagoInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$MetodoDePago' with focus on 'SURA.PC.Emision.Generales.InformacionDePoliza.list_MetodoDePago'.", repo.SURA.PC.Emision.Generales.InformacionDePoliza.list_MetodoDePagoInfo, new RecordItemIndex(2));
             repo.SURA.PC.Emision.Generales.InformacionDePoliza.list_MetodoDePago.PressKeys(MetodoDePago);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.PC.Emision.Generales.InformacionDePoliza.Pantalla' at UpperRight.", repo.SURA.PC.Emision.Generales.InformacionDePoliza.PantallaInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.PC.Emision.Generales.InformacionDePoliza.Pantalla' at UpperRight.", repo.SURA.PC.Emision.Generales.InformacionDePoliza.PantallaInfo, new RecordItemIndex(3));
             repo.SURA.PC.Emision.Generales.InformacionDePoliza.Pantalla.Click(Location.UpperRight);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s to not exist. Associated repository item: 'SURA.PC.Emision.Generales.InformacionDePoliza.Copy_of_list_MetodoDePago'", repo.SURA.PC.Emision.Generales.InformacionDePoliza.Copy_of_list_MetodoDePagoInfo, new ActionTimeout(10000), new RecordItemIndex(3));
-            repo.SURA.PC.Emision.Generales.InformacionDePoliza.Copy_of_list_MetodoDePagoInfo.WaitForNotExists(10000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'SURA.PC.Emision.Generales.InformacionDePoliza.Copy_of_list_MetodoDePago'", repo.SURA.PC.Emision.Generales.InformacionDePoliza.Copy_of_list_MetodoDePagoInfo, new ActionTimeout(30000), new RecordItemIndex(4));
+            repo.SURA.PC.Emision.Generales.InformacionDePoliza.Copy_of_list_MetodoDePagoInfo.WaitForNotExists(30000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.PC.Emision.Generales.InformacionDePoliza.Pantalla' at UpperRight.", repo.SURA.PC.Emision.Generales.InformacionDePoliza.PantallaInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.PC.Emision.Generales.InformacionDePoliza.Pantalla' at UpperRight.", repo.SURA.PC.Emision.Generales.InformacionDePoliza.PantallaInfo, new RecordItemIndex(5));
             repo.SURA.PC.Emision.Generales.InformacionDePoliza.Pantalla.Click(Location.UpperRight);
             Delay.Milliseconds(0);
             
             // Nota: se comentarion los siguiente Items y se pasaron a los IF de Cuotas y al Continue
-            Report.Log(ReportLevel.Info, "Section", "Nota: se comentarion los siguiente Items y se pasaron a los IF de Cuotas y al Continue", new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Section", "Nota: se comentarion los siguiente Items y se pasaron a los IF de Cuotas y al Continue", new RecordItemIndex(6));
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.PC.Emision.Generales.InformacionDePoliza.rb_PagoCuotas' at Center.", repo.SURA.PC.Emision.Generales.InformacionDePoliza.rb_PagoCuotasInfo, new RecordItemIndex(6));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.PC.Emision.Generales.InformacionDePoliza.rb_PagoCuotas' at Center.", repo.SURA.PC.Emision.Generales.InformacionDePoliza.rb_PagoCuotasInfo, new RecordItemIndex(7));
             //repo.SURA.PC.Emision.Generales.InformacionDePoliza.rb_PagoCuotas.Click();
             //Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Wait", "Waiting 4s to exist. Associated repository item: 'SURA.PC.Emision.Generales.InformacionDePoliza.option_Pago'", repo.SURA.PC.Emision.Generales.InformacionDePoliza.option_PagoInfo, new ActionTimeout(4000), new RecordItemIndex(7));
+            //Report.Log(ReportLevel.Info, "Wait", "Waiting 4s to exist. Associated repository item: 'SURA.PC.Emision.Generales.InformacionDePoliza.option_Pago'", repo.SURA.PC.Emision.Generales.InformacionDePoliza.option_PagoInfo, new ActionTimeout(4000), new RecordItemIndex(8));
             //repo.SURA.PC.Emision.Generales.InformacionDePoliza.option_PagoInfo.WaitForExists(4000);
             
-            //Report.Screenshot(ReportLevel.Info, "User", "", repo.SURA.Self, false, new RecordItemIndex(8));
+            //Report.Screenshot(ReportLevel.Info, "User", "", repo.SURA.Self, false, new RecordItemIndex(9));
             
-            //Report.Log(ReportLevel.Info, "Delay", "Waiting for 1.5s.", new RecordItemIndex(9));
+            //Report.Log(ReportLevel.Info, "Delay", "Waiting for 1.5s.", new RecordItemIndex(10));
             //Delay.Duration(1500, false);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.bttn_Siguiente' at Center.", repo.SURA.bttn_SiguienteInfo, new RecordItemIndex(10));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.bttn_Siguiente' at Center.", repo.SURA.bttn_SiguienteInfo, new RecordItemIndex(11));
             //repo.SURA.bttn_Siguiente.Click();
             //Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Vivienda') on item 'SURA.txt_Vivienda'.", repo.SURA.txt_ViviendaInfo, new RecordItemIndex(11));
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Vivienda') on item 'SURA.txt_Vivienda'.", repo.SURA.txt_ViviendaInfo, new RecordItemIndex(12));
             //Validate.AttributeEqual(repo.SURA.txt_ViviendaInfo, "InnerText", "Vivienda");
             //Delay.Milliseconds(100);
             

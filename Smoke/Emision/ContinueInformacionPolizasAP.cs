@@ -20,51 +20,38 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace Smoke.Menu
+namespace Smoke.Emision
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The MenuSuperior_CuentaPC recording.
+    ///The ContinueInformacionPolizasAP recording.
     /// </summary>
-    [TestModule("680bec08-ad12-473f-b1f0-c2c9f8ca50ba", ModuleType.Recording, 1)]
-    public partial class MenuSuperior_CuentaPC : ITestModule
+    [TestModule("a5e2d546-fa1e-4bcb-9f9b-a7895885727c", ModuleType.Recording, 1)]
+    public partial class ContinueInformacionPolizasAP : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::Smoke.SmokeRepository repository.
         /// </summary>
         public static global::Smoke.SmokeRepository repo = global::Smoke.SmokeRepository.Instance;
 
-        static MenuSuperior_CuentaPC instance = new MenuSuperior_CuentaPC();
+        static ContinueInformacionPolizasAP instance = new ContinueInformacionPolizasAP();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public MenuSuperior_CuentaPC()
+        public ContinueInformacionPolizasAP()
         {
-            NroCuenta = "1526561558";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static MenuSuperior_CuentaPC Instance
+        public static ContinueInformacionPolizasAP Instance
         {
             get { return instance; }
         }
 
 #region Variables
-
-        string _NroCuenta;
-
-        /// <summary>
-        /// Gets or sets the value of variable NroCuenta.
-        /// </summary>
-        [TestVariable("bef427af-0a61-47ab-a8b3-88a7d1b11bc4")]
-        public string NroCuenta
-        {
-            get { return _NroCuenta; }
-            set { _NroCuenta = value; }
-        }
 
         /// <summary>
         /// Gets or sets the value of variable Ambiente.
@@ -102,22 +89,18 @@ namespace Smoke.Menu
 
             Init();
 
-            Report.Log(ReportLevel.Info, "User", NroCuenta, new RecordItemIndex(0));
+            Report.Screenshot(ReportLevel.Info, "User", "", repo.SURA.Self, false, new RecordItemIndex(0));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.bttn_Cuenta' at CenterRight.", repo.SURA.bttn_CuentaInfo, new RecordItemIndex(1));
-            repo.SURA.bttn_Cuenta.Click(Location.CenterRight);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'SURA.bttn_Siguiente' at 48;4.", repo.SURA.bttn_SiguienteInfo, new RecordItemIndex(1));
+            repo.SURA.bttn_Siguiente.MoveTo("48;4");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute TagValue to '$NroCuenta' on item 'SURA.txtbox_MenuNroCuenta'.", repo.SURA.txtbox_MenuNroCuentaInfo, new RecordItemIndex(2));
-            repo.SURA.txtbox_MenuNroCuenta.Element.SetAttributeValue("TagValue", NroCuenta);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.bttn_Siguiente' at Center.", repo.SURA.bttn_SiguienteInfo, new RecordItemIndex(2));
+            repo.SURA.bttn_Siguiente.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}' with focus on 'SURA.txtbox_MenuNroCuenta'.", repo.SURA.txtbox_MenuNroCuentaInfo, new RecordItemIndex(3));
-            repo.SURA.txtbox_MenuNroCuenta.PressKeys("{Return}");
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SURA.lbl_VerificarMS'", repo.SURA.lbl_VerificarMSInfo, new ActionTimeout(30000), new RecordItemIndex(4));
-            repo.SURA.lbl_VerificarMSInfo.WaitForExists(30000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SURA.txt_Producto'", repo.SURA.txt_ProductoInfo, new ActionTimeout(30000), new RecordItemIndex(3));
+            repo.SURA.txt_ProductoInfo.WaitForExists(30000);
             
         }
 

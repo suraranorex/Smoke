@@ -33,7 +33,7 @@ mode="Global">
 		action="Click"
 		button="Left"
 		duration="300ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -57,7 +57,7 @@ mode="Global">
 		action="Press"
 		data="A, Control"
 		duration="20ms"
-		enabled="True"
+		enabled="False"
 		numLock="False"
 		optional="False"
 		presstime="20ms"
@@ -79,7 +79,7 @@ mode="Global">
 		<keysequenceitem
 		KeySequence="yourtext"
 		duration="20ms"
-		enabled="True"
+		enabled="False"
 		optional="False"
 		presstime="20ms"
 		searchpropertyid="818e3c41-a280-452c-957c-885e25149ccf">
@@ -157,7 +157,7 @@ mode="Global">
 		action="Click"
 		button="Left"
 		duration="300ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -227,7 +227,7 @@ mode="Global">
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
-		enabled="True"
+		enabled="False"
 		optional="False"
 		searchpropertyid="54ed1470-8024-48cc-b662-e2fe7a6f958f"
 		waitaction="NotExists"

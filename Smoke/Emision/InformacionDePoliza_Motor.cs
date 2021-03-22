@@ -194,20 +194,20 @@ namespace Smoke.Emision
             Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'SURA.PC.Emision.PolizaMotor.InformacionDePoliza.Copy_of_txt_TipoPlazo'", repo.SURA.PC.Emision.PolizaMotor.InformacionDePoliza.Copy_of_txt_TipoPlazoInfo, new ActionTimeout(30000), new RecordItemIndex(9));
             repo.SURA.PC.Emision.PolizaMotor.InformacionDePoliza.Copy_of_txt_TipoPlazoInfo.WaitForNotExists(30000);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LControlKey down}{Akey}{LControlKey up}' with focus on 'SURA.PC.Emision.PolizaMotor.InformacionDePoliza.txt_Fecha_Inicio'.", repo.SURA.PC.Emision.PolizaMotor.InformacionDePoliza.txt_Fecha_InicioInfo, new RecordItemIndex(10));
-            repo.SURA.PC.Emision.PolizaMotor.InformacionDePoliza.txt_Fecha_Inicio.PressKeys("{LControlKey down}{Akey}{LControlKey up}");
-            Delay.Milliseconds(0);
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LControlKey down}{Akey}{LControlKey up}' with focus on 'SURA.PC.Emision.PolizaMotor.InformacionDePoliza.txt_Fecha_Inicio'.", repo.SURA.PC.Emision.PolizaMotor.InformacionDePoliza.txt_Fecha_InicioInfo, new RecordItemIndex(10));
+            //repo.SURA.PC.Emision.PolizaMotor.InformacionDePoliza.txt_Fecha_Inicio.PressKeys("{LControlKey down}{Akey}{LControlKey up}");
+            //Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$FechaInicio' with focus on 'SURA.PC.Emision.PolizaMotor.InformacionDePoliza.txt_Fecha_Inicio'.", repo.SURA.PC.Emision.PolizaMotor.InformacionDePoliza.txt_Fecha_InicioInfo, new RecordItemIndex(11));
-            repo.SURA.PC.Emision.PolizaMotor.InformacionDePoliza.txt_Fecha_Inicio.PressKeys(FechaInicio);
-            Delay.Milliseconds(0);
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$FechaInicio' with focus on 'SURA.PC.Emision.PolizaMotor.InformacionDePoliza.txt_Fecha_Inicio'.", repo.SURA.PC.Emision.PolizaMotor.InformacionDePoliza.txt_Fecha_InicioInfo, new RecordItemIndex(11));
+            //repo.SURA.PC.Emision.PolizaMotor.InformacionDePoliza.txt_Fecha_Inicio.PressKeys(FechaInicio);
+            //Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.Lbl_DetallesDeLaPoliza' at UpperRight.", repo.SURA.Lbl_DetallesDeLaPolizaInfo, new RecordItemIndex(12));
-            repo.SURA.Lbl_DetallesDeLaPoliza.Click(Location.UpperRight);
-            Delay.Milliseconds(0);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.Lbl_DetallesDeLaPoliza' at UpperRight.", repo.SURA.Lbl_DetallesDeLaPolizaInfo, new RecordItemIndex(12));
+            //repo.SURA.Lbl_DetallesDeLaPoliza.Click(Location.UpperRight);
+            //Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'SURA.PC.Emision.PolizaMotor.InformacionDePoliza.Copy_of_txt_Fecha_Inicio'", repo.SURA.PC.Emision.PolizaMotor.InformacionDePoliza.Copy_of_txt_Fecha_InicioInfo, new ActionTimeout(30000), new RecordItemIndex(13));
-            repo.SURA.PC.Emision.PolizaMotor.InformacionDePoliza.Copy_of_txt_Fecha_InicioInfo.WaitForNotExists(30000);
+            //Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'SURA.PC.Emision.PolizaMotor.InformacionDePoliza.Copy_of_txt_Fecha_Inicio'", repo.SURA.PC.Emision.PolizaMotor.InformacionDePoliza.Copy_of_txt_Fecha_InicioInfo, new ActionTimeout(30000), new RecordItemIndex(13));
+            //repo.SURA.PC.Emision.PolizaMotor.InformacionDePoliza.Copy_of_txt_Fecha_InicioInfo.WaitForNotExists(30000);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.PC.Emision.Generales.InformacionDePoliza.list_MetodoDePago' at Center.", repo.SURA.PC.Emision.Generales.InformacionDePoliza.list_MetodoDePagoInfo, new RecordItemIndex(14));
             repo.SURA.PC.Emision.Generales.InformacionDePoliza.list_MetodoDePago.Click();

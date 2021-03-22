@@ -637,7 +637,7 @@ b7t/30aAFz7H8qM+x/Kk2+7f99Gjb7t/30aAFz7H8qM+x/Kk2+7f99Gjb7t/30aAFz7H8qM+x/Kk
 			</info>
 		</WaitForRecordItem>
 		<explicitdelayitem
-		duration="6000ms"
+		duration="3000ms"
 		enabled="True"
 		optional="False">
 			<comment>
@@ -1954,7 +1954,7 @@ UUUAFFFFABRRRQAUUUUAFFFFAH//2Q==
 		action="Click"
 		button="Left"
 		duration="300ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -2058,7 +2058,7 @@ BRRQAYFGBRRQAYFGBRRQAYFGBRRQAYFFFFAH/9k=
 			</helperscreenshot>
 		</mouseitem>
 		<WaitForRecordItem
-		enabled="True"
+		enabled="False"
 		optional="False"
 		searchpropertyid="11fc5ad6-ab3d-4ca4-96f6-f22cc9f266a7"
 		waitaction="Exists"
@@ -2078,7 +2078,7 @@ BRRQAYFGBRRQAYFGBRRQAYFGBRRQAYFFFFAH/9k=
 		<keysequenceitem
 		KeySequence="{LControlKey down}{Akey}{LControlKey up}"
 		duration="20ms"
-		enabled="True"
+		enabled="False"
 		optional="False"
 		presstime="20ms"
 		searchpropertyid="14fcf1cf-551f-47a9-b5c1-defd10fce797">
@@ -2097,7 +2097,7 @@ BRRQAYFGBRRQAYFGBRRQAYFGBRRQAYFFFFAH/9k=
 		<keysequenceitem
 		KeySequence=""
 		duration="20ms"
-		enabled="True"
+		enabled="False"
 		optional="False"
 		presstime="20ms"
 		searchpropertyid="b39c91a5-247f-4823-b553-562fb772a4de">
@@ -2142,7 +2142,7 @@ BRRQAYFGBRRQAYFGBRRQAYFGBRRQAYFFFFAH/9k=
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
-		enabled="True"
+		enabled="False"
 		optional="False"
 		searchpropertyid="e2f2f747-12c7-49f6-8e32-ac095cf198cd"
 		waitaction="NotExists"
@@ -3236,7 +3236,7 @@ fuj6UtIAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigApD2+opaQ9vqKYH//2Q==
 			</helperscreenshot>
 		</mouseitem>
 		<explicitdelayitem
-		duration="8000ms"
+		duration="6000ms"
 		enabled="True"
 		optional="False">
 			<comment>

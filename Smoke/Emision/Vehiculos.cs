@@ -158,18 +158,6 @@ namespace Smoke.Emision
             set { _Chasis = value; }
         }
 
-        string _Producto;
-
-        /// <summary>
-        /// Gets or sets the value of variable Producto.
-        /// </summary>
-        [TestVariable("3769fc9c-6a52-4f96-8f50-ca462fd65275")]
-        public string Producto
-        {
-            get { return _Producto; }
-            set { _Producto = value; }
-        }
-
         /// <summary>
         /// Gets or sets the value of variable Ambiente.
         /// </summary>
@@ -178,6 +166,16 @@ namespace Smoke.Emision
         {
             get { return repo.Ambiente; }
             set { repo.Ambiente = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable Producto.
+        /// </summary>
+        [TestVariable("3769fc9c-6a52-4f96-8f50-ca462fd65275")]
+        public string Producto
+        {
+            get { return repo.Producto; }
+            set { repo.Producto = value; }
         }
 
 #endregion

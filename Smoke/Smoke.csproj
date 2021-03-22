@@ -198,6 +198,30 @@
       <UserCode>true</UserCode>
       <id>83bcbabe-d5ac-46aa-89de-691c4a4fcc43</id>
     </Compile>
+    <Compile Include="Emision\Coberturas_HogarNoEnlatado.cs">
+      <BoundTo>36deda12-2651-49f1-b0c7-9c984095a971</BoundTo>
+      <DependentUpon>Coberturas_HogarNoEnlatado.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>81349ac9-234f-463c-8b5d-e81f9bd52cf0</id>
+    </Compile>
+    <Compile Include="Emision\Coberturas_HogarNoEnlatado.UserCode.cs">
+      <BoundTo>36deda12-2651-49f1-b0c7-9c984095a971</BoundTo>
+      <DependentUpon>Coberturas_HogarNoEnlatado.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>31d51f8d-e670-4599-8ba1-7481c0fccfba</id>
+    </Compile>
+    <Compile Include="Emision\Coberturas_NoEnlatado.cs">
+      <BoundTo>780af516-57fb-47bf-8c95-05194e1ebcf8</BoundTo>
+      <DependentUpon>Coberturas_NoEnlatado.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>043b4bf3-9db7-494a-b300-2ad9fee666fd</id>
+    </Compile>
+    <Compile Include="Emision\Coberturas_NoEnlatado.UserCode.cs">
+      <BoundTo>780af516-57fb-47bf-8c95-05194e1ebcf8</BoundTo>
+      <DependentUpon>Coberturas_NoEnlatado.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7de30168-712e-4ca9-b7e4-209a9b4ef465</id>
+    </Compile>
     <Compile Include="Emision\Comisiones.cs">
       <BoundTo>3fcec59a-bc8e-48dd-bf34-0155cec330ef</BoundTo>
       <DependentUpon>Comisiones.rxrec</DependentUpon>
@@ -234,6 +258,30 @@
       <UserCode>true</UserCode>
       <id>4a28c3a4-f107-45c3-bce8-955dc7e0dbde</id>
     </Compile>
+    <Compile Include="Emision\ContinueInformacionPolizaHogar.cs">
+      <BoundTo>5deb2422-fd21-42c7-aaf7-26f77efeaf64</BoundTo>
+      <DependentUpon>ContinueInformacionPolizaHogar.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>04179857-e939-41ef-8d18-8a8b560d94ce</id>
+    </Compile>
+    <Compile Include="Emision\ContinueInformacionPolizaHogar.UserCode.cs">
+      <BoundTo>5deb2422-fd21-42c7-aaf7-26f77efeaf64</BoundTo>
+      <DependentUpon>ContinueInformacionPolizaHogar.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8b7528f5-b9f6-41d7-9bd0-92b23f57868a</id>
+    </Compile>
+    <Compile Include="Emision\ContinueInformacionPolizasAP.cs">
+      <BoundTo>e595182e-6be7-4a37-8833-6cc98c1308e5</BoundTo>
+      <DependentUpon>ContinueInformacionPolizasAP.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f7026792-32d2-4ac7-9a5e-5f7ea225da54</id>
+    </Compile>
+    <Compile Include="Emision\ContinueInformacionPolizasAP.UserCode.cs">
+      <BoundTo>e595182e-6be7-4a37-8833-6cc98c1308e5</BoundTo>
+      <DependentUpon>ContinueInformacionPolizasAP.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7f19b78b-b066-4a17-b64a-26939c3126ac</id>
+    </Compile>
     <Compile Include="Emision\ContinueInformacionPolizaToVeh.cs">
       <BoundTo>0586c82e-abc9-41ce-9f76-b085d37b8715</BoundTo>
       <DependentUpon>ContinueInformacionPolizaToVeh.rxrec</DependentUpon>
@@ -258,6 +306,18 @@
       <UserCode>true</UserCode>
       <id>bdb73a08-6b2a-4727-b828-c45651bdb153</id>
     </Compile>
+    <Compile Include="Emision\Detalle_Hogar.cs">
+      <BoundTo>a88231b2-3d26-4c42-a003-c0724e1b3df9</BoundTo>
+      <DependentUpon>Detalle_Hogar.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>56a3cc37-9bc0-4556-9efb-08da088145e0</id>
+    </Compile>
+    <Compile Include="Emision\Detalle_Hogar.UserCode.cs">
+      <BoundTo>a88231b2-3d26-4c42-a003-c0724e1b3df9</BoundTo>
+      <DependentUpon>Detalle_Hogar.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9a1dbef3-d8cc-4476-bf1b-e8c9a08f7f65</id>
+    </Compile>
     <Compile Include="Emision\EmisionPoliza.cs">
       <BoundTo>f3a62789-7345-49d0-9fc5-63bfbf4a2413</BoundTo>
       <DependentUpon>EmisionPoliza.rxrec</DependentUpon>
@@ -269,6 +329,30 @@
       <DependentUpon>EmisionPoliza.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>1728b19f-fc73-425e-ba85-964c47936d1b</id>
+    </Compile>
+    <Compile Include="Emision\EmitirHogarNoEnlatado.cs">
+      <BoundTo>c78e0d38-ac6e-4ce3-af4e-7eea73188945</BoundTo>
+      <DependentUpon>EmitirHogarNoEnlatado.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b3c21ae0-0bb3-4cff-9fa1-056e571fe549</id>
+    </Compile>
+    <Compile Include="Emision\EmitirHogarNoEnlatado.UserCode.cs">
+      <BoundTo>c78e0d38-ac6e-4ce3-af4e-7eea73188945</BoundTo>
+      <DependentUpon>EmitirHogarNoEnlatado.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2e956b4b-bb5b-401c-b261-550843bd3610</id>
+    </Compile>
+    <Compile Include="Emision\InformacionDePoliza_AP.cs">
+      <BoundTo>67a1362f-33a0-4542-966a-54dc61952786</BoundTo>
+      <DependentUpon>InformacionDePoliza_AP.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>cbf56a29-5738-48ca-ac11-0603f58a44c0</id>
+    </Compile>
+    <Compile Include="Emision\InformacionDePoliza_AP.UserCode.cs">
+      <BoundTo>67a1362f-33a0-4542-966a-54dc61952786</BoundTo>
+      <DependentUpon>InformacionDePoliza_AP.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d8839ab2-00c6-48dd-97be-a76688f4e886</id>
     </Compile>
     <Compile Include="Emision\InformacionDePoliza_Hogar.cs">
       <BoundTo>c5ff41ad-0368-4a70-adf8-1fe2cc2aae45</BoundTo>
@@ -294,6 +378,18 @@
       <UserCode>true</UserCode>
       <id>55dcf928-0e07-4d21-8c1e-02132abedf41</id>
     </Compile>
+    <Compile Include="Emision\NuevaPolizaAP.cs">
+      <BoundTo>cdf3df15-050c-4a71-95c5-ca95434263b6</BoundTo>
+      <DependentUpon>NuevaPolizaAP.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5af08602-87c5-4bd3-b183-13a100ed1e2e</id>
+    </Compile>
+    <Compile Include="Emision\NuevaPolizaAP.UserCode.cs">
+      <BoundTo>cdf3df15-050c-4a71-95c5-ca95434263b6</BoundTo>
+      <DependentUpon>NuevaPolizaAP.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>261a56e4-cc97-4ec6-888e-3a077db61608</id>
+    </Compile>
     <Compile Include="Emision\NuevaPolizaMotor.cs">
       <BoundTo>7aedb75b-41c1-4c78-8611-21fcea124eac</BoundTo>
       <DependentUpon>NuevaPolizaMotor.rxrec</DependentUpon>
@@ -317,6 +413,30 @@
       <DependentUpon>NuevaPoliza_Hogar.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>d193568e-4c6d-481d-a3e0-6ef8607385b9</id>
+    </Compile>
+    <Compile Include="Emision\Personas.cs">
+      <BoundTo>2f82ddd9-225d-4525-a52b-dafaa2ead377</BoundTo>
+      <DependentUpon>Personas.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0d43f13f-e2f4-49ca-b47c-9c20213ef8e4</id>
+    </Compile>
+    <Compile Include="Emision\Personas.UserCode.cs">
+      <BoundTo>2f82ddd9-225d-4525-a52b-dafaa2ead377</BoundTo>
+      <DependentUpon>Personas.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0d711a35-cd01-4313-83ce-94ef925f59a4</id>
+    </Compile>
+    <Compile Include="Emision\Producto.cs">
+      <BoundTo>67bd7a30-6940-4e75-8dc9-23e98b9534e7</BoundTo>
+      <DependentUpon>Producto.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e491eb0d-6e34-4061-a73a-dc79264c9175</id>
+    </Compile>
+    <Compile Include="Emision\Producto.UserCode.cs">
+      <BoundTo>67bd7a30-6940-4e75-8dc9-23e98b9534e7</BoundTo>
+      <DependentUpon>Producto.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f10f7498-9b95-46af-b6d4-18484dab5a70</id>
     </Compile>
     <Compile Include="Emision\TarjetaCredito.cs">
       <BoundTo>8f5aaa7e-7398-4179-9431-a558ddafec52</BoundTo>
@@ -506,6 +626,16 @@
       <id>c391f8dc-c707-48ee-9dc8-7c47dd326e3f</id>
       <recordtableid>90304663-d05a-482a-b300-b1ad2bd01b02</recordtableid>
     </None>
+    <None Include="Emision\Coberturas_HogarNoEnlatado.rxrec">
+      <BoundTo>c5d687cb-d4dd-46a0-9b8f-7e2a1374cbe9</BoundTo>
+      <id>36deda12-2651-49f1-b0c7-9c984095a971</id>
+      <recordtableid>c242b6ee-3e16-4af2-9fa9-f8d24b76715e</recordtableid>
+    </None>
+    <None Include="Emision\Coberturas_NoEnlatado.rxrec">
+      <BoundTo>c5d687cb-d4dd-46a0-9b8f-7e2a1374cbe9</BoundTo>
+      <id>780af516-57fb-47bf-8c95-05194e1ebcf8</id>
+      <recordtableid>2112d482-6905-442f-a447-7fb380c195aa</recordtableid>
+    </None>
     <None Include="Emision\Comisiones.rxrec">
       <BoundTo>c5d687cb-d4dd-46a0-9b8f-7e2a1374cbe9</BoundTo>
       <id>3fcec59a-bc8e-48dd-bf34-0155cec330ef</id>
@@ -521,6 +651,16 @@
       <id>2b5418f7-04f6-4c50-92bf-23c21c2c7196</id>
       <recordtableid>67fa1771-089c-4116-b015-9097fe9f883d</recordtableid>
     </None>
+    <None Include="Emision\ContinueInformacionPolizaHogar.rxrec">
+      <BoundTo>c5d687cb-d4dd-46a0-9b8f-7e2a1374cbe9</BoundTo>
+      <id>5deb2422-fd21-42c7-aaf7-26f77efeaf64</id>
+      <recordtableid>5ce97bba-35ca-4e86-9612-4f153df01cb4</recordtableid>
+    </None>
+    <None Include="Emision\ContinueInformacionPolizasAP.rxrec">
+      <BoundTo>c5d687cb-d4dd-46a0-9b8f-7e2a1374cbe9</BoundTo>
+      <id>e595182e-6be7-4a37-8833-6cc98c1308e5</id>
+      <recordtableid>a5e2d546-fa1e-4bcb-9f9b-a7895885727c</recordtableid>
+    </None>
     <None Include="Emision\ContinueInformacionPolizaToVeh.rxrec">
       <BoundTo>c5d687cb-d4dd-46a0-9b8f-7e2a1374cbe9</BoundTo>
       <id>0586c82e-abc9-41ce-9f76-b085d37b8715</id>
@@ -531,10 +671,25 @@
       <id>3b23b2ab-5f80-480d-984d-03f2e3eb0c39</id>
       <recordtableid>35bd9132-9eff-42e1-b87a-da440757bbef</recordtableid>
     </None>
+    <None Include="Emision\Detalle_Hogar.rxrec">
+      <BoundTo>c5d687cb-d4dd-46a0-9b8f-7e2a1374cbe9</BoundTo>
+      <id>a88231b2-3d26-4c42-a003-c0724e1b3df9</id>
+      <recordtableid>beb2fb81-2405-4d61-97ee-c618b0f10fce</recordtableid>
+    </None>
     <None Include="Emision\EmisionPoliza.rxrec">
       <BoundTo>c5d687cb-d4dd-46a0-9b8f-7e2a1374cbe9</BoundTo>
       <id>f3a62789-7345-49d0-9fc5-63bfbf4a2413</id>
       <recordtableid>7979bdeb-98ed-4c76-bddb-41d2b24c528c</recordtableid>
+    </None>
+    <None Include="Emision\EmitirHogarNoEnlatado.rxrec">
+      <BoundTo>c5d687cb-d4dd-46a0-9b8f-7e2a1374cbe9</BoundTo>
+      <id>c78e0d38-ac6e-4ce3-af4e-7eea73188945</id>
+      <recordtableid>1e8a1077-4a29-4e5d-80f7-b42f8077524c</recordtableid>
+    </None>
+    <None Include="Emision\InformacionDePoliza_AP.rxrec">
+      <BoundTo>c5d687cb-d4dd-46a0-9b8f-7e2a1374cbe9</BoundTo>
+      <id>67a1362f-33a0-4542-966a-54dc61952786</id>
+      <recordtableid>cc1afe87-61b1-4f58-935f-37d82a6c0174</recordtableid>
     </None>
     <None Include="Emision\InformacionDePoliza_Hogar.rxrec">
       <BoundTo>c5d687cb-d4dd-46a0-9b8f-7e2a1374cbe9</BoundTo>
@@ -546,6 +701,11 @@
       <id>77098006-5e57-4a37-a418-b1b36c12280d</id>
       <recordtableid>54afdca2-aff3-40f7-a8e1-a66fbaf0dfc1</recordtableid>
     </None>
+    <None Include="Emision\NuevaPolizaAP.rxrec">
+      <BoundTo>c5d687cb-d4dd-46a0-9b8f-7e2a1374cbe9</BoundTo>
+      <id>cdf3df15-050c-4a71-95c5-ca95434263b6</id>
+      <recordtableid>0ca80f71-ed3a-43aa-be6f-bdc7d0bf404d</recordtableid>
+    </None>
     <None Include="Emision\NuevaPolizaMotor.rxrec">
       <BoundTo>c5d687cb-d4dd-46a0-9b8f-7e2a1374cbe9</BoundTo>
       <id>7aedb75b-41c1-4c78-8611-21fcea124eac</id>
@@ -555,6 +715,16 @@
       <BoundTo>c5d687cb-d4dd-46a0-9b8f-7e2a1374cbe9</BoundTo>
       <id>494fec68-5716-4e58-876e-d552e046a6ec</id>
       <recordtableid>ebbdef04-02e1-4cee-8d75-a74113240e09</recordtableid>
+    </None>
+    <None Include="Emision\Personas.rxrec">
+      <BoundTo>c5d687cb-d4dd-46a0-9b8f-7e2a1374cbe9</BoundTo>
+      <id>2f82ddd9-225d-4525-a52b-dafaa2ead377</id>
+      <recordtableid>596a8971-6bab-4374-907f-9449fc8fa35f</recordtableid>
+    </None>
+    <None Include="Emision\Producto.rxrec">
+      <BoundTo>c5d687cb-d4dd-46a0-9b8f-7e2a1374cbe9</BoundTo>
+      <id>67bd7a30-6940-4e75-8dc9-23e98b9534e7</id>
+      <recordtableid>19ada6ca-8aec-4da0-a855-7d93e21bfb16</recordtableid>
     </None>
     <None Include="Emision\TarjetaCredito.rxrec">
       <BoundTo>c5d687cb-d4dd-46a0-9b8f-7e2a1374cbe9</BoundTo>
