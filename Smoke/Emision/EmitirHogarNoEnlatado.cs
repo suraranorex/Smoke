@@ -126,8 +126,8 @@ namespace Smoke.Emision
             repo.SURA.PC.Emision.PolizaHogar.Hogar_NoEnlatado.bttn_Aceptar.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 20s to exist. Associated repository item: 'SURA.PC.Emision.PolizaHogar.Hogar_NoEnlatado.PolizaContratada'", repo.SURA.PC.Emision.PolizaHogar.Hogar_NoEnlatado.PolizaContratadaInfo, new ActionTimeout(20000), new RecordItemIndex(3));
-            repo.SURA.PC.Emision.PolizaHogar.Hogar_NoEnlatado.PolizaContratadaInfo.WaitForExists(20000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 40s to exist. Associated repository item: 'SURA.PC.Emision.PolizaHogar.Hogar_NoEnlatado.PolizaContratada'", repo.SURA.PC.Emision.PolizaHogar.Hogar_NoEnlatado.PolizaContratadaInfo, new ActionTimeout(40000), new RecordItemIndex(3));
+            repo.SURA.PC.Emision.PolizaHogar.Hogar_NoEnlatado.PolizaContratadaInfo.WaitForExists(40000);
             
             //Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(4));
             //Delay.Duration(3000, false);

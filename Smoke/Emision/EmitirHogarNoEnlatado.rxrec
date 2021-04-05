@@ -191,7 +191,7 @@ cOSPYP7MX+81H9mL/eaiijnl3Dkj2D+zF/vNR/Zi/wB5qKKOeXcOSPY//9k=
 		optional="False"
 		searchpropertyid="7e23bb0e-e1f0-4f99-92b7-958f3aca7a3d"
 		waitaction="Exists"
-		waittimeout="20000ms">
+		waittimeout="40000ms">
 			<comment>
 			</comment>
 			<bindings>

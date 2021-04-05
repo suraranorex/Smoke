@@ -565,7 +565,7 @@ namespace Smoke
                 _txt_comisionesdescuentosInfo = new RepoItemInfo(this, "txt_ComisionesDescuentos", ".//div[#'SubmissionWizard/ModifiersSura']//span[@innertext~'Comisiones / Descuentos']", 30000, null, "69e5c2ab-a18a-4a6a-8eb0-76e966f89170");
                 _txt_franquiciaInfo = new RepoItemInfo(this, "txt_Franquicia", ".//label/span[@innertext~'Franquicia']/../..//input", 30000, null, "598d0424-1aef-49be-9407-6df8264cc840");
                 _copy_of_txt_franquiciaInfo = new RepoItemInfo(this, "Copy_of_txt_Franquicia", ".//label/span[@innertext='Franquicia']/../..//input[@data-tabindexsaved='True']", 30000, null, "19be4f46-45c2-443d-a061-c9e64819855c");
-                _bttn_cotizarInfo = new RepoItemInfo(this, "bttn_Cotizar", ".//span[@innertext~'Cotiar']", 30000, null, "757e794f-3509-4816-88bd-64889d714086");
+                _bttn_cotizarInfo = new RepoItemInfo(this, "bttn_Cotizar", ".//*[@innertext~'Cotiar']", 30000, null, "757e794f-3509-4816-88bd-64889d714086");
                 _txt_cotizacionInfo = new RepoItemInfo(this, "txt_Cotizacion", ".//div[#'SubmissionWizard/ViewQuote']//span[@innertext~'Cotización' and @visible='true']", 30000, null, "71071205-0f6b-432b-9081-65495283bf00");
                 _menu_informaciondelpagoInfo = new RepoItemInfo(this, "menu_InformacionDelPago", ".//div[#'westPanel-innerCt']//span[@innertext='Información del Pago']", 30000, null, "8da12793-0803-4df2-8b84-d8afd39a25fa");
                 _bttn_agregarInfo = new RepoItemInfo(this, "bttn_Agregar", ".//span[@innertext~'Agregar']", 30000, null, "41857178-6413-4705-9753-4563360f53c4");
@@ -1876,11 +1876,11 @@ namespace Smoke
             /// The bttn_Cotizar item.
             /// </summary>
             [RepositoryItem("757e794f-3509-4816-88bd-64889d714086")]
-            public virtual Ranorex.SpanTag bttn_Cotizar
+            public virtual Ranorex.Unknown bttn_Cotizar
             {
                 get
                 {
-                    return _bttn_cotizarInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                    return _bttn_cotizarInfo.CreateAdapter<Ranorex.Unknown>(true);
                 }
             }
 

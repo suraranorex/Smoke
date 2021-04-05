@@ -1912,12 +1912,12 @@ name="SmokeRepository">
 			</item>
 			<item
 			addcaps="unknown,webelement,spantag"
-			capname="spantag"
+			capname="unknown"
 			id="757e794f-3509-4816-88bd-64889d714086"
 			name="bttn_Cotizar"
 			refimgid="24a9a774-4568-4ae6-99cd-99eed271f18a"
 			searchtimeout="30000ms">
-				/dom[@domain=$Ambiente]//span[@innertext~'Cotiar']
+				/dom[@domain=$Ambiente]//*[@innertext~'Cotiar']
 			</item>
 			<item
 			addcaps="unknown,webelement,spantag"
