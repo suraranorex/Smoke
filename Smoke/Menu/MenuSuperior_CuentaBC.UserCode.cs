@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace Smoke
+namespace Smoke.Menu
 {
-    public partial class OpenBrowser
+    public partial class MenuSuperior_CuentaBC
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

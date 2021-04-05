@@ -400,15 +400,6 @@ name="SmokeRepository">
 									/dom[@domain=$Ambiente]//div//span[@innertext~'Emitir P&#243;liza']
 								</item>
 								<item
-								addcaps="unknown,webelement,spantag"
-								capname="spantag"
-								id="1e07b0ae-e811-4823-add4-8ebb18379c8b"
-								name="bttn_Aceptar"
-								refimgid="07ae7ff1-2f88-4816-85aa-3411a179dec9"
-								searchtimeout="1000ms">
-									/dom[@domain=$Ambiente]/body//span[@innertext~'Aceptar']
-								</item>
-								<item
 								addcaps="unknown,webelement,divtag"
 								capname="divtag"
 								id="0b555a2e-d526-4045-9709-2f592ebc2ff8"
@@ -443,6 +434,15 @@ name="SmokeRepository">
 								refimgid="200bdcd0-f22c-4083-b53f-c41d6ad47250"
 								searchtimeout="1000ms">
 									/dom[@domain=$Ambiente]/body//table//table//div/div/div//span/span/span[@innertext='Aceptar']
+								</item>
+								<item
+								addcaps="unknown,webelement,spantag"
+								capname="spantag"
+								id="2ef09066-7bb0-4cb2-a677-5be6f0de6e97"
+								name="bttn_Aceptar"
+								refimgid="07ae7ff1-2f88-4816-85aa-3411a179dec9"
+								searchtimeout="0ms">
+									/dom[@domain=$Ambiente]/body//span[@innertext~'Aceptar']
 								</item>
 							</folder>
 							<item
@@ -2695,15 +2695,6 @@ name="SmokeRepository">
 			</item>
 			<item
 			addcaps="unknown,webelement,spantag"
-			capname="spantag"
-			id="0a39753b-d9bc-4aa8-b70f-13cf481c9ef4"
-			name="Copy_of_bttn_Aceptar"
-			refimgid="63ff3650-4238-4036-bfd0-d4b43bedabc7"
-			searchtimeout="0ms">
-				/dom[@domain=$Ambiente]/body//span[@innertext~'Aceptar']
-			</item>
-			<item
-			addcaps="unknown,webelement,spantag"
 			capname="inputtag"
 			id="1fb768a6-7edc-4646-bab1-09214c84ff68"
 			name="txtbox_CodigoAgente"
@@ -3570,6 +3561,297 @@ name="SmokeRepository">
 			searchtimeout="30000ms">
 				/dom[@domain=$Ambiente]//span[@innertext='Validar Documento']
 			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="8377fd75-1e42-4481-84e2-8b4bd92fa4ca"
+			name="bttn_MenuCuentaBC"
+			refimgid="156d3923-deb6-466d-9bea-e364023aa2bd"
+			searchtimeout="30000ms">
+				/dom[@domain=$Ambiente]//span[#'TabBar:AccountsTab-btnWrap']
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="21857b16-a744-4e65-a054-c2aaa642e1a6"
+			name="bttn_Acciones"
+			refimgid="d5381fbd-1dc4-4047-ba51-7d18e4d288de"
+			searchtimeout="30000ms">
+				/dom[@domain=$Ambiente]//a[#'AccountGroup:AccountDetailMenuActions']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="5d8ce604-2543-44b2-8bc7-434a668619b6"
+			name="bttn_PagoNuevo"
+			refimgid="e3fc17f7-05c5-4332-8398-273ef43dfe02"
+			searchtimeout="30000ms">
+				/dom[@domain=$Ambiente]//span[@innertext~'Pago nuevo']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="c59d0f49-88c7-4500-8971-9579d4986a9c"
+			name="bttn_NuevoPago"
+			refimgid="05c83634-de31-4cdd-be5a-0fc99ade41fa"
+			searchtimeout="30000ms">
+				/dom[@domain=$Ambiente]//span[@innertext~'Nuevo pago de factura']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="f4c88bb4-0887-45e6-b51e-c74ef89037dc"
+			name="txt_PagosMedianteFacturacionDirecta"
+			refimgid="6ae347ba-cf51-4f33-90a1-a3eaec345df4"
+			searchtimeout="30000ms">
+				/dom[@domain=$Ambiente]//span[@innertext&gt;'Pagos mediante facturaci&#243;n']
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="c6a146c4-7b26-466e-a3e1-7a05de7604c0"
+			name="Arrow_Select_Poliza"
+			refimgid="daf27671-84c1-4c43-80ef-e8a86eb08d97"
+			searchtimeout="30000ms">
+				/dom[@domain=$Ambiente]//div[#'NewDirectBillPayment/distributionCard']/table//div[@id='NewDirectBillPayment:EditDBPaymentScreen:PaymentDetailsDV:policyNumbers-trigger-picker']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="inputtag"
+			id="25d8e279-dcb3-4d79-a973-4cd4854c58f3"
+			name="txtbox_NumeroDePoliza"
+			refimgid="0e23b56e-b2c2-4015-bcd2-c34fe3f53993"
+			searchtimeout="30000ms">
+				/dom[@domain=$Ambiente]//div[#'NewDirectBillPayment/distributionCard']/table//span[@innertext~'N&#250;mero de P&#243;liza']/../..//input
+			</item>
+			<item
+			addcaps="unknown,webelement,litag"
+			capname="litag"
+			id="a716f631-83bf-4e35-888f-0fe739612019"
+			name="Select_Poliza"
+			refimgid="836d0c9d-82c7-4025-a1e1-902c7817c639"
+			searchtimeout="30000ms">
+				/dom[@domain=$Ambiente]//div[#'NewDirectBillPayment/distributionCard']/table//li[@innertext~$NumPoliza and @visible='True']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="inputtag"
+			id="bada0acc-fcbe-4dac-96b8-8612bc977cca"
+			name="Copy_of_txtbox_Monto"
+			refimgid="04cd1783-6481-402e-8487-6d3639e311a3"
+			searchtimeout="30000ms">
+				/dom[@domain=$Ambiente]//div[#'NewDirectBillPayment/distributionCard']/table//span[@innertext='Monto']/../..//input[@data-tabindexsaved='True']
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="atag"
+			id="791edfc9-6d94-4cab-b52f-54f53dc5fed0"
+			name="montoPagar"
+			refimgid="f371b7e0-ff75-4c48-a2e5-f8131d9ee92b"
+			searchtimeout="0ms">
+				/dom[@domain=$Ambiente]//div[#'NewDirectBillPayment/distributionCard']/table//table[@class~'summary']//a[@innertext~'[0-9]']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="inputtag"
+			id="01e98f90-cb46-42ab-8c06-99f64aa18b59"
+			name="txtbox_Monto"
+			refimgid="343addbc-a104-422a-98ec-341b0b22f8e7"
+			searchtimeout="30000ms">
+				/dom[@domain=$Ambiente]//div[#'NewDirectBillPayment/distributionCard']/table//span[@innertext='Monto']/../..//input
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="3ee9f58f-8a08-41f6-af21-0038d807bb22"
+			name="Copy_of_txtbox_NumAutorizacion"
+			refimgid="c637810b-dfb3-41e1-97dc-0613f1024460"
+			searchtimeout="30000ms">
+				/dom[@domain=$Ambiente]//div[#'NewDirectBillPayment/distributionCard']/table//span[@innertext~'N.&#186; Autorizaci&#243;n' and @data-tabindexsaved='True']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="inputtag"
+			id="b387c583-293a-4e15-8e0f-6ff47ad1d9d1"
+			name="txtbox_NumAutorizacion"
+			refimgid="365dabd7-89c1-4e94-9fb7-786b24611ace"
+			searchtimeout="30000ms">
+				/dom[@domain=$Ambiente]//div[#'NewDirectBillPayment/distributionCard']/table//span[@innertext~'N.&#186; Autorizaci&#243;n']/../..//input
+			</item>
+			<item
+			addcaps="unknown,webelement,labeltag"
+			capname="labeltag"
+			id="6f9cc8bd-7ec2-463a-ba2f-82226da5147a"
+			name="DetallesDePago"
+			refimgid="e2c9e0f2-9093-4200-b852-01a2557c380a"
+			refpath="/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewDirectBillPayment/distributionCard']/table/tbody/tr[4]/td/div/table/tbody/tr/td/div/table/tbody/tr/td[2]/div/table/tbody/tr[1]/td/label[@innertext='Detalles de pago']"
+			searchtimeout="30000ms">
+				/dom[@domain=$Ambiente]//div[#'NewDirectBillPayment/distributionCard']/table/tbody/tr[4]//table//div/table/?/?/tr/td[2]/div/table/tbody/tr[1]/?/?/label[@innertext='Detalles de pago']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="inputtag"
+			id="3371ed2e-3320-419f-afbd-a97318ea1c52"
+			name="Copy_of_txtbox_TipoTarjeta1"
+			refimgid="5d5441a1-f826-448d-9e70-f278c266bc85"
+			searchtimeout="30000ms">
+				/dom[@domain=$Ambiente]//div[#'NewDirectBillPayment/distributionCard']/table//span[@innertext~'Tipo de tarjeta']/../..//input[@data-tabindexsaved='True']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="inputtag"
+			id="4d1e5a38-95dc-4a89-a6fb-771d77f6027d"
+			name="txtbox_TipoTarjeta1"
+			refimgid="74c8a646-5be7-4bd2-8d8e-8036090995f4"
+			searchtimeout="30000ms">
+				/dom[@domain=$Ambiente]//div[#'NewDirectBillPayment/distributionCard']/table//span[@innertext~'Tipo de tarjeta']/../..//input
+			</item>
+			<folder
+			capname="webdocument"
+			id="c4d85095-926a-4ee9-8f0d-fc0161e60a78"
+			isrooted="False"
+			name="BC"
+			searchtimeout="0ms">
+				<folder
+				capname="table"
+				id="c5e16470-096b-4342-be8a-45cc53faf44d"
+				isrooted="True"
+				name="NuevoPago"
+				searchtimeout="30000ms"
+				usecache="False">
+					<item
+					addcaps="unknown,webelement,divtag"
+					capname="divtag"
+					id="acc6806a-1b8b-44cd-a747-49e2ea2ba938"
+					name="Arrow_Select_Poliza"
+					refimgid="49fc95bf-31e7-4415-bbd2-ed487d9e3d8b"
+					searchtimeout="30000ms">
+						/dom[@domain=$Ambiente]//div[#'NewDirectBillPayment/distributionCard']/table//div[@id='NewDirectBillPayment:EditDBPaymentScreen:PaymentDetailsDV:policyNumbers-trigger-picker']
+					</item>
+					<item
+					addcaps="unknown,webelement,spantag"
+					capname="inputtag"
+					id="fa318d39-9877-48ab-b74b-0421a15ec5d2"
+					name="txtbox_NumeroDePoliza"
+					refimgid="27555daa-d3d1-4c99-8f35-a4cffcf54589"
+					searchtimeout="30000ms">
+						/dom[@domain=$Ambiente]//div[#'NewDirectBillPayment/distributionCard']/table//span[@innertext~'N&#250;mero de P&#243;liza']/../..//input
+					</item>
+					<item
+					addcaps="unknown,webelement,litag"
+					capname="litag"
+					id="84acf33f-524c-4451-84d5-690744856e43"
+					name="Select_Poliza"
+					refimgid="70328dd0-b5d8-441c-bfde-27dbfa78e0e5"
+					searchtimeout="30000ms">
+						/dom[@domain=$Ambiente]//div[#'NewDirectBillPayment/distributionCard']/table//li[@innertext~$NumPoliza and @visible='True']
+					</item>
+					<item
+					addcaps="unknown,webelement,spantag"
+					capname="inputtag"
+					id="181e1ed5-3fb9-4645-9b9f-5ddb68a14340"
+					name="Copy_of_txtbox_Monto"
+					refimgid="24faf3ab-f9b4-4630-a037-2ae1ee51244b"
+					searchtimeout="30000ms">
+						/dom[@domain=$Ambiente]//div[#'NewDirectBillPayment/distributionCard']/table//span[@innertext='Monto']/../..//input[@data-tabindexsaved='True']
+					</item>
+					<item
+					addcaps="unknown,webelement,spantag"
+					capname="inputtag"
+					id="0d8684e5-c0bf-4ef7-8a29-faed842bb112"
+					name="txtbox_Monto"
+					refimgid="e3b1a8db-35b0-43da-a4cd-0c41e01eb76f"
+					searchtimeout="30000ms">
+						/dom[@domain=$Ambiente]//div[#'NewDirectBillPayment/distributionCard']/table//span[@innertext='Monto']/../..//input
+					</item>
+					<item
+					addcaps="unknown,webelement,spantag"
+					capname="spantag"
+					id="14dd85a4-f7b7-4ad1-bb0d-bda7ec241ccb"
+					name="Copy_of_txtbox_NumAutorizacion"
+					refimgid="0864c859-88f4-46e0-8f8f-d7172dfb6eee"
+					searchtimeout="30000ms">
+						/dom[@domain=$Ambiente]//div[#'NewDirectBillPayment/distributionCard']/table//span[@innertext~'N.&#186; Autorizaci&#243;n' and @data-tabindexsaved='True']
+					</item>
+					<item
+					addcaps="unknown,webelement,spantag"
+					capname="inputtag"
+					id="8bbcdf4e-0d5f-4c35-a283-fac658ef6b1d"
+					name="txtbox_NumAutorizacion"
+					refimgid="7d1bb29d-8eec-472d-bc34-ceb15e1b5508"
+					searchtimeout="30000ms">
+						/dom[@domain=$Ambiente]//div[#'NewDirectBillPayment/distributionCard']/table//span[@innertext~'N.&#186; Autorizaci&#243;n']/../..//input
+					</item>
+					<item
+					addcaps="unknown,webelement,labeltag"
+					capname="labeltag"
+					id="d08014bb-58dc-4304-af5b-61d9f9b25a47"
+					name="DetallesDePago"
+					refimgid="0ef3b1e7-388e-42ac-8d9f-0a0819831fdb"
+					refpath="/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewDirectBillPayment/distributionCard']/table/tbody/tr[4]/td/div/table/tbody/tr/td/div/table/tbody/tr/td[2]/div/table/tbody/tr[1]/td/label[@innertext='Detalles de pago']"
+					searchtimeout="30000ms">
+						/dom[@domain=$Ambiente]//div[#'NewDirectBillPayment/distributionCard']/table/tbody/tr[4]//table//div/table/?/?/tr/td[2]/div/table/tbody/tr[1]/?/?/label[@innertext='Detalles de pago']
+					</item>
+					<item
+					addcaps="unknown,webelement,spantag"
+					capname="inputtag"
+					id="78ec7472-eeba-4b73-9229-401baf0973fe"
+					name="Copy_of_txtbox_TipoTarjeta"
+					refimgid="0a7a9714-fec7-40fc-ba32-482943d3bbe8"
+					searchtimeout="30000ms">
+						/dom[@domain=$Ambiente]//div[#'NewDirectBillPayment/distributionCard']/table//span[@innertext~'Tipo de tarjeta']/../..//input[@data-tabindexsaved='True']
+					</item>
+					<item
+					addcaps="unknown,webelement,spantag"
+					capname="inputtag"
+					id="e3162f33-8d5e-4f9f-b529-df84c51ae04d"
+					name="txtbox_TipoTarjeta"
+					refimgid="630b43b3-a8a2-4e66-8d81-d2e8f71ee10b"
+					searchtimeout="30000ms">
+						/dom[@domain=$Ambiente]//div[#'NewDirectBillPayment/distributionCard']/table//span[@innertext~'Tipo de tarjeta']/../..//input
+					</item>
+					<item
+					addcaps="unknown,webelement,spantag"
+					capname="spantag"
+					id="657f9412-6e4d-4cfb-8b91-7ebda25bbc1a"
+					name="bttn_Ejecutar"
+					refimgid="986f113b-1e9a-4a25-9a2e-4eafafca33c9"
+					searchtimeout="0ms">
+						/dom[@domain=$Ambiente]//div[#'NewDirectBillPayment/distributionCard']/table//span[@innertext~'Ejectar']
+					</item>
+					<basepath>
+						/dom[@domain=$Ambiente]//div[#'NewDirectBillPayment/distributionCard']/table
+					</basepath>
+				</folder>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="a9442fd9-ef98-4bb2-af62-0f89a062b8fa"
+				name="txt_PagosMedianteFacturacionDirecta"
+				refimgid="7dbc1f02-1cfc-4de4-a83d-46440321961b"
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//span[@innertext&gt;'Pagos mediante facturaci&#243;n']
+				</item>
+				<item
+				addcaps="unknown,webelement,canvastag"
+				capname="canvastag"
+				id="0761b1d3-33bc-4097-a3d6-6320659ac111"
+				name="Imag_torta_pago"
+				refimgid="af160d40-3eeb-440c-b436-78e7ac08dec8"
+				refpath="/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'AccountSummary-tbody']/tr[7]/td/div/table/tbody/tr/td[2]/div/table/tbody/tr/td/div/table/tbody/tr/td[1]/div/table/tbody/tr/td/div/div/div[2]/div/canvas"
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'AccountSummary-tbody']/tr[7]//table/?/?/tr/td[2]/?/?/table//div/table/?/?/tr/td[1]/?/?/table/?/?/tr/td/div/div/div[2]/?/?/canvas
+				</item>
+			</folder>
+			<item
+			addcaps="unknown,webelement,canvastag"
+			capname="canvastag"
+			id="7fbc858b-3245-4102-906d-29f4e91b8c9f"
+			name="Imag_torta_pago"
+			refimgid="46465170-e878-46d3-aab8-cae9380174d0"
+			searchtimeout="30000ms">
+				/dom[@domain=$Ambiente]//tbody[#'AccountSummary-tbody']//canvas[@safeclass='x-surface-canvas']
+			</item>
 			<basepath>
 				/dom[@domain=$Ambiente]
 			</basepath>
@@ -4157,6 +4439,15 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			searchtimeout="30000ms">
 				/dom[@domain=$Ambiente]/body//table//div/table//div//span/span/span[@innertext~'Aceptar']
 			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="1e07b0ae-e811-4823-add4-8ebb18379c8b"
+			name="bttn_Aceptar"
+			refimgid="07ae7ff1-2f88-4816-85aa-3411a179dec9"
+			searchtimeout="0ms">
+				/dom[@domain=$Ambiente]/body//span[@innertext~'Aceptar']
+			</item>
 			<basepath>
 				/dom[@domain=$Ambiente]
 			</basepath>
@@ -4239,6 +4530,11 @@ QmCC
 		id="d8099158-6755-4296-b7d5-77a3b4412514"
 		name="NombreCoberturaHogar">
 			RC Vida Privada
+		</var>
+		<var
+		id="902bac09-2652-4e0b-9fed-12b6a2f75983"
+		name="NumPoliza">
+			04104009714
 		</var>
 	</variables>
 </repository>

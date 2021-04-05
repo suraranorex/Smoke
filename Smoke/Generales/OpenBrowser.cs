@@ -20,47 +20,50 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace Smoke.Logout
+namespace Smoke.Generales
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The LogOut recording.
+    ///The OpenBrowser recording.
     /// </summary>
-    [TestModule("00c6bbe4-50ec-43e3-a6c0-b30b6b2678f8", ModuleType.Recording, 1)]
-    public partial class LogOut : ITestModule
+    [TestModule("ad5ed313-4634-480f-8e5b-88e66c955da8", ModuleType.Recording, 1)]
+    public partial class OpenBrowser : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::Smoke.SmokeRepository repository.
         /// </summary>
         public static global::Smoke.SmokeRepository repo = global::Smoke.SmokeRepository.Instance;
 
-        static LogOut instance = new LogOut();
+        static OpenBrowser instance = new OpenBrowser();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public LogOut()
+        public OpenBrowser()
         {
+            URL = "https://preproducciongestion.segurossura.com.ar/pc/PolicyCenter.do";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static LogOut Instance
+        public static OpenBrowser Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
+        string _URL;
+
         /// <summary>
-        /// Gets or sets the value of variable Ambiente.
+        /// Gets or sets the value of variable URL.
         /// </summary>
-        [TestVariable("179cd022-d834-4b47-98d5-e2a34a6a6fce")]
-        public string Ambiente
+        [TestVariable("35c278a9-9396-4876-8b62-b6f02cdf0e51")]
+        public string URL
         {
-            get { return repo.Ambiente; }
-            set { repo.Ambiente = value; }
+            get { return _URL; }
+            set { _URL = value; }
         }
 
 #endregion
@@ -89,29 +92,9 @@ namespace Smoke.Logout
 
             Init();
 
-            //Report.Log(ReportLevel.Info, "Wait", "Waiting 40s to not exist. Associated repository item: 'SURA.Copy_of_bttn_Configuracion'", repo.SURA.Copy_of_bttn_ConfiguracionInfo, new ActionTimeout(40000), new RecordItemIndex(0));
-            //repo.SURA.Copy_of_bttn_ConfiguracionInfo.WaitForNotExists(40000);
-            
-            //Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'SURA.lbl_VerificarMS'", repo.SURA.lbl_VerificarMSInfo, new ActionTimeout(60000), new RecordItemIndex(1));
-            //repo.SURA.lbl_VerificarMSInfo.WaitForExists(60000);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.bttn_Configuracion' at Center.", repo.SURA.bttn_ConfiguracionInfo, new RecordItemIndex(2));
-            repo.SURA.bttn_Configuracion.Click();
+            Report.Log(ReportLevel.Info, "Website", "Opening web site URL in variable $URL with browser 'chrome' in normal mode.", new RecordItemIndex(0));
+            Host.Current.OpenBrowser(URL, "chrome", "", false, false, false, true, false, true);
             Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.bttn_CerrarSesion' at Center.", repo.SURA.bttn_CerrarSesionInfo, new RecordItemIndex(3));
-            repo.SURA.bttn_CerrarSesion.Click();
-            Delay.Milliseconds(0);
-            
-            try {
-                Report.Log(ReportLevel.Info, "Mouse", "(Optional Action)\r\nMouse Left Click item 'SURA_ContinueOnFail.bttn_Aceptar' at Center.", repo.SURA_ContinueOnFail.bttn_AceptarInfo, new RecordItemIndex(4));
-                repo.SURA_ContinueOnFail.bttn_Aceptar.Click();
-                Delay.Milliseconds(0);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(4)); }
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'SURA.bttn_IniciarSesion'.", repo.SURA.bttn_IniciarSesionInfo, new RecordItemIndex(5));
-            Validate.Exists(repo.SURA.bttn_IniciarSesionInfo);
-            Delay.Milliseconds(100);
             
         }
 

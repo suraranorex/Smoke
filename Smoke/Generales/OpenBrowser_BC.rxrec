@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="f048a76f-3ee3-4be8-9cf8-2f405849af64"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="OpenBrowser_BC"
+	namespace="Smoke.Generales">
+	</codegen>
+	<variables>
+		<var
+		id="79c061a8-4c66-4280-8ece-1922e1cc9853"
+		name="URL">
+			https://ssurgwsoadev4-oci.opc.oracleoutsourcing.com/bc/BillingCenter.do&#10;
+		</var>
+	</variables>
+	<recorditems>
+		<openwebsiterecorditem
+		args=""
+		browser="Chrome"
+		clearcache="False"
+		clearcookies="False"
+		enabled="True"
+		incognito="True"
+		instrument="True"
+		killexisting="False"
+		maximized="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="Url"
+				variable="URL">
+				</binding>
+			</bindings>
+			<url>
+				https://ssurgwsoadev4.opc.oracleoutsourcing.com/bc/BillingCenter.do&#10;
+			</url>
+		</openwebsiterecorditem>
+	</recorditems>
+	<repository
+	id="58ca00b5-56c0-4f78-a5d2-302b212932e0"
+	name="SmokeRepository"
+	relativepath="..\SmokeRepository.rxrep">
+		<codegen
+		classname="SmokeRepository"
+		namespace="Smoke">
+		</codegen>
+		<rootfolder
+		id="7521c285-eca8-4037-8149-4c0669f953a6"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		OpenBrowser_BC.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

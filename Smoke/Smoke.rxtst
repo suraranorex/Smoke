@@ -179,6 +179,12 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="1e4f7afb-bd34-4a42-adce-c00b2e205ec7"
+			name="MenuLateral_CuentaBC"
+			ref="0b0be839-fbd6-4a67-aab4-f46a1ff4ffa0"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="1edc62ab-93c0-407d-8510-b88b49ea864e"
 			name="Detalle_Hogar"
 			ref="beb2fb81-2405-4d61-97ee-c618b0f10fce"
@@ -445,6 +451,17 @@
 					</condition>
 				</conditiongroup>
 			</smartfoldernode>
+			<teardown
+			id="442606b3-52fa-4f8f-8b2e-58d8b6c15a28"
+			name="teardown1">
+			</teardown>
+			<testmodule
+			enabled="False"
+			id="45a4d521-b82b-4a27-a460-c6350b652f23"
+			name="OpenBrowser_BC"
+			ref="f048a76f-3ee3-4be8-9cf8-2f405849af64"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="45f1c6a7-59ea-49a6-9439-103ffdf6b983"
 			name="OpenBrowser"
@@ -673,13 +690,19 @@
 				</databinding>
 			</testmodule>
 			<testcase
+			datasource="PagarPolizas"
+			errorbehavior="ContinueNextIteration"
+			id="50f4575a-98aa-4678-bd4c-18c1a69e4040"
+			name="PagarPoliza">
+			</testcase>
+			<testcase
 			id="539633a7-894c-49ae-93fc-0db5a6fe177b"
 			name="Smoke"
 			reportlevel="Info;20">
 				<parameters>
 					<param
 					name="NroCuenta"
-					value="1070606986">
+					value="7971481640">
 					</param>
 				</parameters>
 			</testcase>
@@ -1009,6 +1032,12 @@
 			name="teardown">
 			</teardown>
 			<testmodule
+			id="7426b2a3-a4d9-4ac6-889a-34b037ba5736"
+			name="CloseBrowser"
+			ref="a0b418f0-6551-48d1-b8cc-275b0b6164e7"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			enabled="False"
 			id="7434538e-ea80-4fd8-b600-68bcdc44b83a"
 			name="CloseBrowser"
@@ -1129,6 +1158,12 @@
 					variablename="Contrasenia">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="8bf00e03-14b4-44bb-9d7d-90a9f6057c16"
+			name="Login"
+			ref="a64524be-86c0-4f43-8300-08f1a1e63ac3"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			enabled="False"
@@ -1317,6 +1352,10 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			id="9e0fc752-0fe0-43de-aa28-f0e35d2af160"
+			name="BillingPagos">
+			</smartfoldernode>
 			<testmodule
 			id="9e2e19d7-df84-43e9-827b-8d740bf491f8"
 			name="MenuSuperior_CuentaPC"
@@ -1386,6 +1425,12 @@
 					variablename="Ambiente">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="ab664276-0c75-4d26-abf0-1dbe5e10f5e2"
+			name="LogOut"
+			ref="00c6bbe4-50ec-43e3-a6c0-b30b6b2678f8"
+			type="Recording">
 			</testmodule>
 			<smartfoldernode
 			id="acbf1fda-7509-4e39-b9c7-ec1fa9efb1ed"
@@ -1505,6 +1550,13 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
+			id="bbab4721-9658-4904-ad19-d762ca575b5e"
+			name="CloseBrowser"
+			ref="a0b418f0-6551-48d1-b8cc-275b0b6164e7"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="bfe80b93-a84d-40da-aa78-f468e47f937f"
 			name="InformacionDePoliza_Motor"
 			ref="54afdca2-aff3-40f7-a8e1-a66fbaf0dfc1"
@@ -1548,6 +1600,10 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<teardown
+			id="caf29266-586f-411a-a3a5-128eaab40b3d"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="cc077cd1-c869-4c6d-b016-17d9c8a9035f"
 			name="Personas"
@@ -1619,6 +1675,20 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="d22ee51b-3f1d-449a-96e1-d410e3c9589f"
+			name="Pago"
+			ref="ae5c681a-80df-4403-99a1-98550273f9db"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="NumPoliza"
+					datasourceid="0a5b5b88-3846-427a-a2e5-8f116719dded"
+					variableid="d6e7c6bc-563c-4ebb-9e35-ebe37fa72d3a"
+					variablename="NumPoliza">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="d309ad01-8b57-4490-8ff6-7304d280d3cd"
 			name="Login"
 			ref="a64524be-86c0-4f43-8300-08f1a1e63ac3"
@@ -1643,6 +1713,12 @@
 					variablename="Contrasenia">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="d4e9576e-7bae-411e-a607-eddf641a6073"
+			name="OpenBrowser_BC"
+			ref="f048a76f-3ee3-4be8-9cf8-2f405849af64"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="d9483d95-6751-4177-9114-d004356b876a"
@@ -1682,6 +1758,10 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<setup
+			id="db329025-c3d8-4014-a293-ff7e7551d266"
+			name="setup">
+			</setup>
 			<smartfoldernode
 			id="dc535c44-91f9-4bbd-b7a2-73402152611d"
 			name="Cuotas_Si">
@@ -1822,6 +1902,10 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<setup
+			id="f543e369-eea0-4773-b0e6-1faf96c9c66f"
+			name="setup1">
+			</setup>
 			<testmodule
 			id="f6fcff98-1a8f-43b6-8c76-9f43445f8c4c"
 			name="MenuSuperior_CuentaPC"
@@ -1857,6 +1941,27 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			enabled="False"
+			id="f8ff893e-ed29-4620-a51c-3465fb455375"
+			name="LogOut"
+			ref="00c6bbe4-50ec-43e3-a6c0-b30b6b2678f8"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="fe5b8a4d-4ccf-4a51-a824-483580f61f10"
+			name="MenuSuperior_CuentaBC"
+			ref="e764f1b0-75ea-473a-8107-188fb87760d0"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="NumCuenta"
+					datasourceid="0a5b5b88-3846-427a-a2e5-8f116719dded"
+					variableid="0bf45686-f899-4f9f-a81b-da515c8cde89"
+					variablename="NumCuenta">
+					</var>
+				</databinding>
+			</testmodule>
 			<setup
 			id="fe649720-47f6-449c-9a95-7af3a6d7ba9c"
 			name="setup">
@@ -1886,6 +1991,13 @@
 					variablename="CantCuotas">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			enabled="False"
+			id="fffed015-fd28-4b83-ab8e-d184bba883f1"
+			name="Login"
+			ref="a64524be-86c0-4f43-8300-08f1a1e63ac3"
+			type="Recording">
 			</testmodule>
 		</flatlistofchildren>
 		<childhierarchy>
@@ -2227,6 +2339,74 @@
 						name="EmisionPoliza">
 						</testmodule>
 					</testcase>
+					<smartfoldernode
+					id="9e0fc752-0fe0-43de-aa28-f0e35d2af160"
+					name="BillingPagos">
+						<setup
+						id="f543e369-eea0-4773-b0e6-1faf96c9c66f"
+						name="setup1">
+							<testmodule
+							id="d4e9576e-7bae-411e-a607-eddf641a6073"
+							name="OpenBrowser_BC">
+							</testmodule>
+							<testmodule
+							id="8bf00e03-14b4-44bb-9d7d-90a9f6057c16"
+							name="Login">
+							</testmodule>
+						</setup>
+						<testcase
+						id="50f4575a-98aa-4678-bd4c-18c1a69e4040"
+						name="PagarPoliza">
+							<setup
+							id="db329025-c3d8-4014-a293-ff7e7551d266"
+							name="setup">
+								<testmodule
+								id="45a4d521-b82b-4a27-a460-c6350b652f23"
+								name="OpenBrowser_BC">
+								</testmodule>
+								<testmodule
+								id="fffed015-fd28-4b83-ab8e-d184bba883f1"
+								name="Login">
+								</testmodule>
+							</setup>
+							<testmodule
+							id="fe5b8a4d-4ccf-4a51-a824-483580f61f10"
+							name="MenuSuperior_CuentaBC">
+							</testmodule>
+							<testmodule
+							id="1e4f7afb-bd34-4a42-adce-c00b2e205ec7"
+							name="MenuLateral_CuentaBC">
+							</testmodule>
+							<testmodule
+							id="d22ee51b-3f1d-449a-96e1-d410e3c9589f"
+							name="Pago">
+							</testmodule>
+							<teardown
+							id="caf29266-586f-411a-a3a5-128eaab40b3d"
+							name="teardown">
+								<testmodule
+								id="f8ff893e-ed29-4620-a51c-3465fb455375"
+								name="LogOut">
+								</testmodule>
+								<testmodule
+								id="bbab4721-9658-4904-ad19-d762ca575b5e"
+								name="CloseBrowser">
+								</testmodule>
+							</teardown>
+						</testcase>
+						<teardown
+						id="442606b3-52fa-4f8f-8b2e-58d8b6c15a28"
+						name="teardown1">
+							<testmodule
+							id="ab664276-0c75-4d26-abf0-1dbe5e10f5e2"
+							name="LogOut">
+							</testmodule>
+							<testmodule
+							id="7426b2a3-a4d9-4ac6-889a-34b037ba5736"
+							name="CloseBrowser">
+							</testmodule>
+						</teardown>
+					</smartfoldernode>
 					<testcase
 					id="7f48616a-2d1b-4b01-aa8b-c255f4b395b3"
 					name="FinalizaSolicitudes">
@@ -2269,9 +2449,9 @@
 	</testsuiteentryhierarchy>
 	<datasources>
 		<DataSource
-		filename="C:\Users\maruiz\Documents\Ranorex\RanorexStudio Projects\Smoke\DataSources\DataSource - CoberturasHogar.xlsx"
+		filename="DataSource - CoberturasHogar.xlsx"
 		id="7686a1e2-2241-44e8-a8c5-ee7a0aa6e8bc"
-		includefile="Unchecked"
+		includefile="Checked"
 		lastknownrowcount="1"
 		name="CobertrurasHogar"
 		type="Ranorex.Core.Data.ExcelDataConnector"
@@ -2289,9 +2469,9 @@
 			</maskedcolumns>
 		</DataSource>
 		<DataSource
-		filename="C:\Users\maruiz\Documents\Ranorex\RanorexStudio Projects\Smoke\DataSources\ExcelDatosCuentas.xlsx"
+		filename="ExcelDatosCuentas.xlsx"
 		id="9a797f3c-6b6a-444e-88eb-5ad4c9138147"
-		includefile="Unchecked"
+		includefile="Checked"
 		lastknownrowcount="1"
 		name="CrearCuenta"
 		type="Ranorex.Core.Data.ExcelDataConnector"
@@ -2348,9 +2528,9 @@
 			</maskedcolumns>
 		</DataSource>
 		<DataSource
-		filename="C:\Users\maruiz\Documents\Ranorex\RanorexStudio Projects\Smoke\DataSources\DataSource - Emision AP No Enlatada.xlsx"
+		filename="DataSource - Emision AP No Enlatada.xlsx"
 		id="d656bea3-d8cf-499a-b684-bdf339efb302"
-		includefile="Unchecked"
+		includefile="Checked"
 		lastknownrowcount="1"
 		name="Emision_AP"
 		type="Ranorex.Core.Data.ExcelDataConnector"
@@ -2422,9 +2602,9 @@
 			</maskedcolumns>
 		</DataSource>
 		<DataSource
-		filename="C:\Users\maruiz\Documents\Ranorex\RanorexStudio Projects\Smoke\DataSources\DataSource - Emision Hogar No Enlatada.xlsx"
+		filename="DataSource - Emision Hogar No Enlatada.xlsx"
 		id="8e09328a-8507-4ab0-ab39-339965c3ba0a"
-		includefile="Unchecked"
+		includefile="Checked"
 		lastknownrowcount="1"
 		name="Emision_Hogar"
 		type="Ranorex.Core.Data.ExcelDataConnector"
@@ -2493,9 +2673,9 @@
 			</maskedcolumns>
 		</DataSource>
 		<DataSource
-		filename="C:\Users\maruiz\Documents\Ranorex\RanorexStudio Projects\Smoke\DataSources\DataSource - Emision Motor.xlsx"
+		filename="DataSource - Emision Motor.xlsx"
 		id="b9610c5f-f29b-4164-b97c-040b4b60430a"
-		includefile="Unchecked"
+		includefile="Checked"
 		lastknownrowcount="1"
 		name="Emision_Motor"
 		type="Ranorex.Core.Data.ExcelDataConnector"
@@ -2628,6 +2808,74 @@
 			<maskedcolumns>
 			</maskedcolumns>
 		</DataSource>
+		<DataSource
+		id="0a5b5b88-3846-427a-a2e5-8f116719dded"
+		includefile="Unchecked"
+		lastknownrowcount="3"
+		name="PagarPolizas"
+		type="Ranorex.Core.Data.CsvDataConnector"
+		withheaders="True">
+			<lastknowncolumns>
+				<column>
+					NumPoliza
+				</column>
+				<column>
+					NumCuenta
+				</column>
+			</lastknowncolumns>
+			<maskedcolumns>
+				<columnname>
+					NumCuenta
+				</columnname>
+				<columnname>
+					NumPoliza
+				</columnname>
+			</maskedcolumns>
+			<file>
+				C:\TEMP\Polizas\Smoke\polizas.csv
+			</file>
+		</DataSource>
+		<DataSource
+		filename="C:\Users\maruiz\Documents\Ranorex\RanorexStudio Projects\Smoke\DataSources\DataSource - Pago.xlsx"
+		id="0f4b5f01-8994-40d9-8737-7422d507e0c9"
+		includefile="Unchecked"
+		lastknownrowcount="3"
+		name="PagoPolizas"
+		type="Ranorex.Core.Data.ExcelDataConnector"
+		worksheetname="Sheet1"
+		worksheetrange="Auto-Range">
+			<lastknowncolumns>
+				<column>
+					ID
+				</column>
+				<column>
+					Ambiente
+				</column>
+				<column>
+					URL
+				</column>
+				<column>
+					Usuario
+				</column>
+				<column>
+					Contrasenia
+				</column>
+				<column>
+					NroCuenta
+				</column>
+				<column>
+					NumPoliza
+				</column>
+				<column>
+					NumAutorizacion
+				</column>
+				<column>
+					TipoTarjeta
+				</column>
+			</lastknowncolumns>
+			<maskedcolumns>
+			</maskedcolumns>
+		</DataSource>
 	</datasources>
 	<testconfigurations
 	default="Smoke">
@@ -2638,6 +2886,18 @@
 			</testcontainer>
 			<testcontainer
 			id="7f48616a-2d1b-4b01-aa8b-c255f4b395b3">
+			</testcontainer>
+		</testconfiguration>
+		<testconfiguration
+		name="PagoReversa">
+			<testcontainer
+			id="50f4575a-98aa-4678-bd4c-18c1a69e4040">
+			</testcontainer>
+			<testcontainer
+			id="539633a7-894c-49ae-93fc-0db5a6fe177b">
+			</testcontainer>
+			<testcontainer
+			id="9e0fc752-0fe0-43de-aa28-f0e35d2af160">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration
@@ -2661,6 +2921,9 @@
 			id="4f5e8f86-9772-4799-a29d-49ca5e7cebff">
 			</testcontainer>
 			<testcontainer
+			id="50f4575a-98aa-4678-bd4c-18c1a69e4040">
+			</testcontainer>
+			<testcontainer
 			id="539633a7-894c-49ae-93fc-0db5a6fe177b">
 			</testcontainer>
 			<testcontainer
@@ -2677,6 +2940,9 @@
 			</testcontainer>
 			<testcontainer
 			id="9796e920-1188-45ad-af46-1061deede081">
+			</testcontainer>
+			<testcontainer
+			id="9e0fc752-0fe0-43de-aa28-f0e35d2af160">
 			</testcontainer>
 			<testcontainer
 			id="a6a30ae5-30c4-4a02-8b29-f6d65fd9fd05">

@@ -20,7 +20,7 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace Smoke
+namespace Smoke.Generales
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
@@ -30,9 +30,9 @@ namespace Smoke
     public partial class CloseBrowser : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the SmokeRepository repository.
+        /// Holds an instance of the global::Smoke.SmokeRepository repository.
         /// </summary>
-        public static SmokeRepository repo = SmokeRepository.Instance;
+        public static global::Smoke.SmokeRepository repo = global::Smoke.SmokeRepository.Instance;
 
         static CloseBrowser instance = new CloseBrowser();
 

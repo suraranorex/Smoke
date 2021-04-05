@@ -37,7 +37,7 @@ namespace Smoke.Emision
         public void guardarNumPoliza()
         {
         	verificarDirectorio();
-			string path = @"C:\TEMP\Polizas\polizas.csv";
+			string path = @"C:\TEMP\Polizas\Smoke\polizas.csv";
 			bool exist = File.Exists(path);
 			
 			string cabecera = "NumPoliza,NumCuenta" + System.Environment.NewLine;
@@ -69,10 +69,10 @@ namespace Smoke.Emision
         public void verificarDirectorio(){
         	Report.Info("Info","Verificando la existencia del directorio destino");
 			
-        	if (!Directory.Exists(@"C:\TEMP\Polizas"))
+        	if (!Directory.Exists(@"C:\TEMP\Smoke\Polizas"))
 			{
 				Report.Info("Info","No se encontro el directorio, comienza la creacion del directorio...");
-				Directory.CreateDirectory(@"C:\TEMP\Polizas");
+				Directory.CreateDirectory(@"C:\TEMP\Smoke\Polizas");
 				Report.Info("Info","Creacion del directorio finalizada.");
 			}
 			Report.Info("Info","Verificacion finalizada");

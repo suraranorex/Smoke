@@ -354,7 +354,7 @@ KKACiiigAooooAKKKKACiiigAooooAKKKKAP/9k=
 			<bindings>
 			</bindings>
 			<info
-			id="0a39753b-d9bc-4aa8-b70f-13cf481c9ef4"
+			id="1e07b0ae-e811-4823-add4-8ebb18379c8b"
 			sourcename="RepositoryEditor">
 				<path>
 					/dom[@domain=$Ambiente]/body//span[@innertext~'Aceptar']

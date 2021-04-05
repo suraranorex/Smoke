@@ -20,38 +20,48 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace Smoke
+namespace Smoke.Menu
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Recording1 recording.
+    ///The MenuLateral_CuentaBC recording.
     /// </summary>
-    [TestModule("3f085675-ef40-4173-adb3-cd9d977f16b1", ModuleType.Recording, 1)]
-    public partial class Recording1 : ITestModule
+    [TestModule("0b0be839-fbd6-4a67-aab4-f46a1ff4ffa0", ModuleType.Recording, 1)]
+    public partial class MenuLateral_CuentaBC : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the SmokeRepository repository.
+        /// Holds an instance of the global::Smoke.SmokeRepository repository.
         /// </summary>
-        public static SmokeRepository repo = SmokeRepository.Instance;
+        public static global::Smoke.SmokeRepository repo = global::Smoke.SmokeRepository.Instance;
 
-        static Recording1 instance = new Recording1();
+        static MenuLateral_CuentaBC instance = new MenuLateral_CuentaBC();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Recording1()
+        public MenuLateral_CuentaBC()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Recording1 Instance
+        public static MenuLateral_CuentaBC Instance
         {
             get { return instance; }
         }
 
 #region Variables
+
+        /// <summary>
+        /// Gets or sets the value of variable Ambiente.
+        /// </summary>
+        [TestVariable("179cd022-d834-4b47-98d5-e2a34a6a6fce")]
+        public string Ambiente
+        {
+            get { return repo.Ambiente; }
+            set { repo.Ambiente = value; }
+        }
 
 #endregion
 
@@ -79,6 +89,21 @@ namespace Smoke
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.bttn_Acciones' at 67;2.", repo.SURA.bttn_AccionesInfo, new RecordItemIndex(0));
+            repo.SURA.bttn_Acciones.Click("67;2");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.bttn_PagoNuevo' at 12;10.", repo.SURA.bttn_PagoNuevoInfo, new RecordItemIndex(1));
+            repo.SURA.bttn_PagoNuevo.Click("12;10");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.bttn_NuevoPago' at 16;13.", repo.SURA.bttn_NuevoPagoInfo, new RecordItemIndex(2));
+            repo.SURA.bttn_NuevoPago.Click("16;13");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SURA.txt_PagosMedianteFacturacionDirecta'", repo.SURA.txt_PagosMedianteFacturacionDirectaInfo, new ActionTimeout(30000), new RecordItemIndex(3));
+            repo.SURA.txt_PagosMedianteFacturacionDirectaInfo.WaitForExists(30000);
+            
         }
 
 #region Image Feature Data

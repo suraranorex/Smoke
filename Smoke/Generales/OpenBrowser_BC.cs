@@ -20,34 +20,34 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace Smoke
+namespace Smoke.Generales
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The OpenBrowser recording.
+    ///The OpenBrowser_BC recording.
     /// </summary>
-    [TestModule("ad5ed313-4634-480f-8e5b-88e66c955da8", ModuleType.Recording, 1)]
-    public partial class OpenBrowser : ITestModule
+    [TestModule("f048a76f-3ee3-4be8-9cf8-2f405849af64", ModuleType.Recording, 1)]
+    public partial class OpenBrowser_BC : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the SmokeRepository repository.
+        /// Holds an instance of the global::Smoke.SmokeRepository repository.
         /// </summary>
-        public static SmokeRepository repo = SmokeRepository.Instance;
+        public static global::Smoke.SmokeRepository repo = global::Smoke.SmokeRepository.Instance;
 
-        static OpenBrowser instance = new OpenBrowser();
+        static OpenBrowser_BC instance = new OpenBrowser_BC();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public OpenBrowser()
+        public OpenBrowser_BC()
         {
-            URL = "https://preproducciongestion.segurossura.com.ar/pc/PolicyCenter.do";
+            URL = "https://ssurgwsoadev4-oci.opc.oracleoutsourcing.com/bc/BillingCenter.do\r\n";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static OpenBrowser Instance
+        public static OpenBrowser_BC Instance
         {
             get { return instance; }
         }
@@ -59,7 +59,7 @@ namespace Smoke
         /// <summary>
         /// Gets or sets the value of variable URL.
         /// </summary>
-        [TestVariable("35c278a9-9396-4876-8b62-b6f02cdf0e51")]
+        [TestVariable("79c061a8-4c66-4280-8ece-1922e1cc9853")]
         public string URL
         {
             get { return _URL; }
@@ -92,8 +92,8 @@ namespace Smoke
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Website", "Opening web site URL in variable $URL with browser 'chrome' in normal mode.", new RecordItemIndex(0));
-            Host.Current.OpenBrowser(URL, "chrome", "", false, false, false, true, false, true);
+            Report.Log(ReportLevel.Info, "Website", "Opening web site URL in variable $URL with browser 'Chrome' in maximized mode.", new RecordItemIndex(0));
+            Host.Current.OpenBrowser(URL, "Chrome", "", false, true, false, true, false, true);
             Delay.Milliseconds(0);
             
         }

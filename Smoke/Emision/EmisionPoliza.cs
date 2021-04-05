@@ -139,8 +139,8 @@ namespace Smoke.Emision
             //repo.SURA.btn_AprobacionEspecial.Click();
             //Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.PC.Emision.Generales.InformacionDePoliza.Botones.bttn_Aceptar' at Center.", repo.SURA.PC.Emision.Generales.InformacionDePoliza.Botones.bttn_AceptarInfo, new RecordItemIndex(7));
-            //repo.SURA.PC.Emision.Generales.InformacionDePoliza.Botones.bttn_Aceptar.Click();
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA_ContinueOnFail.bttn_Aceptar' at Center.", repo.SURA_ContinueOnFail.bttn_AceptarInfo, new RecordItemIndex(7));
+            //repo.SURA_ContinueOnFail.bttn_Aceptar.Click();
             //Delay.Milliseconds(0);
             
             //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.bttn_Aceptar4' at Center.", repo.SURA.bttn_Aceptar4Info, new RecordItemIndex(8));

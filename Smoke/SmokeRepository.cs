@@ -197,6 +197,18 @@ namespace Smoke
             set { _NombreCoberturaHogar = value; }
         }
 
+        string _NumPoliza = "04104009714";
+
+        /// <summary>
+        /// Gets or sets the value of variable NumPoliza.
+        /// </summary>
+        [TestVariable("902bac09-2652-4e0b-9fed-12b6a2f75983")]
+        public string NumPoliza
+        {
+            get { return _NumPoliza; }
+            set { _NumPoliza = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -252,6 +264,7 @@ namespace Smoke
         public partial class SURAAppFolder : RepoGenBaseFolder
         {
             SmokeRepositoryFolders.PCFolder _pc;
+            SmokeRepositoryFolders.BCFolder _bc;
             RepoItemInfo _bttn_cuentaInfo;
             RepoItemInfo _txtbox_menunrocuentaInfo;
             RepoItemInfo _lbl_verificarmsInfo;
@@ -384,7 +397,6 @@ namespace Smoke
             RepoItemInfo _bttn_configuracionInfo;
             RepoItemInfo _copy_of_bttn_configuracionInfo;
             RepoItemInfo _bttn_cerrarsesionInfo;
-            RepoItemInfo _copy_of_bttn_aceptarInfo;
             RepoItemInfo _txtbox_codigoagenteInfo;
             RepoItemInfo _copy_of_txtbox_codigoagenteInfo;
             RepoItemInfo _txt_tipoplazoInfo;
@@ -482,6 +494,23 @@ namespace Smoke
             RepoItemInfo _txt_fecha_nac_personaInfo;
             RepoItemInfo _copy_of_txt_fecha_nac_personaInfo;
             RepoItemInfo _bttn_validardocumentoInfo;
+            RepoItemInfo _bttn_menucuentabcInfo;
+            RepoItemInfo _bttn_accionesInfo;
+            RepoItemInfo _bttn_pagonuevoInfo;
+            RepoItemInfo _bttn_nuevopagoInfo;
+            RepoItemInfo _txt_pagosmediantefacturaciondirectaInfo;
+            RepoItemInfo _arrow_select_polizaInfo;
+            RepoItemInfo _txtbox_numerodepolizaInfo;
+            RepoItemInfo _select_polizaInfo;
+            RepoItemInfo _copy_of_txtbox_montoInfo;
+            RepoItemInfo _montopagarInfo;
+            RepoItemInfo _txtbox_montoInfo;
+            RepoItemInfo _copy_of_txtbox_numautorizacionInfo;
+            RepoItemInfo _txtbox_numautorizacionInfo;
+            RepoItemInfo _detallesdepagoInfo;
+            RepoItemInfo _copy_of_txtbox_tipotarjeta1Info;
+            RepoItemInfo _txtbox_tipotarjeta1Info;
+            RepoItemInfo _imag_torta_pagoInfo;
 
             /// <summary>
             /// Creates a new SURA  folder.
@@ -490,6 +519,7 @@ namespace Smoke
                     base("SURA", "/dom[@domain=$Ambiente]", parentFolder, 30000, null, false, "cf322db1-9fef-4062-8950-7863c9b87436", "")
             {
                 _pc = new SmokeRepositoryFolders.PCFolder(this);
+                _bc = new SmokeRepositoryFolders.BCFolder(this);
                 _bttn_cuentaInfo = new RepoItemInfo(this, "bttn_Cuenta", ".//a[#'TabBar:AccountTab']/span[@id='TabBar:AccountTab-btnWrap']", 30000, null, "cfad1d0d-5eeb-40aa-bd13-73b41c2dc6e9");
                 _txtbox_menunrocuentaInfo = new RepoItemInfo(this, "txtbox_MenuNroCuenta", "body//./input[@name~'AccountNumber']", 30000, null, "454bea0e-0f94-42ae-9ac8-093717cf8bbc");
                 _lbl_verificarmsInfo = new RepoItemInfo(this, "lbl_VerificarMS", ".//tbody//span[@innertext~'Resumen']", 30000, null, "cf0f04fc-eb89-48f5-8018-274f0dc0aa32");
@@ -622,7 +652,6 @@ namespace Smoke
                 _bttn_configuracionInfo = new RepoItemInfo(this, "bttn_Configuracion", ".//span[#':TabLinkMenuButton-btnEl']/span[@enabled='True']", 30000, null, "62d45c52-05b3-42d3-ad5a-b37ce36dc425");
                 _copy_of_bttn_configuracionInfo = new RepoItemInfo(this, "Copy_of_bttn_Configuracion", ".//span[#':TabLinkMenuButton-btnEl']/span[@enabled='True' and @data-tabindexsaved='True']", 30000, null, "06205759-2d1b-42b8-92b0-9fa9f5a51bfe");
                 _bttn_cerrarsesionInfo = new RepoItemInfo(this, "bttn_CerrarSesion", ".//div[#'TabBar:LogoutTabBarLink']/?/?/span[@innertext~'Cerrar sesión']", 30000, null, "08eef9bc-2a9f-4659-bb66-7720bd852fc5");
-                _copy_of_bttn_aceptarInfo = new RepoItemInfo(this, "Copy_of_bttn_Aceptar", "body//span[@innertext~'Aceptar']", 0, null, "0a39753b-d9bc-4aa8-b70f-13cf481c9ef4");
                 _txtbox_codigoagenteInfo = new RepoItemInfo(this, "txtbox_CodigoAgente", ".//span[@innertext~'Código de agente']/../..//input", 30000, null, "1fb768a6-7edc-4646-bab1-09214c84ff68");
                 _copy_of_txtbox_codigoagenteInfo = new RepoItemInfo(this, "Copy_of_txtbox_CodigoAgente", ".//span[@innertext~'Código de agente']/../..//input[@data-tabindexsaved='True']", 30000, null, "897593c0-36a5-495d-a48b-841dd606fcc5");
                 _txt_tipoplazoInfo = new RepoItemInfo(this, "txt_TipoPlazo", ".//div[#'SubmissionWizard/PolicyInfo']//span[@innertext='Tipo de plazo']/../..//input", 30000, null, "9661fa56-d4ee-4dea-b4f3-2a1c8729e925");
@@ -720,6 +749,23 @@ namespace Smoke
                 _txt_fecha_nac_personaInfo = new RepoItemInfo(this, "txt_fecha_nac_persona", ".//tbody[#'centerPanel-tbody']//span[@innertext='Fecha Nacimiento']/../..//input", 30000, null, "68807221-a8e3-45d5-a584-e8c11e0c32b3");
                 _copy_of_txt_fecha_nac_personaInfo = new RepoItemInfo(this, "Copy_of_txt_fecha_nac_persona", ".//tbody[#'centerPanel-tbody']//span[@innertext='Fecha Nacimiento']/../..//input[@data-tabindexsaved='True']", 30000, null, "1060902e-bec0-484a-8a17-638c181a4c41");
                 _bttn_validardocumentoInfo = new RepoItemInfo(this, "bttn_ValidarDocumento", ".//span[@innertext='Validar Documento']", 30000, null, "d6f9b752-abf4-4b15-bb7f-587c5a76b61c");
+                _bttn_menucuentabcInfo = new RepoItemInfo(this, "bttn_MenuCuentaBC", ".//span[#'TabBar:AccountsTab-btnWrap']", 30000, null, "8377fd75-1e42-4481-84e2-8b4bd92fa4ca");
+                _bttn_accionesInfo = new RepoItemInfo(this, "bttn_Acciones", ".//a[#'AccountGroup:AccountDetailMenuActions']", 30000, null, "21857b16-a744-4e65-a054-c2aaa642e1a6");
+                _bttn_pagonuevoInfo = new RepoItemInfo(this, "bttn_PagoNuevo", ".//span[@innertext~'Pago nuevo']", 30000, null, "5d8ce604-2543-44b2-8bc7-434a668619b6");
+                _bttn_nuevopagoInfo = new RepoItemInfo(this, "bttn_NuevoPago", ".//span[@innertext~'Nuevo pago de factura']", 30000, null, "c59d0f49-88c7-4500-8971-9579d4986a9c");
+                _txt_pagosmediantefacturaciondirectaInfo = new RepoItemInfo(this, "txt_PagosMedianteFacturacionDirecta", ".//span[@innertext>'Pagos mediante facturación']", 30000, null, "f4c88bb4-0887-45e6-b51e-c74ef89037dc");
+                _arrow_select_polizaInfo = new RepoItemInfo(this, "Arrow_Select_Poliza", ".//div[#'NewDirectBillPayment/distributionCard']/table//div[@id='NewDirectBillPayment:EditDBPaymentScreen:PaymentDetailsDV:policyNumbers-trigger-picker']", 30000, null, "c6a146c4-7b26-466e-a3e1-7a05de7604c0");
+                _txtbox_numerodepolizaInfo = new RepoItemInfo(this, "txtbox_NumeroDePoliza", ".//div[#'NewDirectBillPayment/distributionCard']/table//span[@innertext~'Número de Póliza']/../..//input", 30000, null, "25d8e279-dcb3-4d79-a973-4cd4854c58f3");
+                _select_polizaInfo = new RepoItemInfo(this, "Select_Poliza", ".//div[#'NewDirectBillPayment/distributionCard']/table//li[@innertext~$NumPoliza and @visible='True']", 30000, null, "a716f631-83bf-4e35-888f-0fe739612019");
+                _copy_of_txtbox_montoInfo = new RepoItemInfo(this, "Copy_of_txtbox_Monto", ".//div[#'NewDirectBillPayment/distributionCard']/table//span[@innertext='Monto']/../..//input[@data-tabindexsaved='True']", 30000, null, "bada0acc-fcbe-4dac-96b8-8612bc977cca");
+                _montopagarInfo = new RepoItemInfo(this, "montoPagar", ".//div[#'NewDirectBillPayment/distributionCard']/table//table[@class~'summary']//a[@innertext~'[0-9]']", 0, null, "791edfc9-6d94-4cab-b52f-54f53dc5fed0");
+                _txtbox_montoInfo = new RepoItemInfo(this, "txtbox_Monto", ".//div[#'NewDirectBillPayment/distributionCard']/table//span[@innertext='Monto']/../..//input", 30000, null, "01e98f90-cb46-42ab-8c06-99f64aa18b59");
+                _copy_of_txtbox_numautorizacionInfo = new RepoItemInfo(this, "Copy_of_txtbox_NumAutorizacion", ".//div[#'NewDirectBillPayment/distributionCard']/table//span[@innertext~'N.º Autorización' and @data-tabindexsaved='True']", 30000, null, "3ee9f58f-8a08-41f6-af21-0038d807bb22");
+                _txtbox_numautorizacionInfo = new RepoItemInfo(this, "txtbox_NumAutorizacion", ".//div[#'NewDirectBillPayment/distributionCard']/table//span[@innertext~'N.º Autorización']/../..//input", 30000, null, "b387c583-293a-4e15-8e0f-6ff47ad1d9d1");
+                _detallesdepagoInfo = new RepoItemInfo(this, "DetallesDePago", ".//div[#'NewDirectBillPayment/distributionCard']/table/tbody/tr[4]//table//div/table/?/?/tr/td[2]/div/table/tbody/tr[1]/?/?/label[@innertext='Detalles de pago']", 30000, null, "6f9cc8bd-7ec2-463a-ba2f-82226da5147a");
+                _copy_of_txtbox_tipotarjeta1Info = new RepoItemInfo(this, "Copy_of_txtbox_TipoTarjeta1", ".//div[#'NewDirectBillPayment/distributionCard']/table//span[@innertext~'Tipo de tarjeta']/../..//input[@data-tabindexsaved='True']", 30000, null, "3371ed2e-3320-419f-afbd-a97318ea1c52");
+                _txtbox_tipotarjeta1Info = new RepoItemInfo(this, "txtbox_TipoTarjeta1", ".//div[#'NewDirectBillPayment/distributionCard']/table//span[@innertext~'Tipo de tarjeta']/../..//input", 30000, null, "4d1e5a38-95dc-4a89-a6fb-771d77f6027d");
+                _imag_torta_pagoInfo = new RepoItemInfo(this, "Imag_torta_pago", ".//tbody[#'AccountSummary-tbody']//canvas[@safeclass='x-surface-canvas']", 30000, null, "7fbc858b-3245-4102-906d-29f4e91b8c9f");
             }
 
             /// <summary>
@@ -3915,30 +3961,6 @@ namespace Smoke
             }
 
             /// <summary>
-            /// The Copy_of_bttn_Aceptar item.
-            /// </summary>
-            [RepositoryItem("0a39753b-d9bc-4aa8-b70f-13cf481c9ef4")]
-            public virtual Ranorex.SpanTag Copy_of_bttn_Aceptar
-            {
-                get
-                {
-                    return _copy_of_bttn_aceptarInfo.CreateAdapter<Ranorex.SpanTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Copy_of_bttn_Aceptar item info.
-            /// </summary>
-            [RepositoryItemInfo("0a39753b-d9bc-4aa8-b70f-13cf481c9ef4")]
-            public virtual RepoItemInfo Copy_of_bttn_AceptarInfo
-            {
-                get
-                {
-                    return _copy_of_bttn_aceptarInfo;
-                }
-            }
-
-            /// <summary>
             /// The txtbox_CodigoAgente item.
             /// </summary>
             [RepositoryItem("1fb768a6-7edc-4646-bab1-09214c84ff68")]
@@ -6267,12 +6289,429 @@ namespace Smoke
             }
 
             /// <summary>
+            /// The bttn_MenuCuentaBC item.
+            /// </summary>
+            [RepositoryItem("8377fd75-1e42-4481-84e2-8b4bd92fa4ca")]
+            public virtual Ranorex.SpanTag bttn_MenuCuentaBC
+            {
+                get
+                {
+                    return _bttn_menucuentabcInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The bttn_MenuCuentaBC item info.
+            /// </summary>
+            [RepositoryItemInfo("8377fd75-1e42-4481-84e2-8b4bd92fa4ca")]
+            public virtual RepoItemInfo bttn_MenuCuentaBCInfo
+            {
+                get
+                {
+                    return _bttn_menucuentabcInfo;
+                }
+            }
+
+            /// <summary>
+            /// The bttn_Acciones item.
+            /// </summary>
+            [RepositoryItem("21857b16-a744-4e65-a054-c2aaa642e1a6")]
+            public virtual Ranorex.ATag bttn_Acciones
+            {
+                get
+                {
+                    return _bttn_accionesInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The bttn_Acciones item info.
+            /// </summary>
+            [RepositoryItemInfo("21857b16-a744-4e65-a054-c2aaa642e1a6")]
+            public virtual RepoItemInfo bttn_AccionesInfo
+            {
+                get
+                {
+                    return _bttn_accionesInfo;
+                }
+            }
+
+            /// <summary>
+            /// The bttn_PagoNuevo item.
+            /// </summary>
+            [RepositoryItem("5d8ce604-2543-44b2-8bc7-434a668619b6")]
+            public virtual Ranorex.SpanTag bttn_PagoNuevo
+            {
+                get
+                {
+                    return _bttn_pagonuevoInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The bttn_PagoNuevo item info.
+            /// </summary>
+            [RepositoryItemInfo("5d8ce604-2543-44b2-8bc7-434a668619b6")]
+            public virtual RepoItemInfo bttn_PagoNuevoInfo
+            {
+                get
+                {
+                    return _bttn_pagonuevoInfo;
+                }
+            }
+
+            /// <summary>
+            /// The bttn_NuevoPago item.
+            /// </summary>
+            [RepositoryItem("c59d0f49-88c7-4500-8971-9579d4986a9c")]
+            public virtual Ranorex.SpanTag bttn_NuevoPago
+            {
+                get
+                {
+                    return _bttn_nuevopagoInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The bttn_NuevoPago item info.
+            /// </summary>
+            [RepositoryItemInfo("c59d0f49-88c7-4500-8971-9579d4986a9c")]
+            public virtual RepoItemInfo bttn_NuevoPagoInfo
+            {
+                get
+                {
+                    return _bttn_nuevopagoInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txt_PagosMedianteFacturacionDirecta item.
+            /// </summary>
+            [RepositoryItem("f4c88bb4-0887-45e6-b51e-c74ef89037dc")]
+            public virtual Ranorex.SpanTag txt_PagosMedianteFacturacionDirecta
+            {
+                get
+                {
+                    return _txt_pagosmediantefacturaciondirectaInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txt_PagosMedianteFacturacionDirecta item info.
+            /// </summary>
+            [RepositoryItemInfo("f4c88bb4-0887-45e6-b51e-c74ef89037dc")]
+            public virtual RepoItemInfo txt_PagosMedianteFacturacionDirectaInfo
+            {
+                get
+                {
+                    return _txt_pagosmediantefacturaciondirectaInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Arrow_Select_Poliza item.
+            /// </summary>
+            [RepositoryItem("c6a146c4-7b26-466e-a3e1-7a05de7604c0")]
+            public virtual Ranorex.DivTag Arrow_Select_Poliza
+            {
+                get
+                {
+                    return _arrow_select_polizaInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Arrow_Select_Poliza item info.
+            /// </summary>
+            [RepositoryItemInfo("c6a146c4-7b26-466e-a3e1-7a05de7604c0")]
+            public virtual RepoItemInfo Arrow_Select_PolizaInfo
+            {
+                get
+                {
+                    return _arrow_select_polizaInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txtbox_NumeroDePoliza item.
+            /// </summary>
+            [RepositoryItem("25d8e279-dcb3-4d79-a973-4cd4854c58f3")]
+            public virtual Ranorex.InputTag txtbox_NumeroDePoliza
+            {
+                get
+                {
+                    return _txtbox_numerodepolizaInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txtbox_NumeroDePoliza item info.
+            /// </summary>
+            [RepositoryItemInfo("25d8e279-dcb3-4d79-a973-4cd4854c58f3")]
+            public virtual RepoItemInfo txtbox_NumeroDePolizaInfo
+            {
+                get
+                {
+                    return _txtbox_numerodepolizaInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Select_Poliza item.
+            /// </summary>
+            [RepositoryItem("a716f631-83bf-4e35-888f-0fe739612019")]
+            public virtual Ranorex.LiTag Select_Poliza
+            {
+                get
+                {
+                    return _select_polizaInfo.CreateAdapter<Ranorex.LiTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Select_Poliza item info.
+            /// </summary>
+            [RepositoryItemInfo("a716f631-83bf-4e35-888f-0fe739612019")]
+            public virtual RepoItemInfo Select_PolizaInfo
+            {
+                get
+                {
+                    return _select_polizaInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Copy_of_txtbox_Monto item.
+            /// </summary>
+            [RepositoryItem("bada0acc-fcbe-4dac-96b8-8612bc977cca")]
+            public virtual Ranorex.InputTag Copy_of_txtbox_Monto
+            {
+                get
+                {
+                    return _copy_of_txtbox_montoInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Copy_of_txtbox_Monto item info.
+            /// </summary>
+            [RepositoryItemInfo("bada0acc-fcbe-4dac-96b8-8612bc977cca")]
+            public virtual RepoItemInfo Copy_of_txtbox_MontoInfo
+            {
+                get
+                {
+                    return _copy_of_txtbox_montoInfo;
+                }
+            }
+
+            /// <summary>
+            /// The montoPagar item.
+            /// </summary>
+            [RepositoryItem("791edfc9-6d94-4cab-b52f-54f53dc5fed0")]
+            public virtual Ranorex.ATag montoPagar
+            {
+                get
+                {
+                    return _montopagarInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The montoPagar item info.
+            /// </summary>
+            [RepositoryItemInfo("791edfc9-6d94-4cab-b52f-54f53dc5fed0")]
+            public virtual RepoItemInfo montoPagarInfo
+            {
+                get
+                {
+                    return _montopagarInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txtbox_Monto item.
+            /// </summary>
+            [RepositoryItem("01e98f90-cb46-42ab-8c06-99f64aa18b59")]
+            public virtual Ranorex.InputTag txtbox_Monto
+            {
+                get
+                {
+                    return _txtbox_montoInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txtbox_Monto item info.
+            /// </summary>
+            [RepositoryItemInfo("01e98f90-cb46-42ab-8c06-99f64aa18b59")]
+            public virtual RepoItemInfo txtbox_MontoInfo
+            {
+                get
+                {
+                    return _txtbox_montoInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Copy_of_txtbox_NumAutorizacion item.
+            /// </summary>
+            [RepositoryItem("3ee9f58f-8a08-41f6-af21-0038d807bb22")]
+            public virtual Ranorex.SpanTag Copy_of_txtbox_NumAutorizacion
+            {
+                get
+                {
+                    return _copy_of_txtbox_numautorizacionInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Copy_of_txtbox_NumAutorizacion item info.
+            /// </summary>
+            [RepositoryItemInfo("3ee9f58f-8a08-41f6-af21-0038d807bb22")]
+            public virtual RepoItemInfo Copy_of_txtbox_NumAutorizacionInfo
+            {
+                get
+                {
+                    return _copy_of_txtbox_numautorizacionInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txtbox_NumAutorizacion item.
+            /// </summary>
+            [RepositoryItem("b387c583-293a-4e15-8e0f-6ff47ad1d9d1")]
+            public virtual Ranorex.InputTag txtbox_NumAutorizacion
+            {
+                get
+                {
+                    return _txtbox_numautorizacionInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txtbox_NumAutorizacion item info.
+            /// </summary>
+            [RepositoryItemInfo("b387c583-293a-4e15-8e0f-6ff47ad1d9d1")]
+            public virtual RepoItemInfo txtbox_NumAutorizacionInfo
+            {
+                get
+                {
+                    return _txtbox_numautorizacionInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DetallesDePago item.
+            /// </summary>
+            [RepositoryItem("6f9cc8bd-7ec2-463a-ba2f-82226da5147a")]
+            public virtual Ranorex.LabelTag DetallesDePago
+            {
+                get
+                {
+                    return _detallesdepagoInfo.CreateAdapter<Ranorex.LabelTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DetallesDePago item info.
+            /// </summary>
+            [RepositoryItemInfo("6f9cc8bd-7ec2-463a-ba2f-82226da5147a")]
+            public virtual RepoItemInfo DetallesDePagoInfo
+            {
+                get
+                {
+                    return _detallesdepagoInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Copy_of_txtbox_TipoTarjeta1 item.
+            /// </summary>
+            [RepositoryItem("3371ed2e-3320-419f-afbd-a97318ea1c52")]
+            public virtual Ranorex.InputTag Copy_of_txtbox_TipoTarjeta1
+            {
+                get
+                {
+                    return _copy_of_txtbox_tipotarjeta1Info.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Copy_of_txtbox_TipoTarjeta1 item info.
+            /// </summary>
+            [RepositoryItemInfo("3371ed2e-3320-419f-afbd-a97318ea1c52")]
+            public virtual RepoItemInfo Copy_of_txtbox_TipoTarjeta1Info
+            {
+                get
+                {
+                    return _copy_of_txtbox_tipotarjeta1Info;
+                }
+            }
+
+            /// <summary>
+            /// The txtbox_TipoTarjeta1 item.
+            /// </summary>
+            [RepositoryItem("4d1e5a38-95dc-4a89-a6fb-771d77f6027d")]
+            public virtual Ranorex.InputTag txtbox_TipoTarjeta1
+            {
+                get
+                {
+                    return _txtbox_tipotarjeta1Info.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txtbox_TipoTarjeta1 item info.
+            /// </summary>
+            [RepositoryItemInfo("4d1e5a38-95dc-4a89-a6fb-771d77f6027d")]
+            public virtual RepoItemInfo txtbox_TipoTarjeta1Info
+            {
+                get
+                {
+                    return _txtbox_tipotarjeta1Info;
+                }
+            }
+
+            /// <summary>
+            /// The Imag_torta_pago item.
+            /// </summary>
+            [RepositoryItem("7fbc858b-3245-4102-906d-29f4e91b8c9f")]
+            public virtual Ranorex.CanvasTag Imag_torta_pago
+            {
+                get
+                {
+                    return _imag_torta_pagoInfo.CreateAdapter<Ranorex.CanvasTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Imag_torta_pago item info.
+            /// </summary>
+            [RepositoryItemInfo("7fbc858b-3245-4102-906d-29f4e91b8c9f")]
+            public virtual RepoItemInfo Imag_torta_pagoInfo
+            {
+                get
+                {
+                    return _imag_torta_pagoInfo;
+                }
+            }
+
+            /// <summary>
             /// The PC folder.
             /// </summary>
             [RepositoryFolder("0f5b0abe-7a5f-4c05-a3f8-192c01a184a9")]
             public virtual SmokeRepositoryFolders.PCFolder PC
             {
                 get { return _pc; }
+            }
+
+            /// <summary>
+            /// The BC folder.
+            /// </summary>
+            [RepositoryFolder("c4d85095-926a-4ee9-8f0d-fc0161e60a78")]
+            public virtual SmokeRepositoryFolders.BCFolder BC
+            {
+                get { return _bc; }
             }
         }
 
@@ -7661,11 +8100,11 @@ namespace Smoke
             RepoItemInfo _bttn_siguiente2Info;
             RepoItemInfo _bttn_cotizarInfo;
             RepoItemInfo _bttn_emitirpolizaInfo;
-            RepoItemInfo _bttn_aceptarInfo;
             RepoItemInfo _numerodepolizaemitidaInfo;
             RepoItemInfo _copy_of_bttn_siguienteInfo;
             RepoItemInfo _copy_of_bttn_aceptar3Info;
             RepoItemInfo _bttn_aceptar3Info;
+            RepoItemInfo _bttn_aceptarInfo;
 
             /// <summary>
             /// Creates a new Botones  folder.
@@ -7677,11 +8116,11 @@ namespace Smoke
                 _bttn_siguiente2Info = new RepoItemInfo(this, "bttn_Siguiente2", ".//span/span/span[@innertext~'Siguiente >']", 30000, null, "92806af3-1580-4f40-abd7-a5e82362c53d");
                 _bttn_cotizarInfo = new RepoItemInfo(this, "bttn_Cotizar", ".//span[@innertext~'Cotiar']", 30000, null, "6367dbe5-e134-4e9b-92f4-fa0e968c208b");
                 _bttn_emitirpolizaInfo = new RepoItemInfo(this, "bttn_EmitirPoliza", ".//div//span[@innertext~'Emitir Póliza']", 30000, null, "ce9bbb1f-7d20-4fa2-8289-d686966fb928");
-                _bttn_aceptarInfo = new RepoItemInfo(this, "bttn_Aceptar", "body//span[@innertext~'Aceptar']", 1000, null, "1e07b0ae-e811-4823-add4-8ebb18379c8b");
                 _numerodepolizaemitidaInfo = new RepoItemInfo(this, "NumeroDePolizaEmitida", ".//tbody[#'JobComplete-tbody']//div[@innertext>'Ver su póliza']", 30000, null, "0b555a2e-d526-4045-9709-2f592ebc2ff8");
                 _copy_of_bttn_siguienteInfo = new RepoItemInfo(this, "Copy_of_bttn_Siguiente", ".//span[#'SubmissionWizard:Next-btnInnerEl']/../..//input[@data-tabindexsaved='True']", 30000, null, "34fc6e41-8522-4505-b91b-f1e72c7568c0");
                 _copy_of_bttn_aceptar3Info = new RepoItemInfo(this, "Copy_of_bttn_Aceptar3", "body//table//table//div/div/div//span/span/span[@innertext='Aceptar' and @enabled='True']", 1000, null, "d421b8bc-c1ac-44b0-a35b-3eebb334b9fd");
                 _bttn_aceptar3Info = new RepoItemInfo(this, "bttn_Aceptar3", "body//table//table//div/div/div//span/span/span[@innertext='Aceptar']", 1000, null, "0435c891-78bd-44aa-9a3c-12678eee3e21");
+                _bttn_aceptarInfo = new RepoItemInfo(this, "bttn_Aceptar", "body//span[@innertext~'Aceptar']", 0, null, "2ef09066-7bb0-4cb2-a677-5be6f0de6e97");
             }
 
             /// <summary>
@@ -7793,30 +8232,6 @@ namespace Smoke
             }
 
             /// <summary>
-            /// The bttn_Aceptar item.
-            /// </summary>
-            [RepositoryItem("1e07b0ae-e811-4823-add4-8ebb18379c8b")]
-            public virtual Ranorex.SpanTag bttn_Aceptar
-            {
-                get
-                {
-                    return _bttn_aceptarInfo.CreateAdapter<Ranorex.SpanTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The bttn_Aceptar item info.
-            /// </summary>
-            [RepositoryItemInfo("1e07b0ae-e811-4823-add4-8ebb18379c8b")]
-            public virtual RepoItemInfo bttn_AceptarInfo
-            {
-                get
-                {
-                    return _bttn_aceptarInfo;
-                }
-            }
-
-            /// <summary>
             /// The NumeroDePolizaEmitida item.
             /// </summary>
             [RepositoryItem("0b555a2e-d526-4045-9709-2f592ebc2ff8")]
@@ -7909,6 +8324,30 @@ namespace Smoke
                 get
                 {
                     return _bttn_aceptar3Info;
+                }
+            }
+
+            /// <summary>
+            /// The bttn_Aceptar item.
+            /// </summary>
+            [RepositoryItem("2ef09066-7bb0-4cb2-a677-5be6f0de6e97")]
+            public virtual Ranorex.SpanTag bttn_Aceptar
+            {
+                get
+                {
+                    return _bttn_aceptarInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The bttn_Aceptar item info.
+            /// </summary>
+            [RepositoryItemInfo("2ef09066-7bb0-4cb2-a677-5be6f0de6e97")]
+            public virtual RepoItemInfo bttn_AceptarInfo
+            {
+                get
+                {
+                    return _bttn_aceptarInfo;
                 }
             }
         }
@@ -11102,6 +11541,423 @@ namespace Smoke
         }
 
         /// <summary>
+        /// The BCFolder folder.
+        /// </summary>
+        [RepositoryFolder("c4d85095-926a-4ee9-8f0d-fc0161e60a78")]
+        public partial class BCFolder : RepoGenBaseFolder
+        {
+            SmokeRepositoryFolders.NuevoPagoFolder _nuevopago;
+            RepoItemInfo _txt_pagosmediantefacturaciondirectaInfo;
+            RepoItemInfo _imag_torta_pagoInfo;
+
+            /// <summary>
+            /// Creates a new BC  folder.
+            /// </summary>
+            public BCFolder(RepoGenBaseFolder parentFolder) :
+                    base("BC", "", parentFolder, 0, null, false, "c4d85095-926a-4ee9-8f0d-fc0161e60a78", "")
+            {
+                _nuevopago = new SmokeRepositoryFolders.NuevoPagoFolder(this);
+                _txt_pagosmediantefacturaciondirectaInfo = new RepoItemInfo(this, "txt_PagosMedianteFacturacionDirecta", ".//span[@innertext>'Pagos mediante facturación']", 30000, null, "a9442fd9-ef98-4bb2-af62-0f89a062b8fa");
+                _imag_torta_pagoInfo = new RepoItemInfo(this, "Imag_torta_pago", ".//tbody[#'AccountSummary-tbody']/tr[7]//table/?/?/tr/td[2]/?/?/table//div/table/?/?/tr/td[1]/?/?/table/?/?/tr/td/div/div/div[2]/?/?/canvas", 30000, null, "0761b1d3-33bc-4097-a3d6-6320659ac111");
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("c4d85095-926a-4ee9-8f0d-fc0161e60a78")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txt_PagosMedianteFacturacionDirecta item.
+            /// </summary>
+            [RepositoryItem("a9442fd9-ef98-4bb2-af62-0f89a062b8fa")]
+            public virtual Ranorex.SpanTag txt_PagosMedianteFacturacionDirecta
+            {
+                get
+                {
+                    return _txt_pagosmediantefacturaciondirectaInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txt_PagosMedianteFacturacionDirecta item info.
+            /// </summary>
+            [RepositoryItemInfo("a9442fd9-ef98-4bb2-af62-0f89a062b8fa")]
+            public virtual RepoItemInfo txt_PagosMedianteFacturacionDirectaInfo
+            {
+                get
+                {
+                    return _txt_pagosmediantefacturaciondirectaInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Imag_torta_pago item.
+            /// </summary>
+            [RepositoryItem("0761b1d3-33bc-4097-a3d6-6320659ac111")]
+            public virtual Ranorex.CanvasTag Imag_torta_pago
+            {
+                get
+                {
+                    return _imag_torta_pagoInfo.CreateAdapter<Ranorex.CanvasTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Imag_torta_pago item info.
+            /// </summary>
+            [RepositoryItemInfo("0761b1d3-33bc-4097-a3d6-6320659ac111")]
+            public virtual RepoItemInfo Imag_torta_pagoInfo
+            {
+                get
+                {
+                    return _imag_torta_pagoInfo;
+                }
+            }
+
+            /// <summary>
+            /// The NuevoPago folder.
+            /// </summary>
+            [RepositoryFolder("c5e16470-096b-4342-be8a-45cc53faf44d")]
+            public virtual SmokeRepositoryFolders.NuevoPagoFolder NuevoPago
+            {
+                get { return _nuevopago; }
+            }
+        }
+
+        /// <summary>
+        /// The NuevoPagoFolder folder.
+        /// </summary>
+        [RepositoryFolder("c5e16470-096b-4342-be8a-45cc53faf44d")]
+        public partial class NuevoPagoFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _arrow_select_polizaInfo;
+            RepoItemInfo _txtbox_numerodepolizaInfo;
+            RepoItemInfo _select_polizaInfo;
+            RepoItemInfo _copy_of_txtbox_montoInfo;
+            RepoItemInfo _txtbox_montoInfo;
+            RepoItemInfo _copy_of_txtbox_numautorizacionInfo;
+            RepoItemInfo _txtbox_numautorizacionInfo;
+            RepoItemInfo _detallesdepagoInfo;
+            RepoItemInfo _copy_of_txtbox_tipotarjetaInfo;
+            RepoItemInfo _txtbox_tipotarjetaInfo;
+            RepoItemInfo _bttn_ejecutarInfo;
+
+            /// <summary>
+            /// Creates a new NuevoPago  folder.
+            /// </summary>
+            public NuevoPagoFolder(RepoGenBaseFolder parentFolder) :
+                    base("NuevoPago", ".//div[#'NewDirectBillPayment/distributionCard']/table", parentFolder, 30000, null, false, "c5e16470-096b-4342-be8a-45cc53faf44d", "")
+            {
+                _arrow_select_polizaInfo = new RepoItemInfo(this, "Arrow_Select_Poliza", ".//div[@id='NewDirectBillPayment:EditDBPaymentScreen:PaymentDetailsDV:policyNumbers-trigger-picker']", 30000, null, "acc6806a-1b8b-44cd-a747-49e2ea2ba938");
+                _txtbox_numerodepolizaInfo = new RepoItemInfo(this, "txtbox_NumeroDePoliza", ".//span[@innertext~'Número de Póliza']/../..//input", 30000, null, "fa318d39-9877-48ab-b74b-0421a15ec5d2");
+                _select_polizaInfo = new RepoItemInfo(this, "Select_Poliza", ".//li[@innertext~$NumPoliza and @visible='True']", 30000, null, "84acf33f-524c-4451-84d5-690744856e43");
+                _copy_of_txtbox_montoInfo = new RepoItemInfo(this, "Copy_of_txtbox_Monto", ".//span[@innertext='Monto']/../..//input[@data-tabindexsaved='True']", 30000, null, "181e1ed5-3fb9-4645-9b9f-5ddb68a14340");
+                _txtbox_montoInfo = new RepoItemInfo(this, "txtbox_Monto", ".//span[@innertext='Monto']/../..//input", 30000, null, "0d8684e5-c0bf-4ef7-8a29-faed842bb112");
+                _copy_of_txtbox_numautorizacionInfo = new RepoItemInfo(this, "Copy_of_txtbox_NumAutorizacion", ".//span[@innertext~'N.º Autorización' and @data-tabindexsaved='True']", 30000, null, "14dd85a4-f7b7-4ad1-bb0d-bda7ec241ccb");
+                _txtbox_numautorizacionInfo = new RepoItemInfo(this, "txtbox_NumAutorizacion", ".//span[@innertext~'N.º Autorización']/../..//input", 30000, null, "8bbcdf4e-0d5f-4c35-a283-fac658ef6b1d");
+                _detallesdepagoInfo = new RepoItemInfo(this, "DetallesDePago", "tbody/tr[4]//table//div/table/?/?/tr/td[2]/div/table/tbody/tr[1]/?/?/label[@innertext='Detalles de pago']", 30000, null, "d08014bb-58dc-4304-af5b-61d9f9b25a47");
+                _copy_of_txtbox_tipotarjetaInfo = new RepoItemInfo(this, "Copy_of_txtbox_TipoTarjeta", ".//span[@innertext~'Tipo de tarjeta']/../..//input[@data-tabindexsaved='True']", 30000, null, "78ec7472-eeba-4b73-9229-401baf0973fe");
+                _txtbox_tipotarjetaInfo = new RepoItemInfo(this, "txtbox_TipoTarjeta", ".//span[@innertext~'Tipo de tarjeta']/../..//input", 30000, null, "e3162f33-8d5e-4f9f-b529-df84c51ae04d");
+                _bttn_ejecutarInfo = new RepoItemInfo(this, "bttn_Ejecutar", ".//span[@innertext~'Ejectar']", 0, null, "657f9412-6e4d-4cfb-8b91-7ebda25bbc1a");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("c5e16470-096b-4342-be8a-45cc53faf44d")]
+            public virtual Ranorex.Table Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Table>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("c5e16470-096b-4342-be8a-45cc53faf44d")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Arrow_Select_Poliza item.
+            /// </summary>
+            [RepositoryItem("acc6806a-1b8b-44cd-a747-49e2ea2ba938")]
+            public virtual Ranorex.DivTag Arrow_Select_Poliza
+            {
+                get
+                {
+                    return _arrow_select_polizaInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Arrow_Select_Poliza item info.
+            /// </summary>
+            [RepositoryItemInfo("acc6806a-1b8b-44cd-a747-49e2ea2ba938")]
+            public virtual RepoItemInfo Arrow_Select_PolizaInfo
+            {
+                get
+                {
+                    return _arrow_select_polizaInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txtbox_NumeroDePoliza item.
+            /// </summary>
+            [RepositoryItem("fa318d39-9877-48ab-b74b-0421a15ec5d2")]
+            public virtual Ranorex.InputTag txtbox_NumeroDePoliza
+            {
+                get
+                {
+                    return _txtbox_numerodepolizaInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txtbox_NumeroDePoliza item info.
+            /// </summary>
+            [RepositoryItemInfo("fa318d39-9877-48ab-b74b-0421a15ec5d2")]
+            public virtual RepoItemInfo txtbox_NumeroDePolizaInfo
+            {
+                get
+                {
+                    return _txtbox_numerodepolizaInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Select_Poliza item.
+            /// </summary>
+            [RepositoryItem("84acf33f-524c-4451-84d5-690744856e43")]
+            public virtual Ranorex.LiTag Select_Poliza
+            {
+                get
+                {
+                    return _select_polizaInfo.CreateAdapter<Ranorex.LiTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Select_Poliza item info.
+            /// </summary>
+            [RepositoryItemInfo("84acf33f-524c-4451-84d5-690744856e43")]
+            public virtual RepoItemInfo Select_PolizaInfo
+            {
+                get
+                {
+                    return _select_polizaInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Copy_of_txtbox_Monto item.
+            /// </summary>
+            [RepositoryItem("181e1ed5-3fb9-4645-9b9f-5ddb68a14340")]
+            public virtual Ranorex.InputTag Copy_of_txtbox_Monto
+            {
+                get
+                {
+                    return _copy_of_txtbox_montoInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Copy_of_txtbox_Monto item info.
+            /// </summary>
+            [RepositoryItemInfo("181e1ed5-3fb9-4645-9b9f-5ddb68a14340")]
+            public virtual RepoItemInfo Copy_of_txtbox_MontoInfo
+            {
+                get
+                {
+                    return _copy_of_txtbox_montoInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txtbox_Monto item.
+            /// </summary>
+            [RepositoryItem("0d8684e5-c0bf-4ef7-8a29-faed842bb112")]
+            public virtual Ranorex.InputTag txtbox_Monto
+            {
+                get
+                {
+                    return _txtbox_montoInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txtbox_Monto item info.
+            /// </summary>
+            [RepositoryItemInfo("0d8684e5-c0bf-4ef7-8a29-faed842bb112")]
+            public virtual RepoItemInfo txtbox_MontoInfo
+            {
+                get
+                {
+                    return _txtbox_montoInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Copy_of_txtbox_NumAutorizacion item.
+            /// </summary>
+            [RepositoryItem("14dd85a4-f7b7-4ad1-bb0d-bda7ec241ccb")]
+            public virtual Ranorex.SpanTag Copy_of_txtbox_NumAutorizacion
+            {
+                get
+                {
+                    return _copy_of_txtbox_numautorizacionInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Copy_of_txtbox_NumAutorizacion item info.
+            /// </summary>
+            [RepositoryItemInfo("14dd85a4-f7b7-4ad1-bb0d-bda7ec241ccb")]
+            public virtual RepoItemInfo Copy_of_txtbox_NumAutorizacionInfo
+            {
+                get
+                {
+                    return _copy_of_txtbox_numautorizacionInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txtbox_NumAutorizacion item.
+            /// </summary>
+            [RepositoryItem("8bbcdf4e-0d5f-4c35-a283-fac658ef6b1d")]
+            public virtual Ranorex.InputTag txtbox_NumAutorizacion
+            {
+                get
+                {
+                    return _txtbox_numautorizacionInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txtbox_NumAutorizacion item info.
+            /// </summary>
+            [RepositoryItemInfo("8bbcdf4e-0d5f-4c35-a283-fac658ef6b1d")]
+            public virtual RepoItemInfo txtbox_NumAutorizacionInfo
+            {
+                get
+                {
+                    return _txtbox_numautorizacionInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DetallesDePago item.
+            /// </summary>
+            [RepositoryItem("d08014bb-58dc-4304-af5b-61d9f9b25a47")]
+            public virtual Ranorex.LabelTag DetallesDePago
+            {
+                get
+                {
+                    return _detallesdepagoInfo.CreateAdapter<Ranorex.LabelTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DetallesDePago item info.
+            /// </summary>
+            [RepositoryItemInfo("d08014bb-58dc-4304-af5b-61d9f9b25a47")]
+            public virtual RepoItemInfo DetallesDePagoInfo
+            {
+                get
+                {
+                    return _detallesdepagoInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Copy_of_txtbox_TipoTarjeta item.
+            /// </summary>
+            [RepositoryItem("78ec7472-eeba-4b73-9229-401baf0973fe")]
+            public virtual Ranorex.InputTag Copy_of_txtbox_TipoTarjeta
+            {
+                get
+                {
+                    return _copy_of_txtbox_tipotarjetaInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Copy_of_txtbox_TipoTarjeta item info.
+            /// </summary>
+            [RepositoryItemInfo("78ec7472-eeba-4b73-9229-401baf0973fe")]
+            public virtual RepoItemInfo Copy_of_txtbox_TipoTarjetaInfo
+            {
+                get
+                {
+                    return _copy_of_txtbox_tipotarjetaInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txtbox_TipoTarjeta item.
+            /// </summary>
+            [RepositoryItem("e3162f33-8d5e-4f9f-b529-df84c51ae04d")]
+            public virtual Ranorex.InputTag txtbox_TipoTarjeta
+            {
+                get
+                {
+                    return _txtbox_tipotarjetaInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txtbox_TipoTarjeta item info.
+            /// </summary>
+            [RepositoryItemInfo("e3162f33-8d5e-4f9f-b529-df84c51ae04d")]
+            public virtual RepoItemInfo txtbox_TipoTarjetaInfo
+            {
+                get
+                {
+                    return _txtbox_tipotarjetaInfo;
+                }
+            }
+
+            /// <summary>
+            /// The bttn_Ejecutar item.
+            /// </summary>
+            [RepositoryItem("657f9412-6e4d-4cfb-8b91-7ebda25bbc1a")]
+            public virtual Ranorex.SpanTag bttn_Ejecutar
+            {
+                get
+                {
+                    return _bttn_ejecutarInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The bttn_Ejecutar item info.
+            /// </summary>
+            [RepositoryItemInfo("657f9412-6e4d-4cfb-8b91-7ebda25bbc1a")]
+            public virtual RepoItemInfo bttn_EjecutarInfo
+            {
+                get
+                {
+                    return _bttn_ejecutarInfo;
+                }
+            }
+        }
+
+        /// <summary>
         /// The ApplicationUnderTestAppFolder folder.
         /// </summary>
         [RepositoryFolder("0cf39306-9843-4052-a44c-066f618a7e1e")]
@@ -12606,6 +13462,7 @@ namespace Smoke
             RepoItemInfo _btn_aprobacionespecialInfo;
             RepoItemInfo _bttn_aceptarcofInfo;
             RepoItemInfo _bttn_aceptar4Info;
+            RepoItemInfo _bttn_aceptarInfo;
 
             /// <summary>
             /// Creates a new SURA_ContinueOnFail  folder.
@@ -12617,6 +13474,7 @@ namespace Smoke
                 _btn_aprobacionespecialInfo = new RepoItemInfo(this, "btn_AprobacionEspecial", ".//div[#'SubmissionWizard/RiskAnalysis']//a[@innertext~'Aprobación especial']", 30000, null, "e8644154-542d-419f-b600-277957db60c3");
                 _bttn_aceptarcofInfo = new RepoItemInfo(this, "bttn_AceptarCOF", "body//span[@innertext~'Aceptar']", 0, null, "46048979-b84b-4f84-91ed-a763e10aa82f");
                 _bttn_aceptar4Info = new RepoItemInfo(this, "bttn_Aceptar4", "body//table//div/table//div//span/span/span[@innertext~'Aceptar']", 30000, null, "9ac096fd-06fc-4e0c-9ade-e0fead5141f5");
+                _bttn_aceptarInfo = new RepoItemInfo(this, "bttn_Aceptar", "body//span[@innertext~'Aceptar']", 0, null, "1e07b0ae-e811-4823-add4-8ebb18379c8b");
             }
 
             /// <summary>
@@ -12736,6 +13594,30 @@ namespace Smoke
                 get
                 {
                     return _bttn_aceptar4Info;
+                }
+            }
+
+            /// <summary>
+            /// The bttn_Aceptar item.
+            /// </summary>
+            [RepositoryItem("1e07b0ae-e811-4823-add4-8ebb18379c8b")]
+            public virtual Ranorex.SpanTag bttn_Aceptar
+            {
+                get
+                {
+                    return _bttn_aceptarInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The bttn_Aceptar item info.
+            /// </summary>
+            [RepositoryItemInfo("1e07b0ae-e811-4823-add4-8ebb18379c8b")]
+            public virtual RepoItemInfo bttn_AceptarInfo
+            {
+                get
+                {
+                    return _bttn_aceptarInfo;
                 }
             }
         }

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="ad5ed313-4634-480f-8e5b-88e66c955da8"
+id="a0b418f0-6551-48d1-b8cc-275b0b6164e7"
 mode="Desktop">
 	<repeatcount>
 		1
@@ -19,45 +19,35 @@ mode="Desktop">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="OpenBrowser"
-	namespace="Smoke">
+	classname="CloseBrowser"
+	namespace="Smoke.Generales">
 	</codegen>
 	<variables>
-		<var
-		id="35c278a9-9396-4876-8b62-b6f02cdf0e51"
-		name="URL">
-			https://preproducciongestion.segurossura.com.ar/pc/PolicyCenter.do
-		</var>
 	</variables>
 	<recorditems>
-		<openwebsiterecorditem
-		args=""
-		browser="chrome"
-		clearcache="False"
-		clearcookies="False"
+		<closeapprecorditem
 		enabled="True"
-		incognito="True"
-		instrument="True"
-		killexisting="False"
-		maximized="False"
-		optional="False">
+		graceperiod="0ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="c261781b-18fb-4836-8ce5-b2c4aa87080e">
 			<comment>
 			</comment>
 			<bindings>
-				<binding
-				target="Url"
-				variable="URL">
-				</binding>
 			</bindings>
-			<url>
-				URL
-			</url>
-		</openwebsiterecorditem>
+			<info
+			id="0cf39306-9843-4052-a44c-066f618a7e1e"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~$Ambiente]
+				</path>
+			</info>
+		</closeapprecorditem>
 	</recorditems>
 	<repository
 	id="58ca00b5-56c0-4f78-a5d2-302b212932e0"
 	name="SmokeRepository"
-	relativepath="SmokeRepository.rxrep">
+	relativepath="..\SmokeRepository.rxrep">
 		<codegen
 		classname="SmokeRepository"
 		namespace="Smoke">
@@ -69,7 +59,7 @@ mode="Desktop">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		OpenBrowser.UserCode.cs
+		CloseBrowser.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

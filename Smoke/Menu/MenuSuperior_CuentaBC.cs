@@ -20,63 +20,50 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace Smoke.Login
+namespace Smoke.Menu
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Login recording.
+    ///The MenuSuperior_CuentaBC recording.
     /// </summary>
-    [TestModule("a64524be-86c0-4f43-8300-08f1a1e63ac3", ModuleType.Recording, 1)]
-    public partial class Login : ITestModule
+    [TestModule("e764f1b0-75ea-473a-8107-188fb87760d0", ModuleType.Recording, 1)]
+    public partial class MenuSuperior_CuentaBC : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::Smoke.SmokeRepository repository.
         /// </summary>
         public static global::Smoke.SmokeRepository repo = global::Smoke.SmokeRepository.Instance;
 
-        static Login instance = new Login();
+        static MenuSuperior_CuentaBC instance = new MenuSuperior_CuentaBC();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Login()
+        public MenuSuperior_CuentaBC()
         {
-            Usuario = "su";
-            Contrasenia = "gw";
+            NumCuenta = "2887145026";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Login Instance
+        public static MenuSuperior_CuentaBC Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _Usuario;
+        string _NumCuenta;
 
         /// <summary>
-        /// Gets or sets the value of variable Usuario.
+        /// Gets or sets the value of variable NumCuenta.
         /// </summary>
-        [TestVariable("4706f1ff-a560-453b-a6c9-642422385362")]
-        public string Usuario
+        [TestVariable("0bf45686-f899-4f9f-a81b-da515c8cde89")]
+        public string NumCuenta
         {
-            get { return _Usuario; }
-            set { _Usuario = value; }
-        }
-
-        string _Contrasenia;
-
-        /// <summary>
-        /// Gets or sets the value of variable Contrasenia.
-        /// </summary>
-        [TestVariable("7e77cef4-fd01-48c3-9ebe-6fd0e02c47fd")]
-        public string Contrasenia
-        {
-            get { return _Contrasenia; }
-            set { _Contrasenia = value; }
+            get { return _NumCuenta; }
+            set { _NumCuenta = value; }
         }
 
         /// <summary>
@@ -115,23 +102,20 @@ namespace Smoke.Login
 
             Init();
 
-            // **** Ingreso de usuario y clave ****
-            Report.Log(ReportLevel.Info, "Section", "**** Ingreso de usuario y clave ****", new RecordItemIndex(0));
-            
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute TagValue to '$Usuario' on item 'SURA.txtbox_Usuario'.", repo.SURA.txtbox_UsuarioInfo, new RecordItemIndex(1));
-            repo.SURA.txtbox_Usuario.Element.SetAttributeValue("TagValue", Usuario);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.bttn_MenuCuentaBC' at CenterRight.", repo.SURA.bttn_MenuCuentaBCInfo, new RecordItemIndex(0));
+            repo.SURA.bttn_MenuCuentaBC.Click(Location.CenterRight);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute TagValue to '$Contrasenia' on item 'SURA.txtbox_Contrasenia'.", repo.SURA.txtbox_ContraseniaInfo, new RecordItemIndex(2));
-            repo.SURA.txtbox_Contrasenia.Element.SetAttributeValue("TagValue", Contrasenia);
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute TagValue to '$NumCuenta' on item 'SURA.txtbox_MenuNroCuenta'.", repo.SURA.txtbox_MenuNroCuentaInfo, new RecordItemIndex(1));
+            repo.SURA.txtbox_MenuNroCuenta.Element.SetAttributeValue("TagValue", NumCuenta);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.bttn_IniciarSesion' at 26;3.", repo.SURA.bttn_IniciarSesionInfo, new RecordItemIndex(3));
-            repo.SURA.bttn_IniciarSesion.Click("26;3");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}' with focus on 'SURA.txtbox_MenuNroCuenta'.", repo.SURA.txtbox_MenuNroCuentaInfo, new RecordItemIndex(2));
+            repo.SURA.txtbox_MenuNroCuenta.PressKeys("{Return}");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 20s to exist. Associated repository item: 'SURA.bttn_Configuracion'", repo.SURA.bttn_ConfiguracionInfo, new ActionTimeout(20000), new RecordItemIndex(4));
-            repo.SURA.bttn_ConfiguracionInfo.WaitForExists(20000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SURA.lbl_VerificarMS'", repo.SURA.lbl_VerificarMSInfo, new ActionTimeout(30000), new RecordItemIndex(3));
+            repo.SURA.lbl_VerificarMSInfo.WaitForExists(30000);
             
         }
 
