@@ -486,6 +486,30 @@
       <UserCode>true</UserCode>
       <id>127c8b8a-eb9c-4a02-9d31-d98a08aba55f</id>
     </Compile>
+    <Compile Include="Generales\AnulaPoliza.cs">
+      <BoundTo>5fa661cf-182d-41a1-b2b4-528dcce3bae2</BoundTo>
+      <DependentUpon>AnulaPoliza.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b35b8c1a-2a7c-4e29-805a-23186fcefda2</id>
+    </Compile>
+    <Compile Include="Generales\AnulaPoliza.UserCode.cs">
+      <BoundTo>5fa661cf-182d-41a1-b2b4-528dcce3bae2</BoundTo>
+      <DependentUpon>AnulaPoliza.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>de1ac2e1-ef38-40af-87a0-269f3ddd3df8</id>
+    </Compile>
+    <Compile Include="Generales\BuscaPoliza.cs">
+      <BoundTo>65e8920e-0943-4a74-9e12-adbdf638d3a1</BoundTo>
+      <DependentUpon>BuscaPoliza.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ead0eaed-8abe-460c-803b-641a0dfd12a8</id>
+    </Compile>
+    <Compile Include="Generales\BuscaPoliza.UserCode.cs">
+      <BoundTo>65e8920e-0943-4a74-9e12-adbdf638d3a1</BoundTo>
+      <DependentUpon>BuscaPoliza.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>135f3265-c8c6-4ede-8b7c-8954858aa4bf</id>
+    </Compile>
     <Compile Include="Generales\CloseBrowser.cs">
       <DependentUpon>CloseBrowser.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -824,6 +848,16 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <id>179ee4a1-7323-46c7-8696-14d5cec56696</id>
     </Content>
+    <None Include="Generales\AnulaPoliza.rxrec">
+      <BoundTo>c5d687cb-d4dd-46a0-9b8f-7e2a1374cbe9</BoundTo>
+      <id>5fa661cf-182d-41a1-b2b4-528dcce3bae2</id>
+      <recordtableid>de114023-b9f4-4177-8d8a-d559886158ae</recordtableid>
+    </None>
+    <None Include="Generales\BuscaPoliza.rxrec">
+      <BoundTo>c5d687cb-d4dd-46a0-9b8f-7e2a1374cbe9</BoundTo>
+      <id>65e8920e-0943-4a74-9e12-adbdf638d3a1</id>
+      <recordtableid>bdc78984-58d3-42f5-8d74-7364922619c4</recordtableid>
+    </None>
     <None Include="Generales\CloseBrowser.rxrec">
       <BoundTo>c5d687cb-d4dd-46a0-9b8f-7e2a1374cbe9</BoundTo>
       <id>53e41ab5-f1f2-4deb-8d0a-4f8b7d1db742</id>

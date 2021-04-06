@@ -704,6 +704,10 @@
 					name="NroCuenta"
 					value="7971481640">
 					</param>
+					<param
+					name="NumPolizaEmitida"
+					value="">
+					</param>
 				</parameters>
 			</testcase>
 			<testmodule
@@ -918,6 +922,12 @@
 					variablename="Ambiente">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="6b927146-6823-4897-b79f-8cb684c87355"
+			name="AnulaPoliza"
+			ref="de114023-b9f4-4177-8d8a-d559886158ae"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="6be451c2-8d6b-491c-ae25-5759fce4eb97"
@@ -1674,6 +1684,10 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="cf6457a3-eb5d-4eac-8f5a-ac3abb6df13f"
+			name="AnularFast">
+			</testcase>
 			<testmodule
 			id="d22ee51b-3f1d-449a-96e1-d410e3c9589f"
 			name="Pago"
@@ -1899,6 +1913,20 @@
 					datasourceid="b9610c5f-f29b-4164-b97c-040b4b60430a"
 					variableid="179cd022-d834-4b47-98d5-e2a34a6a6fce"
 					variablename="Ambiente">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="ee0ef495-15bf-48b7-a2e0-ca84ba78618d"
+			name="BuscaPoliza"
+			ref="bdc78984-58d3-42f5-8d74-7364922619c4"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="NumPolizaEmitida"
+					datasourceid="539633a7-894c-49ae-93fc-0db5a6fe177b"
+					variableid="6b93a59c-d2b0-4f9e-9980-3563206beb3c"
+					variablename="NumPolizaEmitida">
 					</var>
 				</databinding>
 			</testmodule>
@@ -2337,6 +2365,18 @@
 						<testmodule
 						id="50051ce0-8427-4eb4-a9d0-5748452ac97b"
 						name="EmisionPoliza">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="cf6457a3-eb5d-4eac-8f5a-ac3abb6df13f"
+					name="AnularFast">
+						<testmodule
+						id="ee0ef495-15bf-48b7-a2e0-ca84ba78618d"
+						name="BuscaPoliza">
+						</testmodule>
+						<testmodule
+						id="6b927146-6823-4897-b79f-8cb684c87355"
+						name="AnulaPoliza">
 						</testmodule>
 					</testcase>
 					<smartfoldernode
@@ -2955,6 +2995,9 @@
 			</testcontainer>
 			<testcontainer
 			id="b4e9a6ac-352d-4e4d-96ca-fffa1b815606">
+			</testcontainer>
+			<testcontainer
+			id="cf6457a3-eb5d-4eac-8f5a-ac3abb6df13f">
 			</testcontainer>
 			<testcontainer
 			id="dc535c44-91f9-4bbd-b7a2-73402152611d">

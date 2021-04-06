@@ -3852,6 +3852,148 @@ name="SmokeRepository">
 			searchtimeout="30000ms">
 				/dom[@domain=$Ambiente]//tbody[#'AccountSummary-tbody']//canvas[@safeclass='x-surface-canvas']
 			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="0c0ce9c5-fe1d-498a-a7bc-671e8e00e7b1"
+			name="bttn_Aceptar1"
+			refimgid="b7b46ce9-3672-4da1-92cc-43736c034292"
+			searchtimeout="30000ms">
+				/dom[@domain=$Ambiente]//span[@innertext='Aceptar']
+			</item>
+			<folder
+			capname="webdocument"
+			id="5a6b83e4-ccda-4002-ad6b-92ac92ab5423"
+			isrooted="False"
+			name="Anulacion_Rehabilitacion"
+			searchtimeout="0ms">
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="aed144e8-f9cd-4d2f-a68c-73248fa6b547"
+				name="bttn_Nuevo"
+				refimgid="9ad5a17c-78b2-4493-a285-e407b57c1535"
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//a[#'PolicyFile:PolicyFileMenuActions']//span[@innertext~'Nuevo ...']
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="0b23014e-a18f-4197-9794-6a2dade1830b"
+				name="bttn_AnularPoliza"
+				refimgid="0438a9b6-1f0f-40e2-96de-69429f1a8ab4"
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//span[@innertext~'Anular p&#243;liza']
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="b30bd660-38d9-4609-ba20-63bea919f10d"
+				name="txt_IniciarAnulacion"
+				refimgid="b8fb3418-6ac7-404d-a9fb-cad5c6867cd7"
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//span[@innertext~'Iniciar anulaci&#243;n de p&#243;liza']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="62c67db0-4998-467f-adb9-8fd436a18e81"
+				name="txtbox_Fuente"
+				refimgid="8490b0fe-d4c6-4500-84c0-7475c978ab48"
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//span[@innertext='Fuente']/../..//input
+				</item>
+				<item
+				addcaps="unknown,webelement,litag"
+				capname="litag"
+				id="e7081bb1-a962-4b67-9d28-4ff64ef1bf6a"
+				name="option_Asegurado"
+				refimgid="7342c396-ee39-4b03-b976-0f165e204457"
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//li[@innertext='Asegurado']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="6b98a329-2856-4448-bb4d-54f3cb1b30eb"
+				name="Copy_of_txtbox_Fuente"
+				refimgid="fd3044cc-4663-4261-b43c-8e9aaf0b771a"
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//span[@innertext='Fuente']/../..//input[@data-tabindexsaved='True']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="d3cf3b95-0e6c-4cf1-8882-14420f69269c"
+				name="txtbox_Motivo"
+				refimgid="6fb8e1de-0cf6-433e-9fb0-09278cced03c"
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//span[@innertext='Motivo']/../..//input
+				</item>
+				<item
+				addcaps="unknown,webelement,litag"
+				capname="litag"
+				id="340f6da7-2341-4a4c-9e62-2daa730adf89"
+				name="option_AnulacionPorDesistimiento"
+				refimgid="2b733b4c-9e55-42c9-b3f2-94861c1cbb78"
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//li[@innertext~'Anulaci&#243;n por desistimien']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="7c5667df-556d-4eb9-8213-59e068d186fa"
+				name="Copy_of_txtbox_Motivo"
+				refimgid="5742fd71-e04a-45ad-b612-f043e7e37379"
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//span[@innertext='Motivo']/../..//input[@data-tabindexsaved='True']
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="51c99656-4d05-46fc-a66c-989412344a7b"
+				name="bttn_IniciarAnulacion"
+				refimgid="b9e93d4e-67fa-4069-8c55-1a7223ab92ae"
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//a[#'StartCancellation:StartCancellationScreen:NewCancellation']//span[@innertext='Iniciar anulaci&#243;n']
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="c08cd158-af20-4b03-99e8-55b4fd769f60"
+				name="txt_Confirmacion"
+				refimgid="0a4c990d-5d4d-4fa5-a9e9-d875ab65a478"
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//span[@innertext='Confirmaci&#243;n']
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="84b81efd-615d-4f42-bfb2-efe85f7001b6"
+				name="bttn_AnularAhora"
+				refimgid="137dfa8e-7fb7-474c-bb24-3c6799f5f8b3"
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//div[#'CancellationWizard/ViewQuote']//span[@innertext~'Anular ahora']
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="10da5b4b-ee9b-421c-82c2-629f88e2f1e1"
+				name="txt_AnulacionContratada"
+				refimgid="73b824b6-29d3-4a14-b78d-e005d720f029"
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//span[@innertext='Anulaci&#243;n Contratada']
+				</item>
+				<item
+				addcaps="unknown,webelement,labeltag"
+				capname="labeltag"
+				id="6b909211-335f-4a20-9e5e-92709a1de56d"
+				name="txt_NroAnulacion"
+				refimgid="52eb717c-ba00-431a-b20e-8a65538677fe"
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'JobComplete-tbody']//label[@innertext&gt;'Se contrat&#243; Anulaci&#243;n (n.&#176;']
+				</item>
+			</folder>
 			<basepath>
 				/dom[@domain=$Ambiente]
 			</basepath>
@@ -4377,6 +4519,168 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			refimgid="e02d34d4-6434-4628-8705-f70d8d8e1f7f"
 			searchtimeout="30000ms">
 				/dom[@domain~$Ambiente]//tbody[#'AccountFile_Summary-tbody']/tr[1]/td/div//span[@innertext&gt;'Resumen del archivo de cu']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="d219cb6b-e635-442e-b861-20c44725a974"
+			name="bttn_MenuPoliza"
+			refimgid="cef81574-9344-419f-8df9-1db6046bdaae"
+			searchtimeout="30000ms">
+				/dom[@domain~$Ambiente]//a[#'TabBar:PolicyTab']//span[@innertext~'&#243;liza']/../../../span
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="f8eaa4e5-7be8-430c-afbc-2930d5f14428"
+			name="txtbox_NumPoliza"
+			refimgid="4333b999-fdd0-4e2a-8b97-677a18e4d634"
+			searchtimeout="30000ms">
+				/dom[@domain~$Ambiente]//div[@class~'x-menu']//span[@innertext='N.&#176; de p&#243;liza']/../..//input
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="9a273a4d-dd89-4296-8670-7e24db2b8c8e"
+			name="txt_InformacionDePoliza"
+			refimgid="b0de5156-9311-44d7-b1a7-7f48d0077db8"
+			searchtimeout="30000ms">
+				/dom[@domain~$Ambiente]//span[@innertext='Informaci&#243;n de p&#243;liza']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="d56496c7-9f22-4800-940c-6b1579961090"
+			name="bttn_Nuevo"
+			refimgid="34c90050-9acf-401c-8bf4-17165ba59d17"
+			searchtimeout="30000ms">
+				/dom[@domain~$Ambiente]//a[#'PolicyFile:PolicyFileMenuActions']//span[@innertext~'Nuevo ...']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="4f89ba99-7da1-4814-9a83-5ae16497968a"
+			name="bttn_AnularPoliza"
+			refimgid="e3d1dd7d-f664-474b-9eb6-2443600292eb"
+			searchtimeout="30000ms">
+				/dom[@domain~$Ambiente]//span[@innertext~'Anular p&#243;liza']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="4a0d882e-7362-46a6-a278-415d8351b8ba"
+			name="txt_IniciarAnulacion"
+			refimgid="744b7fe0-9711-4c53-8592-2a746f5cb28c"
+			searchtimeout="30000ms">
+				/dom[@domain~$Ambiente]//span[@innertext~'Iniciar anulaci&#243;n de p&#243;liza']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="c258a0d9-af7f-4d8a-a39c-7382c402f0f4"
+			name="txtbox_Fuente"
+			refimgid="3edf4cc4-13eb-45d8-ba02-b48a3928d826"
+			searchtimeout="30000ms">
+				/dom[@domain~$Ambiente]//span[@innertext='Fuente']/../..//input
+			</item>
+			<item
+			addcaps="unknown,webelement,litag"
+			capname="litag"
+			id="59d64744-7208-44e9-bd07-ad4035de3f06"
+			name="option_Asegurado"
+			refimgid="79623445-134c-4c03-a85b-a3770f5f341b"
+			searchtimeout="30000ms">
+				/dom[@domain~$Ambiente]//li[@innertext='Asegurado']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="d08d9b79-555a-4f42-8d25-212a40cd7ec4"
+			name="Copy_of_txtbox_Fuente"
+			refimgid="a97e0ef1-d970-4169-a80f-31cfeee14d47"
+			searchtimeout="30000ms">
+				/dom[@domain~$Ambiente]//span[@innertext='Fuente']/../..//input[@data-tabindexsaved='True']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="cd737971-32e4-4991-a03a-90df3ddfc8af"
+			name="txtbox_Motivo"
+			refimgid="625ba992-d859-48dc-bbea-512001254de8"
+			searchtimeout="30000ms">
+				/dom[@domain~$Ambiente]//span[@innertext='Motivo']/../..//input
+			</item>
+			<item
+			addcaps="unknown,webelement,litag"
+			capname="litag"
+			id="23137eff-5ddb-4b52-97a2-0d9bdfbfcd71"
+			name="option_AnulacionPorDesistimiento"
+			refimgid="064894c0-a5e6-48dc-98a5-30fee8e333fd"
+			searchtimeout="30000ms">
+				/dom[@domain~$Ambiente]//li[@innertext~'Anulaci&#243;n por desistimien']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="969d9917-e01a-4760-ab77-0eb3f0c04675"
+			name="Copy_of_txtbox_Motivo"
+			refimgid="9b0b0826-ff5a-4bae-9a88-b8b726958aad"
+			searchtimeout="30000ms">
+				/dom[@domain~$Ambiente]//span[@innertext='Motivo']/../..//input[@data-tabindexsaved='True']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="1aec84cb-453d-48ba-aee3-d724fc1b1bae"
+			name="bttn_IniciarAnulacion"
+			refimgid="97eb4ae6-602d-4ea0-b347-1be3aa727e28"
+			searchtimeout="30000ms">
+				/dom[@domain~$Ambiente]//a[#'StartCancellation:StartCancellationScreen:NewCancellation']//span[@innertext='Iniciar anulaci&#243;n']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="4871ecde-a9cf-4ce9-9cf9-ded2e33e4926"
+			name="txt_Confirmacion"
+			refimgid="63748466-4908-4dab-aa55-11a3e264ddce"
+			searchtimeout="30000ms">
+				/dom[@domain~$Ambiente]//span[@innertext='Confirmaci&#243;n']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="1ddaeb5d-d446-44f0-80d4-7dcb9461a0f6"
+			name="bttn_AnularAhora"
+			refimgid="ce3f7585-0ae5-4089-8247-5229e2055766"
+			searchtimeout="30000ms">
+				/dom[@domain~$Ambiente]//div[#'CancellationWizard/ViewQuote']//span[@innertext~'Anular ahora']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="641cad57-536b-45bf-b424-91593280b130"
+			name="bttn_Aceptar"
+			refimgid="a0ace985-83e0-443f-9313-6576f6699d4c"
+			searchtimeout="30000ms">
+				/dom[@domain~$Ambiente]//span[@innertext='Aceptar']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="71fb74a5-10a7-4ee9-a598-6328715adf95"
+			name="txt_AnulacionContratada"
+			refimgid="b96b5294-d238-4184-818c-c332bd0dd02d"
+			searchtimeout="30000ms">
+				/dom[@domain~$Ambiente]//span[@innertext='Anulaci&#243;n Contratada']
+			</item>
+			<item
+			addcaps="unknown,webelement,labeltag"
+			capname="labeltag"
+			id="c83ffca8-1359-4be2-bd82-cdb1ee051eb2"
+			name="txt_NroAnulacion"
+			refimgid="ef732928-81f5-43b1-bac6-fadcfd33e11f"
+			searchtimeout="30000ms">
+				/dom[@domain~$Ambiente]//tbody[#'JobComplete-tbody']//label[@innertext&gt;'Se contrat&#243; Anulaci&#243;n (n.&#176;']
 			</item>
 			<basepath>
 				/dom[@domain~$Ambiente]
