@@ -888,9 +888,10 @@
       <id>8be8ed47-ba36-4411-9720-5bf068b17e2b</id>
       <recordtableid>00c6bbe4-50ec-43e3-a6c0-b30b6b2678f8</recordtableid>
     </None>
-    <None Include="MaestroData.xlsx">
+    <Content Include="MaestroData.xlsx">
       <id>89972175-40e4-4e2a-a582-10194d796614</id>
-    </None>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="Menu\MenuLateral_CuentaBC.rxrec">
       <BoundTo>c5d687cb-d4dd-46a0-9b8f-7e2a1374cbe9</BoundTo>
       <id>81fae061-8be1-46c1-ae8d-15846f4c4b2c</id>
