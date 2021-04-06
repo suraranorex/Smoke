@@ -1687,6 +1687,9 @@
 			<testcase
 			id="cf6457a3-eb5d-4eac-8f5a-ac3abb6df13f"
 			name="AnularFast">
+				<description>
+					<![CDATA[Este test case Anula las polizas]]>
+				</description>
 			</testcase>
 			<testmodule
 			id="d22ee51b-3f1d-449a-96e1-d410e3c9589f"
