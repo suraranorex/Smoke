@@ -41,8 +41,8 @@ namespace Smoke.Login
         /// </summary>
         public Login()
         {
-            Usuario = "su";
-            Contrasenia = "gw";
+            User = "su";
+            Pass = "gw";
         }
 
         /// <summary>
@@ -55,28 +55,28 @@ namespace Smoke.Login
 
 #region Variables
 
-        string _Usuario;
+        string _User;
 
         /// <summary>
-        /// Gets or sets the value of variable Usuario.
+        /// Gets or sets the value of variable User.
         /// </summary>
         [TestVariable("4706f1ff-a560-453b-a6c9-642422385362")]
-        public string Usuario
+        public string User
         {
-            get { return _Usuario; }
-            set { _Usuario = value; }
+            get { return _User; }
+            set { _User = value; }
         }
 
-        string _Contrasenia;
+        string _Pass;
 
         /// <summary>
-        /// Gets or sets the value of variable Contrasenia.
+        /// Gets or sets the value of variable Pass.
         /// </summary>
         [TestVariable("7e77cef4-fd01-48c3-9ebe-6fd0e02c47fd")]
-        public string Contrasenia
+        public string Pass
         {
-            get { return _Contrasenia; }
-            set { _Contrasenia = value; }
+            get { return _Pass; }
+            set { _Pass = value; }
         }
 
         /// <summary>
@@ -118,12 +118,12 @@ namespace Smoke.Login
             // **** Ingreso de usuario y clave ****
             Report.Log(ReportLevel.Info, "Section", "**** Ingreso de usuario y clave ****", new RecordItemIndex(0));
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute TagValue to '$Usuario' on item 'SURA.txtbox_Usuario'.", repo.SURA.txtbox_UsuarioInfo, new RecordItemIndex(1));
-            repo.SURA.txtbox_Usuario.Element.SetAttributeValue("TagValue", Usuario);
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute TagValue to '$User' on item 'SURA.txtbox_Usuario'.", repo.SURA.txtbox_UsuarioInfo, new RecordItemIndex(1));
+            repo.SURA.txtbox_Usuario.Element.SetAttributeValue("TagValue", User);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute TagValue to '$Contrasenia' on item 'SURA.txtbox_Contrasenia'.", repo.SURA.txtbox_ContraseniaInfo, new RecordItemIndex(2));
-            repo.SURA.txtbox_Contrasenia.Element.SetAttributeValue("TagValue", Contrasenia);
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute TagValue to '$Pass' on item 'SURA.txtbox_Contrasenia'.", repo.SURA.txtbox_ContraseniaInfo, new RecordItemIndex(2));
+            repo.SURA.txtbox_Contrasenia.Element.SetAttributeValue("TagValue", Pass);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.bttn_IniciarSesion' at 26;3.", repo.SURA.bttn_IniciarSesionInfo, new RecordItemIndex(3));

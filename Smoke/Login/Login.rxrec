@@ -25,12 +25,12 @@ mode="Global">
 	<variables>
 		<var
 		id="4706f1ff-a560-453b-a6c9-642422385362"
-		name="Usuario">
+		name="User">
 			su
 		</var>
 		<var
 		id="7e77cef4-fd01-48c3-9ebe-6fd0e02c47fd"
-		name="Contrasenia">
+		name="Pass">
 			gw
 		</var>
 	</variables>
@@ -54,7 +54,7 @@ mode="Global">
 			<bindings>
 				<binding
 				target="AttributeValue"
-				variable="Usuario">
+				variable="User">
 				</binding>
 			</bindings>
 			<info
@@ -77,7 +77,7 @@ mode="Global">
 			<bindings>
 				<binding
 				target="AttributeValue"
-				variable="Contrasenia">
+				variable="Pass">
 				</binding>
 			</bindings>
 			<info
