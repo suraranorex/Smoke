@@ -41,7 +41,7 @@ namespace Smoke.Generales
         /// </summary>
         public OpenBrowser_BC()
         {
-            URL = "https://ssurgwsoadev4-oci.opc.oracleoutsourcing.com/bc/BillingCenter.do\r\n";
+            URL = "https://i-preproducciongestion.segurossura.com.ar/bc";
         }
 
         /// <summary>

@@ -42,7 +42,8 @@ namespace Smoke.Login
         public Login()
         {
             User = "su";
-            Pass = "gw";
+            Pass = "silverarrow";
+            Ambiente = "https://i-preproducciongestion.segurossura.com.ar/bc";
         }
 
         /// <summary>

@@ -31,7 +31,12 @@ mode="Global">
 		<var
 		id="7e77cef4-fd01-48c3-9ebe-6fd0e02c47fd"
 		name="Pass">
-			gw
+			silverarrow
+		</var>
+		<var
+		id="179cd022-d834-4b47-98d5-e2a34a6a6fce"
+		name="Ambiente">
+			https://i-preproducciongestion.segurossura.com.ar/bc
 		</var>
 	</variables>
 	<recorditems>
@@ -63,6 +68,8 @@ mode="Global">
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'Login-tbody']/tr/td/?/?/table/tbody/tr/td//input[@name~'username']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<AttributeValue>
 			</AttributeValue>
@@ -86,6 +93,8 @@ mode="Global">
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'Login-tbody']/tr/td/?/?/table/tbody/tr/td//input[@name~'password']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<AttributeValue>
 			</AttributeValue>
@@ -145,7 +154,7 @@ mode="Global">
 					<attribute
 					name="innertext"
 					type="System.String">
-						Iniciar sesi&#243;n
+						Iniciar sesión
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -171,8 +180,10 @@ mode="Global">
 					</dynamicattribute>
 				</element>
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'Login-tbody']/tr[3]//table/tbody/tr[3]/td/div/div[1]/?/?/table/?/?/tr/td/a//span[@innertext='Iniciar sesi&#243;n']
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'Login-tbody']/tr[3]//table/tbody/tr[3]/td/div/div[1]/?/?/table/?/?/tr/td/a//span[@innertext='Iniciar sesión']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="bb497d9d-4007-4966-b40b-454a530029c6">
@@ -308,6 +319,8 @@ iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP/9k=
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//span[#':TabLinkMenuButton-btnEl']/span[1]
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 	</recorditems>

@@ -1235,18 +1235,22 @@
 				<parameters>
 					<param
 					name="URL"
-					value="">
+					value="https://i-preproducciongestion.segurossura.com.ar/pc/PolicyCenter.do">
 					</param>
 					<param
 					name="Ambiente"
-					value="">
+					value="i-preproducciongestion.segurossura.com.ar">
 					</param>
 					<param
 					name="User"
-					value="">
+					value="su">
 					</param>
 					<param
 					name="Pass"
+					value="silverarrow">
+					</param>
+					<param
+					name="NewParameter"
 					value="">
 					</param>
 				</parameters>
@@ -1341,16 +1345,21 @@
 			VideoFps="15"
 			VideoRecordingMode="Off"
 			VideoSource="Auto"
+			createsinglereportpdfchecked="False"
 			enabletracingscreenshots="True"
 			id="9c563525-84e4-414b-9862-049a38adc3f6"
+			includeimageschecked="False"
+			includerecordingschecked="False"
 			junitreport="False"
 			name="Smoke"
+			overwritefilechecked="False"
 			reportcompress="False"
 			reportdirectoryname="Reports"
 			reportenabled="True"
 			reportfilename="%S_%Y%M%D_%T.rxlog"
 			reporttemplatefolder=""
-			reportwriteinterval="30000ms">
+			reportwriteinterval="30000ms"
+			singlereportpdfdirectory="SingleReportPDF">
 			</testsuite>
 			<testmodule
 			id="9df2b14c-a52d-4527-ac75-2310a536f361"
@@ -2842,7 +2851,7 @@
 		<DataSource
 		id="0a5b5b88-3846-427a-a2e5-8f116719dded"
 		includefile="Unchecked"
-		lastknownrowcount="4"
+		lastknownrowcount="10"
 		name="PagarPolizas"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">

@@ -39,7 +39,7 @@ mode="Global">
 		enabled="True"
 		optional="False">
 			<comment>
-				**** Ingresar Informaci&#243;n de la Cuenta ****
+				**** Ingresar Información de la Cuenta ****
 			</comment>
 			<bindings>
 			</bindings>
@@ -60,6 +60,8 @@ mode="Global">
 				<path>
 					/dom[@domain~$Ambiente]//a[#'TabBar:AccountTab']/span[@id='TabBar:AccountTab-btnWrap']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<mouseitem
@@ -156,6 +158,8 @@ mode="Global">
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//a[#'TabBar:AccountTab']/span
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="8d837c78-aa37-4e9b-bc1f-cd526fa190a6">
@@ -272,6 +276,8 @@ SH8z/hRJ8zuTFcqsb9FFFIoKKKKACiiigAooooAKKKKACiiigAooooA//9k=
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']/body/div[12]/div/div[2]/div/div[1]/?/?/span[@innertext='Nueva cuenta']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="6e56be4f-5f07-4959-8024-ed31365bbe6c">
@@ -568,6 +574,8 @@ g0ed/sGpNoo2igBglJ/gNKi8k+tO2iloAKKKKAP/2Q==
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'NewAccount-tbody']/tr[4]/td/?/?/table/tbody/tr[4]/td/div/div//input[@name='NewAccount:NewAccountScreen:NewAccountSearchDV:GlobalPersonNameInputSet:FirstName']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="7b96ab24-952f-44df-bb1a-3e625cc4d4de">
@@ -941,6 +949,8 @@ FFFFABRRRQAUUUUAFFFFABRRRQB//9k=
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'NewAccount-tbody']/tr[4]/td/?/?/table/tbody/tr[4]/td/div/div//input[@name='NewAccount:NewAccountScreen:NewAccountSearchDV:GlobalPersonNameInputSet:FirstName']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="6bfbe56a-ffd1-4787-a89d-830390b1f597">
@@ -1230,7 +1240,7 @@ KAG7E/ur+VGxP7q/lTqKAGMi7T8o6elTVG33T9KkpgFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf/
 					<attribute
 					name="innertext"
 					type="System.String">
-						Ingresar informaci&#243;n de la cuenta
+						Ingresar información de la cuenta
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -1246,6 +1256,8 @@ KAG7E/ur+VGxP7q/lTqKAGMi7T8o6elTVG33T9KkpgFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf/
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'NewAccount-tbody']/tr[1]/td/div//span[@innertext&gt;'Ingresar informaci&#243;n de la']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="5bd01a03-c7de-4e76-81a4-f7614751009a">
@@ -1389,6 +1401,8 @@ I//Z
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'NewAccount-tbody']/tr[4]/td/?/?/table/tbody/tr[4]/td/div/div//input[@name='NewAccount:NewAccountScreen:NewAccountSearchDV:GlobalPersonNameInputSet:FirstName']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<mouseitem
@@ -1545,6 +1559,8 @@ I//Z
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'NewAccount-tbody']/tr[4]/td/?/?/table/tbody/tr[5]/td/div/div//input[@name='NewAccount:NewAccountScreen:NewAccountSearchDV:GlobalPersonNameInputSet:LastName']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="9f8f94db-b808-4569-ae77-b94d9b5b2f92">
@@ -1903,6 +1919,8 @@ FFAH/9k=
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'NewAccount-tbody']/tr[4]/td/?/?/table/tbody/tr[5]/td/div/div//input[@name='NewAccount:NewAccountScreen:NewAccountSearchDV:GlobalPersonNameInputSet:LastName']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<loggingrecorditem
@@ -1976,7 +1994,7 @@ FFAH/9k=
 					<attribute
 					name="innertext"
 					type="System.String">
-						Ingresar informaci&#243;n de la cuenta
+						Ingresar información de la cuenta
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -1992,6 +2010,8 @@ FFAH/9k=
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'NewAccount-tbody']/tr[1]/td/div//span[@innertext&gt;'Ingresar informaci&#243;n de la']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="5bd01a03-c7de-4e76-81a4-f7614751009a">
@@ -2135,6 +2155,8 @@ I//Z
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'NewAccount-tbody']/tr[4]/td/?/?/table/tbody/tr[5]/td/div/div//input[@data-tabindexsaved='True']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<mouseitem
@@ -2213,6 +2235,8 @@ I//Z
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'NewAccount-tbody']/tr[4]//table/tbody/tr[12]/td/div/div/?/?/table/?/?/tr/td[1]/a[@innertext='Bucar']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="53c23ad5-c636-456f-bd75-b89b1dc4c857">
@@ -2374,6 +2398,8 @@ UUUAFFFFABRRRQAUUUUAf//Z
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'NewAccount-tbody']/tr[5]/td/div/table/tbody/tr//span[@innertext='Crear cuenta nueva']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="e10ea90e-144e-47e7-937d-8d248717c705">
@@ -2498,6 +2524,8 @@ sXdENWCiiimIKKKKAP/Z
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']/body/div[12]/div/div[2]/div/div[2]/?/?/span[@innertext='Personal']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="4747a721-88f9-40e8-858c-db5453d1a263">
@@ -2620,6 +2648,8 @@ f5Uf2zcekf5VmUUciD2sjT/tm49I/wAqQ6zcekf5f/XrNoo5EHtZF/8Ataf+5F+R/wAaKz6KfKhe
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'CreateAccount-tbody']/tr[1]/td/div//span[@innertext='Crear cuenta']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="79912872-dae0-4403-a290-5db9c28268f2">
@@ -2685,7 +2715,7 @@ BRRRQB0V3/x5z/8AXNv5Vy9FFd1LYnEboKKKK1OcKKKKACiiigArotK/5B0X4/zNFFZVdjfD/EYd
 		enabled="True"
 		optional="False">
 			<comment>
-				**** Validaci&#243;n a pr&#243;xima ventana - Cargar Datos de la Cuenta ****
+				**** Validación a próxima ventana - Cargar Datos de la Cuenta ****
 			</comment>
 			<bindings>
 			</bindings>
@@ -2705,6 +2735,8 @@ BRRRQB0V3/x5z/8AXNv5Vy9FFd1LYnEboKKKK1OcKKKKACiiigArotK/5B0X4/zNFFZVdjfD/EYd
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'CreateAccount-tbody']/tr[1]/td/div//span[@innertext='Crear cuenta']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<matchname>
 				InnerText
@@ -2778,6 +2810,8 @@ BRRRQB0V3/x5z/8AXNv5Vy9FFd1LYnEboKKKK1OcKKKKACiiigArotK/5B0X4/zNFFZVdjfD/EYd
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'CreateAccount-tbody']/tr[1]/td/div//span[@innertext='Crear cuenta']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 	</recorditems>
