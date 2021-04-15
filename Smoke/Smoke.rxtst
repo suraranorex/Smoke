@@ -67,6 +67,26 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="06a1c242-41b9-41d8-bcef-ea495e2f8139"
+			name="BuscaPoliza"
+			ref="bdc78984-58d3-42f5-8d74-7364922619c4"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="NumPolizaEmitida"
+					datasourceid="539633a7-894c-49ae-93fc-0db5a6fe177b"
+					variableid="6b93a59c-d2b0-4f9e-9980-3563206beb3c"
+					variablename="NumPolizaEmitida">
+					</var>
+					<var
+					dataname="Ambiente"
+					datasourceid="944abe9b-0ea1-485e-a74f-0bb72c9242d8"
+					variableid="179cd022-d834-4b47-98d5-e2a34a6a6fce"
+					variablename="Ambiente">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			enabled="False"
 			id="0c44fccd-d5b4-4383-ba1c-3fca99b05ecd"
 			name="LogOut"
@@ -170,6 +190,14 @@
 			name="MenuLateral_CuentaBC"
 			ref="0b0be839-fbd6-4a67-aab4-f46a1ff4ffa0"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="9e0fc752-0fe0-43de-aa28-f0e35d2af160"
+					variableid="179cd022-d834-4b47-98d5-e2a34a6a6fce"
+					variablename="Ambiente">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="1edc62ab-93c0-407d-8510-b88b49ea864e"
@@ -436,6 +464,14 @@
 			name="OpenBrowser_BC"
 			ref="f048a76f-3ee3-4be8-9cf8-2f405849af64"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="URL"
+					datasourceid="9e0fc752-0fe0-43de-aa28-f0e35d2af160"
+					variableid="79c061a8-4c66-4280-8ece-1922e1cc9853"
+					variablename="URL">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			enabled="False"
@@ -1182,6 +1218,26 @@
 			name="Login"
 			ref="a64524be-86c0-4f43-8300-08f1a1e63ac3"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="9e0fc752-0fe0-43de-aa28-f0e35d2af160"
+					variableid="179cd022-d834-4b47-98d5-e2a34a6a6fce"
+					variablename="Ambiente">
+					</var>
+					<var
+					dataname="User"
+					datasourceid="9e0fc752-0fe0-43de-aa28-f0e35d2af160"
+					variableid="4706f1ff-a560-453b-a6c9-642422385362"
+					variablename="User">
+					</var>
+					<var
+					dataname="Pass"
+					datasourceid="9e0fc752-0fe0-43de-aa28-f0e35d2af160"
+					variableid="7e77cef4-fd01-48c3-9ebe-6fd0e02c47fd"
+					variablename="Pass">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			enabled="False"
@@ -1235,11 +1291,11 @@
 				<parameters>
 					<param
 					name="URL"
-					value="https://i-preproducciongestion.segurossura.com.ar/pc/PolicyCenter.do">
+					value="https://ssurgwsoadev4-oci.opc.oracleoutsourcing.com/pc/PolicyCenter.do">
 					</param>
 					<param
 					name="Ambiente"
-					value="i-preproducciongestion.segurossura.com.ar">
+					value="ssurgwsoadev4-oci.opc.oracleoutsourcing.com">
 					</param>
 					<param
 					name="User"
@@ -1247,7 +1303,7 @@
 					</param>
 					<param
 					name="Pass"
-					value="silverarrow">
+					value="gw">
 					</param>
 					<param
 					name="NewParameter"
@@ -1390,6 +1446,24 @@
 			<smartfoldernode
 			id="9e0fc752-0fe0-43de-aa28-f0e35d2af160"
 			name="BillingPagos">
+				<parameters>
+					<param
+					name="URL"
+					value="https://ssurgwsoadev4-oci.opc.oracleoutsourcing.com/bc">
+					</param>
+					<param
+					name="Ambiente"
+					value="ssurgwsoadev4-oci.opc.oracleoutsourcing.com">
+					</param>
+					<param
+					name="User"
+					value="su">
+					</param>
+					<param
+					name="Pass"
+					value="gw">
+					</param>
+				</parameters>
 			</smartfoldernode>
 			<testmodule
 			id="9e2e19d7-df84-43e9-827b-8d740bf491f8"
@@ -1586,6 +1660,14 @@
 			name="CloseBrowser"
 			ref="a0b418f0-6551-48d1-b8cc-275b0b6164e7"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="9e0fc752-0fe0-43de-aa28-f0e35d2af160"
+					variableid="179cd022-d834-4b47-98d5-e2a34a6a6fce"
+					variablename="Ambiente">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="bfe80b93-a84d-40da-aa78-f468e47f937f"
@@ -1724,6 +1806,12 @@
 					variableid="d6e7c6bc-563c-4ebb-9e35-ebe37fa72d3a"
 					variablename="NumPoliza">
 					</var>
+					<var
+					dataname="Ambiente"
+					datasourceid="9e0fc752-0fe0-43de-aa28-f0e35d2af160"
+					variableid="179cd022-d834-4b47-98d5-e2a34a6a6fce"
+					variablename="Ambiente">
+					</var>
 				</databinding>
 			</testmodule>
 			<testmodule
@@ -1757,6 +1845,14 @@
 			name="OpenBrowser_BC"
 			ref="f048a76f-3ee3-4be8-9cf8-2f405849af64"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="URL"
+					datasourceid="9e0fc752-0fe0-43de-aa28-f0e35d2af160"
+					variableid="79c061a8-4c66-4280-8ece-1922e1cc9853"
+					variablename="URL">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="d9483d95-6751-4177-9114-d004356b876a"
@@ -1825,6 +1921,20 @@
 					</condition>
 				</conditiongroup>
 			</smartfoldernode>
+			<testmodule
+			id="dd51a100-3e3f-4c97-af2f-66c66e38418a"
+			name="Rehabilitar"
+			ref="846c100f-01c8-4698-affe-196938bec06c"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="944abe9b-0ea1-485e-a74f-0bb72c9242d8"
+					variableid="179cd022-d834-4b47-98d5-e2a34a6a6fce"
+					variablename="Ambiente">
+					</var>
+				</databinding>
+			</testmodule>
 			<smartfoldernode
 			datasource="CobertrurasHogar"
 			id="dd6dcb38-e88b-465d-bbd9-16bcb10659f8"
@@ -1920,6 +2030,10 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="e8744e29-a519-4561-b34d-cdee1430cbbd"
+			name="RehabilitarFast">
+			</testcase>
 			<testmodule
 			id="ea78cac7-9aea-4235-beb3-d43c82a4af5a"
 			name="ContinueInformacionPolizaToVeh"
@@ -1999,6 +2113,14 @@
 			name="LogOut"
 			ref="00c6bbe4-50ec-43e3-a6c0-b30b6b2678f8"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="9e0fc752-0fe0-43de-aa28-f0e35d2af160"
+					variableid="179cd022-d834-4b47-98d5-e2a34a6a6fce"
+					variablename="Ambiente">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="fa030664-8d51-459b-9f49-0f7a3f98c84f"
@@ -2025,6 +2147,12 @@
 					datasourceid="0a5b5b88-3846-427a-a2e5-8f116719dded"
 					variableid="0bf45686-f899-4f9f-a81b-da515c8cde89"
 					variablename="NumCuenta">
+					</var>
+					<var
+					dataname="Ambiente"
+					datasourceid="9e0fc752-0fe0-43de-aa28-f0e35d2af160"
+					variableid="179cd022-d834-4b47-98d5-e2a34a6a6fce"
+					variablename="Ambiente">
 					</var>
 				</databinding>
 			</testmodule>
@@ -2058,6 +2186,26 @@
 			name="Login"
 			ref="a64524be-86c0-4f43-8300-08f1a1e63ac3"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="9e0fc752-0fe0-43de-aa28-f0e35d2af160"
+					variableid="179cd022-d834-4b47-98d5-e2a34a6a6fce"
+					variablename="Ambiente">
+					</var>
+					<var
+					dataname="User"
+					datasourceid="9e0fc752-0fe0-43de-aa28-f0e35d2af160"
+					variableid="4706f1ff-a560-453b-a6c9-642422385362"
+					variablename="User">
+					</var>
+					<var
+					dataname="Pass"
+					datasourceid="9e0fc752-0fe0-43de-aa28-f0e35d2af160"
+					variableid="7e77cef4-fd01-48c3-9ebe-6fd0e02c47fd"
+					variablename="Pass">
+					</var>
+				</databinding>
 			</testmodule>
 		</flatlistofchildren>
 		<childhierarchy>
@@ -2424,6 +2572,18 @@
 							<testmodule
 							id="6b927146-6823-4897-b79f-8cb684c87355"
 							name="AnulaPoliza">
+							</testmodule>
+						</testcase>
+						<testcase
+						id="e8744e29-a519-4561-b34d-cdee1430cbbd"
+						name="RehabilitarFast">
+							<testmodule
+							id="06a1c242-41b9-41d8-bcef-ea495e2f8139"
+							name="BuscaPoliza">
+							</testmodule>
+							<testmodule
+							id="dd51a100-3e3f-4c97-af2f-66c66e38418a"
+							name="Rehabilitar">
 							</testmodule>
 						</testcase>
 						<teardown
@@ -2851,7 +3011,7 @@
 		<DataSource
 		id="0a5b5b88-3846-427a-a2e5-8f116719dded"
 		includefile="Unchecked"
-		lastknownrowcount="10"
+		lastknownrowcount="0"
 		name="PagarPolizas"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -3013,6 +3173,9 @@
 			</testcontainer>
 			<testcontainer
 			id="e434e143-c5af-41af-b191-b7b7a6f4444a">
+			</testcontainer>
+			<testcontainer
+			id="e8744e29-a519-4561-b34d-cdee1430cbbd">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

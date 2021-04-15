@@ -426,6 +426,18 @@
       <UserCode>true</UserCode>
       <id>f10f7498-9b95-46af-b6d4-18484dab5a70</id>
     </Compile>
+    <Compile Include="Emision\Rehabilitar.cs">
+      <BoundTo>708e92e7-8dee-4da5-8480-724c01abcc36</BoundTo>
+      <DependentUpon>Rehabilitar.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a7cb9da7-c884-4df2-9fec-694acdc1f4d9</id>
+    </Compile>
+    <Compile Include="Emision\Rehabilitar.UserCode.cs">
+      <BoundTo>708e92e7-8dee-4da5-8480-724c01abcc36</BoundTo>
+      <DependentUpon>Rehabilitar.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3a6e72a0-e3cc-4fdf-9c89-46b3552762ef</id>
+    </Compile>
     <Compile Include="Emision\TarjetaCredito.cs">
       <BoundTo>8f5aaa7e-7398-4179-9431-a558ddafec52</BoundTo>
       <DependentUpon>TarjetaCredito.rxrec</DependentUpon>
@@ -808,6 +820,11 @@
       <BoundTo>c5d687cb-d4dd-46a0-9b8f-7e2a1374cbe9</BoundTo>
       <id>67bd7a30-6940-4e75-8dc9-23e98b9534e7</id>
       <recordtableid>19ada6ca-8aec-4da0-a855-7d93e21bfb16</recordtableid>
+    </None>
+    <None Include="Emision\Rehabilitar.rxrec">
+      <BoundTo>c5d687cb-d4dd-46a0-9b8f-7e2a1374cbe9</BoundTo>
+      <id>708e92e7-8dee-4da5-8480-724c01abcc36</id>
+      <recordtableid>846c100f-01c8-4698-affe-196938bec06c</recordtableid>
     </None>
     <None Include="Emision\TarjetaCredito.rxrec">
       <BoundTo>c5d687cb-d4dd-46a0-9b8f-7e2a1374cbe9</BoundTo>

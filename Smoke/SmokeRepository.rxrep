@@ -4412,6 +4412,123 @@ name="SmokeRepository">
 					/dom[@domain=$Ambiente]//tbody[#'JobComplete-tbody']//label[@innertext&gt;'Se contrat&#243; Anulaci&#243;n (n.&#176;']
 				</item>
 			</folder>
+			<folder
+			capname="webdocument"
+			id="b1bd281c-06c1-410f-9214-af6e726c5209"
+			isrooted="False"
+			name="Anulacion_Rehabilitacion1"
+			searchtimeout="0ms">
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="4e1d7c88-d523-4520-8e38-fc3f2d3aa92a"
+				name="bttn_Nuevo"
+				refimgid="4acde0c2-03b9-4f0d-93ff-6af08ece3dd0"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//a[#'PolicyFile:PolicyFileMenuActions']//span[@innertext~'Nuevo ...']
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="d4ee58f5-a2dd-4371-8b3b-7ce671ceecc5"
+				name="bttn_RehabilitarPoliza"
+				refimgid="ffebe3d8-7a4b-44c1-8f6e-0ca53d8b58c2"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//span[@innertext='Rehabilitar póliza']
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="b186214b-72c1-473e-98b8-51f00b117733"
+				name="txt_IniciarLaRehabilitacion"
+				refimgid="a5f7f44a-0105-44d6-9a1f-74b369717639"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//span[@innertext='Iniciar la rehabilitación']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="bfa54be2-0421-44ef-99b3-83704105ce5e"
+				name="txtbox_Motivo"
+				refimgid="41577ae5-ce83-4593-b56b-cf5bf814e4c7"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//span[@innertext='Motivo']/../..//input
+				</item>
+				<item
+				addcaps="unknown,webelement,labeltag"
+				capname="labeltag"
+				id="46a84071-eb5a-4995-8cff-30f69604c12a"
+				name="lbl_GrupoDeAfinidad"
+				refimgid="691505db-0c96-41a0-89e8-8722e91d9916"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//label[@innertext='Grupo de afinidad']
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="457f0526-0cc6-4ab4-8ef7-28892ca3a7f3"
+				name="bttn_Recotizar"
+				refimgid="f37844e2-be8a-4df3-906a-84679b844bc5"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//span[@innertext='Re-Cotiar']
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="c0e6cbb9-1d01-42c0-b188-ae01ef50f3d0"
+				name="txt_Cotizacion"
+				refimgid="c7a76da4-5220-4353-b016-8e54a4b6474f"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//div[#'ReinstatementWizard/ViewQuote']//span[@innertext='Cotización']
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="52deedbc-2e80-4acc-a6b8-b1b8968c3966"
+				name="bttn_Rehabilitar"
+				refimgid="35237290-ce53-4b7d-b4ca-83dedbc3ae90"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//span[@innertext~'ehabilitar']
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="2b78fe07-1db7-44e7-97cc-e23ae75ef9c0"
+				name="txt_RehabilitacionContratada"
+				refimgid="7959b793-6d60-4860-8c24-7edc849212c4"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'JobComplete-tbody']/tr[1]/td/div//span[@innertext='Rehabilitación Contratada']
+				</item>
+				<item
+				addcaps="unknown,webelement,labeltag"
+				capname="labeltag"
+				id="a8c27840-aadc-457c-873e-ecfeb4bee0c3"
+				name="txt_NroRehabilitacion"
+				refimgid="325d0949-1857-4e7c-81ab-d6d0e9867eed"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'JobComplete-tbody']//label[@innertext&gt;'Se contrat&#243; Rehabilitaci&#243;n']
+				</item>
+			</folder>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="429e2f5d-b9e7-45d9-bb9a-c08e8f090c6a"
+			name="bttn_Aceptar2"
+			refimgid="b8dbd334-4753-44a6-8a5a-81edee6a31d8"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain=$Ambiente]//span[@innertext='Aceptar']
+			</item>
 			<basepath>
 				/dom[@domain=$Ambiente]
 			</basepath>
@@ -5171,6 +5288,86 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			robustPath=""
 			searchtimeout="30000ms">
 				/dom[@domain~$Ambiente]//tbody[#'JobComplete-tbody']//label[@innertext&gt;'Se contrat&#243; Anulaci&#243;n (n.&#176;']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="fa0e9c5b-4ace-45a8-b8e7-4a2285ba78df"
+			name="bttn_RehabilitarPoliza"
+			refimgid="767d3d9d-73ca-43c0-b476-6a919290ed95"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain~$Ambiente]//span[@innertext='Rehabilitar póliza']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="b11858c3-db47-4d99-a6a3-efec074d70c5"
+			name="txt_IniciarLaRehabilitacion"
+			refimgid="301b4e2d-395e-430f-8cde-81e96fa77bc8"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain~$Ambiente]//span[@innertext='Iniciar la rehabilitación']
+			</item>
+			<item
+			addcaps="unknown,webelement,labeltag"
+			capname="labeltag"
+			id="dd2313f5-4dc8-4d03-90e8-97c6e61f0ebb"
+			name="lbl_GrupoDeAfinidad"
+			refimgid="fe9d8358-a3a3-4ec5-bcce-685a4e319b44"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain~$Ambiente]//label[@innertext='Grupo de afinidad']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="c1ad27cc-6daa-4319-9ea8-20b92b247885"
+			name="bttn_Recotizar"
+			refimgid="0b2687e4-7f3d-49b4-89ac-d6b059100b1e"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain~$Ambiente]//span[@innertext='Re-Cotiar']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="b3464371-e33b-45f3-8510-f39a2d2a7490"
+			name="txt_Cotizacion"
+			refimgid="bed7b1bd-a1ed-4009-a5c6-528f94b5cc9d"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain~$Ambiente]//div[#'ReinstatementWizard/ViewQuote']//span[@innertext='Cotización']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="0f1884db-841e-4c9e-b206-7c8b7a429106"
+			name="bttn_Rehabilitar"
+			refimgid="14683907-2626-4b65-8b53-60ce340bd104"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain~$Ambiente]//span[@innertext~'ehabilitar']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="7d513468-7605-4886-83e3-9734b8d06d31"
+			name="txt_RehabilitacionContratada"
+			refimgid="4eb031e0-fb42-4a81-932f-de9cece8a067"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain~$Ambiente]//tbody[#'JobComplete-tbody']/tr[1]/td/div//span[@innertext='Rehabilitación Contratada']
+			</item>
+			<item
+			addcaps="unknown,webelement,labeltag"
+			capname="labeltag"
+			id="84c419bc-d84f-4a3b-ad6a-9a0bd084fa53"
+			name="txt_NroRehabilitacion"
+			refimgid="375d09c3-1eed-467c-8daa-d130fdbcef1b"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain~$Ambiente]//tbody[#'JobComplete-tbody']//label[@innertext&gt;'Se contrat&#243; Rehabilitaci&#243;n']
 			</item>
 			<basepath>
 				/dom[@domain~$Ambiente]
