@@ -1291,19 +1291,19 @@
 				<parameters>
 					<param
 					name="URL"
-					value="https://ssurgwsoadev4-oci.opc.oracleoutsourcing.com/pc/PolicyCenter.do">
+					value="">
 					</param>
 					<param
 					name="Ambiente"
-					value="ssurgwsoadev4-oci.opc.oracleoutsourcing.com">
+					value="">
 					</param>
 					<param
 					name="User"
-					value="su">
+					value="">
 					</param>
 					<param
 					name="Pass"
-					value="gw">
+					value="">
 					</param>
 					<param
 					name="NewParameter"
