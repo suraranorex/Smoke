@@ -4025,16 +4025,6 @@ name="SmokeRepository">
 				/dom[@domain=$Ambiente]//div[#'NewDirectBillPayment/distributionCard']/table//span[@innertext='Monto']/../..//input[@data-tabindexsaved='True']
 			</item>
 			<item
-			addcaps="unknown,webelement,divtag"
-			capname="atag"
-			id="791edfc9-6d94-4cab-b52f-54f53dc5fed0"
-			name="montoPagar"
-			refimgid="f371b7e0-ff75-4c48-a2e5-f8131d9ee92b"
-			robustPath=""
-			searchtimeout="0ms">
-				/dom[@domain=$Ambiente]//div[#'NewDirectBillPayment/distributionCard']/table//table[@class~'summary']//a[@innertext~'[0-9]']
-			</item>
-			<item
 			addcaps="unknown,webelement,spantag"
 			capname="inputtag"
 			id="01e98f90-cb46-42ab-8c06-99f64aa18b59"
@@ -4209,16 +4199,6 @@ name="SmokeRepository">
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//div[#'NewDirectBillPayment/distributionCard']/table//span[@innertext~'Tipo de tarjeta']/../..//input
 					</item>
-					<item
-					addcaps="unknown,webelement,spantag"
-					capname="spantag"
-					id="657f9412-6e4d-4cfb-8b91-7ebda25bbc1a"
-					name="bttn_Ejecutar"
-					refimgid="986f113b-1e9a-4a25-9a2e-4eafafca33c9"
-					robustPath=""
-					searchtimeout="0ms">
-						/dom[@domain=$Ambiente]//div[#'NewDirectBillPayment/distributionCard']/table//span[@innertext~'Ejectar']
-					</item>
 					<basepath>
 						/dom[@domain=$Ambiente]//div[#'NewDirectBillPayment/distributionCard']/table
 					</basepath>
@@ -4244,6 +4224,53 @@ name="SmokeRepository">
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'AccountSummary-tbody']/tr[7]//table/?/?/tr/td[2]/?/?/table//div/table/?/?/tr/td[1]/?/?/table/?/?/tr/td/div/div/div[2]/?/?/canvas
 				</item>
+				<folder
+				capname="webdocument"
+				id="ce737864-998e-41bc-a9e9-51c0d7703293"
+				isrooted="False"
+				name="Reversa"
+				searchtimeout="0ms">
+					<item
+					addcaps="unknown,webelement,spantag"
+					capname="inputtag"
+					id="b76af132-6f18-4497-9b90-e94d59aaf40c"
+					name="bttn_Motivo"
+					refimgid="5daaee53-de71-4596-91b2-b01073887c16"
+					robustPath=""
+					searchtimeout="30000ms">
+						/dom[@domain=$Ambiente]//div[#'DBPaymentReversalConfirmationPopup:reversalReason']//span[@innertext='Motivo']/../..//input
+					</item>
+					<item
+					addcaps="unknown,webelement,spantag"
+					capname="spantag"
+					id="ddfbe5fc-91df-4ef3-8fb9-4edbb55f7573"
+					name="txt_ReversionDePago"
+					refimgid="3eb55415-6a05-466c-bfbd-1fa3aeb4c4d3"
+					robustPath=""
+					searchtimeout="30000ms">
+						/dom[@domain=$Ambiente]//span[@innertext~'reversión de pago']
+					</item>
+					<item
+					addcaps="unknown,webelement,spantag"
+					capname="inputtag"
+					id="c44284a2-15bd-480c-ac71-399b103e759f"
+					name="Copy_of_bttn_Motivo"
+					refimgid="60efced5-d0fb-430e-b886-97cdc3d94ffb"
+					robustPath=""
+					searchtimeout="30000ms">
+						/dom[@domain=$Ambiente]//div[#'DBPaymentReversalConfirmationPopup:reversalReason']//span[@innertext='Motivo']/../..//input[@data-tabindexsaved='True']
+					</item>
+					<item
+					addcaps="unknown,webelement,spantag"
+					capname="spantag"
+					id="a90f2898-0deb-4c10-96fe-9d80e3dcdef8"
+					name="txt_Revertido"
+					refimgid="75765fc2-9d55-41fd-989f-cec829dd24d6"
+					robustPath=""
+					searchtimeout="30000ms">
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//a[@innertext~$NUMPOLIZA_REVERTIR]/../../..//span[@innertext='Revertido']
+					</item>
+				</folder>
 			</folder>
 			<item
 			addcaps="unknown,webelement,canvastag"
@@ -4528,6 +4555,46 @@ name="SmokeRepository">
 			robustPath=""
 			searchtimeout="30000ms">
 				/dom[@domain=$Ambiente]//span[@innertext='Aceptar']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="inputtag"
+			id="6fbb28ed-3616-414c-9728-130fd6133df0"
+			name="bttn_Motivo"
+			refimgid="ff500c35-191a-4910-9239-e69a3b3143fd"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain=$Ambiente]//div[#'DBPaymentReversalConfirmationPopup:reversalReason']//span[@innertext='Motivo']/../..//input
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="709872bd-02a5-4cee-be80-129d84cb8a7d"
+			name="txt_ReversionDePago"
+			refimgid="06199dbb-6d05-4b12-a778-4afc0d80b82a"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain=$Ambiente]//span[@innertext~'reversión de pago']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="inputtag"
+			id="105908ca-67b8-4212-a778-3e12b0a25dbf"
+			name="Copy_of_bttn_Motivo"
+			refimgid="9e24286f-68a6-4e03-a061-a600ed5ef3d7"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain=$Ambiente]//div[#'DBPaymentReversalConfirmationPopup:reversalReason']//span[@innertext='Motivo']/../..//input[@data-tabindexsaved='True']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="bd16f183-c1ca-4feb-a8af-12fba4215849"
+			name="txt_Revertido"
+			refimgid="7e5a3614-cfde-4fc0-be3b-41bcb611eb9f"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//a[@innertext~$NUMPOLIZA_REVERTIR]/../../..//span[@innertext='Revertido']
 			</item>
 			<basepath>
 				/dom[@domain=$Ambiente]
@@ -5444,6 +5511,26 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			searchtimeout="0ms">
 				/dom[@domain=$Ambiente]/body//span[@innertext~'Aceptar']
 			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="atag"
+			id="791edfc9-6d94-4cab-b52f-54f53dc5fed0"
+			name="montoPagar"
+			refimgid="f371b7e0-ff75-4c48-a2e5-f8131d9ee92b"
+			robustPath=""
+			searchtimeout="0ms">
+				/dom[@domain=$Ambiente]//div[#'NewDirectBillPayment/distributionCard']/table//table[@class~'summary']//a[@innertext~'[0-9]']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="657f9412-6e4d-4cfb-8b91-7ebda25bbc1a"
+			name="bttn_Ejecutar"
+			refimgid="986f113b-1e9a-4a25-9a2e-4eafafca33c9"
+			robustPath=""
+			searchtimeout="0ms">
+				/dom[@domain=$Ambiente]//div[#'NewDirectBillPayment/distributionCard']/table//span[@innertext~'Ejectar']
+			</item>
 			<basepath>
 				/dom[@domain=$Ambiente]
 			</basepath>
@@ -5531,6 +5618,11 @@ QmCC
 		id="902bac09-2652-4e0b-9fed-12b6a2f75983"
 		name="NumPoliza">
 			04104009714
+		</var>
+		<var
+		id="ec206af3-54d1-44c2-86ad-9c9b8fabcad0"
+		name="NUMPOLIZA_REVERTIR">
+			04104012805
 		</var>
 	</variables>
 </repository>

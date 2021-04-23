@@ -534,6 +534,18 @@
       <id>4f63b1e9-8383-40be-9fd9-45956f6f4e49</id>
       <BoundTo>53e41ab5-f1f2-4deb-8d0a-4f8b7d1db742</BoundTo>
     </Compile>
+    <Compile Include="Generales\ConfirmarReversion.cs">
+      <BoundTo>3c8a57c4-6864-462f-99ed-7ea9584b078c</BoundTo>
+      <DependentUpon>ConfirmarReversion.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f313cd66-3f36-444e-b22b-4ce131cf1e89</id>
+    </Compile>
+    <Compile Include="Generales\ConfirmarReversion.UserCode.cs">
+      <BoundTo>3c8a57c4-6864-462f-99ed-7ea9584b078c</BoundTo>
+      <DependentUpon>ConfirmarReversion.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f7b9c77a-782e-4eba-a9eb-49cbb5e0f790</id>
+    </Compile>
     <Compile Include="Generales\OpenBrowser.cs">
       <DependentUpon>OpenBrowser.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -879,6 +891,11 @@
       <BoundTo>c5d687cb-d4dd-46a0-9b8f-7e2a1374cbe9</BoundTo>
       <id>53e41ab5-f1f2-4deb-8d0a-4f8b7d1db742</id>
       <recordtableid>a0b418f0-6551-48d1-b8cc-275b0b6164e7</recordtableid>
+    </None>
+    <None Include="Generales\ConfirmarReversion.rxrec">
+      <BoundTo>c5d687cb-d4dd-46a0-9b8f-7e2a1374cbe9</BoundTo>
+      <id>3c8a57c4-6864-462f-99ed-7ea9584b078c</id>
+      <recordtableid>fde3da18-809b-432f-b71f-9500deb8553a</recordtableid>
     </None>
     <None Include="Generales\OpenBrowser.rxrec">
       <BoundTo>c5d687cb-d4dd-46a0-9b8f-7e2a1374cbe9</BoundTo>

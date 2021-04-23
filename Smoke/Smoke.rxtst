@@ -326,6 +326,26 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="346f1c08-d697-45ef-8440-760c5e961471"
+			name="MenuSuperior_CuentaBC"
+			ref="e764f1b0-75ea-473a-8107-188fb87760d0"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="9e0fc752-0fe0-43de-aa28-f0e35d2af160"
+					variableid="179cd022-d834-4b47-98d5-e2a34a6a6fce"
+					variablename="Ambiente">
+					</var>
+					<var
+					dataname="NumCuenta"
+					datasourceid="0a5b5b88-3846-427a-a2e5-8f116719dded"
+					variableid="0bf45686-f899-4f9f-a81b-da515c8cde89"
+					variablename="NumCuenta">
+					</var>
+				</databinding>
+			</testmodule>
 			<smartfoldernode
 			id="3774b8fb-928c-4e47-9e8d-0597e1f7ca83"
 			name="TF_VARIABLE">
@@ -819,10 +839,29 @@
 			id="58137bde-512d-4aeb-9219-548f7d6ec962"
 			name="teardown">
 			</teardown>
+			<testmodule
+			id="58e61a31-1f0e-4861-b312-e12c074de943"
+			name="ConfirmarReversion"
+			ref="fde3da18-809b-432f-b71f-9500deb8553a"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="9e0fc752-0fe0-43de-aa28-f0e35d2af160"
+					variableid="179cd022-d834-4b47-98d5-e2a34a6a6fce"
+					variablename="Ambiente">
+					</var>
+				</databinding>
+			</testmodule>
 			<setup
 			id="605d95b3-be4d-4329-b3a0-0fda913fa3f1"
 			name="setup">
 			</setup>
+			<testcase
+			datasource="PagarPolizas"
+			id="655b1a57-ebab-4f5f-bd66-0a1742de6ff0"
+			name="Reversa">
+			</testcase>
 			<testcase
 			datasource="Emision_AP"
 			id="66ef67d9-cf45-4baa-bb1d-07c4d71f5d1a"
@@ -1653,6 +1692,20 @@
 			name="DebitoBancario"
 			ref="35bd9132-9eff-42e1-b87a-da440757bbef"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="b8fc3efe-0ddd-4384-ba76-4973396e95f9"
+			name="MenuLateral_CuentaBC"
+			ref="0b0be839-fbd6-4a67-aab4-f46a1ff4ffa0"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="9e0fc752-0fe0-43de-aa28-f0e35d2af160"
+					variableid="179cd022-d834-4b47-98d5-e2a34a6a6fce"
+					variablename="Ambiente">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			enabled="False"
@@ -2654,6 +2707,22 @@
 								</testmodule>
 							</teardown>
 						</testcase>
+						<testcase
+						id="655b1a57-ebab-4f5f-bd66-0a1742de6ff0"
+						name="Reversa">
+							<testmodule
+							id="346f1c08-d697-45ef-8440-760c5e961471"
+							name="MenuSuperior_CuentaBC">
+							</testmodule>
+							<testmodule
+							id="b8fc3efe-0ddd-4384-ba76-4973396e95f9"
+							name="MenuLateral_CuentaBC">
+							</testmodule>
+							<testmodule
+							id="58e61a31-1f0e-4861-b312-e12c074de943"
+							name="ConfirmarReversion">
+							</testmodule>
+						</testcase>
 					</smartfoldernode>
 					<testcase
 					id="7f48616a-2d1b-4b01-aa8b-c255f4b395b3"
@@ -3011,7 +3080,7 @@
 		<DataSource
 		id="0a5b5b88-3846-427a-a2e5-8f116719dded"
 		includefile="Unchecked"
-		lastknownrowcount="0"
+		lastknownrowcount="1"
 		name="PagarPolizas"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -3078,7 +3147,7 @@
 		</DataSource>
 	</datasources>
 	<testconfigurations
-	default="Smoke">
+	default="PagoReversa">
 		<testconfiguration
 		name="FinalizaSolicitudes">
 			<testcontainer
@@ -3095,6 +3164,9 @@
 			</testcontainer>
 			<testcontainer
 			id="539633a7-894c-49ae-93fc-0db5a6fe177b">
+			</testcontainer>
+			<testcontainer
+			id="655b1a57-ebab-4f5f-bd66-0a1742de6ff0">
 			</testcontainer>
 			<testcontainer
 			id="9e0fc752-0fe0-43de-aa28-f0e35d2af160">

@@ -167,8 +167,8 @@ namespace Smoke.Generales
             repo.SURA.BC.NuevoPago.Copy_of_txtbox_MontoInfo.WaitForNotExists(40000);
             
             try {
-                Report.Log(ReportLevel.Info, "Get Value", "(Optional Action)\r\nGetting attribute 'InnerText' from item 'SURA.montoPagar' and assigning the part of its value captured by '[0-9.,]+' to variable 'Monto'.", repo.SURA.montoPagarInfo, new RecordItemIndex(7));
-                Monto = repo.SURA.montoPagar.Element.GetAttributeValueText("InnerText", new Regex("[0-9.,]+"));
+                Report.Log(ReportLevel.Info, "Get Value", "(Optional Action)\r\nGetting attribute 'InnerText' from item 'SURA_ContinueOnFail.montoPagar' and assigning the part of its value captured by '[0-9.,]+' to variable 'Monto'.", repo.SURA_ContinueOnFail.montoPagarInfo, new RecordItemIndex(7));
+                Monto = repo.SURA_ContinueOnFail.montoPagar.Element.GetAttributeValueText("InnerText", new Regex("[0-9.,]+"));
                 Delay.Milliseconds(0);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(7)); }
             
@@ -228,8 +228,8 @@ namespace Smoke.Generales
             Report.Screenshot(ReportLevel.Info, "User", "", repo.SURA.Self, false, new RecordItemIndex(23));
             
             try {
-                Report.Log(ReportLevel.Info, "Mouse", "(Optional Action)\r\nMouse Left Click item 'SURA.BC.NuevoPago.bttn_Ejecutar' at Center.", repo.SURA.BC.NuevoPago.bttn_EjecutarInfo, new RecordItemIndex(24));
-                repo.SURA.BC.NuevoPago.bttn_Ejecutar.Click();
+                Report.Log(ReportLevel.Info, "Mouse", "(Optional Action)\r\nMouse Left Click item 'SURA_ContinueOnFail.bttn_Ejecutar' at Center.", repo.SURA_ContinueOnFail.bttn_EjecutarInfo, new RecordItemIndex(24));
+                repo.SURA_ContinueOnFail.bttn_Ejecutar.Click();
                 Delay.Milliseconds(0);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(24)); }
             
