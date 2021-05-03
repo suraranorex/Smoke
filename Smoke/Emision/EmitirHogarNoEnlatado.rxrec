@@ -53,8 +53,10 @@ mode="Global">
 			id="c8fc321d-004e-4783-b26d-3580aaf51177"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']/body/div[4]//tr/td/div/table//span[@innertext~'Emitir P&#243;liza']
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']/body/div[4]//tr/td/div/table//span[@innertext~'Emitir Póliza']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<explicitdelayitem
@@ -149,6 +151,8 @@ mode="Global">
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']/body//span[@innertext~'Aceptar']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="1cde49ae-ff06-44be-ab67-e57f979bf15c">
@@ -200,8 +204,10 @@ cOSPYP7MX+81H9mL/eaiijnl3Dkj2D+zF/vNR/Zi/wB5qKKOeXcOSPY//9k=
 			id="a4709cea-4d86-4441-9d07-e445eeaa7bd8"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']/body//table/tbody//span[@visible='True' and @innertext~'Solicitud de P&#243;liza Contratada']
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']/body//table/tbody//span[@visible='True' and @innertext~'Solicitud de Póliza Contratada']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<explicitdelayitem
@@ -231,6 +237,8 @@ cOSPYP7MX+81H9mL/eaiijnl3Dkj2D+zF/vNR/Zi/wB5qKKOeXcOSPY//9k=
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</loggingrecorditem>
 		<separatoritem
@@ -260,6 +268,8 @@ cOSPYP7MX+81H9mL/eaiijnl3Dkj2D+zF/vNR/Zi/wB5qKKOeXcOSPY//9k=
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</loggingrecorditem>
 		<getvaluerecorditem
@@ -279,6 +289,8 @@ cOSPYP7MX+81H9mL/eaiijnl3Dkj2D+zF/vNR/Zi/wB5qKKOeXcOSPY//9k=
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'JobComplete-tbody']/tr[5]//table/tbody/tr[2]/td/div/div[1]/div[@innertext&gt;'Ver su p&#243;liza (N.&#176; 124200']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</getvaluerecorditem>
 		<getvaluerecorditem
@@ -297,6 +309,8 @@ cOSPYP7MX+81H9mL/eaiijnl3Dkj2D+zF/vNR/Zi/wB5qKKOeXcOSPY//9k=
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'infoBar-targetEl']//span[@innertext~'cuenta']/..//span[@innertext~'[0-9]+']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</getvaluerecorditem>
 		<loggingrecorditem

@@ -66,6 +66,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//div[#'NewDirectBillPayment/distributionCard']/table//div[@id='NewDirectBillPayment:EditDBPaymentScreen:PaymentDetailsDV:policyNumbers-trigger-picker']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<keysequenceitem
@@ -137,8 +139,10 @@ mode="Global">
 					</attribute>
 				</element>
 				<path>
-					/dom[@domain=$Ambiente]//div[#'NewDirectBillPayment/distributionCard']/table//span[@innertext~'N&#250;mero de P&#243;liza']/../..//input
+					/dom[@domain=$Ambiente]//div[#'NewDirectBillPayment/distributionCard']/table//span[@innertext~'Número de Póliza']/../..//input
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<keysequenceitem
@@ -297,8 +301,10 @@ mode="Global">
 					</dynamicattribute>
 				</element>
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewDirectBillPayment/distributionCard']/table//span[@innertext~'N&#250;mero de P&#243;liza']/../..//input
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewDirectBillPayment/distributionCard']/table//span[@innertext~'Número de Póliza']/../..//input
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<mouseitem
@@ -375,8 +381,10 @@ mode="Global">
 					</attribute>
 				</element>
 				<path>
-					/dom[@domain=$Ambiente]//div[#'NewDirectBillPayment/distributionCard']/table//span[@innertext~'N&#250;mero de P&#243;liza']/../..//input
+					/dom[@domain=$Ambiente]//div[#'NewDirectBillPayment/distributionCard']/table//span[@innertext~'Número de Póliza']/../..//input
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<mouseitem
@@ -401,6 +409,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//div[#'NewDirectBillPayment/distributionCard']/table/body//ul/li[@nnertext=$NumPoliza]
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<mouseitem
@@ -458,7 +468,7 @@ mode="Global">
 					<attribute
 					name="innertext"
 					type="System.String">
-						Pagos mediante facturaci&#243;n directa
+						Pagos mediante facturación directa
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -474,6 +484,8 @@ mode="Global">
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewDirectBillPayment/distributionCard']/table/tbody/tr[1]/td/div/div/div/div/?/?/span[@innertext&gt;'Pagos mediante facturaci&#243;n']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="5590094e-78ce-4fb4-b795-354643ebf6ce">
@@ -583,6 +595,8 @@ ooooAKKKKAP/2Q==
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewDirectBillPayment/distributionCard']/table//span[@innertext='Monto']/../..//input[@data-tabindexsaved='True']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<getvaluerecorditem
@@ -651,6 +665,8 @@ ooooAKKKKAP/2Q==
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewDirectBillPayment/distributionCard']/table//table[@class~'summary']//a[@innertext~'[0-9]']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</getvaluerecorditem>
 		<loggingrecorditem
@@ -698,6 +714,8 @@ ooooAKKKKAP/2Q==
 				<path>
 					/dom[@domain=$Ambiente]//div[#'NewDirectBillPayment/distributionCard']/table//span[@innertext='Monto']/../..//input
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<keysequenceitem
@@ -842,6 +860,8 @@ ooooAKKKKAP/2Q==
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewDirectBillPayment/distributionCard']/table//span[@innertext='Monto']/../..//input
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<mouseitem
@@ -899,7 +919,7 @@ ooooAKKKKAP/2Q==
 					<attribute
 					name="innertext"
 					type="System.String">
-						Pagos mediante facturaci&#243;n directa
+						Pagos mediante facturación directa
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -915,6 +935,8 @@ ooooAKKKKAP/2Q==
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewDirectBillPayment/distributionCard']/table/tbody/tr[1]/td/div/div/div/div/?/?/span[@innertext&gt;'Pagos mediante facturaci&#243;n']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="3465da3d-532c-4aef-92ee-69231943da61">
@@ -1024,6 +1046,8 @@ DopSco3YUUUVBqFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf/2Q==
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewDirectBillPayment/distributionCard']/table//span[@innertext='Monto']/../..//input[@data-tabindexsaved='True']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<explicitdelayitem
@@ -1049,8 +1073,10 @@ DopSco3YUUUVBqFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf/2Q==
 			id="14dd85a4-f7b7-4ad1-bb0d-bda7ec241ccb"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewDirectBillPayment/distributionCard']/table//span[@innertext~'N.&#186; Autorizaci&#243;n']/../..//input[@data-tabindexsaved='True']
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewDirectBillPayment/distributionCard']/table//span[@innertext~'N.º Autorización']/../..//input[@data-tabindexsaved='True']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<mouseitem
@@ -1211,8 +1237,10 @@ DopSco3YUUUVBqFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf/2Q==
 					</dynamicattribute>
 				</element>
 				<path>
-					/dom[@domain=$Ambiente]//div[#'NewDirectBillPayment/distributionCard']/table//span[@innertext~'N.&#186; Autorizaci&#243;n']/../..//input
+					/dom[@domain=$Ambiente]//div[#'NewDirectBillPayment/distributionCard']/table//span[@innertext~'N.º Autorización']/../..//input
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<keysequenceitem
@@ -1366,8 +1394,10 @@ DopSco3YUUUVBqFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf/2Q==
 					</dynamicattribute>
 				</element>
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewDirectBillPayment/distributionCard']/table//span[@innertext~'N.&#186; Autorizaci&#243;n']/../..//input
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewDirectBillPayment/distributionCard']/table//span[@innertext~'N.º Autorización']/../..//input
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<mouseitem
@@ -1451,6 +1481,8 @@ DopSco3YUUUVBqFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf/2Q==
 				<path>
 					/dom[@domain=$Ambiente]//div[#'NewDirectBillPayment/distributionCard']/table/tbody/tr[4]//table//div/table/?/?/tr/td[2]/div/table/tbody/tr[1]/?/?/label[@innertext='Detalles de pago']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
@@ -1469,6 +1501,8 @@ DopSco3YUUUVBqFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf/2Q==
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewDirectBillPayment/distributionCard']/table//span[@innertext~'Tipo de tarjeta']/../..//input[@data-tabindexsaved='True']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<keyitem
@@ -1492,6 +1526,8 @@ DopSco3YUUUVBqFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf/2Q==
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewDirectBillPayment/distributionCard']/table//span[@innertext~'Tipo de tarjeta']/../..//input
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keyitem>
 		<keysequenceitem
@@ -1515,6 +1551,8 @@ DopSco3YUUUVBqFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf/2Q==
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewDirectBillPayment/distributionCard']/table//span[@innertext~'Tipo de tarjeta']/../..//input
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<mouseitem
@@ -1572,7 +1610,7 @@ DopSco3YUUUVBqFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf/2Q==
 					<attribute
 					name="innertext"
 					type="System.String">
-						Pagos mediante facturaci&#243;n directa
+						Pagos mediante facturación directa
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -1588,6 +1626,8 @@ DopSco3YUUUVBqFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf/2Q==
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewDirectBillPayment/distributionCard']/table/tbody/tr[1]/td/div/div/div/div/?/?/span[@innertext&gt;'Pagos mediante facturaci&#243;n']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="3465da3d-532c-4aef-92ee-69231943da61">
@@ -1699,6 +1739,8 @@ DopSco3YUUUVBqFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf/2Q==
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</loggingrecorditem>
 		<mouseitem
@@ -1784,6 +1826,8 @@ DopSco3YUUUVBqFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf/2Q==
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewDirectBillPayment/distributionCard']/table/tbody/tr[2]/td/div/div/div/a[1]//span[@innertext='Ejectar']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="923fe58a-7e7f-4d49-8ca0-687f79c1ff96">
@@ -1834,6 +1878,8 @@ tE6s+9ZH54RVIYknt0x+NXxyMihpPcFOUdm0Zn9hWv8Az0m/Mf4VasrGKyD+UXO/Gdx9Ks0UrLsN
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'AccountSummary-tbody']/tr[7]//table/?/?/tr/td[2]/?/?/table//div/table/?/?/tr/td[1]/?/?/table/?/?/tr/td/div/div/div[2]/?/?/canvas
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 	</recorditems>
