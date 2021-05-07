@@ -752,11 +752,19 @@
 				<parameters>
 					<param
 					name="NroCuenta"
-					value="7971481640">
+					value="4216353383">
 					</param>
 					<param
 					name="NumPolizaEmitida"
 					value="">
+					</param>
+					<param
+					name="URL"
+					value="https://i-preproducciongestion.segurossura.com.ar/pc/PolicyCenter.do">
+					</param>
+					<param
+					name="Ambiente"
+					value="i-preproducciongestion.segurossura.com.ar">
 					</param>
 				</parameters>
 			</testcase>
@@ -805,6 +813,12 @@
 					datasourceid="d656bea3-d8cf-499a-b684-bdf339efb302"
 					variableid="1e331208-d6b2-40e3-8990-4411105add5e"
 					variablename="CantCuotas">
+					</var>
+					<var
+					dataname="Ambiente"
+					datasourceid="944abe9b-0ea1-485e-a74f-0bb72c9242d8"
+					variableid="179cd022-d834-4b47-98d5-e2a34a6a6fce"
+					variablename="Ambiente">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1088,6 +1102,12 @@
 					variableid="10e73b3e-5f3c-4506-a282-bfc64eae503b"
 					variablename="OPCION_PAGOCUOTAS">
 					</var>
+					<var
+					dataname="Ambiente"
+					datasourceid="944abe9b-0ea1-485e-a74f-0bb72c9242d8"
+					variableid="179cd022-d834-4b47-98d5-e2a34a6a6fce"
+					variablename="Ambiente">
+					</var>
 				</databinding>
 			</testmodule>
 			<teardown
@@ -1330,11 +1350,11 @@
 				<parameters>
 					<param
 					name="URL"
-					value="">
+					value="https://i-preproducciongestion.segurossura.com.ar/pc/PolicyCenter.do">
 					</param>
 					<param
 					name="Ambiente"
-					value="">
+					value="i-preproducciongestion.segurossura.com.ar">
 					</param>
 					<param
 					name="User"
@@ -3080,7 +3100,7 @@
 		<DataSource
 		id="0a5b5b88-3846-427a-a2e5-8f116719dded"
 		includefile="Unchecked"
-		lastknownrowcount="1"
+		lastknownrowcount="2"
 		name="PagarPolizas"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">

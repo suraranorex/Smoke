@@ -26,7 +26,7 @@ mode="Global">
 	</variables>
 	<recorditems>
 		<WaitForRecordItem
-		enabled="True"
+		enabled="False"
 		optional="False"
 		searchpropertyid="a998bf2a-a14b-4332-9300-3ceb7e91b866"
 		waitaction="Exists"
@@ -178,6 +178,8 @@ mode="Global">
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'SubmissionWizard/PolicyInfo']/table/tbody/tr[4]//table//div/table/?/?/tr/td[2]/?/?/table/tbody/tr[14]/td/div/div[1]/div/div[1]/input[@name='SubmissionWizard:LOBWizardStepGroup:SubmissionWizard_PolicyInfoScreen:SubmissionWizard_PolicyInfoDV:PolicyInfoInputSet:paymentPlans']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<mouseitem
@@ -329,8 +331,19 @@ mode="Global">
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'SubmissionWizard/PolicyInfo']//span[@innertext='Pago en Cuotas?']/../..//label[@innertext='No']/..//input
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
+		<explicitdelayitem
+		duration="6000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -351,12 +364,14 @@ mode="Global">
 			id="f8f3193d-ec43-4187-843d-23e41f09a532"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain=$Ambiente]//div[#'SubmissionWizard/PolicyInfo']/table/tbody/tr[4]//table//div/table/?/?/tr/td[2]/div/table/tbody/tr[4]/?/?/label[@innertext='Detalles de la p&#243;liza']
+					/dom[@domain=$Ambiente]//div[#'SubmissionWizard/PolicyInfo']/table/tbody/tr[4]//table//div/table/?/?/tr/td[2]/div/table/tbody/tr[4]/?/?/label[@innertext='Detalles de la póliza']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
-		enabled="True"
+		enabled="False"
 		optional="False"
 		searchpropertyid="53ac071b-d3db-463a-a5e8-2ddc0e6e7480"
 		waitaction="NotExists"
@@ -371,91 +386,10 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//div[#'SubmissionWizard/PolicyInfo']//input[@tagvalue~'[a-z]+' and @data-tabindexsaved='True']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="300ms"
-		enabled="True"
-		loc="UpperRight"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="7d43d165-a2c8-4f0f-a971-b3da5dd15fa2"
-		sx="458"
-		sy="463"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="f8f3193d-ec43-4187-843d-23e41f09a532"
-			sourcename="RepositoryEditor">
-				<element
-				capabilities="webelement, labeltag"
-				dontcache="True"
-				enabled="True"
-				flavor="chromeweb"
-				hasfocus="False"
-				index="0"
-				prefcap="labeltag"
-				rect="762,216,96,12"
-				role="unknown"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="class"
-					type="System.String">
-						x-component x-component-default
-					</attribute>
-					<attribute
-					name="draggable"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="hidden"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="id"
-					type="System.String">
-						SubmissionWizard:LOBWizardStepGroup:SubmissionWizard_PolicyInfoScreen:SubmissionWizard_PolicyInfoDV:PolicyInfoInputSet:2
-					</attribute>
-					<attribute
-					name="innertext"
-					type="System.String">
-						Detalles de la p&#243;liza
-					</attribute>
-					<attribute
-					name="safeclass"
-					type="System.String">
-						x-component x-component-default
-					</attribute>
-					<attribute
-					name="tagname"
-					type="System.String">
-						label
-					</attribute>
-					<attribute
-					name="for"
-					type="System.String">
-					</attribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="style"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-				</element>
-				<path>
-					/dom[@domain=$Ambiente]//div[#'SubmissionWizard/PolicyInfo']/table/tbody/tr[4]//table//div/table/?/?/tr/td[2]/div/table/tbody/tr[4]/?/?/label[@innertext='Detalles de la p&#243;liza']
-				</path>
-			</info>
-		</mouseitem>
 	</recorditems>
 	<repository
 	id="58ca00b5-56c0-4f78-a5d2-302b212932e0"

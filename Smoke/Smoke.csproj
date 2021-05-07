@@ -794,9 +794,9 @@
       <recordtableid>1e8a1077-4a29-4e5d-80f7-b42f8077524c</recordtableid>
     </None>
     <None Include="Emision\InformacionDePoliza_AP.rxrec">
-      <BoundTo>c5d687cb-d4dd-46a0-9b8f-7e2a1374cbe9</BoundTo>
       <id>67a1362f-33a0-4542-966a-54dc61952786</id>
       <recordtableid>cc1afe87-61b1-4f58-935f-37d82a6c0174</recordtableid>
+      <BoundTo>c5d687cb-d4dd-46a0-9b8f-7e2a1374cbe9</BoundTo>
     </None>
     <None Include="Emision\InformacionDePoliza_Hogar.rxrec">
       <BoundTo>c5d687cb-d4dd-46a0-9b8f-7e2a1374cbe9</BoundTo>

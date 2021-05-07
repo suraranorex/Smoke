@@ -42,6 +42,7 @@ namespace Smoke.Emision
         public InformacionDePoliza_AP()
         {
             MetodoDePago = "Cupón";
+            Ambiente = "i-preproducciongestion.segurossura.com.ar";
         }
 
         /// <summary>
@@ -112,31 +113,41 @@ namespace Smoke.Emision
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$MetodoDePago' with focus on 'SURA.PC.Emision.Generales.InformacionDePoliza.list_MetodoDePago'.", repo.SURA.PC.Emision.Generales.InformacionDePoliza.list_MetodoDePagoInfo, new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.PC.Emision.Generales.InformacionDePoliza.list_MetodoDePago' at Center.", repo.SURA.PC.Emision.Generales.InformacionDePoliza.list_MetodoDePagoInfo, new RecordItemIndex(0));
+            repo.SURA.PC.Emision.Generales.InformacionDePoliza.list_MetodoDePago.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'SURA.PC.Emision.Generales.InformacionDePoliza.list_MetodoDePago'.", repo.SURA.PC.Emision.Generales.InformacionDePoliza.list_MetodoDePagoInfo, new RecordItemIndex(1));
+            Keyboard.PrepareFocus(repo.SURA.PC.Emision.Generales.InformacionDePoliza.list_MetodoDePago);
+            Keyboard.Press(System.Windows.Forms.Keys.A | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$MetodoDePago' with focus on 'SURA.PC.Emision.Generales.InformacionDePoliza.list_MetodoDePago'.", repo.SURA.PC.Emision.Generales.InformacionDePoliza.list_MetodoDePagoInfo, new RecordItemIndex(2));
             repo.SURA.PC.Emision.Generales.InformacionDePoliza.list_MetodoDePago.PressKeys(MetodoDePago);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.Lbl_DetallesDeLaPoliza' at UpperRight.", repo.SURA.Lbl_DetallesDeLaPolizaInfo, new RecordItemIndex(1));
-            repo.SURA.Lbl_DetallesDeLaPoliza.Click(Location.UpperRight);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Enter' Press with focus on 'SURA.PC.Emision.Generales.InformacionDePoliza.list_MetodoDePago'.", repo.SURA.PC.Emision.Generales.InformacionDePoliza.list_MetodoDePagoInfo, new RecordItemIndex(3));
+            Keyboard.PrepareFocus(repo.SURA.PC.Emision.Generales.InformacionDePoliza.list_MetodoDePago);
+            Keyboard.Press(System.Windows.Forms.Keys.Return, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 40s to not exist. Associated repository item: 'SURA.PC.Emision.Generales.InformacionDePoliza.Copy_of_list_MetodoDePago'", repo.SURA.PC.Emision.Generales.InformacionDePoliza.Copy_of_list_MetodoDePagoInfo, new ActionTimeout(40000), new RecordItemIndex(2));
-            repo.SURA.PC.Emision.Generales.InformacionDePoliza.Copy_of_list_MetodoDePagoInfo.WaitForNotExists(40000);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 6s.", new RecordItemIndex(4));
+            Delay.Duration(6000, false);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.PC.Emision.Generales.InformacionDePoliza.rb_PagoCuotas' at Center.", repo.SURA.PC.Emision.Generales.InformacionDePoliza.rb_PagoCuotasInfo, new RecordItemIndex(3));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.PC.Emision.Generales.InformacionDePoliza.rb_PagoCuotas' at Center.", repo.SURA.PC.Emision.Generales.InformacionDePoliza.rb_PagoCuotasInfo, new RecordItemIndex(5));
             //repo.SURA.PC.Emision.Generales.InformacionDePoliza.rb_PagoCuotas.Click();
             //Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'SURA.PC.Emision.Generales.InformacionDePoliza.Copy_of_option_PagoCuotas'", repo.SURA.PC.Emision.Generales.InformacionDePoliza.Copy_of_option_PagoCuotasInfo, new ActionTimeout(30000), new RecordItemIndex(4));
+            //Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'SURA.PC.Emision.Generales.InformacionDePoliza.Copy_of_option_PagoCuotas'", repo.SURA.PC.Emision.Generales.InformacionDePoliza.Copy_of_option_PagoCuotasInfo, new ActionTimeout(30000), new RecordItemIndex(6));
             //repo.SURA.PC.Emision.Generales.InformacionDePoliza.Copy_of_option_PagoCuotasInfo.WaitForNotExists(30000);
             
-            //Report.Screenshot(ReportLevel.Info, "User", "", repo.SURA.Self, false, new RecordItemIndex(5));
+            //Report.Screenshot(ReportLevel.Info, "User", "", repo.SURA.Self, false, new RecordItemIndex(7));
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.bttn_Siguiente' at 48;4.", repo.SURA.bttn_SiguienteInfo, new RecordItemIndex(6));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.bttn_Siguiente' at 48;4.", repo.SURA.bttn_SiguienteInfo, new RecordItemIndex(8));
             //repo.SURA.bttn_Siguiente.Click("48;4");
             //Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SURA.txt_Producto'", repo.SURA.txt_ProductoInfo, new ActionTimeout(30000), new RecordItemIndex(7));
+            //Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SURA.txt_Producto'", repo.SURA.txt_ProductoInfo, new ActionTimeout(30000), new RecordItemIndex(9));
             //repo.SURA.txt_ProductoInfo.WaitForExists(30000);
             
         }

@@ -26,7 +26,6 @@ mode="Global">
 		<var
 		id="bef427af-0a61-47ab-a8b3-88a7d1b11bc4"
 		name="NroCuenta">
-			1526561558
 		</var>
 	</variables>
 	<recorditems>
@@ -140,6 +139,8 @@ mode="Global">
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//a[#'TabBar:AccountTab']/span[@id='TabBar:AccountTab-btnWrap']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<setvaluerecorditem
@@ -161,6 +162,8 @@ mode="Global">
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']/body//./input[@name='TabBar:AccountTab:AccountTab_AccountNumberSearchItem']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<AttributeValue>
 				yourValue
@@ -183,6 +186,8 @@ mode="Global">
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']/body/div[11]/div/div[2]/div/div[2]/div[1]//input[@name='TabBar:AccountTab:AccountTab_AccountNumberSearchItem' and @enabled='True']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<WaitForRecordItem
@@ -250,6 +255,8 @@ mode="Global">
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'AccountFile_Summary-tbody']/tr[1]/td/div//span[@innertext&gt;'Resumen del archivo de cu']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 	</recorditems>
