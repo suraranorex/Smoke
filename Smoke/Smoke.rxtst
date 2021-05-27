@@ -87,6 +87,25 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="09b1fc64-fed8-487a-b8de-8410f0d8390b"
+			name="MenuLatPagosRevert"
+			ref="79298b40-47aa-40e4-b09c-fa13853760b8"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="9e0fc752-0fe0-43de-aa28-f0e35d2af160"
+					variableid="179cd022-d834-4b47-98d5-e2a34a6a6fce"
+					variablename="Ambiente">
+					</var>
+				</databinding>
+			</testmodule>
+			<smartfoldernode
+			datasource="PagarPolizas"
+			id="0bbcbfc5-c4d4-4881-8aed-d2cc9050b93a"
+			name="PagoAcciones">
+			</smartfoldernode>
+			<testmodule
 			enabled="False"
 			id="0c44fccd-d5b4-4383-ba1c-3fca99b05ecd"
 			name="LogOut"
@@ -127,6 +146,11 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			datasource="PagarPolizas"
+			id="10ad764a-a2c1-4540-b3a0-dff49d534efb"
+			name="ReversaAcciones">
+			</smartfoldernode>
 			<testmodule
 			id="1b202b80-bac7-4a30-87c7-13e770423445"
 			name="DebitoBancario"
@@ -339,12 +363,20 @@
 					variablename="Ambiente">
 					</var>
 					<var
+					dataname="NroCuenta"
+					datasourceid="539633a7-894c-49ae-93fc-0db5a6fe177b"
+					variableid="0bf45686-f899-4f9f-a81b-da515c8cde89"
+					variablename="NumCuenta">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
 					dataname="NumCuenta"
 					datasourceid="0a5b5b88-3846-427a-a2e5-8f116719dded"
 					variableid="0bf45686-f899-4f9f-a81b-da515c8cde89"
 					variablename="NumCuenta">
 					</var>
-				</databinding>
+				</missingdatabinding>
 			</testmodule>
 			<smartfoldernode
 			id="3774b8fb-928c-4e47-9e8d-0597e1f7ca83"
@@ -740,7 +772,6 @@
 				</databinding>
 			</testmodule>
 			<testcase
-			datasource="PagarPolizas"
 			errorbehavior="ContinueNextIteration"
 			id="50f4575a-98aa-4678-bd4c-18c1a69e4040"
 			name="PagarPoliza">
@@ -865,6 +896,12 @@
 					variableid="179cd022-d834-4b47-98d5-e2a34a6a6fce"
 					variablename="Ambiente">
 					</var>
+					<var
+					dataname="NumPoliza"
+					datasourceid="0a5b5b88-3846-427a-a2e5-8f116719dded"
+					variableid="ec206af3-54d1-44c2-86ad-9c9b8fabcad0"
+					variablename="NUMPOLIZA_REVERTIR">
+					</var>
 				</databinding>
 			</testmodule>
 			<setup
@@ -872,7 +909,6 @@
 			name="setup">
 			</setup>
 			<testcase
-			datasource="PagarPolizas"
 			id="655b1a57-ebab-4f5f-bd66-0a1742de6ff0"
 			name="Reversa">
 			</testcase>
@@ -1508,11 +1544,11 @@
 				<parameters>
 					<param
 					name="URL"
-					value="https://ssurgwsoadev4-oci.opc.oracleoutsourcing.com/bc">
+					value="https://i-preproducciongestion.segurossura.com.ar/bc">
 					</param>
 					<param
 					name="Ambiente"
-					value="ssurgwsoadev4-oci.opc.oracleoutsourcing.com">
+					value="i-preproducciongestion.segurossura.com.ar">
 					</param>
 					<param
 					name="User"
@@ -1714,20 +1750,6 @@
 			type="Recording">
 			</testmodule>
 			<testmodule
-			id="b8fc3efe-0ddd-4384-ba76-4973396e95f9"
-			name="MenuLateral_CuentaBC"
-			ref="0b0be839-fbd6-4a67-aab4-f46a1ff4ffa0"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Ambiente"
-					datasourceid="9e0fc752-0fe0-43de-aa28-f0e35d2af160"
-					variableid="179cd022-d834-4b47-98d5-e2a34a6a6fce"
-					variablename="Ambiente">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			enabled="False"
 			id="bbab4721-9658-4904-ad19-d762ca575b5e"
 			name="CloseBrowser"
@@ -1874,16 +1896,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="NumPoliza"
-					datasourceid="0a5b5b88-3846-427a-a2e5-8f116719dded"
-					variableid="d6e7c6bc-563c-4ebb-9e35-ebe37fa72d3a"
-					variablename="NumPoliza">
-					</var>
-					<var
 					dataname="Ambiente"
 					datasourceid="9e0fc752-0fe0-43de-aa28-f0e35d2af160"
 					variableid="179cd022-d834-4b47-98d5-e2a34a6a6fce"
 					variablename="Ambiente">
+					</var>
+					<var
+					dataname="NumPoliza"
+					datasourceid="0a5b5b88-3846-427a-a2e5-8f116719dded"
+					variableid="d6e7c6bc-563c-4ebb-9e35-ebe37fa72d3a"
+					variablename="NumPoliza">
 					</var>
 				</databinding>
 			</testmodule>
@@ -2216,18 +2238,26 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="NumCuenta"
-					datasourceid="0a5b5b88-3846-427a-a2e5-8f116719dded"
-					variableid="0bf45686-f899-4f9f-a81b-da515c8cde89"
-					variablename="NumCuenta">
-					</var>
-					<var
 					dataname="Ambiente"
 					datasourceid="9e0fc752-0fe0-43de-aa28-f0e35d2af160"
 					variableid="179cd022-d834-4b47-98d5-e2a34a6a6fce"
 					variablename="Ambiente">
 					</var>
+					<var
+					dataname="NroCuenta"
+					datasourceid="539633a7-894c-49ae-93fc-0db5a6fe177b"
+					variableid="0bf45686-f899-4f9f-a81b-da515c8cde89"
+					variablename="NumCuenta">
+					</var>
 				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="NumCuenta"
+					datasourceid="0a5b5b88-3846-427a-a2e5-8f116719dded"
+					variableid="0bf45686-f899-4f9f-a81b-da515c8cde89"
+					variablename="NumCuenta">
+					</var>
+				</missingdatabinding>
 			</testmodule>
 			<setup
 			id="fe649720-47f6-449c-9a95-7af3a6d7ba9c"
@@ -2706,14 +2736,18 @@
 							id="fe5b8a4d-4ccf-4a51-a824-483580f61f10"
 							name="MenuSuperior_CuentaBC">
 							</testmodule>
-							<testmodule
-							id="1e4f7afb-bd34-4a42-adce-c00b2e205ec7"
-							name="MenuLateral_CuentaBC">
-							</testmodule>
-							<testmodule
-							id="d22ee51b-3f1d-449a-96e1-d410e3c9589f"
-							name="Pago">
-							</testmodule>
+							<smartfoldernode
+							id="0bbcbfc5-c4d4-4881-8aed-d2cc9050b93a"
+							name="PagoAcciones">
+								<testmodule
+								id="1e4f7afb-bd34-4a42-adce-c00b2e205ec7"
+								name="MenuLateral_CuentaBC">
+								</testmodule>
+								<testmodule
+								id="d22ee51b-3f1d-449a-96e1-d410e3c9589f"
+								name="Pago">
+								</testmodule>
+							</smartfoldernode>
 							<teardown
 							id="caf29266-586f-411a-a3a5-128eaab40b3d"
 							name="teardown">
@@ -2735,13 +2769,17 @@
 							name="MenuSuperior_CuentaBC">
 							</testmodule>
 							<testmodule
-							id="b8fc3efe-0ddd-4384-ba76-4973396e95f9"
-							name="MenuLateral_CuentaBC">
+							id="09b1fc64-fed8-487a-b8de-8410f0d8390b"
+							name="MenuLatPagosRevert">
 							</testmodule>
-							<testmodule
-							id="58e61a31-1f0e-4861-b312-e12c074de943"
-							name="ConfirmarReversion">
-							</testmodule>
+							<smartfoldernode
+							id="10ad764a-a2c1-4540-b3a0-dff49d534efb"
+							name="ReversaAcciones">
+								<testmodule
+								id="58e61a31-1f0e-4861-b312-e12c074de943"
+								name="ConfirmarReversion">
+								</testmodule>
+							</smartfoldernode>
 						</testcase>
 					</smartfoldernode>
 					<testcase
@@ -3195,6 +3233,12 @@
 		<testconfiguration
 		name="Smoke">
 			<testcontainer
+			id="0bbcbfc5-c4d4-4881-8aed-d2cc9050b93a">
+			</testcontainer>
+			<testcontainer
+			id="10ad764a-a2c1-4540-b3a0-dff49d534efb">
+			</testcontainer>
+			<testcontainer
 			id="1d01bab4-16a3-4c66-b0b5-66f0308c27e3">
 			</testcontainer>
 			<testcontainer
@@ -3213,7 +3257,13 @@
 			id="4f5e8f86-9772-4799-a29d-49ca5e7cebff">
 			</testcontainer>
 			<testcontainer
+			id="50f4575a-98aa-4678-bd4c-18c1a69e4040">
+			</testcontainer>
+			<testcontainer
 			id="539633a7-894c-49ae-93fc-0db5a6fe177b">
+			</testcontainer>
+			<testcontainer
+			id="655b1a57-ebab-4f5f-bd66-0a1742de6ff0">
 			</testcontainer>
 			<testcontainer
 			id="66ef67d9-cf45-4baa-bb1d-07c4d71f5d1a">
@@ -3232,6 +3282,9 @@
 			</testcontainer>
 			<testcontainer
 			id="9796e920-1188-45ad-af46-1061deede081">
+			</testcontainer>
+			<testcontainer
+			id="9e0fc752-0fe0-43de-aa28-f0e35d2af160">
 			</testcontainer>
 			<testcontainer
 			id="a6a30ae5-30c4-4a02-8b29-f6d65fd9fd05">

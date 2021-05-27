@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="79298b40-47aa-40e4-b09c-fa13853760b8"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="MenuLatPagosRevert"
+	namespace="Smoke.Menu">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="a4fa2168-993c-4406-8a74-f8ff14d011cf"
+		sx="63"
+		sy="310"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="7a670d76-031a-4d85-8e10-7ebb6a3c0fc4"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="3"
+				prefcap="spantag"
+				rect="42,302,32,14"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						x-tree-node-text&#32;
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Pagos
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						x-tree-node-text
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'AccountGroup:MenuLinks-body']/div[1]/div/div/table[5]//span[@innertext='Pagos']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="e6a0b306-f69c-485d-9092-fa6d9671d1cd">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCAAtAHkDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDpKK5T
+7Zc/8/E3/fZo+2XP/PxN/wB9mtvYvuYe3XY6uiuU+2XP/PxN/wB9mj7Zc/8APxN/32aPYvuHt12O
+rpqRpH9xFXPoMVy32y5/5+Jv++zSfbLr/n4m/wC+zUSiouzZtTU6ivFfijrKK5P7Zdf8/E3/AH2a
+Ptl1/wA/E3/fZqfd7/gzT2VTt+K/zOsork/tl1/z8Tf99mj7Zdf8/E3/AH2afu3tf8GJ06iTfLt5
+r/M6yiuU+2XP/PxN/wB9mj7Zc/8APxN/32a09i+5ze3XY6uiuU+2XP8Az8Tf99mj7Zc/8/E3/fZo
+9i+4e3XY6uiuU+2XP/PxN/32aPtlz/z8Tf8AfZo9i+4e3XYhoooroOYKKKKAEqa0iE1wkbZwc9Ov
+SoadHI0bBkOGHesJNKpq+h204Snh2oq/vL8mWms90irHlSVyytklT74FMaydImkd41Vc5yT2OOuM
+VFFO8WdhAzjOVB6fWrMd0JpII2jBYypzx13gk9M/rTdRLZohYefWDXyZGlo0mDHLE4zglSSAfy5/
+CoJEMchQnJHsR/OrVwt3G8pjjRod80gHHAVsEkEe9VZXkeUmZWWQcEMMEcelRKV7eqNKMOVy06P8
+hKKKK6ThCiiigAooooA2P7B/6ef/ACH/APXo/sH/AKef/If/ANetmiuX2ku52eyh2Mb+wf8Ap5/8
+h/8A16P7B/6ef/If/wBetmij2ku4eyh2Mb+wf+nn/wAh/wD16P7B/wCnn/yH/wDXrZopObe5Sio7
+GN/YP/Tz/wCQ/wD69VrbTpTchkdWMFwA6FdrABgQffI5roqoaoTbKt/GfniwrL2dSQMH6dR+PrS5
+mP5llrSFkZSvDB1PJ6Mct+tZs2mfbb66k87ZiQLjbn+Bff3rVeTbCZMZwu7FVNGcz2RuWzunkZyP
+TnaAPwApJtag1fQqf2D/ANPP/kP/AOvR/YP/AE8/+Q//AK9bNFX7SXcj2UOxjf2D/wBPP/kP/wCv
+R/YP/Tz/AOQ//r1s0Ue0l3D2UOxjf2D/ANPP/kP/AOvR/YP/AE8/+Q//AK9bNFHtJdw9lDsf/9k=
+			</helperscreenshot>
+		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="00a9b0f7-8684-4bc6-bdc4-c115fcbee9fb"
+		waitaction="Exists"
+		waittimeout="30000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="ae9c16d2-8017-46ff-8ad9-c2006f0c699e"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'AccountPayments/PaymentDetails']//span[@innertext='Pagos']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
+	</recorditems>
+	<repository
+	id="58ca00b5-56c0-4f78-a5d2-302b212932e0"
+	name="SmokeRepository"
+	relativepath="..\SmokeRepository.rxrep">
+		<codegen
+		classname="SmokeRepository"
+		namespace="Smoke">
+		</codegen>
+		<rootfolder
+		id="7521c285-eca8-4037-8149-4c0669f953a6"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		MenuLatPagosRevert.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

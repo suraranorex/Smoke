@@ -530,6 +530,10 @@ namespace Smoke
             RepoItemInfo _txt_reversiondepagoInfo;
             RepoItemInfo _copy_of_bttn_motivoInfo;
             RepoItemInfo _txt_revertidoInfo;
+            RepoItemInfo _revertirInfo;
+            RepoItemInfo _accionesInfo;
+            RepoItemInfo _bttnlateral_pagosInfo;
+            RepoItemInfo _txt_pagosInfo;
 
             /// <summary>
             /// Creates a new SURA  folder.
@@ -792,6 +796,10 @@ namespace Smoke
                 _txt_reversiondepagoInfo = new RepoItemInfo(this, "txt_ReversionDePago", ".//span[@innertext~'reversión de pago']", "", 30000, null, "709872bd-02a5-4cee-be80-129d84cb8a7d");
                 _copy_of_bttn_motivoInfo = new RepoItemInfo(this, "Copy_of_bttn_Motivo", ".//div[#'DBPaymentReversalConfirmationPopup:reversalReason']//span[@innertext='Motivo']/../..//input[@data-tabindexsaved='True']", "", 30000, null, "105908ca-67b8-4212-a778-3e12b0a25dbf");
                 _txt_revertidoInfo = new RepoItemInfo(this, "txt_Revertido", ".//tbody[#'centerPanel-tbody']//a[@innertext~$NUMPOLIZA_REVERTIR]/../../..//span[@innertext='Revertido']", "", 30000, null, "bd16f183-c1ca-4feb-a8af-12fba4215849");
+                _revertirInfo = new RepoItemInfo(this, "Revertir", ".//span[@innertext='Revertir' and @visible='True']", "", 30000, null, "efdaa085-1e9c-4c60-a8ab-6c5717385334");
+                _accionesInfo = new RepoItemInfo(this, "Acciones", ".//div[#'AccountPayments/PaymentDetails']//a[@innertext>$NUMPOLIZA_REVERTIR]/../../..//a[@innertext='Acciones']", "", 30000, null, "2f91935e-cff3-4bb0-b1d3-4334e1b27e0c");
+                _bttnlateral_pagosInfo = new RepoItemInfo(this, "bttnLateral_Pagos", ".//div[#'AccountGroup:MenuLinks-body']//span[@innertext='Pagos']", "", 30000, null, "7a670d76-031a-4d85-8e10-7ebb6a3c0fc4");
+                _txt_pagosInfo = new RepoItemInfo(this, "txt_Pagos", ".//div[#'AccountPayments/PaymentDetails']//span[@innertext='Pagos']", "", 30000, null, "ae9c16d2-8017-46ff-8ad9-c2006f0c699e");
             }
 
             /// <summary>
@@ -6839,6 +6847,102 @@ namespace Smoke
                 get
                 {
                     return _txt_revertidoInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Revertir item.
+            /// </summary>
+            [RepositoryItem("efdaa085-1e9c-4c60-a8ab-6c5717385334")]
+            public virtual Ranorex.SpanTag Revertir
+            {
+                get
+                {
+                    return _revertirInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Revertir item info.
+            /// </summary>
+            [RepositoryItemInfo("efdaa085-1e9c-4c60-a8ab-6c5717385334")]
+            public virtual RepoItemInfo RevertirInfo
+            {
+                get
+                {
+                    return _revertirInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Acciones item.
+            /// </summary>
+            [RepositoryItem("2f91935e-cff3-4bb0-b1d3-4334e1b27e0c")]
+            public virtual Ranorex.ATag Acciones
+            {
+                get
+                {
+                    return _accionesInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Acciones item info.
+            /// </summary>
+            [RepositoryItemInfo("2f91935e-cff3-4bb0-b1d3-4334e1b27e0c")]
+            public virtual RepoItemInfo AccionesInfo
+            {
+                get
+                {
+                    return _accionesInfo;
+                }
+            }
+
+            /// <summary>
+            /// The bttnLateral_Pagos item.
+            /// </summary>
+            [RepositoryItem("7a670d76-031a-4d85-8e10-7ebb6a3c0fc4")]
+            public virtual Ranorex.SpanTag bttnLateral_Pagos
+            {
+                get
+                {
+                    return _bttnlateral_pagosInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The bttnLateral_Pagos item info.
+            /// </summary>
+            [RepositoryItemInfo("7a670d76-031a-4d85-8e10-7ebb6a3c0fc4")]
+            public virtual RepoItemInfo bttnLateral_PagosInfo
+            {
+                get
+                {
+                    return _bttnlateral_pagosInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txt_Pagos item.
+            /// </summary>
+            [RepositoryItem("ae9c16d2-8017-46ff-8ad9-c2006f0c699e")]
+            public virtual Ranorex.SpanTag txt_Pagos
+            {
+                get
+                {
+                    return _txt_pagosInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txt_Pagos item info.
+            /// </summary>
+            [RepositoryItemInfo("ae9c16d2-8017-46ff-8ad9-c2006f0c699e")]
+            public virtual RepoItemInfo txt_PagosInfo
+            {
+                get
+                {
+                    return _txt_pagosInfo;
                 }
             }
 

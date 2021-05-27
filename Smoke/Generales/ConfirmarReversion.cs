@@ -112,33 +112,41 @@ namespace Smoke.Generales
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.BC.Reversa.bttn_Motivo' at 23;6.", repo.SURA.BC.Reversa.bttn_MotivoInfo, new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.Acciones' at Center.", repo.SURA.AccionesInfo, new RecordItemIndex(0));
+            repo.SURA.Acciones.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.Revertir' at Center.", repo.SURA.RevertirInfo, new RecordItemIndex(1));
+            repo.SURA.Revertir.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.BC.Reversa.bttn_Motivo' at 23;6.", repo.SURA.BC.Reversa.bttn_MotivoInfo, new RecordItemIndex(2));
             repo.SURA.BC.Reversa.bttn_Motivo.Click("23;6");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'SURA.BC.Reversa.bttn_Motivo'.", repo.SURA.BC.Reversa.bttn_MotivoInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'SURA.BC.Reversa.bttn_Motivo'.", repo.SURA.BC.Reversa.bttn_MotivoInfo, new RecordItemIndex(3));
             Keyboard.PrepareFocus(repo.SURA.BC.Reversa.bttn_Motivo);
             Keyboard.Press(System.Windows.Forms.Keys.A | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$MotivoReversion' with focus on 'SURA.BC.Reversa.bttn_Motivo'.", repo.SURA.BC.Reversa.bttn_MotivoInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$MotivoReversion' with focus on 'SURA.BC.Reversa.bttn_Motivo'.", repo.SURA.BC.Reversa.bttn_MotivoInfo, new RecordItemIndex(4));
             repo.SURA.BC.Reversa.bttn_Motivo.PressKeys(MotivoReversion);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.BC.Reversa.txt_ReversionDePago' at Center.", repo.SURA.BC.Reversa.txt_ReversionDePagoInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.BC.Reversa.txt_ReversionDePago' at Center.", repo.SURA.BC.Reversa.txt_ReversionDePagoInfo, new RecordItemIndex(5));
             repo.SURA.BC.Reversa.txt_ReversionDePago.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'SURA.BC.Reversa.Copy_of_bttn_Motivo'", repo.SURA.BC.Reversa.Copy_of_bttn_MotivoInfo, new ActionTimeout(30000), new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'SURA.BC.Reversa.Copy_of_bttn_Motivo'", repo.SURA.BC.Reversa.Copy_of_bttn_MotivoInfo, new ActionTimeout(30000), new RecordItemIndex(6));
             repo.SURA.BC.Reversa.Copy_of_bttn_MotivoInfo.WaitForNotExists(30000);
             
-            Report.Screenshot(ReportLevel.Info, "User", "", repo.SURA.Self, false, new RecordItemIndex(5));
+            Report.Screenshot(ReportLevel.Info, "User", "", repo.SURA.Self, false, new RecordItemIndex(7));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.bttn_Aceptar' at Center.", repo.SURA.bttn_AceptarInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.bttn_Aceptar' at Center.", repo.SURA.bttn_AceptarInfo, new RecordItemIndex(8));
             repo.SURA.bttn_Aceptar.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'SURA.txt_Revertido'.", repo.SURA.txt_RevertidoInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'SURA.txt_Revertido'.", repo.SURA.txt_RevertidoInfo, new RecordItemIndex(9));
             Validate.Exists(repo.SURA.txt_RevertidoInfo);
             Delay.Milliseconds(0);
             

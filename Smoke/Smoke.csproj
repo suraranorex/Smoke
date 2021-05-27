@@ -630,6 +630,18 @@
       <UserCode>true</UserCode>
       <id>dfceabb4-e920-4e5a-a0c0-2ab94e8d16c7</id>
     </Compile>
+    <Compile Include="Menu\MenuLatPagosRevert.cs">
+      <BoundTo>153f5347-c50b-4f08-9713-065ecb64eb6a</BoundTo>
+      <DependentUpon>MenuLatPagosRevert.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b0d578e5-bbe6-4c7c-a9d9-4282fe615b9f</id>
+    </Compile>
+    <Compile Include="Menu\MenuLatPagosRevert.UserCode.cs">
+      <BoundTo>153f5347-c50b-4f08-9713-065ecb64eb6a</BoundTo>
+      <DependentUpon>MenuLatPagosRevert.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>441ab5c7-ff4c-48f0-be06-568040cadc75</id>
+    </Compile>
     <Compile Include="Menu\MenuSupBuscaSoli.cs">
       <DependentUpon>MenuSupBuscaSoli.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -935,6 +947,11 @@
       <BoundTo>c5d687cb-d4dd-46a0-9b8f-7e2a1374cbe9</BoundTo>
       <id>4b0126cf-f282-4adf-811a-efaa22737a2c</id>
       <recordtableid>4a4cfa98-0f1e-4ea3-bb4f-7c88347b85de</recordtableid>
+    </None>
+    <None Include="Menu\MenuLatPagosRevert.rxrec">
+      <BoundTo>c5d687cb-d4dd-46a0-9b8f-7e2a1374cbe9</BoundTo>
+      <id>153f5347-c50b-4f08-9713-065ecb64eb6a</id>
+      <recordtableid>79298b40-47aa-40e4-b09c-fa13853760b8</recordtableid>
     </None>
     <None Include="Menu\MenuSupBuscaSoli.rxrec">
       <BoundTo>c5d687cb-d4dd-46a0-9b8f-7e2a1374cbe9</BoundTo>

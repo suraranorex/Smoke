@@ -24,47 +24,34 @@ namespace Smoke.Menu
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The MenuSuperior_CuentaBC recording.
+    ///The MenuLatPagosRevert recording.
     /// </summary>
-    [TestModule("e764f1b0-75ea-473a-8107-188fb87760d0", ModuleType.Recording, 1)]
-    public partial class MenuSuperior_CuentaBC : ITestModule
+    [TestModule("79298b40-47aa-40e4-b09c-fa13853760b8", ModuleType.Recording, 1)]
+    public partial class MenuLatPagosRevert : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::Smoke.SmokeRepository repository.
         /// </summary>
         public static global::Smoke.SmokeRepository repo = global::Smoke.SmokeRepository.Instance;
 
-        static MenuSuperior_CuentaBC instance = new MenuSuperior_CuentaBC();
+        static MenuLatPagosRevert instance = new MenuLatPagosRevert();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public MenuSuperior_CuentaBC()
+        public MenuLatPagosRevert()
         {
-            NumCuenta = "4216353383";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static MenuSuperior_CuentaBC Instance
+        public static MenuLatPagosRevert Instance
         {
             get { return instance; }
         }
 
 #region Variables
-
-        string _NumCuenta;
-
-        /// <summary>
-        /// Gets or sets the value of variable NumCuenta.
-        /// </summary>
-        [TestVariable("0bf45686-f899-4f9f-a81b-da515c8cde89")]
-        public string NumCuenta
-        {
-            get { return _NumCuenta; }
-            set { _NumCuenta = value; }
-        }
 
         /// <summary>
         /// Gets or sets the value of variable Ambiente.
@@ -102,20 +89,12 @@ namespace Smoke.Menu
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.bttn_MenuCuentaBC' at CenterRight.", repo.SURA.bttn_MenuCuentaBCInfo, new RecordItemIndex(0));
-            repo.SURA.bttn_MenuCuentaBC.Click(Location.CenterRight);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.bttnLateral_Pagos' at Center.", repo.SURA.bttnLateral_PagosInfo, new RecordItemIndex(0));
+            repo.SURA.bttnLateral_Pagos.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute TagValue to '$NumCuenta' on item 'SURA.txtbox_MenuNroCuenta'.", repo.SURA.txtbox_MenuNroCuentaInfo, new RecordItemIndex(1));
-            repo.SURA.txtbox_MenuNroCuenta.Element.SetAttributeValue("TagValue", NumCuenta);
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}' with focus on 'SURA.txtbox_MenuNroCuenta'.", repo.SURA.txtbox_MenuNroCuentaInfo, new RecordItemIndex(2));
-            repo.SURA.txtbox_MenuNroCuenta.PressKeys("{Return}");
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SURA.lbl_VerificarMS'", repo.SURA.lbl_VerificarMSInfo, new ActionTimeout(30000), new RecordItemIndex(3));
-            repo.SURA.lbl_VerificarMSInfo.WaitForExists(30000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SURA.txt_Pagos'", repo.SURA.txt_PagosInfo, new ActionTimeout(30000), new RecordItemIndex(1));
+            repo.SURA.txt_PagosInfo.WaitForExists(30000);
             
         }
 

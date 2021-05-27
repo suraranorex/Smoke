@@ -124,6 +124,8 @@ mode="Global">
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//a[#'AccountGroup:AccountDetailMenuActions']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="11036889-213e-4f44-8406-c8ca2bbfdb80">
@@ -337,6 +339,8 @@ FABRRRQAUUUUAFI/3G+lLSP9xvpQBBRRRQB//9k=
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']/body/div[15]/div/div[2]/div/div[2]/?/?/span[@innertext='Pago nuevo']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="b84235c8-f9dd-4902-a4f6-d4e730c9bbee">
@@ -486,6 +490,8 @@ gAooooAKKKKACiiigAooooAKR/uN9KKKAIR94VOKKKACiiigD//Z
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']/body/div[17]/div/div[2]/div/div[1]/?/?/span[@innertext&gt;'Nuevo pago de factura dir']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="15f7a6e5-0a11-4a94-b09c-f11f253545f0">
@@ -562,6 +568,8 @@ wpAH5U+gAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD//Z
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//span[@innertext&gt;'Pagos mediante facturaci&#243;n']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 	</recorditems>
