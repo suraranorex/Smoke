@@ -361,6 +361,26 @@ mode="Global">
 				</robustPath>
 			</info>
 		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="53ac071b-d3db-463a-a5e8-2ddc0e6e7480"
+		waitaction="NotExists"
+		waittimeout="30000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="99670350-ed24-44ef-b53d-b80170dcc7b3"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//div[#'SubmissionWizard/PolicyInfo']//input[@tagvalue~'[a-z]+' and @data-tabindexsaved='True']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
 		<explicitdelayitem
 		duration="6000ms"
 		enabled="True"
@@ -396,26 +416,6 @@ mode="Global">
 				</robustPath>
 			</info>
 		</mouseitem>
-		<WaitForRecordItem
-		enabled="False"
-		optional="False"
-		searchpropertyid="53ac071b-d3db-463a-a5e8-2ddc0e6e7480"
-		waitaction="NotExists"
-		waittimeout="30000ms">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="99670350-ed24-44ef-b53d-b80170dcc7b3"
-			sourcename="RepositoryEditor">
-				<path>
-					/dom[@domain=$Ambiente]//div[#'SubmissionWizard/PolicyInfo']//input[@tagvalue~'[a-z]+' and @data-tabindexsaved='True']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</WaitForRecordItem>
 	</recorditems>
 	<repository
 	id="58ca00b5-56c0-4f78-a5d2-302b212932e0"
