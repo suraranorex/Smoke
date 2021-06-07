@@ -99,21 +99,25 @@ namespace Smoke.Emision
 
             Init();
 
-            //Report.Log(ReportLevel.Info, "Wait", "Waiting 50s to exist. Associated repository item: 'SURA.option_Pago'", repo.SURA.option_PagoInfo, new ActionTimeout(50000), new RecordItemIndex(0));
-            //repo.SURA.option_PagoInfo.WaitForExists(50000);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.rb_PagoCuotas' at Center.", repo.SURA.rb_PagoCuotasInfo, new RecordItemIndex(1));
-            repo.SURA.rb_PagoCuotas.Click();
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 6s.", new RecordItemIndex(2));
-            Delay.Duration(6000, false);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.Lbl_DetallesDeLaPoliza' at Center.", repo.SURA.Lbl_DetallesDeLaPolizaInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.Lbl_DetallesDeLaPoliza' at Center.", repo.SURA.Lbl_DetallesDeLaPolizaInfo, new RecordItemIndex(0));
             repo.SURA.Lbl_DetallesDeLaPoliza.Click();
             Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'SURA.Copy_of_option_Pago'", repo.SURA.Copy_of_option_PagoInfo, new ActionTimeout(30000), new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 50s to exist. Associated repository item: 'SURA.option_Pago'", repo.SURA.option_PagoInfo, new ActionTimeout(50000), new RecordItemIndex(1));
+            repo.SURA.option_PagoInfo.WaitForExists(50000);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.rb_PagoCuotas' at Center.", repo.SURA.rb_PagoCuotasInfo, new RecordItemIndex(2));
+            repo.SURA.rb_PagoCuotas.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 6s.", new RecordItemIndex(3));
+            Delay.Duration(6000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.Lbl_DetallesDeLaPoliza' at Center.", repo.SURA.Lbl_DetallesDeLaPolizaInfo, new RecordItemIndex(4));
+            repo.SURA.Lbl_DetallesDeLaPoliza.Click();
+            Delay.Milliseconds(0);
+            
+            //Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'SURA.Copy_of_option_Pago'", repo.SURA.Copy_of_option_PagoInfo, new ActionTimeout(30000), new RecordItemIndex(5));
             //repo.SURA.Copy_of_option_PagoInfo.WaitForNotExists(30000);
             
         }

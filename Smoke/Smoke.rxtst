@@ -3218,6 +3218,12 @@
 		<testconfiguration
 		name="PagoReversa">
 			<testcontainer
+			id="0bbcbfc5-c4d4-4881-8aed-d2cc9050b93a">
+			</testcontainer>
+			<testcontainer
+			id="10ad764a-a2c1-4540-b3a0-dff49d534efb">
+			</testcontainer>
+			<testcontainer
 			id="50f4575a-98aa-4678-bd4c-18c1a69e4040">
 			</testcontainer>
 			<testcontainer
@@ -3232,12 +3238,6 @@
 		</testconfiguration>
 		<testconfiguration
 		name="Smoke">
-			<testcontainer
-			id="0bbcbfc5-c4d4-4881-8aed-d2cc9050b93a">
-			</testcontainer>
-			<testcontainer
-			id="10ad764a-a2c1-4540-b3a0-dff49d534efb">
-			</testcontainer>
 			<testcontainer
 			id="1d01bab4-16a3-4c66-b0b5-66f0308c27e3">
 			</testcontainer>
@@ -3257,13 +3257,7 @@
 			id="4f5e8f86-9772-4799-a29d-49ca5e7cebff">
 			</testcontainer>
 			<testcontainer
-			id="50f4575a-98aa-4678-bd4c-18c1a69e4040">
-			</testcontainer>
-			<testcontainer
 			id="539633a7-894c-49ae-93fc-0db5a6fe177b">
-			</testcontainer>
-			<testcontainer
-			id="655b1a57-ebab-4f5f-bd66-0a1742de6ff0">
 			</testcontainer>
 			<testcontainer
 			id="66ef67d9-cf45-4baa-bb1d-07c4d71f5d1a">
@@ -3282,9 +3276,6 @@
 			</testcontainer>
 			<testcontainer
 			id="9796e920-1188-45ad-af46-1061deede081">
-			</testcontainer>
-			<testcontainer
-			id="9e0fc752-0fe0-43de-aa28-f0e35d2af160">
 			</testcontainer>
 			<testcontainer
 			id="a6a30ae5-30c4-4a02-8b29-f6d65fd9fd05">

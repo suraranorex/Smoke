@@ -25,8 +25,34 @@ mode="Global">
 	<variables>
 	</variables>
 	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="aca0ea81-9f7f-425a-a43a-d21ff7f8eafe"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="f8f3193d-ec43-4187-843d-23e41f09a532"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//div[#'SubmissionWizard/PolicyInfo']/table/tbody/tr[4]//table//div/table/?/?/tr/td[2]/div/table/tbody/tr[4]/?/?/label[@innertext='Detalles de la póliza']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
 		<WaitForRecordItem
-		enabled="False"
+		enabled="True"
 		optional="False"
 		searchpropertyid="a998bf2a-a14b-4332-9300-3ceb7e91b866"
 		waitaction="Exists"
