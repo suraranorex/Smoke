@@ -41,7 +41,7 @@ namespace Smoke.Menu
         /// </summary>
         public MenuSuperior_CuentaBC()
         {
-            NumCuenta = "4216353383";
+            NumCuenta = "";
         }
 
         /// <summary>
