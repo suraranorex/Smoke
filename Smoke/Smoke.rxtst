@@ -3205,7 +3205,7 @@
 		</DataSource>
 	</datasources>
 	<testconfigurations
-	default="Smoke">
+	default="PagoReversa">
 		<testconfiguration
 		name="FinalizaSolicitudes">
 			<testcontainer
