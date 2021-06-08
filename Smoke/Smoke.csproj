@@ -1002,13 +1002,6 @@
       <id>79796b04-0cc0-4a5a-975f-456892553ad1</id>
       <recordtableid>680bec08-ad12-473f-b1f0-c2c9f8ca50ba</recordtableid>
     </None>
-    <Content Include="polizas.csv">
-      <Link>polizas.csv</Link>
-      <BoundTo>c44ee359-d969-40e7-a15c-d24eeb99e84d</BoundTo>
-      <DependentUpon>Smoke.rxtst</DependentUpon>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <id>c91d4d47-a092-4aee-a7b8-09aab094552c</id>
-    </Content>
     <None Include="SmokeRepository.rximg">
       <BoundTo>c5d687cb-d4dd-46a0-9b8f-7e2a1374cbe9</BoundTo>
       <DependentUpon>SmokeRepository.rxrep</DependentUpon>
