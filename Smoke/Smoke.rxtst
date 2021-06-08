@@ -1331,7 +1331,6 @@
 				</databinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="8bf00e03-14b4-44bb-9d7d-90a9f6057c16"
 			name="Login"
 			ref="a64524be-86c0-4f43-8300-08f1a1e63ac3"
@@ -1532,7 +1531,7 @@
 			TracingScreenshotQuality="40"
 			VideoBitrate="2000"
 			VideoFps="15"
-			VideoRecordingMode="Off"
+			VideoRecordingMode="KeepFailedTests"
 			VideoSource="Auto"
 			createsinglereportpdfchecked="False"
 			enabletracingscreenshots="True"
@@ -1978,7 +1977,6 @@
 				</databinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="d4e9576e-7bae-411e-a607-eddf641a6073"
 			name="OpenBrowser_BC"
 			ref="f048a76f-3ee3-4be8-9cf8-2f405849af64"
@@ -3277,7 +3275,7 @@
 		</DataSource>
 	</datasources>
 	<testconfigurations
-	default="Smoke">
+	default="PagoReversa">
 		<testconfiguration
 		name="FinalizaSolicitudes">
 			<testcontainer
