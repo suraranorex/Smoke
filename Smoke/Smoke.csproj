@@ -582,6 +582,30 @@
       <UserCode>true</UserCode>
       <id>3e7cd584-9d02-44ff-9641-db34955c297c</id>
     </Compile>
+    <Compile Include="Generales\PasoParametroCSV.cs">
+      <BoundTo>68aeb99d-5f51-47e3-abdb-542d6bbd3e40</BoundTo>
+      <DependentUpon>PasoParametroCSV.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>19ef7c44-0119-4a1f-94f7-d65fe9fe2940</id>
+    </Compile>
+    <Compile Include="Generales\PasoParametroCSV.UserCode.cs">
+      <BoundTo>68aeb99d-5f51-47e3-abdb-542d6bbd3e40</BoundTo>
+      <DependentUpon>PasoParametroCSV.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2ced5d54-f8ec-4ae3-bc04-796c39e17cf7</id>
+    </Compile>
+    <Compile Include="Generales\Recording1.cs">
+      <BoundTo>1d7e5b5e-cc10-4a60-95ac-ec3b218fca6c</BoundTo>
+      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4dc1dbf7-8271-4867-8877-862cd91df731</id>
+    </Compile>
+    <Compile Include="Generales\Recording1.UserCode.cs">
+      <BoundTo>1d7e5b5e-cc10-4a60-95ac-ec3b218fca6c</BoundTo>
+      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e4ff38aa-aae7-47eb-bd79-fdc466d81344</id>
+    </Compile>
     <Compile Include="Login\Login.cs">
       <BoundTo>6a3341d2-3e2a-476a-afcc-f10b0a901a7e</BoundTo>
       <DependentUpon>Login.rxrec</DependentUpon>
@@ -924,6 +948,16 @@
       <id>2a514a4d-d329-4c57-98d5-3f977415563e</id>
       <recordtableid>ae5c681a-80df-4403-99a1-98550273f9db</recordtableid>
     </None>
+    <None Include="Generales\PasoParametroCSV.rxrec">
+      <BoundTo>c5d687cb-d4dd-46a0-9b8f-7e2a1374cbe9</BoundTo>
+      <id>68aeb99d-5f51-47e3-abdb-542d6bbd3e40</id>
+      <recordtableid>c668a664-b489-4838-92b2-32bde3db896a</recordtableid>
+    </None>
+    <None Include="Generales\Recording1.rxrec">
+      <BoundTo>c5d687cb-d4dd-46a0-9b8f-7e2a1374cbe9</BoundTo>
+      <id>1d7e5b5e-cc10-4a60-95ac-ec3b218fca6c</id>
+      <recordtableid>667e835b-1c91-496a-bee6-1a2534c3dd7a</recordtableid>
+    </None>
     <None Include="Login\Login.rxrec">
       <BoundTo>c5d687cb-d4dd-46a0-9b8f-7e2a1374cbe9</BoundTo>
       <id>6a3341d2-3e2a-476a-afcc-f10b0a901a7e</id>
@@ -968,6 +1002,13 @@
       <id>79796b04-0cc0-4a5a-975f-456892553ad1</id>
       <recordtableid>680bec08-ad12-473f-b1f0-c2c9f8ca50ba</recordtableid>
     </None>
+    <Content Include="polizas.csv">
+      <Link>polizas.csv</Link>
+      <BoundTo>c44ee359-d969-40e7-a15c-d24eeb99e84d</BoundTo>
+      <DependentUpon>Smoke.rxtst</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <id>c91d4d47-a092-4aee-a7b8-09aab094552c</id>
+    </Content>
     <None Include="SmokeRepository.rximg">
       <BoundTo>c5d687cb-d4dd-46a0-9b8f-7e2a1374cbe9</BoundTo>
       <DependentUpon>SmokeRepository.rxrep</DependentUpon>

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="667e835b-1c91-496a-bee6-1a2534c3dd7a"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Recording1"
+	namespace="Smoke.Generales">
+	</codegen>
+	<variables>
+		<var
+		id="0cbc48eb-3393-475d-b73a-678e5f8e600f"
+		name="NroCuenta_GP">
+		</var>
+	</variables>
+	<recorditems>
+		<loggingrecorditem
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="8fe8c921-2343-4ee8-9fd3-061f6b1cbec2">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="Message"
+				variable="NroCuenta_GP">
+				</binding>
+			</bindings>
+		</loggingrecorditem>
+	</recorditems>
+	<repository
+	id="58ca00b5-56c0-4f78-a5d2-302b212932e0"
+	name="SmokeRepository"
+	relativepath="..\SmokeRepository.rxrep">
+		<codegen
+		classname="SmokeRepository"
+		namespace="Smoke">
+		</codegen>
+		<rootfolder
+		id="7521c285-eca8-4037-8149-4c0669f953a6"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Recording1.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

@@ -32,6 +32,28 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="03c0845b-5cde-489b-9b12-95d269ad729f"
+			name="PasoParametroCSV"
+			ref="c668a664-b489-4838-92b2-32bde3db896a"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="NumCuenta"
+					datasourceid="501ba9c9-d04b-42ff-a43a-e30a158c12a4"
+					variableid="79d668a6-0859-4bb6-ac72-40293e87454d"
+					variablename="NroCuenta_CSV">
+					</var>
+				</databinding>
+				<missingdatavariablesbinding>
+					<var
+					dataname="NroCuenta"
+					datasourceid="539633a7-894c-49ae-93fc-0db5a6fe177b"
+					variableid="52818679-95d7-477c-aed6-43505c097006"
+					variablename="NroCuenta_GP">
+					</var>
+				</missingdatavariablesbinding>
+			</testmodule>
+			<testmodule
 			id="0530388a-cee8-436f-b3a0-c8cc0e490385"
 			name="NuevaPolizaMotor"
 			ref="52e62d5a-89a2-4561-b683-6b947bcde38f"
@@ -783,7 +805,7 @@
 				<parameters>
 					<param
 					name="NroCuenta"
-					value="1875515124">
+					value="">
 					</param>
 					<param
 					name="NumPolizaEmitida"
@@ -1309,6 +1331,7 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="8bf00e03-14b4-44bb-9d7d-90a9f6057c16"
 			name="Login"
 			ref="a64524be-86c0-4f43-8300-08f1a1e63ac3"
@@ -1461,6 +1484,21 @@
 			</testcase>
 			<testmodule
 			enabled="False"
+			id="9846e1cb-2e59-41b3-8f76-c4fc92eb8653"
+			name="Recording1"
+			ref="667e835b-1c91-496a-bee6-1a2534c3dd7a"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="NroCuenta"
+					datasourceid="539633a7-894c-49ae-93fc-0db5a6fe177b"
+					variableid="0cbc48eb-3393-475d-b73a-678e5f8e600f"
+					variablename="NroCuenta_GP">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			enabled="False"
 			id="998fb352-ed04-461c-8d9c-810ebb71467c"
 			name="LogOut"
 			ref="00c6bbe4-50ec-43e3-a6c0-b30b6b2678f8"
@@ -1539,7 +1577,11 @@
 				</databinding>
 			</testmodule>
 			<smartfoldernode
+			datarangeactive="True"
+			datasource="PasoParametroCSV"
 			id="9e0fc752-0fe0-43de-aa28-f0e35d2af160"
+			maxrange="0"
+			minrange="0"
 			name="BillingPagos">
 				<parameters>
 					<param
@@ -1936,6 +1978,7 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="d4e9576e-7bae-411e-a607-eddf641a6073"
 			name="OpenBrowser_BC"
 			ref="f048a76f-3ee3-4be8-9cf8-2f405849af64"
@@ -2716,6 +2759,14 @@
 							id="8bf00e03-14b4-44bb-9d7d-90a9f6057c16"
 							name="Login">
 							</testmodule>
+							<testmodule
+							id="03c0845b-5cde-489b-9b12-95d269ad729f"
+							name="PasoParametroCSV">
+							</testmodule>
+							<testmodule
+							id="9846e1cb-2e59-41b3-8f76-c4fc92eb8653"
+							name="Recording1">
+							</testmodule>
 						</setup>
 						<testcase
 						id="50f4575a-98aa-4678-bd4c-18c1a69e4040"
@@ -3203,9 +3254,30 @@
 			<maskedcolumns>
 			</maskedcolumns>
 		</DataSource>
+		<DataSource
+		id="501ba9c9-d04b-42ff-a43a-e30a158c12a4"
+		includefile="Checked"
+		lastknownrowcount="2"
+		name="PasoParametroCSV"
+		type="Ranorex.Core.Data.CsvDataConnector"
+		withheaders="True">
+			<lastknowncolumns>
+				<column>
+					NumPoliza
+				</column>
+				<column>
+					NumCuenta
+				</column>
+			</lastknowncolumns>
+			<maskedcolumns>
+			</maskedcolumns>
+			<file>
+				polizas.csv
+			</file>
+		</DataSource>
 	</datasources>
 	<testconfigurations
-	default="PagoReversa">
+	default="Smoke">
 		<testconfiguration
 		name="FinalizaSolicitudes">
 			<testcontainer

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="c668a664-b489-4838-92b2-32bde3db896a"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="PasoParametroCSV"
+	namespace="Smoke.Generales">
+	</codegen>
+	<variables>
+		<var
+		id="79d668a6-0859-4bb6-ac72-40293e87454d"
+		name="NroCuenta_CSV">
+			12345
+		</var>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="PasoParametroCSV"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="PasaParametroCSV"
+		namespace="Smoke.Generales"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="d9b055c7-1de7-4673-8d7d-765af4eea6fe">
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="58ca00b5-56c0-4f78-a5d2-302b212932e0"
+	name="SmokeRepository"
+	relativepath="..\SmokeRepository.rxrep">
+		<codegen
+		classname="SmokeRepository"
+		namespace="Smoke">
+		</codegen>
+		<rootfolder
+		id="7521c285-eca8-4037-8149-4c0669f953a6"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		PasoParametroCSV.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
