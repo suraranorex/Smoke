@@ -1356,6 +1356,10 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<teardown
+			id="8cb8a5ce-9970-403e-801c-74c5293fb4b5"
+			name="teardown">
+			</teardown>
 			<testmodule
 			enabled="False"
 			id="90801c98-6564-4db5-9619-5137442fbf77"
@@ -1991,6 +1995,28 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="d632f411-eab6-4766-837d-aced622c9556"
+			name="CloseBrowser"
+			ref="a0b418f0-6551-48d1-b8cc-275b0b6164e7"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="9e0fc752-0fe0-43de-aa28-f0e35d2af160"
+					variableid="179cd022-d834-4b47-98d5-e2a34a6a6fce"
+					variablename="Ambiente">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="944abe9b-0ea1-485e-a74f-0bb72c9242d8"
+					variableid="179cd022-d834-4b47-98d5-e2a34a6a6fce"
+					variablename="Ambiente">
+					</var>
+				</missingdatabinding>
+			</testmodule>
+			<testmodule
 			id="d9483d95-6751-4177-9114-d004356b876a"
 			name="Producto"
 			ref="19ada6ca-8aec-4da0-a855-7d93e21bfb16"
@@ -2208,6 +2234,28 @@
 			id="f543e369-eea0-4773-b0e6-1faf96c9c66f"
 			name="setup1">
 			</setup>
+			<testmodule
+			id="f612e4ae-db89-45c5-aa99-1498e3055f1c"
+			name="LogOut"
+			ref="00c6bbe4-50ec-43e3-a6c0-b30b6b2678f8"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="9e0fc752-0fe0-43de-aa28-f0e35d2af160"
+					variableid="179cd022-d834-4b47-98d5-e2a34a6a6fce"
+					variablename="Ambiente">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="944abe9b-0ea1-485e-a74f-0bb72c9242d8"
+					variableid="179cd022-d834-4b47-98d5-e2a34a6a6fce"
+					variablename="Ambiente">
+					</var>
+				</missingdatabinding>
+			</testmodule>
 			<testmodule
 			id="f6fcff98-1a8f-43b6-8c76-9f43445f8c4c"
 			name="MenuSuperior_CuentaPC"
@@ -2830,6 +2878,18 @@
 								</testmodule>
 							</smartfoldernode>
 						</testcase>
+						<teardown
+						id="8cb8a5ce-9970-403e-801c-74c5293fb4b5"
+						name="teardown">
+							<testmodule
+							id="f612e4ae-db89-45c5-aa99-1498e3055f1c"
+							name="LogOut">
+							</testmodule>
+							<testmodule
+							id="d632f411-eab6-4766-837d-aced622c9556"
+							name="CloseBrowser">
+							</testmodule>
+						</teardown>
 					</smartfoldernode>
 					<testcase
 					id="7f48616a-2d1b-4b01-aa8b-c255f4b395b3"
