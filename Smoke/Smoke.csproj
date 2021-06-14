@@ -438,6 +438,18 @@
       <UserCode>true</UserCode>
       <id>3a6e72a0-e3cc-4fdf-9c89-46b3552762ef</id>
     </Compile>
+    <Compile Include="Emision\RenombrarCSV.cs">
+      <BoundTo>cf4302d1-35bb-4470-b239-0a9e33d6b0f5</BoundTo>
+      <DependentUpon>RenombrarCSV.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9fad01db-ce4a-4346-b2ba-5c6740aadd54</id>
+    </Compile>
+    <Compile Include="Emision\RenombrarCSV.UserCode.cs">
+      <BoundTo>cf4302d1-35bb-4470-b239-0a9e33d6b0f5</BoundTo>
+      <DependentUpon>RenombrarCSV.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>020052b7-6d94-479b-a793-8bb92a67b4cb</id>
+    </Compile>
     <Compile Include="Emision\TarjetaCredito.cs">
       <BoundTo>8f5aaa7e-7398-4179-9431-a558ddafec52</BoundTo>
       <DependentUpon>TarjetaCredito.rxrec</DependentUpon>
@@ -497,6 +509,18 @@
       <DependentUpon>Vehiculo_Con_InfoAuto.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>127c8b8a-eb9c-4a02-9d31-d98a08aba55f</id>
+    </Compile>
+    <Compile Include="Emision\VerificarArchivo.cs">
+      <BoundTo>c0a54677-2dae-44e7-9269-89429486bf63</BoundTo>
+      <DependentUpon>VerificarArchivo.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>faa4a10c-ad3e-46dd-af37-8365bd81ec23</id>
+    </Compile>
+    <Compile Include="Emision\VerificarArchivo.UserCode.cs">
+      <BoundTo>c0a54677-2dae-44e7-9269-89429486bf63</BoundTo>
+      <DependentUpon>VerificarArchivo.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>72dfad4e-b835-4280-b014-6fa8e7a8a643</id>
     </Compile>
     <Compile Include="Generales\AnulaPoliza.cs">
       <BoundTo>5fa661cf-182d-41a1-b2b4-528dcce3bae2</BoundTo>
@@ -874,6 +898,11 @@
       <id>708e92e7-8dee-4da5-8480-724c01abcc36</id>
       <recordtableid>846c100f-01c8-4698-affe-196938bec06c</recordtableid>
     </None>
+    <None Include="Emision\RenombrarCSV.rxrec">
+      <BoundTo>c5d687cb-d4dd-46a0-9b8f-7e2a1374cbe9</BoundTo>
+      <id>cf4302d1-35bb-4470-b239-0a9e33d6b0f5</id>
+      <recordtableid>d7995290-d704-4ec8-9154-245069a6a642</recordtableid>
+    </None>
     <None Include="Emision\TarjetaCredito.rxrec">
       <BoundTo>c5d687cb-d4dd-46a0-9b8f-7e2a1374cbe9</BoundTo>
       <id>8f5aaa7e-7398-4179-9431-a558ddafec52</id>
@@ -913,6 +942,11 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <id>179ee4a1-7323-46c7-8696-14d5cec56696</id>
     </Content>
+    <None Include="Emision\VerificarArchivo.rxrec">
+      <id>c0a54677-2dae-44e7-9269-89429486bf63</id>
+      <recordtableid>0c068edb-fdfc-47df-bc2c-55ffd5542ddf</recordtableid>
+      <BoundTo>c5d687cb-d4dd-46a0-9b8f-7e2a1374cbe9</BoundTo>
+    </None>
     <None Include="Generales\AnulaPoliza.rxrec">
       <BoundTo>c5d687cb-d4dd-46a0-9b8f-7e2a1374cbe9</BoundTo>
       <id>5fa661cf-182d-41a1-b2b4-528dcce3bae2</id>
