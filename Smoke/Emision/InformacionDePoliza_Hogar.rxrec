@@ -26,7 +26,7 @@ mode="Global">
 		<var
 		id="c1ea9701-23ec-4aea-916d-36e14bff1a84"
 		name="MetodoDePago">
-			Cup&#243;n
+			Cupón
 		</var>
 	</variables>
 	<recorditems>
@@ -59,8 +59,10 @@ mode="Global">
 			id="b77ce678-f33c-4ae4-9ba2-98846f315b8c"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'SubmissionWizard/PolicyInfo']/table//span[@innertext~'M&#233;todo de Pago']/../..//input
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'SubmissionWizard/PolicyInfo']/table//span[@innertext~'Método de Pago']/../..//input
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<AttributeValue>
 			</AttributeValue>
@@ -162,8 +164,10 @@ mode="Global">
 					</dynamicattribute>
 				</element>
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'SubmissionWizard/PolicyInfo']/table//span[@innertext='M&#233;todo de Pago']/../..//input
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'SubmissionWizard/PolicyInfo']/table//span[@innertext='Método de Pago']/../..//input
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<mouseitem
@@ -242,6 +246,8 @@ mode="Global">
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'SubmissionWizard/PolicyInfo']/table/tbody/tr[4]//table//div/table/?/?/tr/td[1]/div
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
@@ -258,8 +264,10 @@ mode="Global">
 			id="96c03280-c149-4bf7-a733-6c0ea2eea61f"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'SubmissionWizard/PolicyInfo']/table//span[@innertext='M&#233;todo de Pago']/../..//input[@data-tabindexsaved='True']
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'SubmissionWizard/PolicyInfo']/table//span[@innertext='Método de Pago']/../..//input[@data-tabindexsaved='True']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<mouseitem
@@ -338,6 +346,8 @@ mode="Global">
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'SubmissionWizard/PolicyInfo']/table/tbody/tr[4]//table//div/table/?/?/tr/td[1]/div
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<separatoritem
@@ -498,6 +508,8 @@ mode="Global">
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'SubmissionWizard/PolicyInfo']//span[@innertext='Pago en Cuotas?']/../..//label[@innertext='No']/..//input
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
@@ -653,6 +665,8 @@ mode="Global">
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'SubmissionWizard/PolicyInfo']/table/tbody/tr[4]//table//div/table/?/?/tr/td[2]/?/?/table/tbody/tr[14]/td/div/div[1]/div/div[1]/input[@name='SubmissionWizard:LOBWizardStepGroup:SubmissionWizard_PolicyInfoScreen:SubmissionWizard_PolicyInfoDV:PolicyInfoInputSet:paymentPlans']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<loggingrecorditem
@@ -673,6 +687,8 @@ mode="Global">
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</loggingrecorditem>
 		<explicitdelayitem
@@ -767,6 +783,8 @@ mode="Global">
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//span[#'SubmissionWizard:Next-btnInnerEl']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="eb1e1138-3012-40eb-b330-a9ca3b597753">
@@ -814,6 +832,8 @@ YGuYlHySKyhsejAkc+9LDFcT3aXFyixJGD5cQbJBPBJI46duetMzLtFFFABRRRQAUUUUAf/Z
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'SubmissionWizard/HomeownersDwelling']//span[@innertext='Vivienda']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<matchname>
 				InnerText
