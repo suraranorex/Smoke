@@ -58,6 +58,14 @@
 			name="VerificarArchivo"
 			ref="0c068edb-fdfc-47df-bc2c-55ffd5542ddf"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="archivoSalida"
+					datasourceid="539633a7-894c-49ae-93fc-0db5a6fe177b"
+					variableid="0f40c006-2540-4b1a-b730-a7c5efa4680a"
+					variablename="archivoSalida">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="0530388a-cee8-436f-b3a0-c8cc0e490385"
@@ -179,6 +187,40 @@
 			id="10ad764a-a2c1-4540-b3a0-dff49d534efb"
 			name="ReversaAcciones">
 			</smartfoldernode>
+			<testmodule
+			id="1a169fe2-ca9e-4f88-912a-917ba166b945"
+			name="Login"
+			ref="a64524be-86c0-4f43-8300-08f1a1e63ac3"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="539633a7-894c-49ae-93fc-0db5a6fe177b"
+					variableid="179cd022-d834-4b47-98d5-e2a34a6a6fce"
+					variablename="Ambiente">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="944abe9b-0ea1-485e-a74f-0bb72c9242d8"
+					variableid="179cd022-d834-4b47-98d5-e2a34a6a6fce"
+					variablename="Ambiente">
+					</var>
+					<var
+					dataname="User"
+					datasourceid="944abe9b-0ea1-485e-a74f-0bb72c9242d8"
+					variableid="4706f1ff-a560-453b-a6c9-642422385362"
+					variablename="User">
+					</var>
+					<var
+					dataname="Pass"
+					datasourceid="944abe9b-0ea1-485e-a74f-0bb72c9242d8"
+					variableid="7e77cef4-fd01-48c3-9ebe-6fd0e02c47fd"
+					variablename="Pass">
+					</var>
+				</missingdatabinding>
+			</testmodule>
 			<testmodule
 			id="1b202b80-bac7-4a30-87c7-13e770423445"
 			name="DebitoBancario"
@@ -621,6 +663,28 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="48c35283-6362-427d-b85b-2474a770d918"
+			name="LogOut"
+			ref="00c6bbe4-50ec-43e3-a6c0-b30b6b2678f8"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="539633a7-894c-49ae-93fc-0db5a6fe177b"
+					variableid="179cd022-d834-4b47-98d5-e2a34a6a6fce"
+					variablename="Ambiente">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="944abe9b-0ea1-485e-a74f-0bb72c9242d8"
+					variableid="179cd022-d834-4b47-98d5-e2a34a6a6fce"
+					variablename="Ambiente">
+					</var>
+				</missingdatabinding>
+			</testmodule>
+			<testmodule
 			id="48fe5999-1f7b-41e5-9b62-e898355e1f9a"
 			name="TR_VARIABLE"
 			ref="073443fe-35af-4ca2-a4b9-2da95a5a16ce"
@@ -666,6 +730,28 @@
 					</condition>
 				</conditiongroup>
 			</smartfoldernode>
+			<testmodule
+			id="4b224d99-82d2-4465-913d-b0378df7a2c5"
+			name="AnulaPoliza"
+			ref="de114023-b9f4-4177-8d8a-d559886158ae"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="539633a7-894c-49ae-93fc-0db5a6fe177b"
+					variableid="179cd022-d834-4b47-98d5-e2a34a6a6fce"
+					variablename="Ambiente">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="944abe9b-0ea1-485e-a74f-0bb72c9242d8"
+					variableid="179cd022-d834-4b47-98d5-e2a34a6a6fce"
+					variablename="Ambiente">
+					</var>
+				</missingdatabinding>
+			</testmodule>
 			<testmodule
 			id="4b33cda9-d632-4855-aea4-b6d880ad2fb7"
 			name="LogOut"
@@ -811,7 +897,7 @@
 				<parameters>
 					<param
 					name="NroCuenta"
-					value="">
+					value="3025732383">
 					</param>
 					<param
 					name="NumPolizaEmitida"
@@ -831,6 +917,28 @@
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="548dba10-2bcf-4192-9c5f-52ec694c6513"
+			name="OpenBrowser"
+			ref="ad5ed313-4634-480f-8e5b-88e66c955da8"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="URL"
+					datasourceid="539633a7-894c-49ae-93fc-0db5a6fe177b"
+					variableid="35c278a9-9396-4876-8b62-b6f02cdf0e51"
+					variablename="URL">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="URL"
+					datasourceid="944abe9b-0ea1-485e-a74f-0bb72c9242d8"
+					variableid="35c278a9-9396-4876-8b62-b6f02cdf0e51"
+					variablename="URL">
+					</var>
+				</missingdatabinding>
+			</testmodule>
 			<testmodule
 			id="5559df4a-1035-483e-91d5-bb5f7b5b6bde"
 			name="ContinueInformacionPolizasAP"
@@ -1328,6 +1436,28 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="8714564e-306c-4ac4-93fe-ed4e0f09290f"
+			name="CloseBrowser"
+			ref="a0b418f0-6551-48d1-b8cc-275b0b6164e7"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="539633a7-894c-49ae-93fc-0db5a6fe177b"
+					variableid="179cd022-d834-4b47-98d5-e2a34a6a6fce"
+					variablename="Ambiente">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="944abe9b-0ea1-485e-a74f-0bb72c9242d8"
+					variableid="179cd022-d834-4b47-98d5-e2a34a6a6fce"
+					variablename="Ambiente">
+					</var>
+				</missingdatabinding>
+			</testmodule>
+			<testmodule
 			enabled="False"
 			id="89df41d1-280e-4388-b683-3243dc6288fe"
 			name="Login"
@@ -1385,7 +1515,6 @@
 			name="teardown">
 			</teardown>
 			<testmodule
-			enabled="False"
 			id="90801c98-6564-4db5-9619-5137442fbf77"
 			name="MenuSuperior_CuentaPC"
 			ref="680bec08-ad12-473f-b1f0-c2c9f8ca50ba"
@@ -1405,6 +1534,11 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			datasource="Anulaciones"
+			id="90c933ad-a8e2-4261-a148-20533aa13592"
+			name="Anulaciones">
+			</smartfoldernode>
 			<smartfoldernode
 			id="931e75ae-0bb5-429a-b117-55b9a6e6c88d"
 			name="Credito_M">
@@ -1444,11 +1578,11 @@
 					</param>
 					<param
 					name="User"
-					value="">
+					value="su">
 					</param>
 					<param
 					name="Pass"
-					value="">
+					value="silverarrow">
 					</param>
 					<param
 					name="NewParameter"
@@ -1674,6 +1808,30 @@
 					datasourceid="944abe9b-0ea1-485e-a74f-0bb72c9242d8"
 					variableid="179cd022-d834-4b47-98d5-e2a34a6a6fce"
 					variablename="Ambiente">
+					</var>
+				</databinding>
+			</testmodule>
+			<teardown
+			id="a43789f1-0c2e-459e-aa82-57214b377b1e"
+			name="teardown">
+			</teardown>
+			<testmodule
+			id="a4a24a9f-bd6e-4518-8654-6cd642923c79"
+			name="BuscaPolizaParaAnular"
+			ref="097746c6-29dd-498f-9b4e-0874387cbb2e"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="539633a7-894c-49ae-93fc-0db5a6fe177b"
+					variableid="179cd022-d834-4b47-98d5-e2a34a6a6fce"
+					variablename="Ambiente">
+					</var>
+					<var
+					dataname="NumPoliza"
+					datasourceid="1068c333-3949-479b-bdf1-aa04673bd6b6"
+					variableid="7d638e27-b74a-4929-9ff9-737a7d9cd1ac"
+					variablename="NumPoliza">
 					</var>
 				</databinding>
 			</testmodule>
@@ -2254,6 +2412,10 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<setup
+			id="f484183e-15a4-409c-8507-da69596c3125"
+			name="setup">
+			</setup>
 			<setup
 			id="f543e369-eea0-4773-b0e6-1faf96c9c66f"
 			name="setup1">
@@ -2923,6 +3085,42 @@
 							</testmodule>
 						</teardown>
 					</smartfoldernode>
+					<smartfoldernode
+					id="90c933ad-a8e2-4261-a148-20533aa13592"
+					name="Anulaciones">
+						<setup
+						id="f484183e-15a4-409c-8507-da69596c3125"
+						name="setup">
+							<testmodule
+							id="548dba10-2bcf-4192-9c5f-52ec694c6513"
+							name="OpenBrowser">
+							</testmodule>
+							<testmodule
+							id="1a169fe2-ca9e-4f88-912a-917ba166b945"
+							name="Login">
+							</testmodule>
+							<testmodule
+							id="a4a24a9f-bd6e-4518-8654-6cd642923c79"
+							name="BuscaPolizaParaAnular">
+							</testmodule>
+							<testmodule
+							id="4b224d99-82d2-4465-913d-b0378df7a2c5"
+							name="AnulaPoliza">
+							</testmodule>
+						</setup>
+						<teardown
+						id="a43789f1-0c2e-459e-aa82-57214b377b1e"
+						name="teardown">
+							<testmodule
+							id="48c35283-6362-427d-b85b-2474a770d918"
+							name="LogOut">
+							</testmodule>
+							<testmodule
+							id="8714564e-306c-4ac4-93fe-ed4e0f09290f"
+							name="CloseBrowser">
+							</testmodule>
+						</teardown>
+					</smartfoldernode>
 					<testcase
 					id="7f48616a-2d1b-4b01-aa8b-c255f4b395b3"
 					name="FinalizaSolicitudes">
@@ -2964,6 +3162,27 @@
 		</childhierarchy>
 	</testsuiteentryhierarchy>
 	<datasources>
+		<DataSource
+		id="1068c333-3949-479b-bdf1-aa04673bd6b6"
+		includefile="Unchecked"
+		lastknownrowcount="2"
+		name="Anulaciones"
+		type="Ranorex.Core.Data.CsvDataConnector"
+		withheaders="True">
+			<lastknowncolumns>
+				<column>
+					NumPoliza
+				</column>
+				<column>
+					NumCuenta
+				</column>
+			</lastknowncolumns>
+			<maskedcolumns>
+			</maskedcolumns>
+			<file>
+				C:\TEMP\Polizas\Smoke\polizas.csv
+			</file>
+		</DataSource>
 		<DataSource
 		filename="DataSource - CoberturasHogar.xlsx"
 		id="7686a1e2-2241-44e8-a8c5-ee7a0aa6e8bc"
@@ -3368,6 +3587,15 @@
 	</datasources>
 	<testconfigurations
 	default="Smoke">
+		<testconfiguration
+		name="Anulaciones">
+			<testcontainer
+			id="539633a7-894c-49ae-93fc-0db5a6fe177b">
+			</testcontainer>
+			<testcontainer
+			id="90c933ad-a8e2-4261-a148-20533aa13592">
+			</testcontainer>
+		</testconfiguration>
 		<testconfiguration
 		name="FinalizaSolicitudes">
 			<testcontainer
