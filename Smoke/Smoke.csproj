@@ -162,6 +162,18 @@
       <UserCode>true</UserCode>
       <id>82c43067-94eb-46ba-a4e0-40f9bdc759e2</id>
     </Compile>
+    <Compile Include="Emision\BuscaPolizaParaAnular.cs">
+      <BoundTo>1aad3651-3178-47e8-b213-bb195f6c7d9c</BoundTo>
+      <DependentUpon>BuscaPolizaParaAnular.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>da6d7d36-bc4d-4777-a375-5605cda81840</id>
+    </Compile>
+    <Compile Include="Emision\BuscaPolizaParaAnular.UserCode.cs">
+      <BoundTo>1aad3651-3178-47e8-b213-bb195f6c7d9c</BoundTo>
+      <DependentUpon>BuscaPolizaParaAnular.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c3064a78-87d0-4f48-8edf-542ab216d059</id>
+    </Compile>
     <Compile Include="Emision\CantCuotasSi.cs">
       <BoundTo>3f924438-7302-4339-bc3d-2de6295a98a2</BoundTo>
       <DependentUpon>CantCuotasSi.rxrec</DependentUpon>
@@ -783,6 +795,11 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <id>364349ab-0631-4626-aefc-41845ebe9d20</id>
     </Content>
+    <None Include="Emision\BuscaPolizaParaAnular.rxrec">
+      <BoundTo>c5d687cb-d4dd-46a0-9b8f-7e2a1374cbe9</BoundTo>
+      <id>1aad3651-3178-47e8-b213-bb195f6c7d9c</id>
+      <recordtableid>097746c6-29dd-498f-9b4e-0874387cbb2e</recordtableid>
+    </None>
     <None Include="Emision\CantCuotasSi.rxrec">
       <BoundTo>c5d687cb-d4dd-46a0-9b8f-7e2a1374cbe9</BoundTo>
       <id>3f924438-7302-4339-bc3d-2de6295a98a2</id>
