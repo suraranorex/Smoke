@@ -41,7 +41,7 @@ namespace Smoke.Emision
         /// </summary>
         public TR_FIJA()
         {
-            Franquicia = "$ 10.000";
+            Franquicia = "$ 15.000";
         }
 
         /// <summary>

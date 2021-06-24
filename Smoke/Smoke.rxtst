@@ -199,6 +199,18 @@
 					variableid="179cd022-d834-4b47-98d5-e2a34a6a6fce"
 					variablename="Ambiente">
 					</var>
+					<var
+					dataname="User"
+					datasourceid="90c933ad-a8e2-4261-a148-20533aa13592"
+					variableid="4706f1ff-a560-453b-a6c9-642422385362"
+					variablename="User">
+					</var>
+					<var
+					dataname="Pass"
+					datasourceid="90c933ad-a8e2-4261-a148-20533aa13592"
+					variableid="7e77cef4-fd01-48c3-9ebe-6fd0e02c47fd"
+					variablename="Pass">
+					</var>
 				</databinding>
 				<missingdatabinding>
 					<var
@@ -221,6 +233,10 @@
 					</var>
 				</missingdatabinding>
 			</testmodule>
+			<testcase
+			id="1a4c4528-00f3-4104-ba73-39ec7f993727"
+			name="AnularPolizas">
+			</testcase>
 			<testmodule
 			id="1b202b80-bac7-4a30-87c7-13e770423445"
 			name="DebitoBancario"
@@ -905,11 +921,11 @@
 					</param>
 					<param
 					name="URL"
-					value="https://i-preproducciongestion.segurossura.com.ar/pc/PolicyCenter.do">
+					value="https://ssurgwsoadev4-oci.opc.oracleoutsourcing.com/pc/PolicyCenter.do">
 					</param>
 					<param
 					name="Ambiente"
-					value="i-preproducciongestion.segurossura.com.ar">
+					value="ssurgwsoadev4-oci.opc.oracleoutsourcing.com">
 					</param>
 					<param
 					name="archivoSalida"
@@ -1538,6 +1554,16 @@
 			datasource="Anulaciones"
 			id="90c933ad-a8e2-4261-a148-20533aa13592"
 			name="Anulaciones">
+				<parameters>
+					<param
+					name="User"
+					value="su">
+					</param>
+					<param
+					name="Pass"
+					value="gw">
+					</param>
+				</parameters>
 			</smartfoldernode>
 			<smartfoldernode
 			id="931e75ae-0bb5-429a-b117-55b9a6e6c88d"
@@ -3099,6 +3125,10 @@
 							id="1a169fe2-ca9e-4f88-912a-917ba166b945"
 							name="Login">
 							</testmodule>
+						</setup>
+						<testcase
+						id="1a4c4528-00f3-4104-ba73-39ec7f993727"
+						name="AnularPolizas">
 							<testmodule
 							id="a4a24a9f-bd6e-4518-8654-6cd642923c79"
 							name="BuscaPolizaParaAnular">
@@ -3107,7 +3137,7 @@
 							id="4b224d99-82d2-4465-913d-b0378df7a2c5"
 							name="AnulaPoliza">
 							</testmodule>
-						</setup>
+						</testcase>
 						<teardown
 						id="a43789f1-0c2e-459e-aa82-57214b377b1e"
 						name="teardown">
@@ -3165,7 +3195,7 @@
 		<DataSource
 		id="1068c333-3949-479b-bdf1-aa04673bd6b6"
 		includefile="Unchecked"
-		lastknownrowcount="2"
+		lastknownrowcount="3"
 		name="Anulaciones"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -3498,7 +3528,7 @@
 		<DataSource
 		id="0a5b5b88-3846-427a-a2e5-8f116719dded"
 		includefile="Unchecked"
-		lastknownrowcount="2"
+		lastknownrowcount="3"
 		name="PagarPolizas"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -3566,7 +3596,7 @@
 		<DataSource
 		id="501ba9c9-d04b-42ff-a43a-e30a158c12a4"
 		includefile="Unchecked"
-		lastknownrowcount="2"
+		lastknownrowcount="3"
 		name="PasoParametroCSV"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -3589,6 +3619,9 @@
 	default="Smoke">
 		<testconfiguration
 		name="Anulaciones">
+			<testcontainer
+			id="1a4c4528-00f3-4104-ba73-39ec7f993727">
+			</testcontainer>
 			<testcontainer
 			id="539633a7-894c-49ae-93fc-0db5a6fe177b">
 			</testcontainer>
