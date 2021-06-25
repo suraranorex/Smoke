@@ -112,6 +112,8 @@ mode="Global">
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//a[#'PolicyFile:PolicyFileMenuActions']//span[@innertext='Nuevo ...']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="ec5f8204-4105-4797-8ee3-948bbd8abed1">
@@ -211,7 +213,7 @@ i/6af9/W/wAaPskX/TT/AL+t/jTvNb0FHmt6Ci7DlXYb9ki/6af9/W/xop3mt6Cii7DlXY//2Q==
 					<attribute
 					name="innertext"
 					type="System.String">
-						Anular p&#243;liza
+						Anular póliza
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -237,8 +239,10 @@ i/6af9/W/wAaPskX/TT/AL+t/jTvNb0FHmt6Ci7DlXYb9ki/6af9/W/xop3mt6Cii7DlXY//2Q==
 					</dynamicattribute>
 				</element>
 				<path>
-					/dom[@domain~$Ambiente]/body/div[10]/div/div[2]/div/div[15]/?/?/span[@innertext='Anular p&#243;liza']
+					/dom[@domain~$Ambiente]/body/div[10]/div/div[2]/div/div[15]/?/?/span[@innertext='Anular póliza']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
@@ -255,8 +259,10 @@ i/6af9/W/wAaPskX/TT/AL+t/jTvNb0FHmt6Ci7DlXYb9ki/6af9/W/xop3mt6Cii7DlXY//2Q==
 			id="b30bd660-38d9-4609-ba20-63bea919f10d"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain=$Ambiente]//span[@innertext~'Iniciar anulaci&#243;n de p&#243;liza']
+					/dom[@domain=$Ambiente]//span[@innertext~'Iniciar anulación de póliza']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<mouseitem
@@ -281,6 +287,8 @@ i/6af9/W/wAaPskX/TT/AL+t/jTvNb0FHmt6Ci7DlXYb9ki/6af9/W/xop3mt6Cii7DlXY//2Q==
 				<path>
 					/dom[@domain='i-preproducciongestion.segurossura.com.ar']//span[@innertext='Fuente']/../..//input
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
@@ -299,6 +307,8 @@ i/6af9/W/wAaPskX/TT/AL+t/jTvNb0FHmt6Ci7DlXYb9ki/6af9/W/xop3mt6Cii7DlXY//2Q==
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']/body/div[13]/?/?/ul/li[@innertext='Asegurado']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<mouseitem
@@ -407,6 +417,8 @@ i/6af9/W/wAaPskX/TT/AL+t/jTvNb0FHmt6Ci7DlXYb9ki/6af9/W/xop3mt6Cii7DlXY//2Q==
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']/body/div[13]/?/?/ul/li[@innertext='Asegurado']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="2843fafd-d127-4158-9d81-6d5c1b766c2f">
@@ -550,6 +562,8 @@ ooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP//Z
 				<path>
 					/dom[@domain='i-preproducciongestion.segurossura.com.ar']//span[@innertext='Fuente']/../..//input[@data-tabindexsaved='True']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<mouseitem
@@ -701,6 +715,8 @@ ooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP//Z
 				<path>
 					/dom[@domain='i-preproducciongestion.segurossura.com.ar']//span[@innertext='Motivo']/../..//input
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
@@ -768,6 +784,8 @@ ooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP//Z
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']/body/div[13]/?/?/ul/li[@innertext&gt;'Anulaci&#243;n por desistimien']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<mouseitem
@@ -820,7 +838,7 @@ ooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP//Z
 					<attribute
 					name="innertext"
 					type="System.String">
-						Anulaci&#243;n por desistimiento
+						Anulación por desistimiento
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -876,6 +894,8 @@ ooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP//Z
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']/body/div[13]/?/?/ul/li[@innertext&gt;'Anulaci&#243;n por desistimien']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="41d8373c-a84e-49d5-91d2-274a85464c96">
@@ -1187,6 +1207,8 @@ KKKACiiigD//2Q==
 				<path>
 					/dom[@domain='i-preproducciongestion.segurossura.com.ar']//span[@innertext='Motivo']/../..//input[@data-tabindexsaved='True']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<loggingrecorditem
@@ -1207,6 +1229,8 @@ KKKACiiigD//2Q==
 				<path>
 					/dom[@domain~$Ambiente]
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</loggingrecorditem>
 		<mouseitem
@@ -1264,7 +1288,7 @@ KKKACiiigD//2Q==
 					<attribute
 					name="innertext"
 					type="System.String">
-						Iniciar anulaci&#243;n
+						Iniciar anulación
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -1290,8 +1314,10 @@ KKKACiiigD//2Q==
 					</dynamicattribute>
 				</element>
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//a[#'StartCancellation:StartCancellationScreen:NewCancellation']//span[@innertext='Iniciar anulaci&#243;n']
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//a[#'StartCancellation:StartCancellationScreen:NewCancellation']//span[@innertext='Iniciar anulación']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="0166ff9b-0fbf-4c2d-be60-4a66c31eacfb">
@@ -1338,7 +1364,7 @@ fpf8KnjjSJAkSKiDoqjAFFFADqKKKACiiigAooooAKKKKACgnCk+lFFADN7/AN1f++v/AK1G9/7q
 		optional="False"
 		searchpropertyid="4d2c6c78-9796-4290-9853-b7b44c6a1893"
 		waitaction="Exists"
-		waittimeout="10000ms">
+		waittimeout="40000ms">
 			<comment>
 			</comment>
 			<bindings>
@@ -1347,8 +1373,10 @@ fpf8KnjjSJAkSKiDoqjAFFFADqKKKACiiigAooooAKKKKACgnCk+lFFADN7/AN1f++v/AK1G9/7q
 			id="4871ecde-a9cf-4ce9-9cf9-ded2e33e4926"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain~$Ambiente]/dom[@domain='i-preproducciongestion.segurossura.com.ar']//span[@innertext='Confirmaci&#243;n']
+					/dom[@domain~$Ambiente]/dom[@domain='i-preproducciongestion.segurossura.com.ar']//span[@innertext='Confirmación']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<loggingrecorditem
@@ -1369,6 +1397,8 @@ fpf8KnjjSJAkSKiDoqjAFFFADqKKKACiiigAooooAKKKKACgnCk+lFFADN7/AN1f++v/AK1G9/7q
 				<path>
 					/dom[@domain~$Ambiente]
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</loggingrecorditem>
 		<mouseitem
@@ -1454,6 +1484,8 @@ fpf8KnjjSJAkSKiDoqjAFFFADqKKKACiiigAooooAKKKKACgnCk+lFFADN7/AN1f++v/AK1G9/7q
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'CancellationWizard/ViewQuote']/table/tbody/tr[2]/td/div/div/div/a[4]//span[@innertext='Anular ahora']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="be3fbf13-60ab-4e3e-8c8c-b5e1b26e5eff">
@@ -1573,6 +1605,8 @@ jLEnJJwKmoooAKKKKACiiigAooooAKKKKACiiigAooooA//Z
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']/body/div[12]/div[3]/?/?/div/a[1]//span[@innertext='Aceptar']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="dfd1ff65-207b-45b8-a5b1-0defccea406c">
@@ -1660,7 +1694,7 @@ P//Z
 					<attribute
 					name="innertext"
 					type="System.String">
-						Anulaci&#243;n Contratada
+						Anulación Contratada
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -1674,8 +1708,10 @@ P//Z
 					</attribute>
 				</element>
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'JobComplete-tbody']/tr[1]/td/div//span[@innertext='Anulaci&#243;n Contratada']
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'JobComplete-tbody']/tr[1]/td/div//span[@innertext='Anulación Contratada']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="50521bce-7891-453c-a674-a2dc5ad316ce">
@@ -1775,7 +1811,7 @@ zSg+YDn6UUUlsD3/AK8jN1XSxeXQl84p8gGNufWiiisXJpmiWh//2Q==
 				InnerText
 			</matchname>
 			<matchvalue>
-				Anulaci&#243;n Contratada
+				Anulación Contratada
 			</matchvalue>
 		</validationitem>
 		<getvaluerecorditem
@@ -1795,13 +1831,15 @@ zSg+YDn6UUUlsD3/AK8jN1XSxeXQl84p8gGNufWiiisXJpmiWh//2Q==
 				<path>
 					/dom[@domain~$Ambiente]//tbody[#'JobComplete-tbody']//label[@innertext&gt;'Se contrat&#243; Anulaci&#243;n (n.&#176;']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</getvaluerecorditem>
 		<separatoritem
 		enabled="True"
 		optional="False">
 			<comment>
-				El n&#250;mero de transacci&#243;n es
+				El número de transacción es
 			</comment>
 			<bindings>
 			</bindings>
