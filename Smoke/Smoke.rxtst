@@ -234,6 +234,7 @@
 				</missingdatabinding>
 			</testmodule>
 			<testcase
+			datasource="Anulaciones"
 			id="1a4c4528-00f3-4104-ba73-39ec7f993727"
 			name="AnularPolizas">
 			</testcase>
@@ -913,7 +914,7 @@
 				<parameters>
 					<param
 					name="NroCuenta"
-					value="3025732383">
+					value="8068959470">
 					</param>
 					<param
 					name="NumPolizaEmitida"
@@ -1551,7 +1552,6 @@
 				</databinding>
 			</testmodule>
 			<smartfoldernode
-			datasource="Anulaciones"
 			id="90c933ad-a8e2-4261-a148-20533aa13592"
 			name="Anulaciones">
 				<parameters>
@@ -3616,7 +3616,7 @@
 		</DataSource>
 	</datasources>
 	<testconfigurations
-	default="Smoke">
+	default="Anulaciones">
 		<testconfiguration
 		name="Anulaciones">
 			<testcontainer
@@ -3702,6 +3702,75 @@
 			</testcontainer>
 			<testcontainer
 			id="a6a30ae5-30c4-4a02-8b29-f6d65fd9fd05">
+			</testcontainer>
+			<testcontainer
+			id="acbf1fda-7509-4e39-b9c7-ec1fa9efb1ed">
+			</testcontainer>
+			<testcontainer
+			id="aed19121-39d7-46f8-b540-541bdb48ed8e">
+			</testcontainer>
+			<testcontainer
+			id="b4e9a6ac-352d-4e4d-96ca-fffa1b815606">
+			</testcontainer>
+			<testcontainer
+			id="cf6457a3-eb5d-4eac-8f5a-ac3abb6df13f">
+			</testcontainer>
+			<testcontainer
+			id="dc535c44-91f9-4bbd-b7a2-73402152611d">
+			</testcontainer>
+			<testcontainer
+			id="dd6dcb38-e88b-465d-bbd9-16bcb10659f8">
+			</testcontainer>
+			<testcontainer
+			id="e0e4ab49-ea8f-4643-bc01-ecf3a57b4f8c">
+			</testcontainer>
+			<testcontainer
+			id="e434e143-c5af-41af-b191-b7b7a6f4444a">
+			</testcontainer>
+			<testcontainer
+			id="e8744e29-a519-4561-b34d-cdee1430cbbd">
+			</testcontainer>
+		</testconfiguration>
+		<testconfiguration
+		name="SmokePreProd">
+			<testcontainer
+			id="1d01bab4-16a3-4c66-b0b5-66f0308c27e3">
+			</testcontainer>
+			<testcontainer
+			id="3774b8fb-928c-4e47-9e8d-0597e1f7ca83">
+			</testcontainer>
+			<testcontainer
+			id="381b19c5-21b1-465a-9c16-8b161eb3a25e">
+			</testcontainer>
+			<testcontainer
+			id="3f8e07b6-efc7-4b3a-be61-0de7e7dcb309">
+			</testcontainer>
+			<testcontainer
+			id="4b068f0e-3c5f-43a4-a3f1-bcc95c8d1864">
+			</testcontainer>
+			<testcontainer
+			id="4f5e8f86-9772-4799-a29d-49ca5e7cebff">
+			</testcontainer>
+			<testcontainer
+			id="539633a7-894c-49ae-93fc-0db5a6fe177b">
+			</testcontainer>
+			<testcontainer
+			id="66ef67d9-cf45-4baa-bb1d-07c4d71f5d1a">
+			</testcontainer>
+			<testcontainer
+			id="6cdda94d-71b2-4245-b953-d1ddf620bdd3">
+			</testcontainer>
+			<testcontainer
+			id="7f294d39-ccb5-49f0-90c9-30de110ccc0f">
+			</testcontainer>
+			<testcontainer
+			id="931e75ae-0bb5-429a-b117-55b9a6e6c88d">
+			</testcontainer>
+			<testcontainer
+			id="944abe9b-0ea1-485e-a74f-0bb72c9242d8">
+			</testcontainer>
+			<testcontainer
+			id="9796e920-1188-45ad-af46-1061deede081">
 			</testcontainer>
 			<testcontainer
 			id="acbf1fda-7509-4e39-b9c7-ec1fa9efb1ed">
