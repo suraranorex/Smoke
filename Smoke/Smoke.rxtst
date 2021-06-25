@@ -3625,7 +3625,7 @@
 		</DataSource>
 	</datasources>
 	<testconfigurations
-	default="Anulaciones">
+	default="PagoReversa">
 		<testconfiguration
 		name="Anulaciones">
 			<testcontainer

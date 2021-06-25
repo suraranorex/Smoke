@@ -93,7 +93,10 @@ namespace Smoke.Menu
             repo.SURA.bttnLateral_Pagos.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SURA.txt_Pagos'", repo.SURA.txt_PagosInfo, new ActionTimeout(30000), new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(1));
+            Delay.Duration(2000, false);
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SURA.txt_Pagos'", repo.SURA.txt_PagosInfo, new ActionTimeout(30000), new RecordItemIndex(2));
             repo.SURA.txt_PagosInfo.WaitForExists(30000);
             
         }
