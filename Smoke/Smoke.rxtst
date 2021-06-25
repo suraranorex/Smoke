@@ -755,7 +755,7 @@
 				<databinding>
 					<var
 					dataname="Ambiente"
-					datasourceid="539633a7-894c-49ae-93fc-0db5a6fe177b"
+					datasourceid="90c933ad-a8e2-4261-a148-20533aa13592"
 					variableid="179cd022-d834-4b47-98d5-e2a34a6a6fce"
 					variablename="Ambiente">
 					</var>
@@ -1552,6 +1552,7 @@
 				</databinding>
 			</testmodule>
 			<smartfoldernode
+			errorbehavior="ContinueNextIteration"
 			id="90c933ad-a8e2-4261-a148-20533aa13592"
 			name="Anulaciones">
 				<parameters>
@@ -1857,7 +1858,7 @@
 				<databinding>
 					<var
 					dataname="Ambiente"
-					datasourceid="539633a7-894c-49ae-93fc-0db5a6fe177b"
+					datasourceid="90c933ad-a8e2-4261-a148-20533aa13592"
 					variableid="179cd022-d834-4b47-98d5-e2a34a6a6fce"
 					variablename="Ambiente">
 					</var>
