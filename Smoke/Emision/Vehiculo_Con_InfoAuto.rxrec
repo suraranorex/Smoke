@@ -1006,7 +1006,7 @@ mode="Global">
 		action="Press"
 		data="A, Control"
 		duration="20ms"
-		enabled="False"
+		enabled="True"
 		numLock="False"
 		optional="False"
 		presstime="20ms"
@@ -1030,7 +1030,7 @@ mode="Global">
 		<keysequenceitem
 		KeySequence="yourtext"
 		duration="20ms"
-		enabled="False"
+		enabled="True"
 		optional="False"
 		presstime="20ms"
 		searchpropertyid="d868c363-a7bb-42a7-92b2-95a9f8cfb746">
@@ -1054,7 +1054,7 @@ mode="Global">
 		</keysequenceitem>
 		<explicitdelayitem
 		duration="300ms"
-		enabled="False"
+		enabled="True"
 		optional="False">
 			<comment>
 			</comment>
@@ -1065,7 +1065,7 @@ mode="Global">
 		action="Click"
 		button="Left"
 		duration="300ms"
-		enabled="False"
+		enabled="True"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -1169,7 +1169,7 @@ mode="Global">
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
-		enabled="False"
+		enabled="True"
 		optional="False"
 		searchpropertyid="6449885f-bf0b-45ec-b666-68542c74d7e5"
 		waitaction="NotExists"

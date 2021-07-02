@@ -1605,11 +1605,11 @@
 				<parameters>
 					<param
 					name="URL"
-					value="https://i-preproducciongestion.segurossura.com.ar/pc/PolicyCenter.do">
+					value="https://ssurgwsoadev4-oci.opc.oracleoutsourcing.com/pc/PolicyCenter.do">
 					</param>
 					<param
 					name="Ambiente"
-					value="i-preproducciongestion.segurossura.com.ar">
+					value="ssurgwsoadev4-oci.opc.oracleoutsourcing.com">
 					</param>
 					<param
 					name="User"
@@ -1617,7 +1617,7 @@
 					</param>
 					<param
 					name="Pass"
-					value="silverarrow">
+					value="gw">
 					</param>
 				</parameters>
 			</smartfoldernode>
@@ -3214,7 +3214,7 @@
 		<DataSource
 		id="1068c333-3949-479b-bdf1-aa04673bd6b6"
 		includefile="Unchecked"
-		lastknownrowcount="3"
+		lastknownrowcount="4"
 		name="Anulaciones"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -3544,7 +3544,7 @@
 		<DataSource
 		id="0a5b5b88-3846-427a-a2e5-8f116719dded"
 		includefile="Unchecked"
-		lastknownrowcount="3"
+		lastknownrowcount="4"
 		name="PagarPolizas"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -3612,7 +3612,7 @@
 		<DataSource
 		id="501ba9c9-d04b-42ff-a43a-e30a158c12a4"
 		includefile="Unchecked"
-		lastknownrowcount="3"
+		lastknownrowcount="4"
 		name="PasoParametroCSV"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -3632,7 +3632,7 @@
 		</DataSource>
 	</datasources>
 	<testconfigurations
-	default="Anulaciones">
+	default="Smoke">
 		<testconfiguration
 		name="Anulaciones">
 			<testcontainer
