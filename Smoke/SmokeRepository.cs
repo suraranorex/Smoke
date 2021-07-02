@@ -53,7 +53,7 @@ namespace Smoke
 
 #region Variables
 
-        string _Ambiente = "i-preproducciongestion.segurossura.com.ar";
+        string _Ambiente = "ssurgwsoadev4-oci.opc.oracleoutsourcing.com";
 
         /// <summary>
         /// Gets or sets the value of variable Ambiente.
@@ -534,6 +534,7 @@ namespace Smoke
             RepoItemInfo _accionesInfo;
             RepoItemInfo _bttnlateral_pagosInfo;
             RepoItemInfo _txt_pagosInfo;
+            RepoItemInfo _txt_fechainicioInfo;
 
             /// <summary>
             /// Creates a new SURA  folder.
@@ -800,6 +801,7 @@ namespace Smoke
                 _accionesInfo = new RepoItemInfo(this, "Acciones", ".//div[#'AccountPayments/PaymentDetails']//a[@innertext>$NUMPOLIZA_REVERTIR]/../../..//a[@innertext='Acciones']", "", 30000, null, "2f91935e-cff3-4bb0-b1d3-4334e1b27e0c");
                 _bttnlateral_pagosInfo = new RepoItemInfo(this, "bttnLateral_Pagos", ".//div[#'AccountGroup:MenuLinks-body']//span[@innertext='Pagos']", "", 30000, null, "7a670d76-031a-4d85-8e10-7ebb6a3c0fc4");
                 _txt_pagosInfo = new RepoItemInfo(this, "txt_Pagos", ".//div[#'AccountPayments/PaymentDetails']//span[@innertext='Pagos']", "", 30000, null, "ae9c16d2-8017-46ff-8ad9-c2006f0c699e");
+                _txt_fechainicioInfo = new RepoItemInfo(this, "txt_FechaInicio", ".//div[#'SubmissionWizard/PolicyInfo']//input[@name='SubmissionWizard:LOBWizardStepGroup:SubmissionWizard_PolicyInfoScreen:SubmissionWizard_PolicyInfoDV:PolicyInfoInputSet:EffectiveDate']", "", 30000, null, "073381e9-959d-4bd2-8fe1-d3a79e46cd54");
             }
 
             /// <summary>
@@ -6943,6 +6945,30 @@ namespace Smoke
                 get
                 {
                     return _txt_pagosInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txt_FechaInicio item.
+            /// </summary>
+            [RepositoryItem("073381e9-959d-4bd2-8fe1-d3a79e46cd54")]
+            public virtual Ranorex.InputTag txt_FechaInicio
+            {
+                get
+                {
+                    return _txt_fechainicioInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txt_FechaInicio item info.
+            /// </summary>
+            [RepositoryItemInfo("073381e9-959d-4bd2-8fe1-d3a79e46cd54")]
+            public virtual RepoItemInfo txt_FechaInicioInfo
+            {
+                get
+                {
+                    return _txt_fechainicioInfo;
                 }
             }
 

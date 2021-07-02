@@ -41,7 +41,7 @@ namespace Smoke.Emision
         /// </summary>
         public Vehiculo_Con_InfoAuto()
         {
-            Anio = "2009";
+            AnioActual = "2009";
             Marca = "CHEVROLET";
             Modelo = "ASTRA";
             Actividad = "Sin Actividad";
@@ -63,16 +63,16 @@ namespace Smoke.Emision
 
 #region Variables
 
-        string _Anio;
+        string _AnioActual;
 
         /// <summary>
-        /// Gets or sets the value of variable Anio.
+        /// Gets or sets the value of variable AnioActual.
         /// </summary>
         [TestVariable("a98494e1-5423-4404-bc52-37f21dba2dd7")]
-        public string Anio
+        public string AnioActual
         {
-            get { return _Anio; }
-            set { _Anio = value; }
+            get { return _AnioActual; }
+            set { _AnioActual = value; }
         }
 
         string _Marca;
@@ -217,8 +217,8 @@ namespace Smoke.Emision
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Anio' with focus on 'SURA.PC.Emision.PolizaMotor.Vehiculoss.txtbox_Anio'.", repo.SURA.PC.Emision.PolizaMotor.Vehiculoss.txtbox_AnioInfo, new RecordItemIndex(0));
-            repo.SURA.PC.Emision.PolizaMotor.Vehiculoss.txtbox_Anio.PressKeys(Anio);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$AnioActual' with focus on 'SURA.PC.Emision.PolizaMotor.Vehiculoss.txtbox_Anio'.", repo.SURA.PC.Emision.PolizaMotor.Vehiculoss.txtbox_AnioInfo, new RecordItemIndex(0));
+            repo.SURA.PC.Emision.PolizaMotor.Vehiculoss.txtbox_Anio.PressKeys(AnioActual);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.PC.Emision.PolizaMotor.Vehiculoss.lbl_InfoDelVehiculo' at Center.", repo.SURA.PC.Emision.PolizaMotor.Vehiculoss.lbl_InfoDelVehiculoInfo, new RecordItemIndex(1));

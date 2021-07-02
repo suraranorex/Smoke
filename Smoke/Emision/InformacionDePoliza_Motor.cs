@@ -45,6 +45,7 @@ namespace Smoke.Emision
             MetodoDePago = "Cupón";
             TipoPlazo = "3 meses";
             FechaInicio = "17/5/2020";
+            AnioActual = "";
         }
 
         /// <summary>
@@ -103,6 +104,18 @@ namespace Smoke.Emision
         {
             get { return _FechaInicio; }
             set { _FechaInicio = value; }
+        }
+
+        string _AnioActual;
+
+        /// <summary>
+        /// Gets or sets the value of variable AnioActual.
+        /// </summary>
+        [TestVariable("2a7ba0ad-c074-4700-b679-0e122e4bbbe7")]
+        public string AnioActual
+        {
+            get { return _AnioActual; }
+            set { _AnioActual = value; }
         }
 
         /// <summary>
@@ -202,59 +215,65 @@ namespace Smoke.Emision
             //repo.SURA.PC.Emision.PolizaMotor.InformacionDePoliza.txt_Fecha_Inicio.PressKeys(FechaInicio);
             //Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.Lbl_DetallesDeLaPoliza' at UpperRight.", repo.SURA.Lbl_DetallesDeLaPolizaInfo, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Value' from item 'SURA.txt_FechaInicio' and assigning the part of its value captured by '[0-9]+$' to variable 'AnioActual'.", repo.SURA.txt_FechaInicioInfo, new RecordItemIndex(12));
+            AnioActual = repo.SURA.txt_FechaInicio.Element.GetAttributeValueText("Value", new Regex("[0-9]+$"));
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "User", AnioActual, new RecordItemIndex(13));
+            
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.Lbl_DetallesDeLaPoliza' at UpperRight.", repo.SURA.Lbl_DetallesDeLaPolizaInfo, new RecordItemIndex(14));
             //repo.SURA.Lbl_DetallesDeLaPoliza.Click(Location.UpperRight);
             //Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'SURA.PC.Emision.PolizaMotor.InformacionDePoliza.Copy_of_txt_Fecha_Inicio'", repo.SURA.PC.Emision.PolizaMotor.InformacionDePoliza.Copy_of_txt_Fecha_InicioInfo, new ActionTimeout(30000), new RecordItemIndex(13));
+            //Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'SURA.PC.Emision.PolizaMotor.InformacionDePoliza.Copy_of_txt_Fecha_Inicio'", repo.SURA.PC.Emision.PolizaMotor.InformacionDePoliza.Copy_of_txt_Fecha_InicioInfo, new ActionTimeout(30000), new RecordItemIndex(15));
             //repo.SURA.PC.Emision.PolizaMotor.InformacionDePoliza.Copy_of_txt_Fecha_InicioInfo.WaitForNotExists(30000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.PC.Emision.Generales.InformacionDePoliza.list_MetodoDePago' at Center.", repo.SURA.PC.Emision.Generales.InformacionDePoliza.list_MetodoDePagoInfo, new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.PC.Emision.Generales.InformacionDePoliza.list_MetodoDePago' at Center.", repo.SURA.PC.Emision.Generales.InformacionDePoliza.list_MetodoDePagoInfo, new RecordItemIndex(16));
             repo.SURA.PC.Emision.Generales.InformacionDePoliza.list_MetodoDePago.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LControlKey down}{Akey}{LControlKey up}' with focus on 'SURA.PC.Emision.Generales.InformacionDePoliza.list_MetodoDePago'.", repo.SURA.PC.Emision.Generales.InformacionDePoliza.list_MetodoDePagoInfo, new RecordItemIndex(15));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LControlKey down}{Akey}{LControlKey up}' with focus on 'SURA.PC.Emision.Generales.InformacionDePoliza.list_MetodoDePago'.", repo.SURA.PC.Emision.Generales.InformacionDePoliza.list_MetodoDePagoInfo, new RecordItemIndex(17));
             repo.SURA.PC.Emision.Generales.InformacionDePoliza.list_MetodoDePago.PressKeys("{LControlKey down}{Akey}{LControlKey up}");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$MetodoDePago' with focus on 'SURA.PC.Emision.Generales.InformacionDePoliza.list_MetodoDePago'.", repo.SURA.PC.Emision.Generales.InformacionDePoliza.list_MetodoDePagoInfo, new RecordItemIndex(16));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$MetodoDePago' with focus on 'SURA.PC.Emision.Generales.InformacionDePoliza.list_MetodoDePago'.", repo.SURA.PC.Emision.Generales.InformacionDePoliza.list_MetodoDePagoInfo, new RecordItemIndex(18));
             repo.SURA.PC.Emision.Generales.InformacionDePoliza.list_MetodoDePago.PressKeys(MetodoDePago);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.Lbl_DetallesDeLaPoliza' at UpperRight.", repo.SURA.Lbl_DetallesDeLaPolizaInfo, new RecordItemIndex(17));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.Lbl_DetallesDeLaPoliza' at UpperRight.", repo.SURA.Lbl_DetallesDeLaPolizaInfo, new RecordItemIndex(19));
             repo.SURA.Lbl_DetallesDeLaPoliza.Click(Location.UpperRight);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 40s to not exist. Associated repository item: 'SURA.PC.Emision.Generales.InformacionDePoliza.Copy_of_list_MetodoDePago'", repo.SURA.PC.Emision.Generales.InformacionDePoliza.Copy_of_list_MetodoDePagoInfo, new ActionTimeout(40000), new RecordItemIndex(18));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 40s to not exist. Associated repository item: 'SURA.PC.Emision.Generales.InformacionDePoliza.Copy_of_list_MetodoDePago'", repo.SURA.PC.Emision.Generales.InformacionDePoliza.Copy_of_list_MetodoDePagoInfo, new ActionTimeout(40000), new RecordItemIndex(20));
             repo.SURA.PC.Emision.Generales.InformacionDePoliza.Copy_of_list_MetodoDePagoInfo.WaitForNotExists(40000);
             
             // NOTA: se comentaron los sig items por la condición de CantCuotas Si o No
-            Report.Log(ReportLevel.Info, "Section", "NOTA: se comentaron los sig items por la condición de CantCuotas Si o No", new RecordItemIndex(19));
+            Report.Log(ReportLevel.Info, "Section", "NOTA: se comentaron los sig items por la condición de CantCuotas Si o No", new RecordItemIndex(21));
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.PC.Emision.Generales.InformacionDePoliza.rb_PagoCuotas' at Center.", repo.SURA.PC.Emision.Generales.InformacionDePoliza.rb_PagoCuotasInfo, new RecordItemIndex(20));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.PC.Emision.Generales.InformacionDePoliza.rb_PagoCuotas' at Center.", repo.SURA.PC.Emision.Generales.InformacionDePoliza.rb_PagoCuotasInfo, new RecordItemIndex(22));
             //repo.SURA.PC.Emision.Generales.InformacionDePoliza.rb_PagoCuotas.Click();
             //Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Wait", "Waiting 15s to exist. Associated repository item: 'SURA.PC.Emision.Generales.InformacionDePoliza.option_Pago'", repo.SURA.PC.Emision.Generales.InformacionDePoliza.option_PagoInfo, new ActionTimeout(15000), new RecordItemIndex(21));
+            //Report.Log(ReportLevel.Info, "Wait", "Waiting 15s to exist. Associated repository item: 'SURA.PC.Emision.Generales.InformacionDePoliza.option_Pago'", repo.SURA.PC.Emision.Generales.InformacionDePoliza.option_PagoInfo, new ActionTimeout(15000), new RecordItemIndex(23));
             //repo.SURA.PC.Emision.Generales.InformacionDePoliza.option_PagoInfo.WaitForExists(15000);
             
             // --------------------------Capturas de pantalla
-            Report.Log(ReportLevel.Info, "Section", "--------------------------Capturas de pantalla", new RecordItemIndex(22));
+            Report.Log(ReportLevel.Info, "Section", "--------------------------Capturas de pantalla", new RecordItemIndex(24));
             
-            //Report.Screenshot(ReportLevel.Info, "User", "", repo.SURA.Self, false, new RecordItemIndex(23));
+            //Report.Screenshot(ReportLevel.Info, "User", "", repo.SURA.Self, false, new RecordItemIndex(25));
             
-            //Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(24));
+            //Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(26));
             //Delay.Duration(1000, false);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'SURA.bttn_Siguiente' at Center.", repo.SURA.bttn_SiguienteInfo, new RecordItemIndex(25));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'SURA.bttn_Siguiente' at Center.", repo.SURA.bttn_SiguienteInfo, new RecordItemIndex(27));
             //repo.SURA.bttn_Siguiente.MoveTo();
             //Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.bttn_Siguiente' at Center.", repo.SURA.bttn_SiguienteInfo, new RecordItemIndex(26));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.bttn_Siguiente' at Center.", repo.SURA.bttn_SiguienteInfo, new RecordItemIndex(28));
             //repo.SURA.bttn_Siguiente.Click();
             //Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SURA.txt_ConductoresPropietarios'", repo.SURA.txt_ConductoresPropietariosInfo, new ActionTimeout(30000), new RecordItemIndex(27));
+            //Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SURA.txt_ConductoresPropietarios'", repo.SURA.txt_ConductoresPropietariosInfo, new ActionTimeout(30000), new RecordItemIndex(29));
             //repo.SURA.txt_ConductoresPropietariosInfo.WaitForExists(30000);
             
         }

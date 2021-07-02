@@ -790,10 +790,10 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Anio"
-					datasourceid="b9610c5f-f29b-4164-b97c-040b4b60430a"
+					dataname="AnioActual"
+					datasourceid="6cdda94d-71b2-4245-b953-d1ddf620bdd3"
 					variableid="a98494e1-5423-4404-bc52-37f21dba2dd7"
-					variablename="Anio">
+					variablename="AnioActual">
 					</var>
 					<var
 					dataname="CodInfoAuto"
@@ -1106,12 +1106,6 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Anio"
-					datasourceid="b9610c5f-f29b-4164-b97c-040b4b60430a"
-					variableid="e4d60489-73eb-4a96-8b98-fe56bd31e51a"
-					variablename="Anio">
-					</var>
-					<var
 					dataname="Marca"
 					datasourceid="b9610c5f-f29b-4164-b97c-040b4b60430a"
 					variableid="55323f14-f2e3-4a2d-adb3-1c1c9472cd08"
@@ -1268,6 +1262,12 @@
 				<description>
 					<![CDATA[Este test case es para emitir motor más rápido. Se usan los valores que trae el sistema por defecto y no pidan aprobaciones o inspecciones.]]>
 				</description>
+				<parameters>
+					<param
+					name="AnioActual"
+					value="">
+					</param>
+				</parameters>
 			</testcase>
 			<testmodule
 			id="6da5ec13-74ba-489a-b338-af4ee146c008"
@@ -1618,10 +1618,6 @@
 					<param
 					name="Pass"
 					value="silverarrow">
-					</param>
-					<param
-					name="NewParameter"
-					value="">
 					</param>
 				</parameters>
 			</smartfoldernode>
@@ -2068,7 +2064,21 @@
 					variableid="179cd022-d834-4b47-98d5-e2a34a6a6fce"
 					variablename="Ambiente">
 					</var>
+					<var
+					dataname="AnioActual"
+					datasourceid="6cdda94d-71b2-4245-b953-d1ddf620bdd3"
+					variableid="2a7ba0ad-c074-4700-b679-0e122e4bbbe7"
+					variablename="AnioActual">
+					</var>
 				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="AnioActual"
+					datasourceid="944abe9b-0ea1-485e-a74f-0bb72c9242d8"
+					variableid="2a7ba0ad-c074-4700-b679-0e122e4bbbe7"
+					variablename="AnioActual">
+					</var>
+				</missingdatabinding>
 			</testmodule>
 			<teardown
 			id="caf29266-586f-411a-a3a5-128eaab40b3d"
@@ -3463,9 +3473,6 @@
 					NumCBU
 				</column>
 				<column>
-					Anio
-				</column>
-				<column>
 					CodInfoAuto
 				</column>
 				<column>
@@ -3625,7 +3632,7 @@
 		</DataSource>
 	</datasources>
 	<testconfigurations
-	default="PagoReversa">
+	default="Anulaciones">
 		<testconfiguration
 		name="Anulaciones">
 			<testcontainer
