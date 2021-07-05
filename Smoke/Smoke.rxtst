@@ -3632,7 +3632,7 @@
 		</DataSource>
 	</datasources>
 	<testconfigurations
-	default="Smoke">
+	default="PagoReversa">
 		<testconfiguration
 		name="Anulaciones">
 			<testcontainer

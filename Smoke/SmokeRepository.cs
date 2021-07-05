@@ -209,7 +209,7 @@ namespace Smoke
             set { _NumPoliza = value; }
         }
 
-        string _NUMPOLIZA_REVERTIR = "04104012805";
+        string _NUMPOLIZA_REVERTIR = "04104019115";
 
         /// <summary>
         /// Gets or sets the value of variable NUMPOLIZA_REVERTIR.
