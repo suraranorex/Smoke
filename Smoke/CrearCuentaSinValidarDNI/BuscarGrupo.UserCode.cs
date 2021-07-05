@@ -38,5 +38,17 @@ namespace Smoke.CrearCuentaSinValidarDNI
         	PASNombre = PAS + " " + NombreProductor;
         }
 
+        public void ActualizaCuentaExistente()
+        {
+            // TODO: Replace the following line with your code implementation.
+            //throw new NotImplementedException();
+            Report.Info("Info: ","Cuenta Con DNI Existente, se va a actualizar...");
+            
+            if(repo.SURA.MsjeCuentaExistente.Visible){
+            	repo.SURA.Actalizar.Click();
+            	Delay.Milliseconds(0);
+            }
+        }
+
     }
 }

@@ -337,6 +337,7 @@ namespace Smoke
             RepoItemInfo _copy_of_txtbox_fechavencimientoInfo;
             RepoItemInfo _bttn_infocontratanteInfo;
             RepoItemInfo _bttn_actualizarInfo;
+            RepoItemInfo _msjecuentaexistenteInfo;
             RepoItemInfo _copy_of_lbl_tcexistenteInfo;
             RepoItemInfo _copy_of_btn_cof_cancelartcInfo;
             RepoItemInfo _title_informaciondelpagoInfo;
@@ -535,6 +536,7 @@ namespace Smoke
             RepoItemInfo _bttnlateral_pagosInfo;
             RepoItemInfo _txt_pagosInfo;
             RepoItemInfo _txt_fechainicioInfo;
+            RepoItemInfo _actalizarInfo;
 
             /// <summary>
             /// Creates a new SURA  folder.
@@ -604,6 +606,7 @@ namespace Smoke
                 _copy_of_txtbox_fechavencimientoInfo = new RepoItemInfo(this, "Copy_of_txtbox_FechaVencimiento", ".//span[@innertext~'Fecha de vencimiento']/../..//input[@data-tabindexsaved='True']", "", 30000, null, "bd937e48-e8b8-48d1-9443-7627ccf332ff");
                 _bttn_infocontratanteInfo = new RepoItemInfo(this, "bttn_InfoContratante", ".//span[@innertext>'Utilizar la información del']/../..//label[@innertext='Sí']/../input", "", 30000, null, "4dd3f504-35dc-46ce-ad38-4d2b3fdd6e05");
                 _bttn_actualizarInfo = new RepoItemInfo(this, "bttn_Actualizar", ".//span[@innertext~'Actualizar']", "", 30000, null, "d1699ee4-14d8-4079-a606-08cf9a8f4803");
+                _msjecuentaexistenteInfo = new RepoItemInfo(this, "MsjeCuentaExistente", ".//tbody[#'CreateAccountForContact-tbody']//span[@innertext>'\"Existe un contacto con el']", "", 30000, null, "7a37eeee-dcea-48c6-9e7b-05a6d13765c6");
                 _copy_of_lbl_tcexistenteInfo = new RepoItemInfo(this, "Copy_of_lbl_TCExistente", ".//div[@innertext='La tarjeta de crédito que inteta registrar ya existe en la cuenta']", "", 0, null, "5f527a27-5503-4aa5-8503-0ed958720678");
                 _copy_of_btn_cof_cancelartcInfo = new RepoItemInfo(this, "Copy_of_btn_COF_CancelarTC", ".//span[@innertext='Cancelar']", "", 0, null, "36fe6561-eb3f-4b23-900d-9d671332314d");
                 _title_informaciondelpagoInfo = new RepoItemInfo(this, "title_InformacionDelPago", ".//span[@innertext~'Información del Pago']", "", 30000, null, "99fd4770-7171-4ab5-aba9-5895837f8b36");
@@ -802,6 +805,7 @@ namespace Smoke
                 _bttnlateral_pagosInfo = new RepoItemInfo(this, "bttnLateral_Pagos", ".//div[#'AccountGroup:MenuLinks-body']//span[@innertext='Pagos']", "", 30000, null, "7a670d76-031a-4d85-8e10-7ebb6a3c0fc4");
                 _txt_pagosInfo = new RepoItemInfo(this, "txt_Pagos", ".//div[#'AccountPayments/PaymentDetails']//span[@innertext='Pagos']", "", 30000, null, "ae9c16d2-8017-46ff-8ad9-c2006f0c699e");
                 _txt_fechainicioInfo = new RepoItemInfo(this, "txt_FechaInicio", ".//div[#'SubmissionWizard/PolicyInfo']//input[@name='SubmissionWizard:LOBWizardStepGroup:SubmissionWizard_PolicyInfoScreen:SubmissionWizard_PolicyInfoDV:PolicyInfoInputSet:EffectiveDate']", "", 30000, null, "073381e9-959d-4bd2-8fe1-d3a79e46cd54");
+                _actalizarInfo = new RepoItemInfo(this, "Actalizar", ".//tbody[#'CreateAccountForContact-tbody']/tr[2]/td/div/div/div/a[1]//span[@innertext='Actalizar']", "", 30000, null, "289fde99-73fa-432a-99fe-195fd6883e69");
             }
 
             /// <summary>
@@ -2217,6 +2221,30 @@ namespace Smoke
                 get
                 {
                     return _bttn_actualizarInfo;
+                }
+            }
+
+            /// <summary>
+            /// The MsjeCuentaExistente item.
+            /// </summary>
+            [RepositoryItem("7a37eeee-dcea-48c6-9e7b-05a6d13765c6")]
+            public virtual Ranorex.SpanTag MsjeCuentaExistente
+            {
+                get
+                {
+                    return _msjecuentaexistenteInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The MsjeCuentaExistente item info.
+            /// </summary>
+            [RepositoryItemInfo("7a37eeee-dcea-48c6-9e7b-05a6d13765c6")]
+            public virtual RepoItemInfo MsjeCuentaExistenteInfo
+            {
+                get
+                {
+                    return _msjecuentaexistenteInfo;
                 }
             }
 
@@ -6969,6 +6997,30 @@ namespace Smoke
                 get
                 {
                     return _txt_fechainicioInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Actalizar item.
+            /// </summary>
+            [RepositoryItem("289fde99-73fa-432a-99fe-195fd6883e69")]
+            public virtual Ranorex.SpanTag Actalizar
+            {
+                get
+                {
+                    return _actalizarInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Actalizar item info.
+            /// </summary>
+            [RepositoryItemInfo("289fde99-73fa-432a-99fe-195fd6883e69")]
+            public virtual RepoItemInfo ActalizarInfo
+            {
+                get
+                {
+                    return _actalizarInfo;
                 }
             }
 

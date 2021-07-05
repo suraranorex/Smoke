@@ -2230,6 +2230,16 @@ name="SmokeRepository">
 				/dom[@domain=$Ambiente]//span[@innertext~'Actualizar']
 			</item>
 			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="7a37eeee-dcea-48c6-9e7b-05a6d13765c6"
+			name="MsjeCuentaExistente"
+			refimgid="f5e92d25-2cab-4153-9f32-d440afd7a989"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain=$Ambiente]//tbody[#'CreateAccountForContact-tbody']//span[@innertext&gt;'&quot;Existe un contacto con el']
+			</item>
+			<item
 			addcaps="unknown,webelement,divtag"
 			capname="divtag"
 			id="5f527a27-5503-4aa5-8503-0ed958720678"
@@ -4645,6 +4655,17 @@ name="SmokeRepository">
 			robustPath=""
 			searchtimeout="30000ms">
 				/dom[@domain=$Ambiente]//div[#'SubmissionWizard/PolicyInfo']//input[@name='SubmissionWizard:LOBWizardStepGroup:SubmissionWizard_PolicyInfoScreen:SubmissionWizard_PolicyInfoDV:PolicyInfoInputSet:EffectiveDate']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="289fde99-73fa-432a-99fe-195fd6883e69"
+			name="Actalizar"
+			refimgid="f6e26d9e-d0a4-4c0c-9f47-92270a547fc9"
+			refpath="/dom[@domain='ssurgwsoadev4-oci.opc.oracleoutsourcing.com']//tbody[#'CreateAccountForContact-tbody']/tr[2]/td/div/div/div/a[1]/span/span/span[@innertext='Actalizar']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain=$Ambiente]//tbody[#'CreateAccountForContact-tbody']/tr[2]/td/div/div/div/a[1]//span[@innertext='Actalizar']
 			</item>
 			<basepath>
 				/dom[@domain=$Ambiente]
