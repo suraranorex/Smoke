@@ -42,7 +42,7 @@ namespace Smoke.Generales
         public ConfirmarReversion()
         {
             MotivoReversion = "Contracargo Tarjeta";
-            NUMPOLIZA_REVERTIR = "04104019115";
+            NUMPOLIZA_REVERTIR = "04104019118";
         }
 
         /// <summary>
@@ -150,8 +150,8 @@ namespace Smoke.Generales
             repo.SURA.bttn_Aceptar.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 300ms.", new RecordItemIndex(10));
-            Delay.Duration(300, false);
+            //Report.Log(ReportLevel.Info, "Delay", "Waiting for 300ms.", new RecordItemIndex(10));
+            //Delay.Duration(300, false);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'SURA.txt_Revertido'.", repo.SURA.txt_RevertidoInfo, new RecordItemIndex(11));
             Validate.Exists(repo.SURA.txt_RevertidoInfo);

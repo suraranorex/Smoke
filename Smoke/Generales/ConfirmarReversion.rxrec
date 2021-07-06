@@ -31,7 +31,7 @@ mode="Global">
 		<var
 		id="ec206af3-54d1-44c2-86ad-9c9b8fabcad0"
 		name="NUMPOLIZA_REVERTIR">
-			04104019115
+			04104019118
 		</var>
 	</variables>
 	<recorditems>
@@ -499,7 +499,7 @@ oooAKKKKACiiigD/2Q==
 		</mouseitem>
 		<explicitdelayitem
 		duration="300ms"
-		enabled="True"
+		enabled="False"
 		optional="False">
 			<comment>
 			</comment>
