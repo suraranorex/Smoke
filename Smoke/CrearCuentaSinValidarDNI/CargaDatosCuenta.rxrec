@@ -152,6 +152,8 @@ mode="Global">
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'CreateAccount-tbody']/tr[4]//table//td/?/?/table/tbody/tr/td[1]/?/?/table/tbody/tr[2]/td/div/div[1]/div/div/a[1]//span[@innertext='gregar Documento']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="62f5826d-96cd-4d4b-a540-c2efed5b564c">
@@ -264,8 +266,19 @@ jJ7n8aKKAJaR/uj6j+dFFAC0UUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf//Z
 				<path>
 					/dom[@domain~$Ambiente]//tbody[#'CreateAccount-tbody']//table//tbody/tr/td[2]/div[@safeclass='x-grid-cell-inner']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
+		<explicitdelayitem
+		duration="300ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -288,8 +301,19 @@ jJ7n8aKKAJaR/uj6j+dFFAC0UUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf//Z
 				<path>
 					/dom[@domain~$Ambiente]//tbody[#'CreateAccount-tbody']/tr[4]//table//div/table/?/?/tr/td[1]/?/?/table/tbody/tr[2]/td/div/div[3]/div[1]/div/table/tbody/tr/td[2]/div[@id='ext-element-720']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
+		<explicitdelayitem
+		duration="300ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<WaitForRecordItem
 		enabled="True"
 		optional="False"
@@ -306,8 +330,19 @@ jJ7n8aKKAJaR/uj6j+dFFAC0UUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf//Z
 				<path>
 					/dom[@domain~$Ambiente]//tbody[#'CreateAccount-tbody']//table//tbody/tr/td[2]/div[@safeclass='x-grid-cell-inner' and @data-tabindexsaved='True']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
+		<explicitdelayitem
+		duration="300ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -414,6 +449,8 @@ jJ7n8aKKAJaR/uj6j+dFFAC0UUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf//Z
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']/body/div[12]/?/?/ul/li[@innertext='D.N.I.']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="4e2b3cfa-22ce-43ca-8d25-34a56096af22">
@@ -587,6 +624,8 @@ b7t/30aAFz7H8qM+x/Kk2+7f99Gjb7t/30aAFz7H8qM+x/Kk2+7f99Gjb7t/30aAFz7H8qM+x/Kk
 				<path>
 					/dom[@domain~$Ambiente]//span[@innertext='Crear cuenta']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
@@ -634,6 +673,8 @@ b7t/30aAFz7H8qM+x/Kk2+7f99Gjb7t/30aAFz7H8qM+x/Kk2+7f99Gjb7t/30aAFz7H8qM+x/Kk
 				<path>
 					/dom[@domain~$Ambiente]//tbody[#'CreateAccount-tbody']/tr[4]//table//div/table/?/?/tr/td[1]/?/?/table/tbody/tr[2]/td/div/div[3]/div[1]/div/table/tbody/tr/td[2]/div[@innertext='D.N.I.']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<explicitdelayitem
@@ -716,6 +757,8 @@ b7t/30aAFz7H8qM+x/Kk2+7f99Gjb7t/30aAFz7H8qM+x/Kk2+7f99Gjb7t/30aAFz7H8qM+x/Kk
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'CreateAccount-tbody']/tr[4]//table//div/table/?/?/tr/td[1]/?/?/table/tbody/tr[2]/td/div/div[3]/div[1]/div[1]/table/tbody/tr/td[3]/div
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="f757242f-673f-450a-8e86-a1a4a839f752">
@@ -844,6 +887,8 @@ mgLXh65a/u7i5mRRIiLGCuQMEknv7Ct2iikAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUANl/
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'CreateAccount-tbody']/tr[4]//table//div/table/?/?/tr/td[1]/?/?/table/tbody/tr[2]/td/div/div[3]/div[1]/div[1]/table/tbody/tr/td[3]/div
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<loggingrecorditem
@@ -917,7 +962,7 @@ mgLXh65a/u7i5mRRIiLGCuQMEknv7Ct2iikAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUANl/
 					<attribute
 					name="innertext"
 					type="System.String">
-						Condici&#243;n Fiscal
+						Condición Fiscal
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -941,8 +986,10 @@ mgLXh65a/u7i5mRRIiLGCuQMEknv7Ct2iikAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUANl/
 					</dynamicattribute>
 				</element>
 				<path>
-					/dom[@domain~$Ambiente]//tbody[#'CreateAccount-tbody']/tr[4]//table//div/table/?/?/tr/td[1]/div/table/tbody/tr[14]/?/?/label[@innertext='Condici&#243;n Fiscal']
+					/dom[@domain~$Ambiente]//tbody[#'CreateAccount-tbody']/tr[4]//table//div/table/?/?/tr/td[1]/div/table/tbody/tr[14]/?/?/label[@innertext='Condición Fiscal']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
@@ -1098,6 +1145,8 @@ mgLXh65a/u7i5mRRIiLGCuQMEknv7Ct2iikAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUANl/
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'CreateAccount-tbody']//table//table/tbody//tbody//input[@name='CreateAccount:SuraCreateAccountScreen:CreateAccountDV:CreateAccountContactInputSet:FiscalConditionInputSetRef:Ext_FiscalConditionInputSet:IVAFiscalConditionTypeKeyInput' and @value~'[A-Za-z]+']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<keysequenceitem
@@ -1121,6 +1170,8 @@ mgLXh65a/u7i5mRRIiLGCuQMEknv7Ct2iikAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUANl/
 				<path>
 					/dom[@domain~$Ambiente]//tbody[#'CreateAccount-tbody']//span[@innertext~'Fecha de Nacimiento']/../..//input
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<mouseitem
@@ -1178,7 +1229,7 @@ mgLXh65a/u7i5mRRIiLGCuQMEknv7Ct2iikAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUANl/
 					<attribute
 					name="innertext"
 					type="System.String">
-						Condici&#243;n Fiscal
+						Condición Fiscal
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -1202,8 +1253,10 @@ mgLXh65a/u7i5mRRIiLGCuQMEknv7Ct2iikAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUANl/
 					</dynamicattribute>
 				</element>
 				<path>
-					/dom[@domain~$Ambiente]//tbody[#'CreateAccount-tbody']/tr[4]//table//div/table/?/?/tr/td[1]/div/table/tbody/tr[14]/?/?/label[@innertext='Condici&#243;n Fiscal']
+					/dom[@domain~$Ambiente]//tbody[#'CreateAccount-tbody']/tr[4]//table//div/table/?/?/tr/td[1]/div/table/tbody/tr[14]/?/?/label[@innertext='Condición Fiscal']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
@@ -1222,6 +1275,8 @@ mgLXh65a/u7i5mRRIiLGCuQMEknv7Ct2iikAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUANl/
 				<path>
 					/dom[@domain~$Ambiente]//tbody[#'CreateAccount-tbody']//span[@innertext~'Fecha de Nacimiento']/../..//input[@data-tabindexsaved='True']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<mouseitem
@@ -1378,6 +1433,8 @@ mgLXh65a/u7i5mRRIiLGCuQMEknv7Ct2iikAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUANl/
 				<path>
 					/dom[@domain='i-preproducciongestion.segurossura.com.ar']//tbody[#'CreateAccount-tbody']/tr[4]//table//div/table/?/?/tr/td[1]/?/?/table/tbody/tr[33]/td/div/div//input[@name='CreateAccount:SuraCreateAccountScreen:CreateAccountDV:CreateAccountContactPhoneInputSet:EmailAddress1']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<keysequenceitem
@@ -1533,6 +1590,8 @@ mgLXh65a/u7i5mRRIiLGCuQMEknv7Ct2iikAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUANl/
 				<path>
 					/dom[@domain='i-preproducciongestion.segurossura.com.ar']//tbody[#'CreateAccount-tbody']/tr[4]//table//div/table/?/?/tr/td[1]/?/?/table/tbody/tr[33]/td/div/div//input[@name='CreateAccount:SuraCreateAccountScreen:CreateAccountDV:CreateAccountContactPhoneInputSet:EmailAddress1']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<mouseitem
@@ -1616,6 +1675,8 @@ mgLXh65a/u7i5mRRIiLGCuQMEknv7Ct2iikAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUANl/
 				<path>
 					/dom[@domain='i-preproducciongestion.segurossura.com.ar']//tbody[#'CreateAccount-tbody']/tr[4]//table//div/table/?/?/tr/td[1]/div/table/tbody/tr[32]/?/?/label[@innertext='Email']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
@@ -1634,6 +1695,8 @@ mgLXh65a/u7i5mRRIiLGCuQMEknv7Ct2iikAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUANl/
 				<path>
 					/dom[@domain~$Ambiente]//tbody[#'CreateAccount-tbody']/tr[4]//table//div/table/?/?/tr/td[1]/?/?/table/tbody/tr[35]/td/div/div//input[@name='CreateAccount:SuraCreateAccountScreen:CreateAccountDV:CreateAccountContactPhoneInputSet:EmailAddress1']/../..//input[@data-tabindexsaved='True']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<mouseitem
@@ -1706,6 +1769,8 @@ mgLXh65a/u7i5mRRIiLGCuQMEknv7Ct2iikAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUANl/
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'CreateAccount-tbody']/tr[4]//table//div/table/?/?/tr/td[2]/?/?/table/tbody/tr[3]/td/div/div/div/div[2]
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="eec25b8b-e04f-414b-a2fa-bfddabae8e87">
@@ -1756,6 +1821,8 @@ UUUAFFFFABRRRQAUUUUAFFFFAH//2Q==
 				<path>
 					/dom[@domain~$Ambiente]/body/div[12]/?/?/ul/li[@innertext='BUENOS AIRES']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<keysequenceitem
@@ -1906,6 +1973,8 @@ UUUAFFFFABRRRQAUUUUAFFFFAH//2Q==
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'CreateAccount-tbody']/tr[4]//table//td/?/?/table/?/?/tr/td[2]/?/?/table/tbody/tr[3]/td/div/div/div/div[1]/input[@name='CreateAccount:SuraCreateAccountScreen:CreateAccountDV:AddressInputSet:globalAddressContainer:GlobalAddressInputSet:State']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<mouseitem
@@ -1930,6 +1999,8 @@ UUUAFFFFABRRRQAUUUUAFFFFAH//2Q==
 				<path>
 					/dom[@domain~$Ambiente]/body/div[12]/?/?/ul/li[@innertext=$Provincia and @visible='true']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
@@ -1948,6 +2019,8 @@ UUUAFFFFABRRRQAUUUUAFFFFAH//2Q==
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'CreateAccount-tbody']/tr[4]//table//td/?/?/table/?/?/tr/td[2]/?/?/table/tbody/tr[3]/td/div/div/div/div[1]/input[@name='CreateAccount:SuraCreateAccountScreen:CreateAccountDV:AddressInputSet:globalAddressContainer:GlobalAddressInputSet:State' and @data-tabindexsaved='True']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<mouseitem
@@ -2020,6 +2093,8 @@ UUUAFFFFABRRRQAUUUUAFFFFAH//2Q==
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'CreateAccount-tbody']/tr[4]//table//div/table/?/?/tr/td[2]/?/?/table/tbody/tr[4]/td/div/div/div/div[2]
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="bf844a5c-1026-4945-8d19-3e580956bddd">
@@ -2073,6 +2148,8 @@ BRRQAYFGBRRQAYFGBRRQAYFGBRRQAYFFFFAH/9k=
 				<path>
 					/dom[@domain~$Ambiente]/body/div[13]/?/?/ul/li[1][@visible='true']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<keysequenceitem
@@ -2092,6 +2169,8 @@ BRRQAYFGBRRQAYFGBRRQAYFGBRRQAYFFFFAH/9k=
 				<path>
 					/dom[@domain~$Ambiente]//tbody[#'CreateAccount-tbody']/tr[4]//table//div/table/?/?/tr/td[2]/?/?/table/tbody/tr[4]/td/div/div/div/div[@id='CreateAccount:SuraCreateAccountScreen:CreateAccountDV:AddressInputSet:globalAddressContainer:GlobalAddressInputSet:City-trigger-picker']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<keysequenceitem
@@ -2115,6 +2194,8 @@ BRRQAYFGBRRQAYFGBRRQAYFGBRRQAYFFFFAH/9k=
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'CreateAccount-tbody']/tr[4]//table//div/table/?/?/tr/td[2]/?/?/table/tbody/tr[4]/td/div/div/div/div[@id='CreateAccount:SuraCreateAccountScreen:CreateAccountDV:AddressInputSet:globalAddressContainer:GlobalAddressInputSet:City-trigger-picker']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<mouseitem
@@ -2139,6 +2220,8 @@ BRRQAYFGBRRQAYFGBRRQAYFGBRRQAYFFFFAH/9k=
 				<path>
 					/dom[@domain~$Ambiente]/body/div[13]/?/?/ul/li[@innertext=$Localidad and @visible='true']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
@@ -2157,6 +2240,8 @@ BRRQAYFGBRRQAYFGBRRQAYFGBRRQAYFFFFAH/9k=
 				<path>
 					/dom[@domain~$Ambiente]//tbody[#'CreateAccount-tbody']/tr[4]//table//div/table/tbody/tr/td[2]/?/?/table/tbody/tr[4]/td/div/div/div/div[1]/input[@name='CreateAccount:SuraCreateAccountScreen:CreateAccountDV:AddressInputSet:globalAddressContainer:GlobalAddressInputSet:City' and @data-tabindexsaved='True']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<mouseitem
@@ -2209,7 +2294,7 @@ BRRQAYFGBRRQAYFGBRRQAYFGBRRQAYFFFFAH/9k=
 					<attribute
 					name="innertext"
 					type="System.String">
-						Direcci&#243;n
+						Dirección
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -2229,8 +2314,10 @@ BRRQAYFGBRRQAYFGBRRQAYFGBRRQAYFFFFAH/9k=
 					</dynamicattribute>
 				</element>
 				<path>
-					/dom[@domain~$Ambiente]//tbody[#'CreateAccount-tbody']/tr[4]/td/?/?/table/tbody//table/?/?/tr/td[2]/?/?/table/tbody/tr[1]//label/span[@innertext='Direcci&#243;n']
+					/dom[@domain~$Ambiente]//tbody[#'CreateAccount-tbody']/tr[4]/td/?/?/table/tbody//table/?/?/tr/td[2]/?/?/table/tbody/tr[1]//label/span[@innertext='Dirección']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<mouseitem
@@ -2382,6 +2469,8 @@ BRRQAYFGBRRQAYFGBRRQAYFGBRRQAYFFFFAH/9k=
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'CreateAccount-tbody']/tr[4]//table//div/table/?/?/tr/td[2]/?/?/table/tbody/tr[5]/td/div/div//input[@name='CreateAccount:SuraCreateAccountScreen:CreateAccountDV:AddressInputSet:globalAddressContainer:GlobalAddressInputSet:AddressLine1']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="637bfd2f-5743-430b-a0c2-1f67ba7abebc">
@@ -2554,6 +2643,8 @@ FFFFABRRRQAUUUUAFFFFAH//2Q==
 				<path>
 					/dom[@domain~$Ambiente]//tbody[#'CreateAccount-tbody']/tr[4]//table//div/table/?/?/tr/td[2]/?/?/table/tbody/tr[5]/td/div/div//input[@name='CreateAccount:SuraCreateAccountScreen:CreateAccountDV:AddressInputSet:globalAddressContainer:GlobalAddressInputSet:AddressLine1']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<mouseitem
@@ -2606,7 +2697,7 @@ FFFFABRRRQAUUUUAFFFFAH//2Q==
 					<attribute
 					name="innertext"
 					type="System.String">
-						Direcci&#243;n
+						Dirección
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -2626,8 +2717,10 @@ FFFFABRRRQAUUUUAFFFFAH//2Q==
 					</dynamicattribute>
 				</element>
 				<path>
-					/dom[@domain~$Ambiente]//tbody[#'CreateAccount-tbody']/tr[4]/td/?/?/table/tbody//table/?/?/tr/td[2]/?/?/table/tbody/tr[1]//label/span[@innertext='Direcci&#243;n']
+					/dom[@domain~$Ambiente]//tbody[#'CreateAccount-tbody']/tr[4]/td/?/?/table/tbody//table/?/?/tr/td[2]/?/?/table/tbody/tr[1]//label/span[@innertext='Dirección']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
@@ -2646,6 +2739,8 @@ FFFFABRRRQAUUUUAFFFFAH//2Q==
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'CreateAccount-tbody']/tr[4]//table//div/table/?/?/tr/td[2]/?/?/table/tbody/tr[5]/td/div/div//input[@name='CreateAccount:SuraCreateAccountScreen:CreateAccountDV:AddressInputSet:globalAddressContainer:GlobalAddressInputSet:AddressLine1' and @data-tabindexsaved='True']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<mouseitem
@@ -2797,6 +2892,8 @@ FFFFABRRRQAUUUUAFFFFAH//2Q==
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'CreateAccount-tbody']/tr[4]//table//div/table/?/?/tr/td[2]/?/?/table/tbody/tr[6]/td/div/div//input[@name='CreateAccount:SuraCreateAccountScreen:CreateAccountDV:AddressInputSet:globalAddressContainer:GlobalAddressInputSet:StreetNumberSura']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="5ebe0064-4d9d-4658-842a-f78de55c49b5">
@@ -2966,6 +3063,8 @@ AooooAKKKKAP/9k=
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'CreateAccount-tbody']/tr[4]//table//div/table/?/?/tr/td[2]/?/?/table/tbody/tr[6]/td/div/div//input[@name='CreateAccount:SuraCreateAccountScreen:CreateAccountDV:AddressInputSet:globalAddressContainer:GlobalAddressInputSet:StreetNumberSura']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<mouseitem
@@ -3018,7 +3117,7 @@ AooooAKKKKAP/9k=
 					<attribute
 					name="innertext"
 					type="System.String">
-						Direcci&#243;n
+						Dirección
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -3038,8 +3137,10 @@ AooooAKKKKAP/9k=
 					</dynamicattribute>
 				</element>
 				<path>
-					/dom[@domain~$Ambiente]//tbody[#'CreateAccount-tbody']/tr[4]/td/?/?/table/tbody//table/?/?/tr/td[2]/?/?/table/tbody/tr[1]//label/span[@innertext='Direcci&#243;n']
+					/dom[@domain~$Ambiente]//tbody[#'CreateAccount-tbody']/tr[4]/td/?/?/table/tbody//table/?/?/tr/td[2]/?/?/table/tbody/tr[1]//label/span[@innertext='Dirección']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
@@ -3058,6 +3159,8 @@ AooooAKKKKAP/9k=
 				<path>
 					/dom[@domain~$Ambiente]//tbody[#'CreateAccount-tbody']/tr[4]//table//div/table//input[@name='CreateAccount:SuraCreateAccountScreen:CreateAccountDV:AddressInputSet:globalAddressContainer:GlobalAddressInputSet:StreetNumberSura' and @data-tabindexsaved='True']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<mouseitem
@@ -3115,7 +3218,7 @@ AooooAKKKKAP/9k=
 					<attribute
 					name="innertext"
 					type="System.String">
-						Validar Direcci&#243;n
+						Validar Dirección
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -3141,8 +3244,10 @@ AooooAKKKKAP/9k=
 					</dynamicattribute>
 				</element>
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'CreateAccount-tbody']/tr[4]//table//div/table/?/?/tr/td[2]/?/?/table/tbody/tr[7]/td/div/div/div/table/tbody/tr/td/a//span[@innertext='Validar Direcci&#243;n']
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'CreateAccount-tbody']/tr[4]//table//div/table/?/?/tr/td[2]/?/?/table/tbody/tr[7]/td/div/div/div/table/tbody/tr/td/a//span[@innertext='Validar Dirección']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="8a8b0e0e-013f-4c2f-9f87-a5f18ee46e55">
@@ -3266,6 +3371,8 @@ fuj6UtIAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigApD2+opaQ9vqKYH//2Q==
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'CreateAccount-tbody']/tr[4]//table//div/table/?/?/tr/td[2]/?/?/table/tbody/tr[22]/td/div/div/div/div/div/div/div[3]/a[@href='javascript:void(0)']/img[@src='https://'+$Ambiente+'/pc/resources/themes/theme-9/resources/images/app/drop_button.png']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<mouseitem
@@ -3351,6 +3458,8 @@ fuj6UtIAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigApD2+opaQ9vqKYH//2Q==
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']/body/div[12]/div/div[2]//span[@innertext='Buscar grupo...']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="aed7b432-58ba-4fe7-b21d-8e4c58eb497e">
@@ -3471,6 +3580,8 @@ jg4z0q/GixRLGgwqAKB7CiigD//Z
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'GroupSearchPopup-tbody']/tr[1]/td/div/div/div/div/?/?/span[@innertext='Buscar grupos']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="9b09a949-a850-4e0c-b268-701a429fc802">
@@ -3540,7 +3651,7 @@ FABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf/Z
 		enabled="True"
 		optional="False">
 			<comment>
-				**** Validaci&#243;n de Carga de Datos de la Cuenta exitoso ****
+				**** Validación de Carga de Datos de la Cuenta exitoso ****
 			</comment>
 			<bindings>
 			</bindings>
@@ -3609,6 +3720,8 @@ FABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf/Z
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'GroupSearchPopup-tbody']/tr[1]/td/div/div/div/div/?/?/span[@innertext='Buscar grupos']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<matchname>
 				InnerText
