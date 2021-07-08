@@ -138,6 +138,7 @@
 			</testmodule>
 			<smartfoldernode
 			datasource="PagarPolizas"
+			errorbehavior="ContinueNextIteration"
 			id="0bbcbfc5-c4d4-4881-8aed-d2cc9050b93a"
 			name="PagoAcciones">
 			</smartfoldernode>
@@ -184,6 +185,7 @@
 			</testmodule>
 			<smartfoldernode
 			datasource="PagarPolizas"
+			errorbehavior="ContinueNextIteration"
 			id="10ad764a-a2c1-4540-b3a0-dff49d534efb"
 			name="ReversaAcciones">
 			</smartfoldernode>
@@ -408,6 +410,26 @@
 					datasourceid="944abe9b-0ea1-485e-a74f-0bb72c9242d8"
 					variableid="35c278a9-9396-4876-8b62-b6f02cdf0e51"
 					variablename="URL">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="29cd82a6-ce3f-466c-bfc2-d82b115f4dd7"
+			name="BuscarPolizaReversa"
+			ref="b4735cf6-9c63-407c-9248-f7233b2caf44"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="9e0fc752-0fe0-43de-aa28-f0e35d2af160"
+					variableid="179cd022-d834-4b47-98d5-e2a34a6a6fce"
+					variablename="Ambiente">
+					</var>
+					<var
+					dataname="NumPoliza"
+					datasourceid="0a5b5b88-3846-427a-a2e5-8f116719dded"
+					variableid="e5f0bc49-df2f-4a9e-ad72-f6f872184117"
+					variablename="NUMPOLIZA_REVERTIR">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1066,6 +1088,7 @@
 			name="setup">
 			</setup>
 			<testcase
+			errorbehavior="ContinueNextIteration"
 			id="655b1a57-ebab-4f5f-bd66-0a1742de6ff0"
 			name="Reversa">
 			</testcase>
@@ -3112,6 +3135,10 @@
 							id="10ad764a-a2c1-4540-b3a0-dff49d534efb"
 							name="ReversaAcciones">
 								<testmodule
+								id="29cd82a6-ce3f-466c-bfc2-d82b115f4dd7"
+								name="BuscarPolizaReversa">
+								</testmodule>
+								<testmodule
 								id="58e61a31-1f0e-4861-b312-e12c074de943"
 								name="ConfirmarReversion">
 								</testmodule>
@@ -3214,7 +3241,7 @@
 		<DataSource
 		id="1068c333-3949-479b-bdf1-aa04673bd6b6"
 		includefile="Unchecked"
-		lastknownrowcount="1"
+		lastknownrowcount="3"
 		name="Anulaciones"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -3544,7 +3571,7 @@
 		<DataSource
 		id="0a5b5b88-3846-427a-a2e5-8f116719dded"
 		includefile="Unchecked"
-		lastknownrowcount="1"
+		lastknownrowcount="3"
 		name="PagarPolizas"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -3612,7 +3639,7 @@
 		<DataSource
 		id="501ba9c9-d04b-42ff-a43a-e30a158c12a4"
 		includefile="Unchecked"
-		lastknownrowcount="1"
+		lastknownrowcount="3"
 		name="PasoParametroCSV"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">

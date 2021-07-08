@@ -558,6 +558,18 @@
       <UserCode>true</UserCode>
       <id>135f3265-c8c6-4ede-8b7c-8954858aa4bf</id>
     </Compile>
+    <Compile Include="Generales\BuscarPolizaReversa.cs">
+      <BoundTo>d2c3b0fd-fe12-4dbb-84b6-b811a7ed850d</BoundTo>
+      <DependentUpon>BuscarPolizaReversa.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>aaa8413f-4749-4849-a6e1-0818e5956145</id>
+    </Compile>
+    <Compile Include="Generales\BuscarPolizaReversa.UserCode.cs">
+      <BoundTo>d2c3b0fd-fe12-4dbb-84b6-b811a7ed850d</BoundTo>
+      <DependentUpon>BuscarPolizaReversa.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b796f2f7-47a9-49af-8cb4-8b838b982920</id>
+    </Compile>
     <Compile Include="Generales\CloseBrowser.cs">
       <DependentUpon>CloseBrowser.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -973,6 +985,11 @@
       <BoundTo>c5d687cb-d4dd-46a0-9b8f-7e2a1374cbe9</BoundTo>
       <id>65e8920e-0943-4a74-9e12-adbdf638d3a1</id>
       <recordtableid>bdc78984-58d3-42f5-8d74-7364922619c4</recordtableid>
+    </None>
+    <None Include="Generales\BuscarPolizaReversa.rxrec">
+      <BoundTo>c5d687cb-d4dd-46a0-9b8f-7e2a1374cbe9</BoundTo>
+      <id>d2c3b0fd-fe12-4dbb-84b6-b811a7ed850d</id>
+      <recordtableid>b4735cf6-9c63-407c-9248-f7233b2caf44</recordtableid>
     </None>
     <None Include="Generales\CloseBrowser.rxrec">
       <BoundTo>c5d687cb-d4dd-46a0-9b8f-7e2a1374cbe9</BoundTo>

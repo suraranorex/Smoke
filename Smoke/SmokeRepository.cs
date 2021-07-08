@@ -53,7 +53,7 @@ namespace Smoke
 
 #region Variables
 
-        string _Ambiente = "ssurgwsoadev4-oci.opc.oracleoutsourcing.com";
+        string _Ambiente = "i-preproducciongestion.segurossura.com.ar";
 
         /// <summary>
         /// Gets or sets the value of variable Ambiente.
@@ -537,6 +537,7 @@ namespace Smoke
             RepoItemInfo _txt_pagosInfo;
             RepoItemInfo _txt_fechainicioInfo;
             RepoItemInfo _actalizarInfo;
+            RepoItemInfo _txt_numpolizabcInfo;
 
             /// <summary>
             /// Creates a new SURA  folder.
@@ -806,6 +807,7 @@ namespace Smoke
                 _txt_pagosInfo = new RepoItemInfo(this, "txt_Pagos", ".//div[#'AccountPayments/PaymentDetails']//span[@innertext='Pagos']", "", 30000, null, "ae9c16d2-8017-46ff-8ad9-c2006f0c699e");
                 _txt_fechainicioInfo = new RepoItemInfo(this, "txt_FechaInicio", ".//div[#'SubmissionWizard/PolicyInfo']//input[@name='SubmissionWizard:LOBWizardStepGroup:SubmissionWizard_PolicyInfoScreen:SubmissionWizard_PolicyInfoDV:PolicyInfoInputSet:EffectiveDate']", "", 30000, null, "073381e9-959d-4bd2-8fe1-d3a79e46cd54");
                 _actalizarInfo = new RepoItemInfo(this, "Actalizar", ".//tbody[#'CreateAccountForContact-tbody']/tr[2]/td/div/div/div/a[1]//span[@innertext='Actalizar']", "", 30000, null, "289fde99-73fa-432a-99fe-195fd6883e69");
+                _txt_numpolizabcInfo = new RepoItemInfo(this, "txt_NumPolizaBC", ".//div[#'AccountPayments/PaymentDetails']//input[@name='AccountPayments:PaymentsSuraScreen:DirectBillPaymentsListDetail:AccountDBPaymentsLV_tb:PolicyNumbersFilter']", "", 30000, null, "eba41297-1020-42ab-981a-80dde7985bc7");
             }
 
             /// <summary>
@@ -7021,6 +7023,30 @@ namespace Smoke
                 get
                 {
                     return _actalizarInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txt_NumPolizaBC item.
+            /// </summary>
+            [RepositoryItem("eba41297-1020-42ab-981a-80dde7985bc7")]
+            public virtual Ranorex.InputTag txt_NumPolizaBC
+            {
+                get
+                {
+                    return _txt_numpolizabcInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txt_NumPolizaBC item info.
+            /// </summary>
+            [RepositoryItemInfo("eba41297-1020-42ab-981a-80dde7985bc7")]
+            public virtual RepoItemInfo txt_NumPolizaBCInfo
+            {
+                get
+                {
+                    return _txt_numpolizabcInfo;
                 }
             }
 

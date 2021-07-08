@@ -4667,6 +4667,16 @@ name="SmokeRepository">
 			searchtimeout="30000ms">
 				/dom[@domain=$Ambiente]//tbody[#'CreateAccountForContact-tbody']/tr[2]/td/div/div/div/a[1]//span[@innertext='Actalizar']
 			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="eba41297-1020-42ab-981a-80dde7985bc7"
+			name="txt_NumPolizaBC"
+			refimgid="0842c908-5910-4586-adb6-72533e8b0a6d"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain=$Ambiente]//div[#'AccountPayments/PaymentDetails']//input[@name='AccountPayments:PaymentsSuraScreen:DirectBillPaymentsListDetail:AccountDBPaymentsLV_tb:PolicyNumbersFilter']
+			</item>
 			<basepath>
 				/dom[@domain=$Ambiente]
 			</basepath>
@@ -5628,7 +5638,7 @@ QmCC
 		<var
 		id="179cd022-d834-4b47-98d5-e2a34a6a6fce"
 		name="Ambiente">
-			ssurgwsoadev4-oci.opc.oracleoutsourcing.com
+			i-preproducciongestion.segurossura.com.ar
 		</var>
 		<var
 		id="995aaba0-daa7-4faa-ac37-c534aceaec96"
