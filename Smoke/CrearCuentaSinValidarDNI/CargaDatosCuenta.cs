@@ -203,8 +203,8 @@ namespace Smoke.CrearCuentaSinValidarDNI
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 300ms.", new RecordItemIndex(7));
             Delay.Duration(300, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Select_Tipo_Doc' at 29;13.", repo.ApplicationUnderTest.Select_Tipo_DocInfo, new RecordItemIndex(8));
-            repo.ApplicationUnderTest.Select_Tipo_Doc.Click("29;13");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Select_Tipo_Doc' at Center.", repo.ApplicationUnderTest.Select_Tipo_DocInfo, new RecordItemIndex(8));
+            repo.ApplicationUnderTest.Select_Tipo_Doc.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.bl_CrearCuenta' at Center.", repo.ApplicationUnderTest.bl_CrearCuentaInfo, new RecordItemIndex(9));

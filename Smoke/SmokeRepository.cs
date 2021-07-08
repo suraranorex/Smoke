@@ -53,7 +53,7 @@ namespace Smoke
 
 #region Variables
 
-        string _Ambiente = "i-preproducciongestion.segurossura.com.ar";
+        string _Ambiente = "ssurgwsoadev4-oci.opc.oracleoutsourcing.com";
 
         /// <summary>
         /// Gets or sets the value of variable Ambiente.

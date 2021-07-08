@@ -348,7 +348,7 @@ jJ7n8aKKAJaR/uj6j+dFFAC0UUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf//Z
 		button="Left"
 		duration="300ms"
 		enabled="True"
-		loc="29;13"
+		loc="Center"
 		movetime="300ms"
 		optional="False"
 		searchpropertyid="823068ce-df11-495d-a62e-39d3eb55fe39"
