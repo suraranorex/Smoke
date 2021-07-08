@@ -3460,6 +3460,16 @@ name="SmokeRepository">
 				/dom[@domain=$Ambiente]/body//ul/li[@enabled='True']
 			</item>
 			<item
+			addcaps="unknown,webelement,litag"
+			capname="litag"
+			id="305eb3ce-526b-4e99-87b2-b4113e6ab7fc"
+			name="SelectDNI"
+			refimgid="aa98e33d-055c-476d-a425-d490983b778d"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain=$Ambiente]/body//ul/li[@innertext='D.N.I.']
+			</item>
+			<item
 			addcaps="unknown,webelement,divtag"
 			capname="divtag"
 			id="5798da9c-a8c6-43b2-b9b5-73f0b0ad01b6"

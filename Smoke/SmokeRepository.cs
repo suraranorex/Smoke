@@ -460,6 +460,7 @@ namespace Smoke
             RepoItemInfo _productoInfo;
             RepoItemInfo _cbo_productoInfo;
             RepoItemInfo _copy_of_cbo_plan_plantaInfo;
+            RepoItemInfo _selectdniInfo;
             RepoItemInfo _plan_plantaInfo;
             RepoItemInfo _cbo_plan_plantaInfo;
             RepoItemInfo _copy_of_cbo_tipodeconstruccionInfo;
@@ -730,6 +731,7 @@ namespace Smoke
                 _productoInfo = new RepoItemInfo(this, "Producto", ".//div[#'SubmissionWizard/HomeownersDwelling']/table/tbody//label/span[@innertext='Producto']/../../div/div/div[2]", "", 30000, null, "24d1e7ad-b998-4555-95c3-2d78f102b91c");
                 _cbo_productoInfo = new RepoItemInfo(this, "cbo_Producto", "body//ul/li[@innertext~$Producto and @visible='True']", "", 30000, null, "038923ad-c567-44e7-bba2-eecf9375fc38");
                 _copy_of_cbo_plan_plantaInfo = new RepoItemInfo(this, "Copy_of_cbo_Plan_Planta", "body//ul/li[@enabled='True']", "", 30000, null, "193c0367-41bc-42b6-bdbe-90d058a8e795");
+                _selectdniInfo = new RepoItemInfo(this, "SelectDNI", "body//ul/li[@innertext='D.N.I.']", "", 30000, null, "305eb3ce-526b-4e99-87b2-b4113e6ab7fc");
                 _plan_plantaInfo = new RepoItemInfo(this, "Plan_Planta", ".//div[#'SubmissionWizard/HomeownersDwelling']/table/tbody//label/span[@innertext='Plan / Planta']/../../div/div/div[2]", "", 30000, null, "5798da9c-a8c6-43b2-b9b5-73f0b0ad01b6");
                 _cbo_plan_plantaInfo = new RepoItemInfo(this, "cbo_Plan_Planta", "body//ul/li[@innertext~$PlanPlanta and @visible='True']", "", 30000, null, "c7e9fa49-e4ff-42b5-9b69-e488018bfcf0");
                 _copy_of_cbo_tipodeconstruccionInfo = new RepoItemInfo(this, "Copy_of_cbo_TipoDeConstruccion", "body/div[15]/?/?/ul/li[@enabled='True']", "", 30000, null, "3dbf3194-cc15-4eb3-a077-4e075d223aa4");
@@ -5175,6 +5177,30 @@ namespace Smoke
                 get
                 {
                     return _copy_of_cbo_plan_plantaInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SelectDNI item.
+            /// </summary>
+            [RepositoryItem("305eb3ce-526b-4e99-87b2-b4113e6ab7fc")]
+            public virtual Ranorex.LiTag SelectDNI
+            {
+                get
+                {
+                    return _selectdniInfo.CreateAdapter<Ranorex.LiTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SelectDNI item info.
+            /// </summary>
+            [RepositoryItemInfo("305eb3ce-526b-4e99-87b2-b4113e6ab7fc")]
+            public virtual RepoItemInfo SelectDNIInfo
+            {
+                get
+                {
+                    return _selectdniInfo;
                 }
             }
 

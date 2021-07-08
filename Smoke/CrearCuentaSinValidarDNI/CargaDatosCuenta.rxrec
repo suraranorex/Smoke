@@ -351,6 +351,32 @@ jJ7n8aKKAJaR/uj6j+dFFAC0UUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf//Z
 		loc="Center"
 		movetime="300ms"
 		optional="False"
+		searchpropertyid="193f9206-94fd-470d-a456-7c30900bdbf0"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="305eb3ce-526b-4e99-87b2-b4113e6ab7fc"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]/body//ul/li[@innertext='D.N.I.']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="False"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
 		searchpropertyid="823068ce-df11-495d-a62e-39d3eb55fe39"
 		sx="142"
 		sy="345"
