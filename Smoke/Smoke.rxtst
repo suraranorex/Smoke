@@ -54,6 +54,20 @@
 				</missingdatavariablesbinding>
 			</testmodule>
 			<testmodule
+			id="040abd8a-795e-4bd7-b12e-3b1ba579527e"
+			name="VerificarArchivo"
+			ref="0c068edb-fdfc-47df-bc2c-55ffd5542ddf"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="archivoSalida"
+					datasourceid="539633a7-894c-49ae-93fc-0db5a6fe177b"
+					variableid="0f40c006-2540-4b1a-b730-a7c5efa4680a"
+					variablename="archivoSalida">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="0530388a-cee8-436f-b3a0-c8cc0e490385"
 			name="NuevaPolizaMotor"
 			ref="52e62d5a-89a2-4561-b683-6b947bcde38f"
@@ -124,6 +138,7 @@
 			</testmodule>
 			<smartfoldernode
 			datasource="PagarPolizas"
+			errorbehavior="ContinueNextIteration"
 			id="0bbcbfc5-c4d4-4881-8aed-d2cc9050b93a"
 			name="PagoAcciones">
 			</smartfoldernode>
@@ -170,9 +185,61 @@
 			</testmodule>
 			<smartfoldernode
 			datasource="PagarPolizas"
+			errorbehavior="ContinueNextIteration"
 			id="10ad764a-a2c1-4540-b3a0-dff49d534efb"
 			name="ReversaAcciones">
 			</smartfoldernode>
+			<testmodule
+			id="1a169fe2-ca9e-4f88-912a-917ba166b945"
+			name="Login"
+			ref="a64524be-86c0-4f43-8300-08f1a1e63ac3"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="90c933ad-a8e2-4261-a148-20533aa13592"
+					variableid="179cd022-d834-4b47-98d5-e2a34a6a6fce"
+					variablename="Ambiente">
+					</var>
+					<var
+					dataname="User"
+					datasourceid="90c933ad-a8e2-4261-a148-20533aa13592"
+					variableid="4706f1ff-a560-453b-a6c9-642422385362"
+					variablename="User">
+					</var>
+					<var
+					dataname="Pass"
+					datasourceid="90c933ad-a8e2-4261-a148-20533aa13592"
+					variableid="7e77cef4-fd01-48c3-9ebe-6fd0e02c47fd"
+					variablename="Pass">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="944abe9b-0ea1-485e-a74f-0bb72c9242d8"
+					variableid="179cd022-d834-4b47-98d5-e2a34a6a6fce"
+					variablename="Ambiente">
+					</var>
+					<var
+					dataname="User"
+					datasourceid="944abe9b-0ea1-485e-a74f-0bb72c9242d8"
+					variableid="4706f1ff-a560-453b-a6c9-642422385362"
+					variablename="User">
+					</var>
+					<var
+					dataname="Pass"
+					datasourceid="944abe9b-0ea1-485e-a74f-0bb72c9242d8"
+					variableid="7e77cef4-fd01-48c3-9ebe-6fd0e02c47fd"
+					variablename="Pass">
+					</var>
+				</missingdatabinding>
+			</testmodule>
+			<testcase
+			datasource="Anulaciones"
+			id="1a4c4528-00f3-4104-ba73-39ec7f993727"
+			name="AnularPolizas">
+			</testcase>
 			<testmodule
 			id="1b202b80-bac7-4a30-87c7-13e770423445"
 			name="DebitoBancario"
@@ -343,6 +410,26 @@
 					datasourceid="944abe9b-0ea1-485e-a74f-0bb72c9242d8"
 					variableid="35c278a9-9396-4876-8b62-b6f02cdf0e51"
 					variablename="URL">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="29cd82a6-ce3f-466c-bfc2-d82b115f4dd7"
+			name="BuscarPolizaReversa"
+			ref="b4735cf6-9c63-407c-9248-f7233b2caf44"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="9e0fc752-0fe0-43de-aa28-f0e35d2af160"
+					variableid="179cd022-d834-4b47-98d5-e2a34a6a6fce"
+					variablename="Ambiente">
+					</var>
+					<var
+					dataname="NumPoliza"
+					datasourceid="0a5b5b88-3846-427a-a2e5-8f116719dded"
+					variableid="e5f0bc49-df2f-4a9e-ad72-f6f872184117"
+					variablename="NUMPOLIZA_REVERTIR">
 					</var>
 				</databinding>
 			</testmodule>
@@ -615,6 +702,28 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="48c35283-6362-427d-b85b-2474a770d918"
+			name="LogOut"
+			ref="00c6bbe4-50ec-43e3-a6c0-b30b6b2678f8"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="90c933ad-a8e2-4261-a148-20533aa13592"
+					variableid="179cd022-d834-4b47-98d5-e2a34a6a6fce"
+					variablename="Ambiente">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="944abe9b-0ea1-485e-a74f-0bb72c9242d8"
+					variableid="179cd022-d834-4b47-98d5-e2a34a6a6fce"
+					variablename="Ambiente">
+					</var>
+				</missingdatabinding>
+			</testmodule>
+			<testmodule
 			id="48fe5999-1f7b-41e5-9b62-e898355e1f9a"
 			name="TR_VARIABLE"
 			ref="073443fe-35af-4ca2-a4b9-2da95a5a16ce"
@@ -661,6 +770,28 @@
 				</conditiongroup>
 			</smartfoldernode>
 			<testmodule
+			id="4b224d99-82d2-4465-913d-b0378df7a2c5"
+			name="AnulaPoliza"
+			ref="de114023-b9f4-4177-8d8a-d559886158ae"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="90c933ad-a8e2-4261-a148-20533aa13592"
+					variableid="179cd022-d834-4b47-98d5-e2a34a6a6fce"
+					variablename="Ambiente">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="944abe9b-0ea1-485e-a74f-0bb72c9242d8"
+					variableid="179cd022-d834-4b47-98d5-e2a34a6a6fce"
+					variablename="Ambiente">
+					</var>
+				</missingdatabinding>
+			</testmodule>
+			<testmodule
 			id="4b33cda9-d632-4855-aea4-b6d880ad2fb7"
 			name="LogOut"
 			ref="00c6bbe4-50ec-43e3-a6c0-b30b6b2678f8"
@@ -681,10 +812,10 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Anio"
-					datasourceid="b9610c5f-f29b-4164-b97c-040b4b60430a"
+					dataname="AnioActual"
+					datasourceid="6cdda94d-71b2-4245-b953-d1ddf620bdd3"
 					variableid="a98494e1-5423-4404-bc52-37f21dba2dd7"
-					variablename="Anio">
+					variablename="AnioActual">
 					</var>
 					<var
 					dataname="CodInfoAuto"
@@ -805,7 +936,7 @@
 				<parameters>
 					<param
 					name="NroCuenta"
-					value="">
+					value="8068959470">
 					</param>
 					<param
 					name="NumPolizaEmitida"
@@ -813,14 +944,40 @@
 					</param>
 					<param
 					name="URL"
-					value="https://i-preproducciongestion.segurossura.com.ar/pc/PolicyCenter.do">
+					value="https://ssurgwsoadev4-oci.opc.oracleoutsourcing.com/pc/PolicyCenter.do">
 					</param>
 					<param
 					name="Ambiente"
-					value="i-preproducciongestion.segurossura.com.ar">
+					value="ssurgwsoadev4-oci.opc.oracleoutsourcing.com">
+					</param>
+					<param
+					name="archivoSalida"
+					value="polizas.csv">
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="548dba10-2bcf-4192-9c5f-52ec694c6513"
+			name="OpenBrowser"
+			ref="ad5ed313-4634-480f-8e5b-88e66c955da8"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="URL"
+					datasourceid="90c933ad-a8e2-4261-a148-20533aa13592"
+					variableid="35c278a9-9396-4876-8b62-b6f02cdf0e51"
+					variablename="URL">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="URL"
+					datasourceid="944abe9b-0ea1-485e-a74f-0bb72c9242d8"
+					variableid="35c278a9-9396-4876-8b62-b6f02cdf0e51"
+					variablename="URL">
+					</var>
+				</missingdatabinding>
+			</testmodule>
 			<testmodule
 			id="5559df4a-1035-483e-91d5-bb5f7b5b6bde"
 			name="ContinueInformacionPolizasAP"
@@ -931,6 +1088,7 @@
 			name="setup">
 			</setup>
 			<testcase
+			errorbehavior="ContinueNextIteration"
 			id="655b1a57-ebab-4f5f-bd66-0a1742de6ff0"
 			name="Reversa">
 			</testcase>
@@ -970,12 +1128,6 @@
 			ref="263947f6-de59-4855-8e30-80e21b4c972d"
 			type="Recording">
 				<databinding>
-					<var
-					dataname="Anio"
-					datasourceid="b9610c5f-f29b-4164-b97c-040b4b60430a"
-					variableid="e4d60489-73eb-4a96-8b98-fe56bd31e51a"
-					variablename="Anio">
-					</var>
 					<var
 					dataname="Marca"
 					datasourceid="b9610c5f-f29b-4164-b97c-040b4b60430a"
@@ -1133,6 +1285,12 @@
 				<description>
 					<![CDATA[Este test case es para emitir motor más rápido. Se usan los valores que trae el sistema por defecto y no pidan aprobaciones o inspecciones.]]>
 				</description>
+				<parameters>
+					<param
+					name="AnioActual"
+					value="">
+					</param>
+				</parameters>
 			</testcase>
 			<testmodule
 			id="6da5ec13-74ba-489a-b338-af4ee146c008"
@@ -1172,6 +1330,20 @@
 			id="70a06ea1-d9fe-43c3-9bdb-f9525eae0db7"
 			name="teardown">
 			</teardown>
+			<testmodule
+			id="711fa5bf-6562-4fce-9767-f648ba711398"
+			name="RenombrarCSV"
+			ref="d7995290-d704-4ec8-9154-245069a6a642"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="archivoSalida"
+					datasourceid="539633a7-894c-49ae-93fc-0db5a6fe177b"
+					variableid="6fb69339-f00f-41bb-891d-73624be18a87"
+					variablename="archivoSalida">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			enabled="False"
 			id="7434538e-ea80-4fd8-b600-68bcdc44b83a"
@@ -1304,6 +1476,28 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="8714564e-306c-4ac4-93fe-ed4e0f09290f"
+			name="CloseBrowser"
+			ref="a0b418f0-6551-48d1-b8cc-275b0b6164e7"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="90c933ad-a8e2-4261-a148-20533aa13592"
+					variableid="179cd022-d834-4b47-98d5-e2a34a6a6fce"
+					variablename="Ambiente">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="944abe9b-0ea1-485e-a74f-0bb72c9242d8"
+					variableid="179cd022-d834-4b47-98d5-e2a34a6a6fce"
+					variablename="Ambiente">
+					</var>
+				</missingdatabinding>
+			</testmodule>
+			<testmodule
 			enabled="False"
 			id="89df41d1-280e-4388-b683-3243dc6288fe"
 			name="Login"
@@ -1361,7 +1555,6 @@
 			name="teardown">
 			</teardown>
 			<testmodule
-			enabled="False"
 			id="90801c98-6564-4db5-9619-5137442fbf77"
 			name="MenuSuperior_CuentaPC"
 			ref="680bec08-ad12-473f-b1f0-c2c9f8ca50ba"
@@ -1381,6 +1574,29 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			errorbehavior="ContinueNextIteration"
+			id="90c933ad-a8e2-4261-a148-20533aa13592"
+			name="Anulaciones">
+				<parameters>
+					<param
+					name="User"
+					value="su">
+					</param>
+					<param
+					name="Pass"
+					value="gw">
+					</param>
+					<param
+					name="URL"
+					value="">
+					</param>
+					<param
+					name="Ambiente"
+					value="">
+					</param>
+				</parameters>
+			</smartfoldernode>
 			<smartfoldernode
 			id="931e75ae-0bb5-429a-b117-55b9a6e6c88d"
 			name="Credito_M">
@@ -1412,23 +1628,19 @@
 				<parameters>
 					<param
 					name="URL"
-					value="https://i-preproducciongestion.segurossura.com.ar/pc/PolicyCenter.do">
+					value="https://ssurgwsoadev4-oci.opc.oracleoutsourcing.com/pc/PolicyCenter.do">
 					</param>
 					<param
 					name="Ambiente"
-					value="i-preproducciongestion.segurossura.com.ar">
+					value="ssurgwsoadev4-oci.opc.oracleoutsourcing.com">
 					</param>
 					<param
 					name="User"
-					value="">
+					value="su">
 					</param>
 					<param
 					name="Pass"
-					value="">
-					</param>
-					<param
-					name="NewParameter"
-					value="">
+					value="gw">
 					</param>
 				</parameters>
 			</smartfoldernode>
@@ -1653,6 +1865,30 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<teardown
+			id="a43789f1-0c2e-459e-aa82-57214b377b1e"
+			name="teardown">
+			</teardown>
+			<testmodule
+			id="a4a24a9f-bd6e-4518-8654-6cd642923c79"
+			name="BuscaPolizaParaAnular"
+			ref="097746c6-29dd-498f-9b4e-0874387cbb2e"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="90c933ad-a8e2-4261-a148-20533aa13592"
+					variableid="179cd022-d834-4b47-98d5-e2a34a6a6fce"
+					variablename="Ambiente">
+					</var>
+					<var
+					dataname="NumPoliza"
+					datasourceid="1068c333-3949-479b-bdf1-aa04673bd6b6"
+					variableid="7d638e27-b74a-4929-9ff9-737a7d9cd1ac"
+					variablename="NumPoliza">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			datasource="CrearCuenta"
 			id="a6a30ae5-30c4-4a02-8b29-f6d65fd9fd05"
@@ -1851,7 +2087,21 @@
 					variableid="179cd022-d834-4b47-98d5-e2a34a6a6fce"
 					variablename="Ambiente">
 					</var>
+					<var
+					dataname="AnioActual"
+					datasourceid="6cdda94d-71b2-4245-b953-d1ddf620bdd3"
+					variableid="2a7ba0ad-c074-4700-b679-0e122e4bbbe7"
+					variablename="AnioActual">
+					</var>
 				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="AnioActual"
+					datasourceid="944abe9b-0ea1-485e-a74f-0bb72c9242d8"
+					variableid="2a7ba0ad-c074-4700-b679-0e122e4bbbe7"
+					variablename="AnioActual">
+					</var>
+				</missingdatabinding>
 			</testmodule>
 			<teardown
 			id="caf29266-586f-411a-a3a5-128eaab40b3d"
@@ -2231,6 +2481,10 @@
 				</databinding>
 			</testmodule>
 			<setup
+			id="f484183e-15a4-409c-8507-da69596c3125"
+			name="setup">
+			</setup>
+			<setup
 			id="f543e369-eea0-4773-b0e6-1faf96c9c66f"
 			name="setup1">
 			</setup>
@@ -2420,6 +2674,14 @@
 							<testmodule
 							id="7c2bc778-6750-4d68-88d1-0f76c2302630"
 							name="Login">
+							</testmodule>
+							<testmodule
+							id="040abd8a-795e-4bd7-b12e-3b1ba579527e"
+							name="VerificarArchivo">
+							</testmodule>
+							<testmodule
+							id="711fa5bf-6562-4fce-9767-f648ba711398"
+							name="RenombrarCSV">
 							</testmodule>
 						</setup>
 						<testcase
@@ -2873,6 +3135,10 @@
 							id="10ad764a-a2c1-4540-b3a0-dff49d534efb"
 							name="ReversaAcciones">
 								<testmodule
+								id="29cd82a6-ce3f-466c-bfc2-d82b115f4dd7"
+								name="BuscarPolizaReversa">
+								</testmodule>
+								<testmodule
 								id="58e61a31-1f0e-4861-b312-e12c074de943"
 								name="ConfirmarReversion">
 								</testmodule>
@@ -2887,6 +3153,46 @@
 							</testmodule>
 							<testmodule
 							id="d632f411-eab6-4766-837d-aced622c9556"
+							name="CloseBrowser">
+							</testmodule>
+						</teardown>
+					</smartfoldernode>
+					<smartfoldernode
+					id="90c933ad-a8e2-4261-a148-20533aa13592"
+					name="Anulaciones">
+						<setup
+						id="f484183e-15a4-409c-8507-da69596c3125"
+						name="setup">
+							<testmodule
+							id="548dba10-2bcf-4192-9c5f-52ec694c6513"
+							name="OpenBrowser">
+							</testmodule>
+							<testmodule
+							id="1a169fe2-ca9e-4f88-912a-917ba166b945"
+							name="Login">
+							</testmodule>
+						</setup>
+						<testcase
+						id="1a4c4528-00f3-4104-ba73-39ec7f993727"
+						name="AnularPolizas">
+							<testmodule
+							id="a4a24a9f-bd6e-4518-8654-6cd642923c79"
+							name="BuscaPolizaParaAnular">
+							</testmodule>
+							<testmodule
+							id="4b224d99-82d2-4465-913d-b0378df7a2c5"
+							name="AnulaPoliza">
+							</testmodule>
+						</testcase>
+						<teardown
+						id="a43789f1-0c2e-459e-aa82-57214b377b1e"
+						name="teardown">
+							<testmodule
+							id="48c35283-6362-427d-b85b-2474a770d918"
+							name="LogOut">
+							</testmodule>
+							<testmodule
+							id="8714564e-306c-4ac4-93fe-ed4e0f09290f"
 							name="CloseBrowser">
 							</testmodule>
 						</teardown>
@@ -2932,6 +3238,27 @@
 		</childhierarchy>
 	</testsuiteentryhierarchy>
 	<datasources>
+		<DataSource
+		id="1068c333-3949-479b-bdf1-aa04673bd6b6"
+		includefile="Unchecked"
+		lastknownrowcount="3"
+		name="Anulaciones"
+		type="Ranorex.Core.Data.CsvDataConnector"
+		withheaders="True">
+			<lastknowncolumns>
+				<column>
+					NumPoliza
+				</column>
+				<column>
+					NumCuenta
+				</column>
+			</lastknowncolumns>
+			<maskedcolumns>
+			</maskedcolumns>
+			<file>
+				C:\TEMP\Polizas\Smoke\polizas.csv
+			</file>
+		</DataSource>
 		<DataSource
 		filename="DataSource - CoberturasHogar.xlsx"
 		id="7686a1e2-2241-44e8-a8c5-ee7a0aa6e8bc"
@@ -3173,9 +3500,6 @@
 					NumCBU
 				</column>
 				<column>
-					Anio
-				</column>
-				<column>
 					CodInfoAuto
 				</column>
 				<column>
@@ -3337,6 +3661,18 @@
 	<testconfigurations
 	default="Smoke">
 		<testconfiguration
+		name="Anulaciones">
+			<testcontainer
+			id="1a4c4528-00f3-4104-ba73-39ec7f993727">
+			</testcontainer>
+			<testcontainer
+			id="539633a7-894c-49ae-93fc-0db5a6fe177b">
+			</testcontainer>
+			<testcontainer
+			id="90c933ad-a8e2-4261-a148-20533aa13592">
+			</testcontainer>
+		</testconfiguration>
+		<testconfiguration
 		name="FinalizaSolicitudes">
 			<testcontainer
 			id="539633a7-894c-49ae-93fc-0db5a6fe177b">
@@ -3409,6 +3745,75 @@
 			</testcontainer>
 			<testcontainer
 			id="a6a30ae5-30c4-4a02-8b29-f6d65fd9fd05">
+			</testcontainer>
+			<testcontainer
+			id="acbf1fda-7509-4e39-b9c7-ec1fa9efb1ed">
+			</testcontainer>
+			<testcontainer
+			id="aed19121-39d7-46f8-b540-541bdb48ed8e">
+			</testcontainer>
+			<testcontainer
+			id="b4e9a6ac-352d-4e4d-96ca-fffa1b815606">
+			</testcontainer>
+			<testcontainer
+			id="cf6457a3-eb5d-4eac-8f5a-ac3abb6df13f">
+			</testcontainer>
+			<testcontainer
+			id="dc535c44-91f9-4bbd-b7a2-73402152611d">
+			</testcontainer>
+			<testcontainer
+			id="dd6dcb38-e88b-465d-bbd9-16bcb10659f8">
+			</testcontainer>
+			<testcontainer
+			id="e0e4ab49-ea8f-4643-bc01-ecf3a57b4f8c">
+			</testcontainer>
+			<testcontainer
+			id="e434e143-c5af-41af-b191-b7b7a6f4444a">
+			</testcontainer>
+			<testcontainer
+			id="e8744e29-a519-4561-b34d-cdee1430cbbd">
+			</testcontainer>
+		</testconfiguration>
+		<testconfiguration
+		name="SmokePreProd">
+			<testcontainer
+			id="1d01bab4-16a3-4c66-b0b5-66f0308c27e3">
+			</testcontainer>
+			<testcontainer
+			id="3774b8fb-928c-4e47-9e8d-0597e1f7ca83">
+			</testcontainer>
+			<testcontainer
+			id="381b19c5-21b1-465a-9c16-8b161eb3a25e">
+			</testcontainer>
+			<testcontainer
+			id="3f8e07b6-efc7-4b3a-be61-0de7e7dcb309">
+			</testcontainer>
+			<testcontainer
+			id="4b068f0e-3c5f-43a4-a3f1-bcc95c8d1864">
+			</testcontainer>
+			<testcontainer
+			id="4f5e8f86-9772-4799-a29d-49ca5e7cebff">
+			</testcontainer>
+			<testcontainer
+			id="539633a7-894c-49ae-93fc-0db5a6fe177b">
+			</testcontainer>
+			<testcontainer
+			id="66ef67d9-cf45-4baa-bb1d-07c4d71f5d1a">
+			</testcontainer>
+			<testcontainer
+			id="6cdda94d-71b2-4245-b953-d1ddf620bdd3">
+			</testcontainer>
+			<testcontainer
+			id="7f294d39-ccb5-49f0-90c9-30de110ccc0f">
+			</testcontainer>
+			<testcontainer
+			id="931e75ae-0bb5-429a-b117-55b9a6e6c88d">
+			</testcontainer>
+			<testcontainer
+			id="944abe9b-0ea1-485e-a74f-0bb72c9242d8">
+			</testcontainer>
+			<testcontainer
+			id="9796e920-1188-45ad-af46-1061deede081">
 			</testcontainer>
 			<testcontainer
 			id="acbf1fda-7509-4e39-b9c7-ec1fa9efb1ed">

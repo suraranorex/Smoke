@@ -20,47 +20,50 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace Smoke.Menu
+namespace Smoke.Emision
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The MenuLatPagosRevert recording.
+    ///The VerificarArchivo recording.
     /// </summary>
-    [TestModule("79298b40-47aa-40e4-b09c-fa13853760b8", ModuleType.Recording, 1)]
-    public partial class MenuLatPagosRevert : ITestModule
+    [TestModule("0c068edb-fdfc-47df-bc2c-55ffd5542ddf", ModuleType.Recording, 1)]
+    public partial class VerificarArchivo : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::Smoke.SmokeRepository repository.
         /// </summary>
         public static global::Smoke.SmokeRepository repo = global::Smoke.SmokeRepository.Instance;
 
-        static MenuLatPagosRevert instance = new MenuLatPagosRevert();
+        static VerificarArchivo instance = new VerificarArchivo();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public MenuLatPagosRevert()
+        public VerificarArchivo()
         {
+            archivoSalida = "polizas.csv";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static MenuLatPagosRevert Instance
+        public static VerificarArchivo Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
+        string _archivoSalida;
+
         /// <summary>
-        /// Gets or sets the value of variable Ambiente.
+        /// Gets or sets the value of variable archivoSalida.
         /// </summary>
-        [TestVariable("179cd022-d834-4b47-98d5-e2a34a6a6fce")]
-        public string Ambiente
+        [TestVariable("0f40c006-2540-4b1a-b730-a7c5efa4680a")]
+        public string archivoSalida
         {
-            get { return repo.Ambiente; }
-            set { repo.Ambiente = value; }
+            get { return _archivoSalida; }
+            set { _archivoSalida = value; }
         }
 
 #endregion
@@ -89,15 +92,8 @@ namespace Smoke.Menu
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.bttnLateral_Pagos' at Center.", repo.SURA.bttnLateral_PagosInfo, new RecordItemIndex(0));
-            repo.SURA.bttnLateral_Pagos.Click();
+            VerificarArchivoCSV(archivoSalida);
             Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(1));
-            Delay.Duration(2000, false);
-            
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SURA.txt_Pagos'", repo.SURA.txt_PagosInfo, new ActionTimeout(30000), new RecordItemIndex(2));
-            repo.SURA.txt_PagosInfo.WaitForExists(30000);
             
         }
 

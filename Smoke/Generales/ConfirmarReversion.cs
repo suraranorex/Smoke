@@ -42,6 +42,7 @@ namespace Smoke.Generales
         public ConfirmarReversion()
         {
             MotivoReversion = "Contracargo Tarjeta";
+            NUMPOLIZA_REVERTIR = "04104019118";
         }
 
         /// <summary>
@@ -142,11 +143,17 @@ namespace Smoke.Generales
             
             Report.Screenshot(ReportLevel.Info, "User", "", repo.SURA.Self, false, new RecordItemIndex(7));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.bttn_Aceptar' at Center.", repo.SURA.bttn_AceptarInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 300ms.", new RecordItemIndex(8));
+            Delay.Duration(300, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.bttn_Aceptar' at Center.", repo.SURA.bttn_AceptarInfo, new RecordItemIndex(9));
             repo.SURA.bttn_Aceptar.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'SURA.txt_Revertido'.", repo.SURA.txt_RevertidoInfo, new RecordItemIndex(9));
+            //Report.Log(ReportLevel.Info, "Delay", "Waiting for 300ms.", new RecordItemIndex(10));
+            //Delay.Duration(300, false);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'SURA.txt_Revertido'.", repo.SURA.txt_RevertidoInfo, new RecordItemIndex(11));
             Validate.Exists(repo.SURA.txt_RevertidoInfo);
             Delay.Milliseconds(0);
             

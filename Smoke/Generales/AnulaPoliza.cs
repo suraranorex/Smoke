@@ -147,8 +147,8 @@ namespace Smoke.Generales
             repo.ApplicationUnderTest.bttn_IniciarAnulacion.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s to exist. Associated repository item: 'ApplicationUnderTest.txt_Confirmacion'", repo.ApplicationUnderTest.txt_ConfirmacionInfo, new ActionTimeout(10000), new RecordItemIndex(13));
-            repo.ApplicationUnderTest.txt_ConfirmacionInfo.WaitForExists(10000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 40s to exist. Associated repository item: 'ApplicationUnderTest.txt_Confirmacion'", repo.ApplicationUnderTest.txt_ConfirmacionInfo, new ActionTimeout(40000), new RecordItemIndex(13));
+            repo.ApplicationUnderTest.txt_ConfirmacionInfo.WaitForExists(40000);
             
             Report.Screenshot(ReportLevel.Info, "User", "", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(14));
             

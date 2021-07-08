@@ -114,7 +114,10 @@ namespace Smoke.Menu
             repo.SURA.txtbox_MenuNroCuenta.PressKeys("{Return}");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SURA.lbl_VerificarMS'", repo.SURA.lbl_VerificarMSInfo, new ActionTimeout(30000), new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(3));
+            Delay.Duration(3000, false);
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SURA.lbl_VerificarMS'", repo.SURA.lbl_VerificarMSInfo, new ActionTimeout(30000), new RecordItemIndex(4));
             repo.SURA.lbl_VerificarMSInfo.WaitForExists(30000);
             
         }

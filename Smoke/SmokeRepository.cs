@@ -53,7 +53,7 @@ namespace Smoke
 
 #region Variables
 
-        string _Ambiente = "i-preproducciongestion.segurossura.com.ar";
+        string _Ambiente = "ssurgwsoadev4-oci.opc.oracleoutsourcing.com";
 
         /// <summary>
         /// Gets or sets the value of variable Ambiente.
@@ -209,7 +209,7 @@ namespace Smoke
             set { _NumPoliza = value; }
         }
 
-        string _NUMPOLIZA_REVERTIR = "04104012805";
+        string _NUMPOLIZA_REVERTIR = "04104019118";
 
         /// <summary>
         /// Gets or sets the value of variable NUMPOLIZA_REVERTIR.
@@ -337,6 +337,7 @@ namespace Smoke
             RepoItemInfo _copy_of_txtbox_fechavencimientoInfo;
             RepoItemInfo _bttn_infocontratanteInfo;
             RepoItemInfo _bttn_actualizarInfo;
+            RepoItemInfo _msjecuentaexistenteInfo;
             RepoItemInfo _copy_of_lbl_tcexistenteInfo;
             RepoItemInfo _copy_of_btn_cof_cancelartcInfo;
             RepoItemInfo _title_informaciondelpagoInfo;
@@ -459,6 +460,7 @@ namespace Smoke
             RepoItemInfo _productoInfo;
             RepoItemInfo _cbo_productoInfo;
             RepoItemInfo _copy_of_cbo_plan_plantaInfo;
+            RepoItemInfo _selectdniInfo;
             RepoItemInfo _plan_plantaInfo;
             RepoItemInfo _cbo_plan_plantaInfo;
             RepoItemInfo _copy_of_cbo_tipodeconstruccionInfo;
@@ -534,6 +536,9 @@ namespace Smoke
             RepoItemInfo _accionesInfo;
             RepoItemInfo _bttnlateral_pagosInfo;
             RepoItemInfo _txt_pagosInfo;
+            RepoItemInfo _txt_fechainicioInfo;
+            RepoItemInfo _actalizarInfo;
+            RepoItemInfo _txt_numpolizabcInfo;
 
             /// <summary>
             /// Creates a new SURA  folder.
@@ -603,6 +608,7 @@ namespace Smoke
                 _copy_of_txtbox_fechavencimientoInfo = new RepoItemInfo(this, "Copy_of_txtbox_FechaVencimiento", ".//span[@innertext~'Fecha de vencimiento']/../..//input[@data-tabindexsaved='True']", "", 30000, null, "bd937e48-e8b8-48d1-9443-7627ccf332ff");
                 _bttn_infocontratanteInfo = new RepoItemInfo(this, "bttn_InfoContratante", ".//span[@innertext>'Utilizar la información del']/../..//label[@innertext='Sí']/../input", "", 30000, null, "4dd3f504-35dc-46ce-ad38-4d2b3fdd6e05");
                 _bttn_actualizarInfo = new RepoItemInfo(this, "bttn_Actualizar", ".//span[@innertext~'Actualizar']", "", 30000, null, "d1699ee4-14d8-4079-a606-08cf9a8f4803");
+                _msjecuentaexistenteInfo = new RepoItemInfo(this, "MsjeCuentaExistente", ".//tbody[#'CreateAccountForContact-tbody']//span[@innertext>'\"Existe un contacto con el']", "", 30000, null, "7a37eeee-dcea-48c6-9e7b-05a6d13765c6");
                 _copy_of_lbl_tcexistenteInfo = new RepoItemInfo(this, "Copy_of_lbl_TCExistente", ".//div[@innertext='La tarjeta de crédito que inteta registrar ya existe en la cuenta']", "", 0, null, "5f527a27-5503-4aa5-8503-0ed958720678");
                 _copy_of_btn_cof_cancelartcInfo = new RepoItemInfo(this, "Copy_of_btn_COF_CancelarTC", ".//span[@innertext='Cancelar']", "", 0, null, "36fe6561-eb3f-4b23-900d-9d671332314d");
                 _title_informaciondelpagoInfo = new RepoItemInfo(this, "title_InformacionDelPago", ".//span[@innertext~'Información del Pago']", "", 30000, null, "99fd4770-7171-4ab5-aba9-5895837f8b36");
@@ -725,6 +731,7 @@ namespace Smoke
                 _productoInfo = new RepoItemInfo(this, "Producto", ".//div[#'SubmissionWizard/HomeownersDwelling']/table/tbody//label/span[@innertext='Producto']/../../div/div/div[2]", "", 30000, null, "24d1e7ad-b998-4555-95c3-2d78f102b91c");
                 _cbo_productoInfo = new RepoItemInfo(this, "cbo_Producto", "body//ul/li[@innertext~$Producto and @visible='True']", "", 30000, null, "038923ad-c567-44e7-bba2-eecf9375fc38");
                 _copy_of_cbo_plan_plantaInfo = new RepoItemInfo(this, "Copy_of_cbo_Plan_Planta", "body//ul/li[@enabled='True']", "", 30000, null, "193c0367-41bc-42b6-bdbe-90d058a8e795");
+                _selectdniInfo = new RepoItemInfo(this, "SelectDNI", "body//ul/li[@innertext='D.N.I.']", "", 30000, null, "305eb3ce-526b-4e99-87b2-b4113e6ab7fc");
                 _plan_plantaInfo = new RepoItemInfo(this, "Plan_Planta", ".//div[#'SubmissionWizard/HomeownersDwelling']/table/tbody//label/span[@innertext='Plan / Planta']/../../div/div/div[2]", "", 30000, null, "5798da9c-a8c6-43b2-b9b5-73f0b0ad01b6");
                 _cbo_plan_plantaInfo = new RepoItemInfo(this, "cbo_Plan_Planta", "body//ul/li[@innertext~$PlanPlanta and @visible='True']", "", 30000, null, "c7e9fa49-e4ff-42b5-9b69-e488018bfcf0");
                 _copy_of_cbo_tipodeconstruccionInfo = new RepoItemInfo(this, "Copy_of_cbo_TipoDeConstruccion", "body/div[15]/?/?/ul/li[@enabled='True']", "", 30000, null, "3dbf3194-cc15-4eb3-a077-4e075d223aa4");
@@ -800,6 +807,9 @@ namespace Smoke
                 _accionesInfo = new RepoItemInfo(this, "Acciones", ".//div[#'AccountPayments/PaymentDetails']//a[@innertext>$NUMPOLIZA_REVERTIR]/../../..//a[@innertext='Acciones']", "", 30000, null, "2f91935e-cff3-4bb0-b1d3-4334e1b27e0c");
                 _bttnlateral_pagosInfo = new RepoItemInfo(this, "bttnLateral_Pagos", ".//div[#'AccountGroup:MenuLinks-body']//span[@innertext='Pagos']", "", 30000, null, "7a670d76-031a-4d85-8e10-7ebb6a3c0fc4");
                 _txt_pagosInfo = new RepoItemInfo(this, "txt_Pagos", ".//div[#'AccountPayments/PaymentDetails']//span[@innertext='Pagos']", "", 30000, null, "ae9c16d2-8017-46ff-8ad9-c2006f0c699e");
+                _txt_fechainicioInfo = new RepoItemInfo(this, "txt_FechaInicio", ".//div[#'SubmissionWizard/PolicyInfo']//input[@name='SubmissionWizard:LOBWizardStepGroup:SubmissionWizard_PolicyInfoScreen:SubmissionWizard_PolicyInfoDV:PolicyInfoInputSet:EffectiveDate']", "", 30000, null, "073381e9-959d-4bd2-8fe1-d3a79e46cd54");
+                _actalizarInfo = new RepoItemInfo(this, "Actalizar", ".//tbody[#'CreateAccountForContact-tbody']/tr[2]/td/div/div/div/a[1]//span[@innertext='Actalizar']", "", 30000, null, "289fde99-73fa-432a-99fe-195fd6883e69");
+                _txt_numpolizabcInfo = new RepoItemInfo(this, "txt_NumPolizaBC", ".//div[#'AccountPayments/PaymentDetails']//input[@name='AccountPayments:PaymentsSuraScreen:DirectBillPaymentsListDetail:AccountDBPaymentsLV_tb:PolicyNumbersFilter']", "", 30000, null, "eba41297-1020-42ab-981a-80dde7985bc7");
             }
 
             /// <summary>
@@ -2215,6 +2225,30 @@ namespace Smoke
                 get
                 {
                     return _bttn_actualizarInfo;
+                }
+            }
+
+            /// <summary>
+            /// The MsjeCuentaExistente item.
+            /// </summary>
+            [RepositoryItem("7a37eeee-dcea-48c6-9e7b-05a6d13765c6")]
+            public virtual Ranorex.SpanTag MsjeCuentaExistente
+            {
+                get
+                {
+                    return _msjecuentaexistenteInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The MsjeCuentaExistente item info.
+            /// </summary>
+            [RepositoryItemInfo("7a37eeee-dcea-48c6-9e7b-05a6d13765c6")]
+            public virtual RepoItemInfo MsjeCuentaExistenteInfo
+            {
+                get
+                {
+                    return _msjecuentaexistenteInfo;
                 }
             }
 
@@ -5147,6 +5181,30 @@ namespace Smoke
             }
 
             /// <summary>
+            /// The SelectDNI item.
+            /// </summary>
+            [RepositoryItem("305eb3ce-526b-4e99-87b2-b4113e6ab7fc")]
+            public virtual Ranorex.LiTag SelectDNI
+            {
+                get
+                {
+                    return _selectdniInfo.CreateAdapter<Ranorex.LiTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SelectDNI item info.
+            /// </summary>
+            [RepositoryItemInfo("305eb3ce-526b-4e99-87b2-b4113e6ab7fc")]
+            public virtual RepoItemInfo SelectDNIInfo
+            {
+                get
+                {
+                    return _selectdniInfo;
+                }
+            }
+
+            /// <summary>
             /// The Plan_Planta item.
             /// </summary>
             [RepositoryItem("5798da9c-a8c6-43b2-b9b5-73f0b0ad01b6")]
@@ -6943,6 +7001,78 @@ namespace Smoke
                 get
                 {
                     return _txt_pagosInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txt_FechaInicio item.
+            /// </summary>
+            [RepositoryItem("073381e9-959d-4bd2-8fe1-d3a79e46cd54")]
+            public virtual Ranorex.InputTag txt_FechaInicio
+            {
+                get
+                {
+                    return _txt_fechainicioInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txt_FechaInicio item info.
+            /// </summary>
+            [RepositoryItemInfo("073381e9-959d-4bd2-8fe1-d3a79e46cd54")]
+            public virtual RepoItemInfo txt_FechaInicioInfo
+            {
+                get
+                {
+                    return _txt_fechainicioInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Actalizar item.
+            /// </summary>
+            [RepositoryItem("289fde99-73fa-432a-99fe-195fd6883e69")]
+            public virtual Ranorex.SpanTag Actalizar
+            {
+                get
+                {
+                    return _actalizarInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Actalizar item info.
+            /// </summary>
+            [RepositoryItemInfo("289fde99-73fa-432a-99fe-195fd6883e69")]
+            public virtual RepoItemInfo ActalizarInfo
+            {
+                get
+                {
+                    return _actalizarInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txt_NumPolizaBC item.
+            /// </summary>
+            [RepositoryItem("eba41297-1020-42ab-981a-80dde7985bc7")]
+            public virtual Ranorex.InputTag txt_NumPolizaBC
+            {
+                get
+                {
+                    return _txt_numpolizabcInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txt_NumPolizaBC item info.
+            /// </summary>
+            [RepositoryItemInfo("eba41297-1020-42ab-981a-80dde7985bc7")]
+            public virtual RepoItemInfo txt_NumPolizaBCInfo
+            {
+                get
+                {
+                    return _txt_numpolizabcInfo;
                 }
             }
 

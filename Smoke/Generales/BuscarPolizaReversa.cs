@@ -20,33 +20,34 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace Smoke.Menu
+namespace Smoke.Generales
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The MenuLatPagosRevert recording.
+    ///The BuscarPolizaReversa recording.
     /// </summary>
-    [TestModule("79298b40-47aa-40e4-b09c-fa13853760b8", ModuleType.Recording, 1)]
-    public partial class MenuLatPagosRevert : ITestModule
+    [TestModule("b4735cf6-9c63-407c-9248-f7233b2caf44", ModuleType.Recording, 1)]
+    public partial class BuscarPolizaReversa : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::Smoke.SmokeRepository repository.
         /// </summary>
         public static global::Smoke.SmokeRepository repo = global::Smoke.SmokeRepository.Instance;
 
-        static MenuLatPagosRevert instance = new MenuLatPagosRevert();
+        static BuscarPolizaReversa instance = new BuscarPolizaReversa();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public MenuLatPagosRevert()
+        public BuscarPolizaReversa()
         {
+            NUMPOLIZA_REVERTIR = "11111003253";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static MenuLatPagosRevert Instance
+        public static BuscarPolizaReversa Instance
         {
             get { return instance; }
         }
@@ -61,6 +62,16 @@ namespace Smoke.Menu
         {
             get { return repo.Ambiente; }
             set { repo.Ambiente = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable NUMPOLIZA_REVERTIR.
+        /// </summary>
+        [TestVariable("e5f0bc49-df2f-4a9e-ad72-f6f872184117")]
+        public string NUMPOLIZA_REVERTIR
+        {
+            get { return repo.NUMPOLIZA_REVERTIR; }
+            set { repo.NUMPOLIZA_REVERTIR = value; }
         }
 
 #endregion
@@ -89,15 +100,17 @@ namespace Smoke.Menu
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.bttnLateral_Pagos' at Center.", repo.SURA.bttnLateral_PagosInfo, new RecordItemIndex(0));
-            repo.SURA.bttnLateral_Pagos.Click();
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Value to '' on item 'SURA.txt_NumPolizaBC'.", repo.SURA.txt_NumPolizaBCInfo, new RecordItemIndex(0));
+            repo.SURA.txt_NumPolizaBC.Element.SetAttributeValue("Value", "");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(1));
-            Delay.Duration(2000, false);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$NUMPOLIZA_REVERTIR' with focus on 'SURA.txt_NumPolizaBC'.", repo.SURA.txt_NumPolizaBCInfo, new RecordItemIndex(1));
+            repo.SURA.txt_NumPolizaBC.PressKeys(NUMPOLIZA_REVERTIR);
+            Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SURA.txt_Pagos'", repo.SURA.txt_PagosInfo, new ActionTimeout(30000), new RecordItemIndex(2));
-            repo.SURA.txt_PagosInfo.WaitForExists(30000);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Enter' Press.", new RecordItemIndex(2));
+            Keyboard.Press(System.Windows.Forms.Keys.Return, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            Delay.Milliseconds(0);
             
         }
 

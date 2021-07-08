@@ -2230,6 +2230,16 @@ name="SmokeRepository">
 				/dom[@domain=$Ambiente]//span[@innertext~'Actualizar']
 			</item>
 			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="7a37eeee-dcea-48c6-9e7b-05a6d13765c6"
+			name="MsjeCuentaExistente"
+			refimgid="f5e92d25-2cab-4153-9f32-d440afd7a989"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain=$Ambiente]//tbody[#'CreateAccountForContact-tbody']//span[@innertext&gt;'&quot;Existe un contacto con el']
+			</item>
+			<item
 			addcaps="unknown,webelement,divtag"
 			capname="divtag"
 			id="5f527a27-5503-4aa5-8503-0ed958720678"
@@ -3450,6 +3460,16 @@ name="SmokeRepository">
 				/dom[@domain=$Ambiente]/body//ul/li[@enabled='True']
 			</item>
 			<item
+			addcaps="unknown,webelement,litag"
+			capname="litag"
+			id="305eb3ce-526b-4e99-87b2-b4113e6ab7fc"
+			name="SelectDNI"
+			refimgid="aa98e33d-055c-476d-a425-d490983b778d"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain=$Ambiente]/body//ul/li[@innertext='D.N.I.']
+			</item>
+			<item
 			addcaps="unknown,webelement,divtag"
 			capname="divtag"
 			id="5798da9c-a8c6-43b2-b9b5-73f0b0ad01b6"
@@ -4636,6 +4656,37 @@ name="SmokeRepository">
 			searchtimeout="30000ms">
 				/dom[@domain=$Ambiente]//div[#'AccountPayments/PaymentDetails']//span[@innertext='Pagos']
 			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="073381e9-959d-4bd2-8fe1-d3a79e46cd54"
+			name="txt_FechaInicio"
+			refimgid="107f20e3-8030-4e17-b400-991fb98afc9f"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain=$Ambiente]//div[#'SubmissionWizard/PolicyInfo']//input[@name='SubmissionWizard:LOBWizardStepGroup:SubmissionWizard_PolicyInfoScreen:SubmissionWizard_PolicyInfoDV:PolicyInfoInputSet:EffectiveDate']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="289fde99-73fa-432a-99fe-195fd6883e69"
+			name="Actalizar"
+			refimgid="f6e26d9e-d0a4-4c0c-9f47-92270a547fc9"
+			refpath="/dom[@domain='ssurgwsoadev4-oci.opc.oracleoutsourcing.com']//tbody[#'CreateAccountForContact-tbody']/tr[2]/td/div/div/div/a[1]/span/span/span[@innertext='Actalizar']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain=$Ambiente]//tbody[#'CreateAccountForContact-tbody']/tr[2]/td/div/div/div/a[1]//span[@innertext='Actalizar']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="eba41297-1020-42ab-981a-80dde7985bc7"
+			name="txt_NumPolizaBC"
+			refimgid="0842c908-5910-4586-adb6-72533e8b0a6d"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain=$Ambiente]//div[#'AccountPayments/PaymentDetails']//input[@name='AccountPayments:PaymentsSuraScreen:DirectBillPaymentsListDetail:AccountDBPaymentsLV_tb:PolicyNumbersFilter']
+			</item>
 			<basepath>
 				/dom[@domain=$Ambiente]
 			</basepath>
@@ -5597,7 +5648,7 @@ QmCC
 		<var
 		id="179cd022-d834-4b47-98d5-e2a34a6a6fce"
 		name="Ambiente">
-			i-preproducciongestion.segurossura.com.ar
+			ssurgwsoadev4-oci.opc.oracleoutsourcing.com
 		</var>
 		<var
 		id="995aaba0-daa7-4faa-ac37-c534aceaec96"
@@ -5662,7 +5713,7 @@ QmCC
 		<var
 		id="ec206af3-54d1-44c2-86ad-9c9b8fabcad0"
 		name="NUMPOLIZA_REVERTIR">
-			04104012805
+			04104019118
 		</var>
 	</variables>
 </repository>

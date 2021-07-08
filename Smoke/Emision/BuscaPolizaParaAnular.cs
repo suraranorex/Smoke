@@ -20,33 +20,34 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace Smoke.Menu
+namespace Smoke.Emision
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The MenuLatPagosRevert recording.
+    ///The BuscaPolizaParaAnular recording.
     /// </summary>
-    [TestModule("79298b40-47aa-40e4-b09c-fa13853760b8", ModuleType.Recording, 1)]
-    public partial class MenuLatPagosRevert : ITestModule
+    [TestModule("097746c6-29dd-498f-9b4e-0874387cbb2e", ModuleType.Recording, 1)]
+    public partial class BuscaPolizaParaAnular : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::Smoke.SmokeRepository repository.
         /// </summary>
         public static global::Smoke.SmokeRepository repo = global::Smoke.SmokeRepository.Instance;
 
-        static MenuLatPagosRevert instance = new MenuLatPagosRevert();
+        static BuscaPolizaParaAnular instance = new BuscaPolizaParaAnular();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public MenuLatPagosRevert()
+        public BuscaPolizaParaAnular()
         {
+            NumPoliza = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static MenuLatPagosRevert Instance
+        public static BuscaPolizaParaAnular Instance
         {
             get { return instance; }
         }
@@ -61,6 +62,16 @@ namespace Smoke.Menu
         {
             get { return repo.Ambiente; }
             set { repo.Ambiente = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable NumPoliza.
+        /// </summary>
+        [TestVariable("7d638e27-b74a-4929-9ff9-737a7d9cd1ac")]
+        public string NumPoliza
+        {
+            get { return repo.NumPoliza; }
+            set { repo.NumPoliza = value; }
         }
 
 #endregion
@@ -89,15 +100,27 @@ namespace Smoke.Menu
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.bttnLateral_Pagos' at Center.", repo.SURA.bttnLateral_PagosInfo, new RecordItemIndex(0));
-            repo.SURA.bttnLateral_Pagos.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.bttn_MenuPoliza' at CenterRight.", repo.ApplicationUnderTest.bttn_MenuPolizaInfo, new RecordItemIndex(0));
+            repo.ApplicationUnderTest.bttn_MenuPoliza.Click(Location.CenterRight);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(1));
-            Delay.Duration(2000, false);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.txtbox_NumPoliza' at Center.", repo.ApplicationUnderTest.txtbox_NumPolizaInfo, new RecordItemIndex(1));
+            repo.ApplicationUnderTest.txtbox_NumPoliza.Click();
+            Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SURA.txt_Pagos'", repo.SURA.txt_PagosInfo, new ActionTimeout(30000), new RecordItemIndex(2));
-            repo.SURA.txt_PagosInfo.WaitForExists(30000);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$NumPoliza' with focus on 'ApplicationUnderTest.txtbox_NumPoliza'.", repo.ApplicationUnderTest.txtbox_NumPolizaInfo, new RecordItemIndex(2));
+            repo.ApplicationUnderTest.txtbox_NumPoliza.PressKeys(NumPoliza);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}' with focus on 'ApplicationUnderTest.txtbox_NumPoliza'.", repo.ApplicationUnderTest.txtbox_NumPolizaInfo, new RecordItemIndex(3));
+            repo.ApplicationUnderTest.txtbox_NumPoliza.PressKeys("{Return}");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'ApplicationUnderTest.txt_InformacionDePoliza'", repo.ApplicationUnderTest.txt_InformacionDePolizaInfo, new ActionTimeout(30000), new RecordItemIndex(4));
+            repo.ApplicationUnderTest.txt_InformacionDePolizaInfo.WaitForExists(30000);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(5));
+            Delay.Duration(1000, false);
             
         }
 

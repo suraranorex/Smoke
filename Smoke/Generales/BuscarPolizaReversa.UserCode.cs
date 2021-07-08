@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace Smoke.CrearCuentaSinValidarDNI
+namespace Smoke.Generales
 {
-    public partial class BuscarGrupo
+    public partial class BuscarPolizaReversa
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
@@ -31,23 +31,6 @@ namespace Smoke.CrearCuentaSinValidarDNI
         private void Init()
         {
             // Your recording specific initialization code goes here.
-        }
-
-        public void PASNombreProductor()
-        {
-        	PASNombre = PAS + " " + NombreProductor;
-        }
-
-        public void ActualizaCuentaExistente()
-        {
-            // TODO: Replace the following line with your code implementation.
-            //throw new NotImplementedException();
-            Report.Info("Info: ","Cuenta Con DNI Existente, se va a actualizar...");
-            
-            if(repo.SURA.MsjeCuentaExistente.Visible){
-            	repo.SURA.Actalizar.Click();
-            	Delay.Milliseconds(0);
-            }
         }
 
     }

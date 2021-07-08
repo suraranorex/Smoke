@@ -123,6 +123,15 @@ TnaAPwApJtag1fQqf2D/ANPP/kP/AOvR/YP/AE8/+Q//AK9bNFX7SXcj2UOxjf2D/wBPP/kP/wCv
 R/YP/Tz/AOQ//r1s0Ue0l3D2UOxjf2D/ANPP/kP/AOvR/YP/AE8/+Q//AK9bNFHtJdw9lDsf/9k=
 			</helperscreenshot>
 		</mouseitem>
+		<explicitdelayitem
+		duration="2000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<WaitForRecordItem
 		enabled="True"
 		optional="False"

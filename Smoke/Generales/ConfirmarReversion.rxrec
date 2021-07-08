@@ -28,6 +28,11 @@ mode="Global">
 		name="MotivoReversion">
 			Contracargo Tarjeta
 		</var>
+		<var
+		id="ec206af3-54d1-44c2-86ad-9c9b8fabcad0"
+		name="NUMPOLIZA_REVERTIR">
+			04104019118
+		</var>
 	</variables>
 	<recorditems>
 		<mouseitem
@@ -457,6 +462,15 @@ oooAKKKKACiiigD/2Q==
 				</robustPath>
 			</info>
 		</loggingrecorditem>
+		<explicitdelayitem
+		duration="300ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -483,6 +497,15 @@ oooAKKKKACiiigD/2Q==
 				</robustPath>
 			</info>
 		</mouseitem>
+		<explicitdelayitem
+		duration="300ms"
+		enabled="False"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<validationitem
 		action="Exists"
 		enabled="True"

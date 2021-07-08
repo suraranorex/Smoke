@@ -187,169 +187,182 @@ namespace Smoke.CrearCuentaSinValidarDNI
             repo.ApplicationUnderTest.Copy_of_TipoDocumento1.MoveTo();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Copy_of_TipoDocumento1' at 105;16.", repo.ApplicationUnderTest.Copy_of_TipoDocumento1Info, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 300ms.", new RecordItemIndex(3));
+            Delay.Duration(300, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Copy_of_TipoDocumento1' at 105;16.", repo.ApplicationUnderTest.Copy_of_TipoDocumento1Info, new RecordItemIndex(4));
             repo.ApplicationUnderTest.Copy_of_TipoDocumento1.Click("105;16");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 45s to not exist. Associated repository item: 'ApplicationUnderTest.Copy_of_Copy_of_TipoDocumento1'", repo.ApplicationUnderTest.Copy_of_Copy_of_TipoDocumento1Info, new ActionTimeout(45000), new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 300ms.", new RecordItemIndex(5));
+            Delay.Duration(300, false);
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 45s to not exist. Associated repository item: 'ApplicationUnderTest.Copy_of_Copy_of_TipoDocumento1'", repo.ApplicationUnderTest.Copy_of_Copy_of_TipoDocumento1Info, new ActionTimeout(45000), new RecordItemIndex(6));
             repo.ApplicationUnderTest.Copy_of_Copy_of_TipoDocumento1Info.WaitForNotExists(45000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Select_Tipo_Doc' at 29;13.", repo.ApplicationUnderTest.Select_Tipo_DocInfo, new RecordItemIndex(5));
-            repo.ApplicationUnderTest.Select_Tipo_Doc.Click("29;13");
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 300ms.", new RecordItemIndex(7));
+            Delay.Duration(300, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.SelectDNI' at Center.", repo.SURA.SelectDNIInfo, new RecordItemIndex(8));
+            repo.SURA.SelectDNI.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.bl_CrearCuenta' at Center.", repo.ApplicationUnderTest.bl_CrearCuentaInfo, new RecordItemIndex(6));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Select_Tipo_Doc' at Center.", repo.ApplicationUnderTest.Select_Tipo_DocInfo, new RecordItemIndex(9));
+            //repo.ApplicationUnderTest.Select_Tipo_Doc.Click();
+            //Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.bl_CrearCuenta' at Center.", repo.ApplicationUnderTest.bl_CrearCuentaInfo, new RecordItemIndex(10));
             repo.ApplicationUnderTest.bl_CrearCuenta.Click();
             Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Wait", "Waiting 45s to not exist. Associated repository item: 'ApplicationUnderTest.XTableLayout.Copy_of_TipoDocumento'", repo.ApplicationUnderTest.XTableLayout.Copy_of_TipoDocumentoInfo, new ActionTimeout(45000), new RecordItemIndex(7));
+            //Report.Log(ReportLevel.Info, "Wait", "Waiting 45s to not exist. Associated repository item: 'ApplicationUnderTest.XTableLayout.Copy_of_TipoDocumento'", repo.ApplicationUnderTest.XTableLayout.Copy_of_TipoDocumentoInfo, new ActionTimeout(45000), new RecordItemIndex(11));
             //repo.ApplicationUnderTest.XTableLayout.Copy_of_TipoDocumentoInfo.WaitForNotExists(45000);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(12));
             Delay.Duration(3000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.XTableLayout.Txt_NumeroDoc' at Center.", repo.ApplicationUnderTest.XTableLayout.Txt_NumeroDocInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.XTableLayout.Txt_NumeroDoc' at Center.", repo.ApplicationUnderTest.XTableLayout.Txt_NumeroDocInfo, new RecordItemIndex(13));
             repo.ApplicationUnderTest.XTableLayout.Txt_NumeroDoc.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Documento' with focus on 'ApplicationUnderTest.XTableLayout.Txt_NumeroDoc'.", repo.ApplicationUnderTest.XTableLayout.Txt_NumeroDocInfo, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Documento' with focus on 'ApplicationUnderTest.XTableLayout.Txt_NumeroDoc'.", repo.ApplicationUnderTest.XTableLayout.Txt_NumeroDocInfo, new RecordItemIndex(14));
             repo.ApplicationUnderTest.XTableLayout.Txt_NumeroDoc.EnsureVisible();
             Keyboard.Press(Documento);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "User", Documento, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "User", Documento, new RecordItemIndex(15));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.XTableLayout.Lbl_CondicionFiscal' at Center.", repo.ApplicationUnderTest.XTableLayout.Lbl_CondicionFiscalInfo, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.XTableLayout.Lbl_CondicionFiscal' at Center.", repo.ApplicationUnderTest.XTableLayout.Lbl_CondicionFiscalInfo, new RecordItemIndex(16));
             repo.ApplicationUnderTest.XTableLayout.Lbl_CondicionFiscal.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 40s to exist. Associated repository item: 'ApplicationUnderTest.Cbo_CondicFiscal'", repo.ApplicationUnderTest.Cbo_CondicFiscalInfo, new ActionTimeout(40000), new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 40s to exist. Associated repository item: 'ApplicationUnderTest.Cbo_CondicFiscal'", repo.ApplicationUnderTest.Cbo_CondicFiscalInfo, new ActionTimeout(40000), new RecordItemIndex(17));
             repo.ApplicationUnderTest.Cbo_CondicFiscalInfo.WaitForExists(40000);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$FechaNacimiento' with focus on 'ApplicationUnderTest.txt_Fecha_Nacimiento'.", repo.ApplicationUnderTest.txt_Fecha_NacimientoInfo, new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$FechaNacimiento' with focus on 'ApplicationUnderTest.txt_Fecha_Nacimiento'.", repo.ApplicationUnderTest.txt_Fecha_NacimientoInfo, new RecordItemIndex(18));
             repo.ApplicationUnderTest.txt_Fecha_Nacimiento.PressKeys(FechaNacimiento);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.XTableLayout.Lbl_CondicionFiscal' at Center.", repo.ApplicationUnderTest.XTableLayout.Lbl_CondicionFiscalInfo, new RecordItemIndex(15));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.XTableLayout.Lbl_CondicionFiscal' at Center.", repo.ApplicationUnderTest.XTableLayout.Lbl_CondicionFiscalInfo, new RecordItemIndex(19));
             repo.ApplicationUnderTest.XTableLayout.Lbl_CondicionFiscal.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'ApplicationUnderTest.Copy_of_txt_Fecha_Nacimiento'", repo.ApplicationUnderTest.Copy_of_txt_Fecha_NacimientoInfo, new ActionTimeout(30000), new RecordItemIndex(16));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'ApplicationUnderTest.Copy_of_txt_Fecha_Nacimiento'", repo.ApplicationUnderTest.Copy_of_txt_Fecha_NacimientoInfo, new ActionTimeout(30000), new RecordItemIndex(20));
             repo.ApplicationUnderTest.Copy_of_txt_Fecha_NacimientoInfo.WaitForNotExists(30000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.XTableLayout.txt_CorreoPrincipal' at Center.", repo.ApplicationUnderTest.XTableLayout.txt_CorreoPrincipalInfo, new RecordItemIndex(17));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.XTableLayout.txt_CorreoPrincipal' at Center.", repo.ApplicationUnderTest.XTableLayout.txt_CorreoPrincipalInfo, new RecordItemIndex(21));
             repo.ApplicationUnderTest.XTableLayout.txt_CorreoPrincipal.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$correoprincipal' with focus on 'ApplicationUnderTest.XTableLayout.txt_CorreoPrincipal'.", repo.ApplicationUnderTest.XTableLayout.txt_CorreoPrincipalInfo, new RecordItemIndex(18));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$correoprincipal' with focus on 'ApplicationUnderTest.XTableLayout.txt_CorreoPrincipal'.", repo.ApplicationUnderTest.XTableLayout.txt_CorreoPrincipalInfo, new RecordItemIndex(22));
             repo.ApplicationUnderTest.XTableLayout.txt_CorreoPrincipal.PressKeys(correoprincipal);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.XTableLayout.lbl_Email' at Center.", repo.ApplicationUnderTest.XTableLayout.lbl_EmailInfo, new RecordItemIndex(19));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.XTableLayout.lbl_Email' at Center.", repo.ApplicationUnderTest.XTableLayout.lbl_EmailInfo, new RecordItemIndex(23));
             repo.ApplicationUnderTest.XTableLayout.lbl_Email.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'ApplicationUnderTest.XTableLayout.Copy_of_txt_CorreoPrincipal'", repo.ApplicationUnderTest.XTableLayout.Copy_of_txt_CorreoPrincipalInfo, new ActionTimeout(30000), new RecordItemIndex(20));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'ApplicationUnderTest.XTableLayout.Copy_of_txt_CorreoPrincipal'", repo.ApplicationUnderTest.XTableLayout.Copy_of_txt_CorreoPrincipalInfo, new ActionTimeout(30000), new RecordItemIndex(24));
             repo.ApplicationUnderTest.XTableLayout.Copy_of_txt_CorreoPrincipalInfo.WaitForNotExists(30000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.XTableLayout.Click_Provincia' at 11;14.", repo.ApplicationUnderTest.XTableLayout.Click_ProvinciaInfo, new RecordItemIndex(21));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.XTableLayout.Click_Provincia' at 11;14.", repo.ApplicationUnderTest.XTableLayout.Click_ProvinciaInfo, new RecordItemIndex(25));
             repo.ApplicationUnderTest.XTableLayout.Click_Provincia.Click("11;14");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'ApplicationUnderTest.PrimerItemProvincia'", repo.ApplicationUnderTest.PrimerItemProvinciaInfo, new ActionTimeout(30000), new RecordItemIndex(22));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'ApplicationUnderTest.PrimerItemProvincia'", repo.ApplicationUnderTest.PrimerItemProvinciaInfo, new ActionTimeout(30000), new RecordItemIndex(26));
             repo.ApplicationUnderTest.PrimerItemProvinciaInfo.WaitForExists(30000);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Provincia' with focus on 'ApplicationUnderTest.txtProvincia'.", repo.ApplicationUnderTest.txtProvinciaInfo, new RecordItemIndex(23));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Provincia' with focus on 'ApplicationUnderTest.txtProvincia'.", repo.ApplicationUnderTest.txtProvinciaInfo, new RecordItemIndex(27));
             repo.ApplicationUnderTest.txtProvincia.PressKeys(Provincia);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ItemProvincia' at Center.", repo.ApplicationUnderTest.ItemProvinciaInfo, new RecordItemIndex(24));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ItemProvincia' at Center.", repo.ApplicationUnderTest.ItemProvinciaInfo, new RecordItemIndex(28));
             repo.ApplicationUnderTest.ItemProvincia.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'ApplicationUnderTest.Copy_of_txtProvincia'", repo.ApplicationUnderTest.Copy_of_txtProvinciaInfo, new ActionTimeout(30000), new RecordItemIndex(25));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'ApplicationUnderTest.Copy_of_txtProvincia'", repo.ApplicationUnderTest.Copy_of_txtProvinciaInfo, new ActionTimeout(30000), new RecordItemIndex(29));
             repo.ApplicationUnderTest.Copy_of_txtProvinciaInfo.WaitForNotExists(30000);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.XTableLayout.Click_Localidad' at Center.", repo.ApplicationUnderTest.XTableLayout.Click_LocalidadInfo, new RecordItemIndex(26));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.XTableLayout.Click_Localidad' at Center.", repo.ApplicationUnderTest.XTableLayout.Click_LocalidadInfo, new RecordItemIndex(30));
             //repo.ApplicationUnderTest.XTableLayout.Click_Localidad.Click();
             //Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'ApplicationUnderTest.PrimerItemLocalidad'", repo.ApplicationUnderTest.PrimerItemLocalidadInfo, new ActionTimeout(30000), new RecordItemIndex(27));
+            //Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'ApplicationUnderTest.PrimerItemLocalidad'", repo.ApplicationUnderTest.PrimerItemLocalidadInfo, new ActionTimeout(30000), new RecordItemIndex(31));
             //repo.ApplicationUnderTest.PrimerItemLocalidadInfo.WaitForExists(30000);
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LControlKey down}{Akey}{LControlKey up}' with focus on 'ApplicationUnderTest.XTableLayout.Click_Localidad'.", repo.ApplicationUnderTest.XTableLayout.Click_LocalidadInfo, new RecordItemIndex(28));
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LControlKey down}{Akey}{LControlKey up}' with focus on 'ApplicationUnderTest.XTableLayout.Click_Localidad'.", repo.ApplicationUnderTest.XTableLayout.Click_LocalidadInfo, new RecordItemIndex(32));
             //repo.ApplicationUnderTest.XTableLayout.Click_Localidad.PressKeys("{LControlKey down}{Akey}{LControlKey up}");
             //Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Localidad' with focus on 'ApplicationUnderTest.XTableLayout.Click_Localidad'.", repo.ApplicationUnderTest.XTableLayout.Click_LocalidadInfo, new RecordItemIndex(29));
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Localidad' with focus on 'ApplicationUnderTest.XTableLayout.Click_Localidad'.", repo.ApplicationUnderTest.XTableLayout.Click_LocalidadInfo, new RecordItemIndex(33));
             //repo.ApplicationUnderTest.XTableLayout.Click_Localidad.PressKeys(Localidad);
             //Delay.Milliseconds(20);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ItemLocalidad' at Center.", repo.ApplicationUnderTest.ItemLocalidadInfo, new RecordItemIndex(30));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ItemLocalidad' at Center.", repo.ApplicationUnderTest.ItemLocalidadInfo, new RecordItemIndex(34));
             //repo.ApplicationUnderTest.ItemLocalidad.Click();
             //Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Wait", "Waiting 50s to not exist. Associated repository item: 'ApplicationUnderTest.XTableLayout.Copy_of_Click_Localidad'", repo.ApplicationUnderTest.XTableLayout.Copy_of_Click_LocalidadInfo, new ActionTimeout(50000), new RecordItemIndex(31));
+            //Report.Log(ReportLevel.Info, "Wait", "Waiting 50s to not exist. Associated repository item: 'ApplicationUnderTest.XTableLayout.Copy_of_Click_Localidad'", repo.ApplicationUnderTest.XTableLayout.Copy_of_Click_LocalidadInfo, new ActionTimeout(50000), new RecordItemIndex(35));
             //repo.ApplicationUnderTest.XTableLayout.Copy_of_Click_LocalidadInfo.WaitForNotExists(50000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.lbl_Direccion' at Center.", repo.ApplicationUnderTest.lbl_DireccionInfo, new RecordItemIndex(32));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.lbl_Direccion' at Center.", repo.ApplicationUnderTest.lbl_DireccionInfo, new RecordItemIndex(36));
             repo.ApplicationUnderTest.lbl_Direccion.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.XTableLayout.txt_Calle' at Center.", repo.ApplicationUnderTest.XTableLayout.txt_CalleInfo, new RecordItemIndex(33));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.XTableLayout.txt_Calle' at Center.", repo.ApplicationUnderTest.XTableLayout.txt_CalleInfo, new RecordItemIndex(37));
             repo.ApplicationUnderTest.XTableLayout.txt_Calle.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Calle' with focus on 'ApplicationUnderTest.XTableLayout.txt_Calle'.", repo.ApplicationUnderTest.XTableLayout.txt_CalleInfo, new RecordItemIndex(34));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Calle' with focus on 'ApplicationUnderTest.XTableLayout.txt_Calle'.", repo.ApplicationUnderTest.XTableLayout.txt_CalleInfo, new RecordItemIndex(38));
             repo.ApplicationUnderTest.XTableLayout.txt_Calle.PressKeys(Calle);
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.lbl_Direccion' at Center.", repo.ApplicationUnderTest.lbl_DireccionInfo, new RecordItemIndex(35));
-            repo.ApplicationUnderTest.lbl_Direccion.Click();
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 50s to not exist. Associated repository item: 'ApplicationUnderTest.XTableLayout.txt_Calle_Espera'", repo.ApplicationUnderTest.XTableLayout.txt_Calle_EsperaInfo, new ActionTimeout(50000), new RecordItemIndex(36));
-            repo.ApplicationUnderTest.XTableLayout.txt_Calle_EsperaInfo.WaitForNotExists(50000);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.XTableLayout.txt_Numero' at Center.", repo.ApplicationUnderTest.XTableLayout.txt_NumeroInfo, new RecordItemIndex(37));
-            repo.ApplicationUnderTest.XTableLayout.txt_Numero.Click();
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$NumeroCalle' with focus on 'ApplicationUnderTest.XTableLayout.txt_Numero'.", repo.ApplicationUnderTest.XTableLayout.txt_NumeroInfo, new RecordItemIndex(38));
-            repo.ApplicationUnderTest.XTableLayout.txt_Numero.EnsureVisible();
-            Keyboard.Press(NumeroCalle);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.lbl_Direccion' at Center.", repo.ApplicationUnderTest.lbl_DireccionInfo, new RecordItemIndex(39));
             repo.ApplicationUnderTest.lbl_Direccion.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 50s to not exist. Associated repository item: 'ApplicationUnderTest.XTableLayout.Copy_of_txt_Numero'", repo.ApplicationUnderTest.XTableLayout.Copy_of_txt_NumeroInfo, new ActionTimeout(50000), new RecordItemIndex(40));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 50s to not exist. Associated repository item: 'ApplicationUnderTest.XTableLayout.txt_Calle_Espera'", repo.ApplicationUnderTest.XTableLayout.txt_Calle_EsperaInfo, new ActionTimeout(50000), new RecordItemIndex(40));
+            repo.ApplicationUnderTest.XTableLayout.txt_Calle_EsperaInfo.WaitForNotExists(50000);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.XTableLayout.txt_Numero' at Center.", repo.ApplicationUnderTest.XTableLayout.txt_NumeroInfo, new RecordItemIndex(41));
+            repo.ApplicationUnderTest.XTableLayout.txt_Numero.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$NumeroCalle' with focus on 'ApplicationUnderTest.XTableLayout.txt_Numero'.", repo.ApplicationUnderTest.XTableLayout.txt_NumeroInfo, new RecordItemIndex(42));
+            repo.ApplicationUnderTest.XTableLayout.txt_Numero.EnsureVisible();
+            Keyboard.Press(NumeroCalle);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.lbl_Direccion' at Center.", repo.ApplicationUnderTest.lbl_DireccionInfo, new RecordItemIndex(43));
+            repo.ApplicationUnderTest.lbl_Direccion.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 50s to not exist. Associated repository item: 'ApplicationUnderTest.XTableLayout.Copy_of_txt_Numero'", repo.ApplicationUnderTest.XTableLayout.Copy_of_txt_NumeroInfo, new ActionTimeout(50000), new RecordItemIndex(44));
             repo.ApplicationUnderTest.XTableLayout.Copy_of_txt_NumeroInfo.WaitForNotExists(50000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.XTableLayout.Btn_ValidarDireccion' at Center.", repo.ApplicationUnderTest.XTableLayout.Btn_ValidarDireccionInfo, new RecordItemIndex(41));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.XTableLayout.Btn_ValidarDireccion' at Center.", repo.ApplicationUnderTest.XTableLayout.Btn_ValidarDireccionInfo, new RecordItemIndex(45));
             repo.ApplicationUnderTest.XTableLayout.Btn_ValidarDireccion.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 6s.", new RecordItemIndex(42));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 6s.", new RecordItemIndex(46));
             Delay.Duration(6000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.XTableLayout.ClickFlechaBuscaGrupo2' at CenterRight.", repo.ApplicationUnderTest.XTableLayout.ClickFlechaBuscaGrupo2Info, new RecordItemIndex(43));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.XTableLayout.ClickFlechaBuscaGrupo2' at CenterRight.", repo.ApplicationUnderTest.XTableLayout.ClickFlechaBuscaGrupo2Info, new RecordItemIndex(47));
             repo.ApplicationUnderTest.XTableLayout.ClickFlechaBuscaGrupo2.Click(Location.CenterRight);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.BuscarGrupo' at Center.", repo.ApplicationUnderTest.BuscarGrupoInfo, new RecordItemIndex(44));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.BuscarGrupo' at Center.", repo.ApplicationUnderTest.BuscarGrupoInfo, new RecordItemIndex(48));
             repo.ApplicationUnderTest.BuscarGrupo.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Validar_BuscarGrupos' at 112;14.", repo.ApplicationUnderTest.Validar_BuscarGruposInfo, new RecordItemIndex(45));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Validar_BuscarGrupos' at 112;14.", repo.ApplicationUnderTest.Validar_BuscarGruposInfo, new RecordItemIndex(49));
             repo.ApplicationUnderTest.Validar_BuscarGrupos.Click("112;14");
             Delay.Milliseconds(0);
             
             // **** Validación de Carga de Datos de la Cuenta exitoso ****
-            Report.Log(ReportLevel.Info, "Section", "**** Validación de Carga de Datos de la Cuenta exitoso ****", new RecordItemIndex(46));
+            Report.Log(ReportLevel.Info, "Section", "**** Validación de Carga de Datos de la Cuenta exitoso ****", new RecordItemIndex(50));
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Buscar grupos') on item 'ApplicationUnderTest.Validar_BuscarGrupos'.", repo.ApplicationUnderTest.Validar_BuscarGruposInfo, new RecordItemIndex(47));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Buscar grupos') on item 'ApplicationUnderTest.Validar_BuscarGrupos'.", repo.ApplicationUnderTest.Validar_BuscarGruposInfo, new RecordItemIndex(51));
             Validate.AttributeEqual(repo.ApplicationUnderTest.Validar_BuscarGruposInfo, "InnerText", "Buscar grupos");
             Delay.Milliseconds(0);
             

@@ -6,7 +6,8 @@
 // http://www.ranorex.com
 //
 ///////////////////////////////////////////////////////////////////////////////
-
+using System.IO;
+using System.Diagnostics;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -20,9 +21,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace Smoke.CrearCuentaSinValidarDNI
+namespace Smoke.Emision
 {
-    public partial class BuscarGrupo
+    public partial class RenombrarCSV
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
@@ -33,22 +34,35 @@ namespace Smoke.CrearCuentaSinValidarDNI
             // Your recording specific initialization code goes here.
         }
 
-        public void PASNombreProductor()
-        {
-        	PASNombre = PAS + " " + NombreProductor;
-        }
-
-        public void ActualizaCuentaExistente()
+        public void RenombraArchivoCSV(string Datos_Salida)
         {
             // TODO: Replace the following line with your code implementation.
             //throw new NotImplementedException();
-            Report.Info("Info: ","Cuenta Con DNI Existente, se va a actualizar...");
             
-            if(repo.SURA.MsjeCuentaExistente.Visible){
-            	repo.SURA.Actalizar.Click();
-            	Delay.Milliseconds(0);
-            }
+            string nombrearchivo = Datos_Salida.Split('.')[0];
+            //WinForms.MessageBox.Show(nombrearchivo);
+          
+            bool existe = File.Exists(@"C:\TEMP\Polizas\Smoke\" + Datos_Salida);
+			
+			try {
+				if (existe)
+				{
+					//File.Delete(@".\Utilitarios\SalidaComando_AB.txt");
+					//File.Move(@"d:\temp\faf.txt",@"d:\temp\faf_"+ System.DateTime.Now.ToString("yyyyMMdd_hhMMss") +".txt");
+					
+					File.Move(@"C:\TEMP\Polizas\Smoke\" + Datos_Salida,@"C:\TEMP\Polizas\Smoke\" + nombrearchivo + "_"+ System.DateTime.Now.ToString("yyyyMMdd_hhmmss") +".txt");
+					Report.Success("I/O","Finalizado el proceso. Renombre Exitoso");
+				}
+				else{
+					Report.Error("No existe el Archivo");
+				}
+				
+			} catch (Exception e) {
+				Report.Failure("I/O","No se pudo realizar la operacion\r\nError: " + e);
+			}
         }
+
+       
 
     }
 }

@@ -195,26 +195,37 @@ namespace Smoke.CrearCuentaSinValidarDNI
             repo.ApplicationUnderTest.Btn_Actualizar.Click("44;7");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'InnerText' from item 'ApplicationUnderTest.NroCuenta' and assigning its value to variable 'NroCuenta'.", repo.ApplicationUnderTest.NroCuentaInfo, new RecordItemIndex(16));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.MsjeCuentaExistente' at Center.", repo.SURA.MsjeCuentaExistenteInfo, new RecordItemIndex(16));
+            //repo.SURA.MsjeCuentaExistente.Click();
+            //Delay.Milliseconds(0);
+            
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SURA.Actalizar' at Center.", repo.SURA.ActalizarInfo, new RecordItemIndex(17));
+            //repo.SURA.Actalizar.Click();
+            //Delay.Milliseconds(0);
+            
+            ActualizaCuentaExistente();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'InnerText' from item 'ApplicationUnderTest.NroCuenta' and assigning its value to variable 'NroCuenta'.", repo.ApplicationUnderTest.NroCuentaInfo, new RecordItemIndex(19));
             NroCuenta = repo.ApplicationUnderTest.NroCuenta.Element.GetAttributeValueText("InnerText");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "User", "El número de cuenta es:", new RecordItemIndex(17));
+            Report.Log(ReportLevel.Info, "User", "El número de cuenta es:", new RecordItemIndex(20));
             
-            Report.Log(ReportLevel.Info, "User", NroCuenta, new RecordItemIndex(18));
+            Report.Log(ReportLevel.Info, "User", NroCuenta, new RecordItemIndex(21));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Validar_ResumenDelArchivoDeCuenta' at 117;11.", repo.ApplicationUnderTest.Validar_ResumenDelArchivoDeCuentaInfo, new RecordItemIndex(19));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Validar_ResumenDelArchivoDeCuenta' at 117;11.", repo.ApplicationUnderTest.Validar_ResumenDelArchivoDeCuentaInfo, new RecordItemIndex(22));
             repo.ApplicationUnderTest.Validar_ResumenDelArchivoDeCuenta.Click("117;11");
             Delay.Milliseconds(0);
             
             // **** Validación de cuenta creada exitosamente ****
-            Report.Log(ReportLevel.Info, "Section", "**** Validación de cuenta creada exitosamente ****", new RecordItemIndex(20));
+            Report.Log(ReportLevel.Info, "Section", "**** Validación de cuenta creada exitosamente ****", new RecordItemIndex(23));
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Resumen del archivo de cuenta') on item 'ApplicationUnderTest.Validar_ResumenDelArchivoDeCuenta'.", repo.ApplicationUnderTest.Validar_ResumenDelArchivoDeCuentaInfo, new RecordItemIndex(21));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Resumen del archivo de cuenta') on item 'ApplicationUnderTest.Validar_ResumenDelArchivoDeCuenta'.", repo.ApplicationUnderTest.Validar_ResumenDelArchivoDeCuentaInfo, new RecordItemIndex(24));
             Validate.AttributeEqual(repo.ApplicationUnderTest.Validar_ResumenDelArchivoDeCuentaInfo, "InnerText", "Resumen del archivo de cuenta");
             Delay.Milliseconds(0);
             
-            Report.Screenshot(ReportLevel.Info, "User", "", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(22));
+            Report.Screenshot(ReportLevel.Info, "User", "", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(25));
             
         }
 
