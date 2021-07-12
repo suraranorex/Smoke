@@ -237,6 +237,7 @@
 			</testmodule>
 			<testcase
 			datasource="Anulaciones"
+			errorbehavior="ContinueNextIteration"
 			id="1a4c4528-00f3-4104-ba73-39ec7f993727"
 			name="AnularPolizas">
 			</testcase>
@@ -3659,7 +3660,7 @@
 		</DataSource>
 	</datasources>
 	<testconfigurations
-	default="Smoke">
+	default="Anulaciones">
 		<testconfiguration
 		name="Anulaciones">
 			<testcontainer
