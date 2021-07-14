@@ -233,8 +233,8 @@ namespace Smoke.Generales
                 Delay.Milliseconds(0);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(24)); }
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'SURA.Imag_torta_pago'", repo.SURA.Imag_torta_pagoInfo, new ActionTimeout(60000), new RecordItemIndex(25));
-            repo.SURA.Imag_torta_pagoInfo.WaitForExists(60000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'SURA.Imag_torta_pago'", repo.SURA.Imag_torta_pagoInfo, new ActionTimeout(120000), new RecordItemIndex(25));
+            repo.SURA.Imag_torta_pagoInfo.WaitForExists(120000);
             
         }
 

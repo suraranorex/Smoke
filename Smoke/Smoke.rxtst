@@ -3660,7 +3660,7 @@
 		</DataSource>
 	</datasources>
 	<testconfigurations
-	default="Anulaciones">
+	default="Smoke">
 		<testconfiguration
 		name="Anulaciones">
 			<testcontainer
