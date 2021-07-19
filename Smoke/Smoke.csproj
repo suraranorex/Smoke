@@ -570,6 +570,18 @@
       <UserCode>true</UserCode>
       <id>b796f2f7-47a9-49af-8cb4-8b838b982920</id>
     </Compile>
+    <Compile Include="Generales\BuscarProveedor.cs">
+      <BoundTo>fe05da1d-7db3-4c2c-95c9-093dfac97e18</BoundTo>
+      <DependentUpon>BuscarProveedor.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6e1f3deb-1b25-41e1-b701-8d095a0b05d2</id>
+    </Compile>
+    <Compile Include="Generales\BuscarProveedor.UserCode.cs">
+      <BoundTo>fe05da1d-7db3-4c2c-95c9-093dfac97e18</BoundTo>
+      <DependentUpon>BuscarProveedor.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e3e70183-078f-498b-9f8f-e57164bcbdeb</id>
+    </Compile>
     <Compile Include="Generales\CloseBrowser.cs">
       <DependentUpon>CloseBrowser.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -593,6 +605,18 @@
       <DependentUpon>ConfirmarReversion.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>f7b9c77a-782e-4eba-a9eb-49cbb5e0f790</id>
+    </Compile>
+    <Compile Include="Generales\ConsultarLocalidades.cs">
+      <BoundTo>67a0206e-7d51-4f4d-a2bd-8252d071322f</BoundTo>
+      <DependentUpon>ConsultarLocalidades.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>31d75a63-d66a-4565-8f6d-7250d9af76fb</id>
+    </Compile>
+    <Compile Include="Generales\ConsultarLocalidades.UserCode.cs">
+      <BoundTo>67a0206e-7d51-4f4d-a2bd-8252d071322f</BoundTo>
+      <DependentUpon>ConsultarLocalidades.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c803449f-59a6-4f92-a35f-cebe58eea4a2</id>
     </Compile>
     <Compile Include="Generales\OpenBrowser.cs">
       <DependentUpon>OpenBrowser.rxrec</DependentUpon>
@@ -653,6 +677,9 @@
       <DependentUpon>Recording1.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>e4ff38aa-aae7-47eb-bd79-fdc466d81344</id>
+    </Compile>
+    <Compile Include="Generales\UCC_TrabajaArchivos.cs">
+      <id>fc1ee63d-9299-431e-968b-0a88db801624</id>
     </Compile>
     <Compile Include="Login\Login.cs">
       <BoundTo>6a3341d2-3e2a-476a-afcc-f10b0a901a7e</BoundTo>
@@ -991,6 +1018,11 @@
       <id>d2c3b0fd-fe12-4dbb-84b6-b811a7ed850d</id>
       <recordtableid>b4735cf6-9c63-407c-9248-f7233b2caf44</recordtableid>
     </None>
+    <None Include="Generales\BuscarProveedor.rxrec">
+      <BoundTo>c5d687cb-d4dd-46a0-9b8f-7e2a1374cbe9</BoundTo>
+      <id>fe05da1d-7db3-4c2c-95c9-093dfac97e18</id>
+      <recordtableid>64e36552-c831-42c6-b747-23a15db04221</recordtableid>
+    </None>
     <None Include="Generales\CloseBrowser.rxrec">
       <BoundTo>c5d687cb-d4dd-46a0-9b8f-7e2a1374cbe9</BoundTo>
       <id>53e41ab5-f1f2-4deb-8d0a-4f8b7d1db742</id>
@@ -1000,6 +1032,11 @@
       <BoundTo>c5d687cb-d4dd-46a0-9b8f-7e2a1374cbe9</BoundTo>
       <id>3c8a57c4-6864-462f-99ed-7ea9584b078c</id>
       <recordtableid>fde3da18-809b-432f-b71f-9500deb8553a</recordtableid>
+    </None>
+    <None Include="Generales\ConsultarLocalidades.rxrec">
+      <BoundTo>c5d687cb-d4dd-46a0-9b8f-7e2a1374cbe9</BoundTo>
+      <id>67a0206e-7d51-4f4d-a2bd-8252d071322f</id>
+      <recordtableid>fa32e596-1d6d-496d-a93e-30f41b87972f</recordtableid>
     </None>
     <None Include="Generales\OpenBrowser.rxrec">
       <BoundTo>c5d687cb-d4dd-46a0-9b8f-7e2a1374cbe9</BoundTo>

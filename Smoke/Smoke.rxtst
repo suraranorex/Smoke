@@ -190,6 +190,28 @@
 			name="ReversaAcciones">
 			</smartfoldernode>
 			<testmodule
+			id="1629b4b3-921a-45e3-909b-34e4932eebef"
+			name="LogOut"
+			ref="00c6bbe4-50ec-43e3-a6c0-b30b6b2678f8"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="c6251eb7-a7a0-4102-8b57-4ce25d898381"
+					variableid="179cd022-d834-4b47-98d5-e2a34a6a6fce"
+					variablename="Ambiente">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="944abe9b-0ea1-485e-a74f-0bb72c9242d8"
+					variableid="179cd022-d834-4b47-98d5-e2a34a6a6fce"
+					variablename="Ambiente">
+					</var>
+				</missingdatabinding>
+			</testmodule>
+			<testmodule
 			id="1a169fe2-ca9e-4f88-912a-917ba166b945"
 			name="Login"
 			ref="a64524be-86c0-4f43-8300-08f1a1e63ac3"
@@ -538,6 +560,10 @@
 					</condition>
 				</conditiongroup>
 			</smartfoldernode>
+			<teardown
+			id="38cf53ae-23c3-4a1f-9960-21cc32ddc199"
+			name="teardown">
+			</teardown>
 			<testmodule
 			enabled="False"
 			id="39c8e54e-3274-4702-a8f5-96d42683d64b"
@@ -880,6 +906,10 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<setup
+			id="4cca5ee9-de89-4123-97c9-88b20917c9b3"
+			name="setup">
+			</setup>
 			<smartfoldernode
 			id="4f5e8f86-9772-4799-a29d-49ca5e7cebff"
 			name="TR_FIJA">
@@ -1088,6 +1118,28 @@
 			id="605d95b3-be4d-4329-b3a0-0fda913fa3f1"
 			name="setup">
 			</setup>
+			<testmodule
+			id="61b7c142-1cd5-4843-b303-885cc13437aa"
+			name="OpenBrowser"
+			ref="ad5ed313-4634-480f-8e5b-88e66c955da8"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="URL"
+					datasourceid="c6251eb7-a7a0-4102-8b57-4ce25d898381"
+					variableid="35c278a9-9396-4876-8b62-b6f02cdf0e51"
+					variablename="URL">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="URL"
+					datasourceid="944abe9b-0ea1-485e-a74f-0bb72c9242d8"
+					variableid="35c278a9-9396-4876-8b62-b6f02cdf0e51"
+					variablename="URL">
+					</var>
+				</missingdatabinding>
+			</testmodule>
 			<testcase
 			errorbehavior="ContinueNextIteration"
 			id="655b1a57-ebab-4f5f-bd66-0a1742de6ff0"
@@ -1212,6 +1264,28 @@
 					variablename="Ambiente">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="6be36903-b6e3-481d-945d-25a459c58851"
+			name="CloseBrowser"
+			ref="a0b418f0-6551-48d1-b8cc-275b0b6164e7"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="c6251eb7-a7a0-4102-8b57-4ce25d898381"
+					variableid="179cd022-d834-4b47-98d5-e2a34a6a6fce"
+					variablename="Ambiente">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="944abe9b-0ea1-485e-a74f-0bb72c9242d8"
+					variableid="179cd022-d834-4b47-98d5-e2a34a6a6fce"
+					variablename="Ambiente">
+					</var>
+				</missingdatabinding>
 			</testmodule>
 			<testmodule
 			id="6be451c2-8d6b-491c-ae25-5759fce4eb97"
@@ -1802,11 +1876,11 @@
 				<parameters>
 					<param
 					name="URL"
-					value="https://i-preproducciongestion.segurossura.com.ar/bc">
+					value="https://ssurgwsoadev4-oci.opc.oracleoutsourcing.com/bc">
 					</param>
 					<param
 					name="Ambiente"
-					value="i-preproducciongestion.segurossura.com.ar">
+					value="ssurgwsoadev4-oci.opc.oracleoutsourcing.com">
 					</param>
 					<param
 					name="User"
@@ -2104,6 +2178,78 @@
 					</var>
 				</missingdatabinding>
 			</testmodule>
+			<testcase
+			id="c6251eb7-a7a0-4102-8b57-4ce25d898381"
+			name="ContacManager">
+				<parameters>
+					<param
+					name="URL"
+					value="https://i-preproducciongestion.segurossura.com.ar/ab">
+					</param>
+					<param
+					name="Ambiente"
+					value="i-preproducciongestion.segurossura.com.ar">
+					</param>
+					<param
+					name="User"
+					value="su">
+					</param>
+					<param
+					name="Pass"
+					value="silverarrow">
+					</param>
+					<param
+					name="NewParameter"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
+			<testmodule
+			id="c7150bab-4166-4a37-881e-f9dfde5b9022"
+			name="Login"
+			ref="a64524be-86c0-4f43-8300-08f1a1e63ac3"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="c6251eb7-a7a0-4102-8b57-4ce25d898381"
+					variableid="179cd022-d834-4b47-98d5-e2a34a6a6fce"
+					variablename="Ambiente">
+					</var>
+					<var
+					dataname="User"
+					datasourceid="c6251eb7-a7a0-4102-8b57-4ce25d898381"
+					variableid="4706f1ff-a560-453b-a6c9-642422385362"
+					variablename="User">
+					</var>
+					<var
+					dataname="Pass"
+					datasourceid="c6251eb7-a7a0-4102-8b57-4ce25d898381"
+					variableid="7e77cef4-fd01-48c3-9ebe-6fd0e02c47fd"
+					variablename="Pass">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="944abe9b-0ea1-485e-a74f-0bb72c9242d8"
+					variableid="179cd022-d834-4b47-98d5-e2a34a6a6fce"
+					variablename="Ambiente">
+					</var>
+					<var
+					dataname="User"
+					datasourceid="944abe9b-0ea1-485e-a74f-0bb72c9242d8"
+					variableid="4706f1ff-a560-453b-a6c9-642422385362"
+					variablename="User">
+					</var>
+					<var
+					dataname="Pass"
+					datasourceid="944abe9b-0ea1-485e-a74f-0bb72c9242d8"
+					variableid="7e77cef4-fd01-48c3-9ebe-6fd0e02c47fd"
+					variablename="Pass">
+					</var>
+				</missingdatabinding>
+			</testmodule>
 			<teardown
 			id="caf29266-586f-411a-a3a5-128eaab40b3d"
 			name="teardown">
@@ -2268,6 +2414,21 @@
 				</missingdatabinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
+			id="d653b095-fc86-42a8-92fb-d8986a3e20b0"
+			name="ConsultarLocalidades"
+			ref="fa32e596-1d6d-496d-a93e-30f41b87972f"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="c6251eb7-a7a0-4102-8b57-4ce25d898381"
+					variableid="179cd022-d834-4b47-98d5-e2a34a6a6fce"
+					variablename="Ambiente">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="d9483d95-6751-4177-9114-d004356b876a"
 			name="Producto"
 			ref="19ada6ca-8aec-4da0-a855-7d93e21bfb16"
@@ -2353,6 +2514,12 @@
 			id="dd6dcb38-e88b-465d-bbd9-16bcb10659f8"
 			name="Coberturas">
 			</smartfoldernode>
+			<testmodule
+			id="dd9a59b1-1cf2-4ef9-82a4-214cba9349a9"
+			name="BuscarProveedor"
+			ref="64e36552-c831-42c6-b747-23a15db04221"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="ddd9dbd2-2010-4bc1-b04b-4217b122b52d"
 			name="CantCuotasSi"
@@ -3234,6 +3401,42 @@
 							</testmodule>
 						</teardown>
 					</testcase>
+					<testcase
+					id="c6251eb7-a7a0-4102-8b57-4ce25d898381"
+					name="ContacManager">
+						<setup
+						id="4cca5ee9-de89-4123-97c9-88b20917c9b3"
+						name="setup">
+							<testmodule
+							id="61b7c142-1cd5-4843-b303-885cc13437aa"
+							name="OpenBrowser">
+							</testmodule>
+							<testmodule
+							id="c7150bab-4166-4a37-881e-f9dfde5b9022"
+							name="Login">
+							</testmodule>
+						</setup>
+						<testmodule
+						id="d653b095-fc86-42a8-92fb-d8986a3e20b0"
+						name="ConsultarLocalidades">
+						</testmodule>
+						<testmodule
+						id="dd9a59b1-1cf2-4ef9-82a4-214cba9349a9"
+						name="BuscarProveedor">
+						</testmodule>
+						<teardown
+						id="38cf53ae-23c3-4a1f-9960-21cc32ddc199"
+						name="teardown">
+							<testmodule
+							id="1629b4b3-921a-45e3-909b-34e4932eebef"
+							name="LogOut">
+							</testmodule>
+							<testmodule
+							id="6be36903-b6e3-481d-945d-25a459c58851"
+							name="CloseBrowser">
+							</testmodule>
+						</teardown>
+					</testcase>
 				</testcase>
 			</testsuite>
 		</childhierarchy>
@@ -3640,7 +3843,7 @@
 		<DataSource
 		id="501ba9c9-d04b-42ff-a43a-e30a158c12a4"
 		includefile="Unchecked"
-		lastknownrowcount="3"
+		lastknownrowcount="2"
 		name="PasoParametroCSV"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -3660,7 +3863,7 @@
 		</DataSource>
 	</datasources>
 	<testconfigurations
-	default="Smoke">
+	default="ContacManager">
 		<testconfiguration
 		name="Anulaciones">
 			<testcontainer
@@ -3671,6 +3874,15 @@
 			</testcontainer>
 			<testcontainer
 			id="90c933ad-a8e2-4261-a148-20533aa13592">
+			</testcontainer>
+		</testconfiguration>
+		<testconfiguration
+		name="ContacManager">
+			<testcontainer
+			id="539633a7-894c-49ae-93fc-0db5a6fe177b">
+			</testcontainer>
+			<testcontainer
+			id="c6251eb7-a7a0-4102-8b57-4ce25d898381">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration
